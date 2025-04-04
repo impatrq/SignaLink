@@ -94,13 +94,12 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
-
 ---
 
-### 6. [Thiago Albornoz]
+### 6. Thiago Albornoz
 <a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20valentinfranco2506@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <a href="https://www.linkedin.com/in/valentin-franco-174587357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
