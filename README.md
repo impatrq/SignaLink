@@ -3,7 +3,7 @@
 
 # **SignaLink**
 
-<img src="Logo.jpg" alt="Logo proyecto" width="70%"/>
+<img src="Logo.jpg" alt="Logo proyecto" width="50%"/>
 
 </div>
 
