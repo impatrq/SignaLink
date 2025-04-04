@@ -1,4 +1,12 @@
 
+<div align="center">
+
+# **SignaLink**
+
+<img src="" alt="Logo proyecto" width="70%"/>
+
+</div>
+
 # SignaLink - Tus gestos hablan, SignaLink escucha.
 ## 🗓️ Objetivo de Proyecto:
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
@@ -38,7 +46,7 @@
 
 ### 📱 CONTACTOS
 
-### 1. Valentino Sarniguette
+### 1. Valentin Sarniguette
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
     <img alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -49,21 +57,21 @@
 ---
 
 ### 2. Franco Lesme
-<a href="https://mail.google.com/mail/?view=cm&to=correo@example.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20correo@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+<a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20franco.lesme2006@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-<a href="https://www.linkedin.com/in/usuario">
+<a href="https://www.linkedin.com/in/franco-lesme-25bb4b259/us">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
 ---
 
-### 3. [Nombre Apellido]
-<a href="https://mail.google.com/mail/?view=cm&to=correo@example.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20correo@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+### 3. Valentin Franco
+<a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@g" target="_blank">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20valentinfranco2506@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <a href="https://www.linkedin.com/in/usuario">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://www.linkedin.com/in/valentin-franco-174587357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" />
 </a>
 
 ---
@@ -73,10 +81,19 @@
 
 ---
 
-### 5. [Nombre ]
+### 5. Lorenzo Poggi
 <!-- mismo formato -->
-
+Sebastian Erbanazohttps://www.linkedin.com/in/valentin-franco-174587357/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_appSebastian Erbino<a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20correo@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/usuario">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a><a href="https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com" target="_blank">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20correo@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/lorenzo-poggi-6b9b5a357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
 ---
 
-### 6. [Nombre Apellido]
-<!-- mismo formato -->
+### 6. [Thiago Albornoz]
