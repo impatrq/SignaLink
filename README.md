@@ -71,6 +71,7 @@
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20valentinfranco2506@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <a href="https://www.linkedin.com/in/valentin-franco-174587357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">
+   <img alt="LinkedIn" />
 </a>
 
 ---
