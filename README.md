@@ -2,9 +2,9 @@
 <div align="center">
 
 # **SignaLink**
-
-<img src="Logo.jpg" alt="Logo proyecto" width="27%"/>
 # Tus gestos hablan, SignaLink escucha
+<img src="Logo.jpg" alt="Logo proyecto" width="27%"/>
+
 </div>
 
 
