@@ -3,7 +3,7 @@
     SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
 -------------------
 ## 🖐 Descripción del proyecto:
-### Nuestro proyecto va a estar equipado con sensores flex y sensores de giroscopio y acelerómetro que detectarán los movimientos de los dedos. Estos datos se expresan en señales analógicas, por eso es necesario un microcontrolador que convierte estas señales analógicas a digitales (ADC). 
+- Nuestro proyecto va a estar equipado con sensores flex y sensores de giroscopio y acelerómetro que detectarán los movimientos de los dedos. Estos datos se expresan en señales analógicas, por eso es necesario un microcontrolador que convierte estas señales analógicas a digitales (ADC). 
     
 ### Luego serán transmitidas por BLE (Bluetooth Low Energy) a la Raspberry pi Zero 2W en un módulo separado ubicado en el pecho en forma de riñonera, que así mismo se encargará de procesar estas señales digitales para descubrir que gestos se intentó hacer. Una vez realizado este proceso se enviará en forma de texto al módulo reproductor de audio y con salida al parlante, también ubicado en el módulo de pecho, permitiendo así que las personas que se comunican mediante la lengua de señas puedan expresar su mensaje de forma audible para que cualquier receptor lo comprenda. 
     
@@ -35,3 +35,18 @@
 | Sarniguette Valentino | Prueba electronica | 
 
 
+
+### Valentino Sarniguette
+
+<a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
+  <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
+</a>
+<a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
+  <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://github.com/valensarrr/Valensarrr">
+  <img align="left" alt="Valentino's GitHub" width="100px" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://www.instagram.com/valensarrr/?next=%2F">
+  <img align="left" alt="Valentino's Instagram" width="115px" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
