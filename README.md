@@ -7,7 +7,7 @@
 
 </div>
 
-# Tus gestos hablan, SignaLink escucha.
+#            Tus gestos hablan, SignaLink escucha.
 ## 🗓️ Objetivo de Proyecto:
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
 
