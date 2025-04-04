@@ -1,3 +1,4 @@
+
 # SignaLink - Tus gestos hablan, SignaLink escucha.
 ## 🗓️ Objetivo de Proyecto:
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
@@ -36,17 +37,35 @@
 
 
 
-### 📱 CONTACTO
+### 📱 CONTACTOS
 
+-valensar
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
   <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
 <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
   <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="https://github.com/valensarrr/Valensarrr">
-  <img align="left" alt="Valentino's GitHub" width="100px" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+
+<a href="https://mail.google.com/mail/?view=cm&to=v@gmail.com" target="_blank">
+  <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
-<a href="https://www.instagram.com/valensarrr/?next=%2F">
-  <img align="left" alt="Valentino's Instagram" width="115px" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+<a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
+  <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
+
+<a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
+  <img align="left" alt="Franco's Gmail" src="https://img.shields.io/badge/Gmail-%20franco.lesme2006@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
+</a>
+<a href="https://www.linkedin.com/in/franco-lesme-25bb4b259/">
+  <img align="left" alt="Va's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
+  <img align="left" alt="Valentin's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinfranco2@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
+</a>
+<a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
+  <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+
