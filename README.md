@@ -1,1 +1,1 @@
-# SignaLink - Tus manos hablan, SignaLink escucha.
+# SignaLink - Tus manos hablan, SignaLink escucha
