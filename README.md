@@ -35,17 +35,48 @@
 | Poggi Lorenzo | Registro de Seguimiento |
 | Sarniguette Valentino | Prueba electronica | 
 
+
 ### 📱 CONTACTOS
 
+### 1. Valentino Sarniguette
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
-    <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
-    <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-<a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
-    <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
-    <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+<a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
+    <img alt="Valentino's LinkedIn" src="https://img.shields.io/badge/LinkedIn-Valentino%20Sarniguette-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
+
+---
+
+### 2. Franco Lesme
+<a href="https://mail.google.com/mail/?view=cm&to=correo@example.com" target="_blank">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20correo@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/usuario">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+---
+
+### 3. [Nombre Apellido]
+<a href="https://mail.google.com/mail/?view=cm&to=correo@example.com" target="_blank">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%20correo@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/usuario">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Nombre%20Apellido-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+---
+
+### 4. [Nombre Apellido]
+<!-- mismo formato -->
+
+---
+
+### 5. [Nombre ]
+<!-- mismo formato -->
+
+---
+
+### 6. [Nombre Apellido]
+<!-- mismo formato -->
