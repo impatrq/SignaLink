@@ -1,12 +1,12 @@
 
 <div align="center">
 
-# **SignaLink 
+# **SignaLink**
 
 <img src="Logo.jpg" alt="Logo proyecto" width="27%"/>
-
-</div>
 # Tus gestos hablan, SignaLink escucha
+</div>
+
 
 ## 🗓️ Objetivo de Proyecto:
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
