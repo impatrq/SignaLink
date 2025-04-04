@@ -1,5 +1,6 @@
 # SignaLink - Tus manos hablan, SignaLink escucha.
 # Objetivo de Proyecto:
+Signalink
 SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
 -------------------------------
 # Descripción del proyecto:
