@@ -1,6 +1,6 @@
 <div align="center">
  
-<img  sytle=filter: blur(5px); src="Imagenes/Logo.jpg" alt="Logo proyecto" width="27%"/>
+<img src="Imagenes/Logo.jpg" alt="Logo proyecto" width="27%"/>
 
 </div>
 
