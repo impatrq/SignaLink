@@ -10,10 +10,11 @@ En paralelo, un micrófono direccional se encargará de captar la voz de la pers
 
 | Componentes | Imagen |
 |---|---|
-| Rasberry Pi Zero 2W | [Rasberry Pi Zero 2 W - Mercado Libre](https://github.com/carenalgas/popochiu/releases/download/v2.0.0/popochiu-v2.0.0.zip) |
+| Rasberry Pi Zero 2W | [Rasberry Pi Zero 2 W - Mercado Libre](https://www.mercadolibre.com.ar/raspberry-pi-zero-2-w-64-bits-cortex-a53/p/MLA35340704#polycard_client=search-nordic&searchVariation=MLA35340704&wid=MLA1476733635&position=2&search_layout=grid&type=product&tracking_id=1a2cf9bb-b64c-4103-830b-95cb25e0c878&sid=search) |
 | ESP32-C3 Mini | [ESP32-C3 Mini - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-1933180704-placa-desarrollo-esp32-c3-super-mini-wifi-bluetooth-sgk-_JM#polycard_client=search-nordic&position=18&search_layout=grid&type=item&tracking_id=a6179d80-9c2f-448f-931d-3f6b0744610e&wid=MLA1933180704&sid=search) |
 | Sensores Flex | [Sensores Flex - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-621168012-flex-sensor-45-o-degrees-10-30-kohms-sensor-reflectivo-_JM#polycard_client=search-nordic&position=22&search_layout=stack&type=item&tracking_id=d09a116e-7fa9-4e61-b811-829b67d77fb1&wid=MLA621168012&sid=search) |
-| Reproductor      | [DFPlayer Mini](https://listado.mercadolibre.com.ar/dfplayer-mini#D[A:DFPLAYER%20MINI])   |
-| Parlante         | [Parlante]() |
-| Microfono        | [Microfono](https://listado.mercadolibre.com.ar/max9814#D[A:MAX9814]) |
-| Baterias Lipo 3.7V | [Baterias Lipo]() |
+| Reproductor      | [DFPlayer Mini - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-1415876931-modulo-reproductor-audio-hw-247a-musica-dfplayer-mp3-wav-wma-_JM#polycard_client=search-nordic&position=11&search_layout=grid&type=item&tracking_id=ab813d9d-dc9a-42de-8274-9bea4aed94f4&wid=MLA1415876931&sid=search)   |
+| Parlante         | [ Mini Parlante- Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-926965993-mini-parlante-mylar-50mm-8-ohms-05w-audio-arduino-nubbeo-_JM#polycard_client=search-nordic&position=8&search_layout=stack&type=item&tracking_id=5afdc171-789b-4858-9908-6e8644b818c2&wid=MLA926965993&sid=search) |
+| Microfono        | [ MAX 9814- Mercado Libre](https://www.mercadolibre.com.ar/modulo-microfono-amplificado-arduino-max9814-agc/p/MLA46725329#polycard_client=search-nordic&searchVariation=MLA46725329&wid=MLA2026208850&position=1&search_layout=grid&type=product&tracking_id=300cf118-f249-42f0-8552-88a0b5ccff91&sid=search) |
+| Baterias | [ Lipo 3.7V - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-823943306-bateria-litio-polimero-lipo-37v-1200mah-drones-helicopteros-_JM#polycard_client=search-nordic&position=11&search_layout=stack&type=item&tracking_id=00997a8f-a302-41cd-929e-7f9b96588b73&wid=MLA823943306&sid=search) |
+|                     | []()                                   |  
