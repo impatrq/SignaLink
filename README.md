@@ -39,7 +39,6 @@
 
 ### 📱 CONTACTOS
 
--valensar
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
   <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
@@ -50,6 +49,7 @@
 <a href="https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com" target="_blank">
   <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
+
 <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
   <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
