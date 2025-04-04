@@ -1,10 +1,14 @@
 <div align="center">
 # **SignaLink**
+ 
 <img src="Logo.jpg" alt="Logo proyecto" width="27%"/>
+
 </div>
 
-<div align="center">
+<div align="center">}
+ 
 # Tus gestos hablan, SignaLink escucha
+
 </div>
 
 ## 🗓️ Objetivo de Proyecto:
