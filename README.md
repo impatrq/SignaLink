@@ -8,7 +8,7 @@ En paralelo, un micrófono direccional se encargará de captar la voz de la pers
 ----------------------------
 # Componentes a utilizar:
 
-| Componentes | Imagen |
+| Componentes | Links |
 |---|---|
 | Rasberry Pi Zero 2W | [Rasberry Pi Zero 2 W - Mercado Libre](https://www.mercadolibre.com.ar/raspberry-pi-zero-2-w-64-bits-cortex-a53/p/MLA35340704#polycard_client=search-nordic&searchVariation=MLA35340704&wid=MLA1476733635&position=2&search_layout=grid&type=product&tracking_id=1a2cf9bb-b64c-4103-830b-95cb25e0c878&sid=search) |
 | ESP32-C3 Mini | [ESP32-C3 Mini - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-1933180704-placa-desarrollo-esp32-c3-super-mini-wifi-bluetooth-sgk-_JM#polycard_client=search-nordic&position=18&search_layout=grid&type=item&tracking_id=a6179d80-9c2f-448f-931d-3f6b0744610e&wid=MLA1933180704&sid=search) |
