@@ -1,10 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>SignaLink</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
     
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>SignaLink</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#a-quienes-ayudamos">¿A quiénes ayudamos?</a></li>
+                <li><a href="#funcionamiento">Soporte</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="integrantes">
+            <h2>Integrantes</h2>
+          
+            <ul>
+                <li>Albornoz, Thiago Agustin</li>
+                <li>Erbino, Sebastian Jose</li>
+                <li>Franco, Valentin</li>
+                <li>Lesme, Franco</li>
+                <li>Poggi Janin, Lorenzo</li>
+                <li>Sarniguette, Valentino</li>
+            </ul>
+            
+        </section>
+
+        <section id="a-quienes-ayudamos">
+            <h2>¿A quiénes ayudamos?</h2>
+            <p>El proyecto 'Signalink' tiene como objetivo principal brindar apoyo y mejorar la calidad de vida de las personas sordomudas, una comunidad que enfrenta múltiples barreras en su vida cotidiana. Según datos del Censo Nacional de 2010, aproximadamente 200.000 personas en el país tienen discapacidad auditiva, representando alrededor del 1,2% de la población total. La sordomudez genera dificultades para acceder a la comunicación, la educación y el empleo, lo que contribuye a su aislamiento social.</p>
+
+            <p>A pesar de los avances en la integración de personas con discapacidad, las personas sordomudas suelen estar relegadas a una comunidad cerrada, debido a la falta de recursos adecuados, como intérpretes de lengua de señas o tecnologías inclusivas. Esto, junto con los prejuicios y la falta de conciencia social, aumenta la brecha que enfrentan diariamente.</p>
+               
+            <p>Signalink busca romper esas barreras, ofreciendo herramientas de comunicación accesibles, promoviendo la inclusión y sensibilizando a la sociedad sobre las necesidades específicas de este colectivo. A través de su labor, el proyecto pretende que las personas sordomudas puedan desarrollarse plenamente en todos los aspectos de su vida.</p>
+        </section>
+
+        <section id="funcionamiento">
+            <h2>Funcionamiento</h2>
+            <p>A lo largo del año, trabajaremos en el desarrollo de un dispositivo, equipado con sensores flex y sensores de giroscopio y acelerómetro (MPU6050) que detectarán los movimientos de los dedos. Estos datos se expresan en señales analógicas, por eso es necesario un microcontrolador (XIAO Nrf52840 /  Esp32 C3 Super Mini) que convierte estas señales analógicas a digitales (ADC). Luego serán transmitidas por BLE (Bluetooth Low Energy) a  la Raspberry pi Zero 2W en un módulo separado ubicado en el pecho en forma de riñonera, que así mismo se encargará de procesar estas señales digitales para descubrir que seña se intentó hacer. Una vez realizado este proceso se enviará en forma de texto al módulo reproductor de audio (DFPlayer Mini) y con salida al parlante también ubicado en el módulo de pecho, permitiendo así que las personas que se comunican mediante la lengua de señas puedan expresar su mensaje de forma audible para que cualquier receptor lo comprenda. 
+                En paralelo, un micrófono direccional (MAX9814/SPH0645LM4H) se encargará de captar la voz de la persona que quiera comunicarse, esas palabras serán procesadas por la Raspberry Pi Zero 2W utilizando un modelo de reconocimiento de voz (Vosk -> Offline) y en forma de texto finalmente será mostrado en el LCD (ST7735 / Lcd Display Oled ssd1306)</p>
+        </section>
+
+        <section id="objetivo">
+            <h2>Objetivo</h2>
+            <p>Su fin es poder aportar una mejor calidad de vida cotidiana para aquellas personas que sean sordomudas e hipoacúsicas. Lo que proponemos para trabajar a lo largo del año es un dispositivo con sensores Flex, que sensarán los movimientos de los dedos; consecuentemente, un pequeño parlante se encargará de transmitir lo que esta persona quiera comunicar, y así conseguir que puedan expresarse en lengua de señas y que el receptor pueda comprender su mensaje. Agregado a esto, en una muñeca de la persona sordomuda, dispondrá de un LCD y un micrófono direccional, para que aquella persona que quiera comunicarse con esta persona, el micrófono detecte su voz y el LCD procese el mensaje. También, el prototipo se usa de forma didáctica para personas que desean aprender y entender el lenguaje de señas. Por último, puede ser utilizado como material didáctico en escuelas o centros de formación educativa.</p>
+        </section>
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Carrusel con Bootstrap</title>
+        
+            <!-- Incluir Bootstrap desde CDN -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+        <body>
+        
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        
+        <!-- Incluir Bootstrap JS desde CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <h3>Contacto</h3>
+        <ul>
+            <li>Email: signalink@gmail.com</li>
+            <li>Teléfono de la institucion: +54 9 11 4254-1512</li>
+            <li>Dirección: Av. Otamendi, B1878 Quilmes, Provincia de Buenos Aires</li>
+        </ul>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
 </body>
+
 </html>
