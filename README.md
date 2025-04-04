@@ -35,8 +35,6 @@
 | Poggi Lorenzo | Registro de Seguimiento |
 | Sarniguette Valentino | Prueba electronica | 
 
-
-
 ### 📱 CONTACTOS
 
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
@@ -45,36 +43,30 @@
 <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
   <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 <a href="https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com" target="_blank">
   <img align="left" alt="Valentino's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinosarniguette@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
-
 <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
   <img align="left" alt="Valentino's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 <a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
   <img align="left" alt="Franco's Gmail" src="https://img.shields.io/badge/Gmail-%20franco.lesme2006@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
 <a href="https://www.linkedin.com/in/franco-lesme-25bb4b259/">
   <img align="left" alt="Franco's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 <a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
   <img align="left" alt="Valentin's Gmail" src="https://img.shields.io/badge/Gmail-%20valentinfranco2506@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
 <a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
   <img align="left" alt="Valentin's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 <a href="https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com" target="_blank">
   <img align="left" alt="Sebastian's Gmail" src="https://img.shields.io/badge/Gmail-%20serbino25@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
 <a href="https://www.linkedin.com/in/sebasti%C3%A1n-erbino-25b9792ab?trk=contact-info">
   <img align="left" alt="Sebastian's LinkedIn" width="90px" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 <a href="https://mail.google.com/mail/?view=cm&to=albornozthiagoagustin@gmail.com" target="_blank">
   <img align="left" alt="Thiago's Gmail" src="https://img.shields.io/badge/Gmail-%20albornozthiagoagustin@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836&color=white" />
 </a>
