@@ -10,8 +10,8 @@
 
 </div>
 
-## 📺 Acceso a pagina web:
- 
+## 📌 Acceso a pagina web:
+
 
 ## 🗓️ Objetivo de Proyecto:
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar. 
@@ -60,6 +60,7 @@
 
 ### 📱 CONTACTOS
 
+ 
 ### 1. Valentin Sarniguette
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -68,7 +69,7 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
----
+
 
 ### 2. Franco Lesme
 <a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
@@ -78,7 +79,7 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
----
+
 
 ### 3. Valentin Franco
 <a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
@@ -88,7 +89,7 @@
    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
----
+
 
 ### 4. Sebastian Erbino
 <a href="https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com" target="_blank">
