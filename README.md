@@ -44,10 +44,10 @@
 
 | Integrantes  | Responsabiidades | 
 |---|---|
-| Albornoz Thiago | Gestión de Redes Sociales y Marketing |
+| Albornoz Thiago | Gestión de Redes Sociales y Software |
 | Erbino Sebastián |  Diseño del Prototipo |
 | Franco Valentin |  Armado de Hardware |
-| Lesme Franco  | Armado de software | 
+| Lesme Franco  | Armado de Software | 
 | Poggi Lorenzo | Registro de Seguimiento |
 | Sarniguette Valentino | Prueba electronica | 
 
