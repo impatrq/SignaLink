@@ -57,7 +57,7 @@
 | Poggi Lorenzo | Registro de Seguimiento |
 | Sarniguette Valentino | Prueba electronica | 
 
-### 📱 Contactanos: 
+## 📱 Contactanos: 
 
  <div style="display: flex; justify-content: space-around;">
 
@@ -68,7 +68,7 @@
     <img alt="Instagram" width="115px" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
 
-### 📱 Contactos personales
+## 📱 Contactos personales
 
  <div style="display: flex; justify-content: space-around;">
 
