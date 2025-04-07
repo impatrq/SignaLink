@@ -11,7 +11,7 @@
 </div>
 
 ## 🗓️ Objetivo de Proyecto:
- SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
+ SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar. Otro objetivo más a futuro que tenemos es el de proveer un mejor manejo en la vida cotidiana para este tipo de personas, haciendo 
 
  ## 💭 ¿De dónde surgió la idea?
  Esta idea surgió en una conversación con la bibliotecaria de nuestra escuela que nos dio a conocer cuan reservadas son estas personas en la sociedad y cuantos desafios deben afrontar a diario. A traves de todo esto planteamos posibles soluciones para facilitarle sus vidas inicialmente en las escuelas y asi empezo toda esta aventura.
@@ -23,7 +23,7 @@
     
  En paralelo, un micrófono direccional se encargará de captar la voz de la persona que quiera comunicarse, esas palabras serán procesadas por el microcontrolador utilizando un modelo de reconocimiento de voz (Vosk -> Offline) y en forma de texto finalmente será mostrado en el LCD.
 
-<div align="center">
+
 ## 🛠️ Componentes a utilizar:
 
 | Componentes | Imagen |
@@ -38,7 +38,7 @@
 | Sensor Giroscopo y Acelerometro | [MPU6050 - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-1464073846-acelerometro-giroscopo-mpu6050-6-ejes-gy-521-pic-arduino-_JM#polycard_client=search-nordic&position=4&search_layout=grid&type=item&tracking_id=1592b6fb-67c2-4128-a466-704776d0e915&wid=MLA1464073846&sid=search) |  
 |  LCD OLED   | [LCD SSD-1306 - Mercado libre](https://articulo.mercadolibre.com.ar/MLA-832803465-display-oled-091-pulgadas-128x32-ssd1306-i2c-blanco-arduino-_JM#polycard_client=search-nordic&position=6&search_layout=grid&type=item&tracking_id=9fc3ed54-f3c3-4b96-9f93-8db0a3d194bd&wid=MLA832803465&sid=search)  |
 
-</div>
+
 
 ## 🧑🏽‍💻 Integrantes
 
