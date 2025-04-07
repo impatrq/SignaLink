@@ -1,6 +1,6 @@
 <div align="center">
  
-<img src="Imagenes/Logo.jpg" alt="Logo proyecto" width="27%"/>
+<img src="https://web.whatsapp.com/f235f379-1797-4ac8-a642-f0cc860d88c3" alt="Logo proyecto" width="27%"/>
 
 </div>
 
@@ -11,7 +11,7 @@
 </div>
 
 ## 🗓️ Objetivo de Proyecto:
- SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
+ SignaLink tiene     como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar.
 
  ## 💭 ¿De dónde surgió la idea?
  Esta idea surgió en una conversación con la bibliotecaria de nuestra escuela que nos dio a conocer cuan reservadas son estas personas en la sociedad y cuantos desafios deben afrontar a diario. A traves de todo esto planteamos posibles soluciones para facilitarle sus vidas inicialmente en las escuelas y asi empezo toda esta aventura.
