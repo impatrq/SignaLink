@@ -60,7 +60,7 @@
 
 ### 📱 CONTACTOS
 
- 
+ <div style="display: flex; justify-content: space-around;">
 ### 1. Valentin Sarniguette
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
@@ -99,7 +99,7 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
----
+
 
 ### 5. Lorenzo Poggi
 </a><a href="https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com" target="_blank">
@@ -109,7 +109,7 @@
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
----
+
 
 ### 6. Thiago Albornoz
 <a href="https://mail.google.com/mail/?view=cm&to=albornozthiagoagustin@gmail.com" target="_blank">
@@ -118,3 +118,5 @@
 <a href="https://www.linkedin.com/in/thiago-agustin-albornoz-23007335a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
+
+</div>
