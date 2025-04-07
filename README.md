@@ -61,12 +61,11 @@
 
  <div style="display: flex; justify-content: space-around;">
 
- - Correo:<a href="https://mail.google.com/mail/?view=cm&to=signalink2025@gmail.com" target="_blank">
+<a href="https://mail.google.com/mail/?view=cm&to=signalink2025@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-
- - Instagram:<a href="https://www.instagram.com/signalink_?igsh=MXJla3NxOGVqOXlqNQ==">
-  <img align="left" alt="Instagram" width="115px" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+<a href="https://www.instagram.com/signalink_">
+    <img align="left" alt="Instagram" width="115px" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
 
 ### 📱 Contactos personales
