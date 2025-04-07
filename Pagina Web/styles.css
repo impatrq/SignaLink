@@ -9,7 +9,13 @@ body {
     line-height: 1.6;
 }
 
-
+.imagen_logo {
+    width: 150px;
+    height: auto;
+    display: flex;
+    display: flex-end;
+    
+}
 
 header {
     background-color: #333;
