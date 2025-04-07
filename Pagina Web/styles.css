@@ -28,6 +28,10 @@ header .logo h1 {
     font-size: 2rem;
 }
 
+header .logo sub{
+    font-size: 1rem;
+}
+
 header nav ul {
     list-style-type: none;
     margin: 20px 0 0;
