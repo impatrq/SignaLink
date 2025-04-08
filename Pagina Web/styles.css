@@ -28,7 +28,7 @@ header .logo h1 {
     font-size: 2rem;
     position: relative;
     top: -125px;
-    left: -280px;
+    left: -154px;
     color: rgba(219, 169, 21, 0.839);
 }
 
@@ -36,7 +36,7 @@ header .logo h6 {
     font-size: 1rem;
     position: relative;
     top: -120px;
-    left: -280px;
+    left: -160px;
     color:rgba(219, 169, 21, 0.839);
 }
 
@@ -49,8 +49,8 @@ header nav ul {
     margin: 20px 0 0;
     padding: 0;
     position: relative;
-    top: -210px;
-    right: -300px;
+    top: -215px;
+    right: -440px;
 }
 
 header nav ul li {
@@ -106,4 +106,12 @@ footer ul {
 footer ul li {
     font-size: 1rem;
     margin-bottom: 5px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
