@@ -27,7 +27,8 @@ header {
 header .logo h1 {
     font-size: 2rem;
     position: relative;
-    top: -120px;
+    top: -125px;
+    left: -300px
 }
 
 header .logo sub{
@@ -38,6 +39,9 @@ header nav ul {
     list-style-type: none;
     margin: 20px 0 0;
     padding: 0;
+    position: relative;
+    top: -210px;
+    right: -320px;
 }
 
 header nav ul li {
