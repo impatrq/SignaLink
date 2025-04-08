@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #333;
-    background-image: url(header.jpg);
+background-image: url(/Imagenes/header.jpg);
     background-position: center;
     background-size: 1700px;
     color: white;
