@@ -10,7 +10,7 @@ body {
 }
 
 .imagen_logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     display: flex;
     display: flex-end;
@@ -30,7 +30,7 @@ header {
 header .logo h1 {
     font-size: 2rem;
     position: relative;
-    top: -125px;
+    top: -150px;
     left: -154px;
     color: rgba(219, 169, 21, 0.839);
 }
@@ -38,8 +38,8 @@ header .logo h1 {
 header .logo h6 {
     font-size: 1rem;
     position: relative;
-    top: -120px;
-    left: -160px;
+    top: -145px;
+    left: -155px;
     color:rgba(219, 169, 21, 0.839);
 }
 
@@ -52,7 +52,7 @@ header nav ul {
     margin: 20px 0 0;
     padding: 0;
     position: relative;
-    top: -215px;
+    top: -235px;
     right: -440px;
 }
 
