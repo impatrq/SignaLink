@@ -29,7 +29,7 @@ header .logo h1 {
     position: relative;
     top: -125px;
     left: -280px;
-    color: rgb(221, 187, 19);
+    color: rgba(219, 169, 21, 0.839);
 }
 
 header .logo h6 {
@@ -37,7 +37,7 @@ header .logo h6 {
     position: relative;
     top: -120px;
     left: -280px;
-    color:rgb(221, 187, 19);
+    color:rgba(219, 169, 21, 0.839);
 }
 
 header .logo sub{
@@ -50,7 +50,7 @@ header nav ul {
     padding: 0;
     position: relative;
     top: -210px;
-    right: -320px;
+    right: -300px;
 }
 
 header nav ul li {
