@@ -1,6 +1,6 @@
 <div align="center">
  
-<img src="./Imagenes/Logo.png" alt="Logo proyecto" width="27%"/>
+<img src="./Images/Logo.png" alt="Logo proyecto" width="27%"/>
 
 </div>
 
