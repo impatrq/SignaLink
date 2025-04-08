@@ -26,6 +26,8 @@ header {
 
 header .logo h1 {
     font-size: 2rem;
+    position: relative;
+    top: -120px;
 }
 
 header .logo sub{
