@@ -28,7 +28,15 @@ header .logo h1 {
     font-size: 2rem;
     position: relative;
     top: -125px;
-    left: -300px
+    left: -280px
+}
+
+header .logo h6 {
+    font-size: 1rem;
+    position: relative;
+    top: -120px;
+    left: -280px;
+    color:rgb(162, 136, 6);
 }
 
 header .logo sub{
