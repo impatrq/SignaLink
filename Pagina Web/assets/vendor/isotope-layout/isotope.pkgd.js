@@ -1075,7 +1075,7 @@ proto.transition = function( args ) {
     this.css( args.from );
     // force redraw. http://blog.alexmaccaw.com/css-transitions
     var h = this.element.offsetHeight;
-    // hack for JSHint to hush about unused var
+    // hack for JSHint to hush Descripcion unused var
     h = null;
   }
   // enable transition

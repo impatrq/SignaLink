@@ -479,17 +479,17 @@ h6 {
   background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 10%);
 }
 
-.footer .footer-about .logo {
+.footer .footer-Descripcion .logo {
   line-height: 1;
   margin-bottom: 10px;
 }
 
-.footer .footer-about .logo img {
+.footer .footer-Descripcion .logo img {
   max-height: 40px;
   margin-right: 6px;
 }
 
-.footer .footer-about .logo span {
+.footer .footer-Descripcion .logo span {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -497,7 +497,7 @@ h6 {
   color: var(--heading-color);
 }
 
-.footer .footer-about p {
+.footer .footer-Descripcion p {
   font-size: 14px;
   font-family: var(--heading-font);
 }
@@ -805,9 +805,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Inicio Section
 --------------------------------------------------------------*/
-.hero {
+.Inicio {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -817,7 +817,7 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.Inicio img {
   position: absolute;
   inset: 0;
   display: block;
@@ -827,7 +827,7 @@ section,
   z-index: 1;
 }
 
-.hero:before {
+.Inicio:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -835,32 +835,32 @@ section,
   z-index: 2;
 }
 
-.hero .container {
+.Inicio .container {
   position: relative;
   z-index: 3;
 }
 
-.hero h2 {
+.Inicio h2 {
   margin: 0;
   font-size: 56px;
   font-weight: 700;
   font-family: var(--nav-font);
 }
 
-.hero h2 span {
+.Inicio h2 span {
   color: var(--accent-color);
 }
 
-.hero p {
+.Inicio p {
   margin: 10px 0 0 0;
   font-size: 24px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.hero .icon-box {
+.Inicio .icon-box {
   padding: 30px 20px;
   transition: ease-in-out 0.3s;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+
   height: 100%;
   text-align: center;
   display: flex;
@@ -869,13 +869,13 @@ section,
   justify-content: center;
 }
 
-.hero .icon-box i {
+.Inicio .icon-box i {
   font-size: 32px;
   line-height: 1;
   color: var(--accent-color);
 }
 
-.hero .icon-box h3 {
+.Inicio .icon-box h3 {
   font-weight: 700;
   margin: 10px 0 0 0;
   padding: 0;
@@ -884,59 +884,59 @@ section,
   line-height: 26px;
 }
 
-.hero .icon-box h3 a {
+.Inicio .icon-box h3 a {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: ease-in-out 0.3s;
 }
 
-.hero .icon-box:hover {
+.Inicio .icon-box:hover {
   border-color: var(--accent-color);
 }
 
-.hero .icon-box:hover h3 a {
+.Inicio .icon-box:hover h3 a {
   color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .Inicio h2 {
     font-size: 32px;
   }
 
-  .hero p {
+  .Inicio p {
     font-size: 18px;
   }
 }
 
 /*--------------------------------------------------------------
-# About Section
+# Descripcion Section
 --------------------------------------------------------------*/
-.about .content h3 {
+.Descripcion .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-.about .content .fst-italic {
+.Descripcion .content .fst-italic {
   color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
 
-.about .content ul {
+.Descripcion .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.Descripcion .content ul li {
   padding: 10px 0 0 0;
   display: flex;
 }
 
-.about .content ul i {
+.Descripcion .content ul i {
   color: var(--accent-color);
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
 
-.about .content p:last-child {
+.Descripcion .content p:last-child {
   margin-bottom: 0;
 }
 
