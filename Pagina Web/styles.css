@@ -19,6 +19,9 @@ body {
 
 header {
     background-color: #333;
+    background-image: url(header.jpg);
+    background-position: center;
+    background-size: 1400px;
     color: white;
     padding: 7px;
     text-align: center;
