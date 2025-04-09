@@ -789,7 +789,7 @@ section,
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: var(--default-color);
   position: relative;
 }
 
@@ -803,7 +803,7 @@ section,
 }
 
 .section-title p {
-  color: var(--heading-color);
+  color: var(--nav-hover-color);
   margin: 0;
   font-size: 36px;
   font-weight: 700;
