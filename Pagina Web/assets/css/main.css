@@ -152,7 +152,8 @@ h6 {
   --contrast-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 5px 0;
+  padding-top: 0px;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -1733,3 +1734,17 @@ section,
 {
 background-color: #059652;
 }
+
+.row
+{
+  justify-content: center;
+  }
+
+ .tituloalumnos 
+ {
+
+    display: flex;             /* Activa Flexbox */
+    justify-content: center;   /* Centra los elementos horizontalmente */
+    align-items: center;       /* Centra los elementos verticalmente (si lo deseas) */
+  
+  }
