@@ -1,6 +1,6 @@
 <div align="center">
  
-<img src="./Images/signalink_img.png" alt="Logo proyecto" width="27%"/>
+<img src="./Images/signalink_img.png" alt="Logo proyecto" width="30%"/>
 
 </div>
 
