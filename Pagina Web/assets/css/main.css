@@ -985,7 +985,7 @@ section,
 --------------------------------------------------------------*/
 .features .features-image {
   position: relative;
-  min-height: 400px;
+  min-height: 100px;
 }
 
 .features .features-image img {
