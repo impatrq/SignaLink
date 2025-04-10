@@ -1750,17 +1750,18 @@ background-color: #059652;
   
   }
 
+  
 .carousel-slide-sponsors{
-
-}
-
-.carousel-inner{
-
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .sponsor-img {
-  
   width: 210px;
   height: 120px;
-
+  object-fit: contain;
+  border-radius: 8px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
