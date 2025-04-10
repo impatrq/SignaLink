@@ -1749,3 +1749,18 @@ background-color: #059652;
     align-items: center;       /* Centra los elementos verticalmente (si lo deseas) */
   
   }
+
+.carousel-slide-sponsors{
+
+}
+
+.carousel-inner{
+
+}
+
+.sponsor-img {
+  
+  width: 210px;
+  height: 120px;
+
+}
