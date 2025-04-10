@@ -132,7 +132,7 @@
 <a href="https://mail.google.com/mail/?view=cm&to=albornozthiagoagustin@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-<a href="https://www.linkedin.com/in/thiago-agustin-albornoz-23007335a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">
+<a href="https://www.linkedin.com/in/thiago-agustin-albornoz-6956b135b">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
