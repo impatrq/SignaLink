@@ -56,11 +56,11 @@
 
 | Integrantes  | Responsabilidades | Tareas Secundarias |
 |---|---|---|
-| Albornoz Thiago | Gestión de Redes Sociales y Marketing | Armado de Software |
-| Erbino Sebastián |  Diseño del Prototipo | Armado de Hardware - Prueba electrónica |
+| Albornoz Thiago | Gestión de Redes Sociales y Marketing | Desarrollo de Software |
+| Erbino Sebastián |  Diseño del Prototipo | Armado de Hardware |
 | Franco Valentin |  Armado de Hardware | Prueba electrónica |
 | Lesme Franco  | Armado de software | Diseño del prototipo | 
-| Poggi Lorenzo | Registro de Seguimiento | Armado de Software |
+| Poggi Lorenzo | Registro de Seguimiento | Desarrollo de Software |
 | Sarniguette Valentino | Prueba electronica | Armado de Hardware | 
 
 ## 📱 Contactanos: 
