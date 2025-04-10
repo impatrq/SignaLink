@@ -61,7 +61,7 @@
 | Franco Valentin |  Armado de Hardware | Instalación y conexión de hardware |
 | Lesme Franco  | Armado de software | Diseño del prototipo | 
 | Poggi Lorenzo | Registro de Seguimiento | Programación del sistema |
-| Sarniguette Valentino | Prueba electronica | Comprobación del sistema electrónico | 
+| Sarniguette Valentino | Prueba electronica | Armado de circuitos | 
 
 ## 📱 Contactanos: 
 
