@@ -6,7 +6,7 @@
 
 <div align="center">
  
-# Tus gestos hablan, SignaLink escucha
+# Tus gestos hablan, SignaLink traduce
 
 </div>
 
@@ -17,7 +17,7 @@
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar. 
  
  ## 🌎 Visión a futuro
- Otro objetivo más a futuro es que siga creciendo esta idea en futuras generaciones para poder proveerles un mejor manejo en la vida cotidiana para este tipo de personas, agilizando su vida social en casos de que necesiten ayuda de otras personas o simplemente comunicandose con ellos. 
+ Otro objetivo a largo plazo es que siga creciendo esta idea en futuras generaciones para poder proveerles un mejor manejo en la vida cotidiana para este tipo de personas, agilizando su vida social en casos de que necesiten ayuda de otras personas o simplemente comunicandose con ellos. 
 
  ## 💭 ¿De dónde surgió la idea?
  Esta idea surgió en una conversación con la bibliotecaria de nuestra escuela que nos dio a conocer cuan reservadas son estas personas en la sociedad y cuantos desafios deben afrontar a diario. A traves de todo esto planteamos posibles soluciones para facilitarle sus vidas inicialmente en las escuelas y asi empezo toda esta aventura.
