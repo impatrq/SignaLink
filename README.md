@@ -84,20 +84,16 @@
 </a>
 <a href="https://www.linkedin.com/in/thiago-agustin-albornoz-6956b135b">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-
-
 </a>
 
 
-
-### 2. Franco Lesme
-<a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
+### 2.  Sebastian Erbino
+<a href="https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-<a href="https://www.linkedin.com/in/franco-lesme-25bb4b259/us">
+<a href="https://www.linkedin.com/in/sebasti%C3%A1n-erbino-25b9792ab?trk=contact-info">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 
 
 ### 3. Valentin Franco
@@ -109,15 +105,13 @@
 </a>
 
 
-
-### 4. Sebastian Erbino
-<a href="https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com" target="_blank">
+### 4. Franco Lesme
+<a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-<a href="https://www.linkedin.com/in/sebasti%C3%A1n-erbino-25b9792ab?trk=contact-info">
+<a href="https://www.linkedin.com/in/franco-lesme-25bb4b259/us">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 
 
 ### 5. Lorenzo Poggi
@@ -127,7 +121,6 @@
 <a href="https://www.linkedin.com/in/lorenzo-poggi-6b9b5a357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-
 
 
 ### 6. Valentino Sarniguette
