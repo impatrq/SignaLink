@@ -78,7 +78,7 @@
 
 
 
-### 1. Thiago Albornoz
+### 1. Albornoz Thiago
 <a href="https://mail.google.com/mail/?view=cm&to=albornozthiagoagustin@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -87,7 +87,7 @@
 </a>
 
 
-### 2.  Sebastian Erbino
+### 2. Erbino Sebastian
 <a href="https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -96,7 +96,7 @@
 </a>
 
 
-### 3. Valentin Franco
+### 3. Franco Valentin
 <a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -105,7 +105,7 @@
 </a>
 
 
-### 4. Franco Lesme
+### 4. Lesme Franco
 <a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -114,7 +114,7 @@
 </a>
 
 
-### 5. Lorenzo Poggi
+### 5. Poggi Lorenzo
 </a><a href="https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -123,7 +123,7 @@
 </a>
 
 
-### 6. Valentino Sarniguette
+### 6. Sarniguette Valentino
 <a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
