@@ -261,11 +261,13 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 19px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
     align-items: center;
+    position: relative;
+    top: 17px;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
