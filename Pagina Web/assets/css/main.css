@@ -156,6 +156,7 @@ h6 {
   padding-top: 0px;
   transition: all 0.5s;
   z-index: 997;
+  
 }
 
 .signalink {
@@ -216,6 +217,8 @@ h6 {
 
   .header .navmenu {
     order: 3;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -1388,16 +1391,18 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
-  background-color: var(--surface-color);
+  background-color: #000;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
+
 }
 
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .team .team-member .social {
@@ -1441,6 +1446,8 @@ section,
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
 }
 
 .team .team-member .member-info span {
@@ -1757,12 +1764,12 @@ background-color: #059652;
     opacity: 0.5;
     transition: 0.3s;
     filter: grayscale(100);
-    width: 230px;
-    height: 180px;
+    width: 210px;
+   height: 120px;
     object-fit: contain;
-    border-radius: 8px;
+   border-radius: 8px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+   filter: brightness(0) invert(1);
   }
   
   .clients .swiper-slide img:hover {
@@ -1789,4 +1796,3 @@ background-color: #059652;
   .clients .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
   }
-
