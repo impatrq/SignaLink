@@ -1796,3 +1796,7 @@ background-color: #059652;
   .clients .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
   }
+
+  .img-fluid {
+    border-radius: 20px;
+  }
