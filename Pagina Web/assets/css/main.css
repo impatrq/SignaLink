@@ -1757,12 +1757,12 @@ background-color: #059652;
     opacity: 0.5;
     transition: 0.3s;
     filter: grayscale(100);
-    width: 210px;
-   height: 120px;
+    width: 230px;
+    height: 180px;
     object-fit: contain;
-   border-radius: 8px;
+    border-radius: 8px;
     object-fit: contain;
-   filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
   }
   
   .clients .swiper-slide img:hover {
