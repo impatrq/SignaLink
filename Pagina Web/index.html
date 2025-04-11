@@ -197,26 +197,54 @@
 
 
     <!-- Sección de Sponsors -->
-     <!-- NO TOCAR NADA -->
-     <section id="Sponsors" class="sponsors-section">
+    <section id="clients" class="clients section">
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sponsors</h2>
-        <p>Nuestros patrocinadores</p>
-      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div id="carouselSponsors" class="carousel-slide-sponsors" data-bs-ride="carousel" data-aos="zoom-in" data-aos-delay="100"> <!--Movimiento automatico de sponsors-->
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3500">
-            <img src="assets/img/Sponsors/cooperadora.jpg" class="sponsor-img" alt="">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/Sponsors/mercadolibre.jpg" class="img-fluid" alt=""></div>
           </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="assets/img/Sponsors/mercadolibre.jpg" class="sponsor-img" alt="">
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
+
       </div>
-      
-     </section>
+
+    </section>
     <!-- Termina Sección de Sponsors -->
 
 
@@ -429,7 +457,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/Valentin.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Sebastian.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href="https://github.com/SebaErbino"><i class="bi bi-github"></i></a>
                   <a href="https://www.instagram.com/erbino_seba/"><i class="bi bi-instagram"></i></a>
@@ -482,7 +510,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/Valentin.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Lorenzo.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href="https://github.com/LorenzoPoggi"><i class="bi bi-github"></i></a>
                   <a href="https://www.instagram.com/lorenzoo.poggi/"><i class="bi bi-instagram"></i></a>

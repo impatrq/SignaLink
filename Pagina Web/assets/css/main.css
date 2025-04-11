@@ -1753,17 +1753,40 @@ background-color: #059652;
   }
 
   
-.carousel-slide-sponsors{
-  width: 100%;
-  max-width: 250px;
-  margin: 0 auto;
-}
+  .clients .swiper-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: grayscale(100);
+    width: 210px;
+   height: 120px;
+    object-fit: contain;
+   border-radius: 8px;
+    object-fit: contain;
+   filter: brightness(0) invert(1);
+  }
+  
+  .clients .swiper-slide img:hover {
+    filter: none;
+    opacity: 1;
+  }
+  
+  .clients .swiper-wrapper {
+    height: auto;
+  }
+  
+  .clients .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .clients .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  }
+  
+  .clients .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+  }
 
-.sponsor-img {
-  width: 210px;
-  height: 120px;
-  object-fit: contain;
-  border-radius: 8px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-}
