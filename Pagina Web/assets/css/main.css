@@ -91,7 +91,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
+/* Contact Form Messages
 ------------------------------*/
 #contact-form .error-message {
   display: none;
@@ -1736,9 +1736,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 .main 
 {
@@ -1799,4 +1796,13 @@ background-color: #059652;
 
   .img-fluid {
     border-radius: 20px;
+  }
+
+  .img-nosotros{
+    position: relative;
+    margin-right: 100px;
+    border-style: groove;
+    border-color: var(--nav-dropdown-color);
+    border-radius: 20px;
+    width: 600px;
   }
