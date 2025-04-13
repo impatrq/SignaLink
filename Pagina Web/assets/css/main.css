@@ -29,9 +29,8 @@
   --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-.main 
-{
-background-color: #059652;
+.main {
+  background-color: #059652;
 }
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -139,73 +138,21 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.8);
-  --heading-color: #ffffff;
-  --contrast-color: #ffffff;
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 30px 0;
-  padding-top: 0px; 
-  transition: all 0.5s;
-  z-index: 997;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: background-color 0.3s ease;
 }
 
-.logosignalink{
-  display: flex;
-  align-items: center;
-  height: 100px; 
-  width: auto;
-}
-
-.header .logo {
-  line-height: 1;
-}
-
-.header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
-}
-
-.header .logo h1 {
-  font-size: 32px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
-
-.header .logo span {
+.nav-link {
   color: var(--accent-color);
-  font-size: 32px;
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
 }
 
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  font-size: 14px;
-  padding: 8px 30px;
-  margin: 0 0 0 30px;
-  border-radius: 4px;
-  transition: 0.3s;
-  border: 2px solid var(--accent-color);
-}
-
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
-  color: var(--default-color);
-  background: var(--accent-color);
-}
-
-@media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
-  }
-
-  .header .btn-getstarted {
-    order: 2;
-    margin: 0 15px 0 0;
-    padding: 6px 15px;
-  }
-
+.nav-link:hover {
+  color: #6f6060;
 }
 
 /* Header on Scroll*/
