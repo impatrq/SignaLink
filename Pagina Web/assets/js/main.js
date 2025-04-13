@@ -63,13 +63,21 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    const mainContent = document.getElementById('main-content');
 
+    setTimeout(() => {
+      preloader.style.transition = 'opacity 1s ease';
+      preloader.style.opacity = '0';
+
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        mainContent.style.display = 'block';
+      }, 1000);
+
+    }, 2000);
+  });
   /**
    * Scroll top button
    */
