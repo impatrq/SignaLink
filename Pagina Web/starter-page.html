@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Signlink</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -25,33 +30,39 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- =======================================================
-  * Template Name: Gp
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Updated: Aug 15 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-start justify-content-between">
+  <header id="header" class="align-items: center; justify-content: center; width: 100%">
+    <div class="header"></div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0"><!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> --> <!-- imagen o icono de signalink --> 
-                   
-      </a>
+      <a href="index.html" class="logo d-flex align-items-center"></div></a>
 
-      <nav id="navmenu" class="navmenu">
-        <div>
-          <img class= "signalink" src="assets/img/logo/signalink_img.png" alt=""> 
+      <nav class="navbar navbar-expand-md fixed-top header shadow-sm">
+        <div class="container d-flex align-items-center justify-content-between">
+          
+          <a class="navbar-brand fw-semibold" href="#Inicio">
+            <img src="assets/img/logo/signalink_img.png" alt="" height="40">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApple" aria-controls="navbarApple" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center" id="navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#Equipo">Equipo</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tabla-integrantes">Funciones</a></li>
+
+              <a class="btn-getstarted" href="index.html#Descripcion">Volver al Inicio</a>
+            </ul>
+          </div>
         </div>
-      
-        <a class="btn-getstarted" href="index.html#Descripcion">Volver a Inicio</a>
-
       </nav>
+
+  <!-- Espaciador para el header fijo -->
+  <div style="height: 70px;"></div>
     
     </div>
   </header>
@@ -62,7 +73,6 @@
 
 <!-- Sección de Equipo -->
      <!-- NO TOCAR NADA -->
-      <section></section>
      <section id="Equipo" class="team section">       
       <div class="tituloalumnos">
         <div class="container section-title" data-aos="fade-up">
@@ -187,6 +197,59 @@
         
       </section>
       <!-- Termina Sección de Equipo -->
+
+      <!-- Secciòn Tabla -->
+      <section id="tabla-integrantes" class="team section"> 
+      <div class="tabla-integrantes">
+        <table>
+          <div class="tituloalumnos">
+            <div class="container section-title" data-aos="fade-up">
+              <h2>Funciones</h2>
+              <p>Tareas de Integrantes</p>
+          <thead>
+            <tr>
+              <th>Integrantes</th>
+              <th>Responsabilidades</th>
+              <th>Tareas Secundarias</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Albornoz Thiago</td>
+              <td>Gestión de Redes Sociales y Marketing</td>
+              <td>Desarrollo de Software</td>
+            </tr>
+            <tr>
+              <td>Erbino Sebastián</td>
+              <td>Diseño del Prototipo</td>
+              <td>Integración de hardware</td>
+            </tr>
+            <tr>
+              <td>Franco Valentin</td>
+              <td>Armado de Hardware</td>
+              <td>Instalación y conexión de hardware</td>
+            </tr>
+            <tr>
+              <td>Lesme Franco</td>
+              <td>Armado de software</td>
+              <td>Diseño del prototipo</td>
+            </tr>
+            <tr>
+              <td>Poggi Lorenzo</td>
+              <td>Registro de Seguimiento</td>
+              <td>Programación del sistema</td>
+            </tr>
+            <tr>
+              <td>Sarniguette Valentino</td>
+              <td>Prueba electrónica</td>
+              <td>Armado de circuitos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      </section>
+      <!-- Termina Secciòn Tabla-->
    
     <div class="copyright">
       <div class="container text-center">
@@ -195,6 +258,8 @@
       </div>
     </div>
 
+
+    
   </footer>
 
   <!-- Scroll Top -->

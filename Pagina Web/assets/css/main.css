@@ -1698,7 +1698,7 @@ section,
 
 .main 
 {
-background-color: #000000;
+background-color: #171817;
 }
 
 .row
@@ -1727,15 +1727,15 @@ background-color: #000000;
     object-fit: contain;
    filter: brightness(0) invert(1);
   }
-
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.clients .swiper-wrapper {
-  height: auto;
-}
+  
+  .clients .swiper-slide img:hover {
+    filter: none;
+    opacity: 1;
+  }
+  
+  .clients .swiper-wrapper {
+    height: auto;
+  }
 
 .clients .swiper-pagination {
   margin-top: 20px;
