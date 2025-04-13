@@ -1,14 +1,6 @@
-/**
-* Template Name: Gp
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Updated: Aug 15 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
@@ -37,9 +29,8 @@
   --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-.main 
-{
-background-color: #059652;
+.main {
+  background-color: #059652;
 }
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -147,82 +138,24 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.8);
-  --heading-color: #ffffff;
-  --contrast-color: #ffffff;
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 30px 0;
-  padding-top: 0px;
-  transition: all 0.5s;
-  z-index: 997;
-  
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: background-color 0.3s ease;
 }
 
-.signalink {
-  width: 130px;
-  height: auto;
-  position: absolute;
-  left: 10px;
-}
-
-.header .logo {
-  line-height: 1;
-}
-
-.header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
-}
-
-.header .logo h1 {
-  font-size: 32px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
-
-.header .logo span {
+.nav-link {
   color: var(--accent-color);
-  font-size: 32px;
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
 }
 
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  font-size: 14px;
-  padding: 8px 30px;
-  margin: 0 0 0 30px;
-  border-radius: 4px;
-  transition: 0.3s;
-  border: 2px solid var(--accent-color);
+.nav-link:hover {
+  color: #6f6060;
 }
 
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
-  color: var(--default-color);
-  background: var(--accent-color);
-}
-
-@media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
-  }
-
-  .header .btn-getstarted {
-    order: 2;
-    margin: 0 15px 0 0;
-    padding: 6px 15px;
-  }
-
-  .header .navmenu {
-    order: 3;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-
+/* Header on Scroll*/
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
@@ -244,22 +177,30 @@ h6 {
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
+
+
   .navmenu {
     padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 70px;
   }
 
   .navmenu ul {
     margin: 0;
     padding: 0;
     display: flex;
-    list-style: none;
     align-items: center;
+    justify-content: center; 
+    width: 100%;
+    list-style: none;
   }
 
   .navmenu li {
     position: relative;
   }
-
+  
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
@@ -269,8 +210,6 @@ h6 {
     font-weight: 400;
     display: flex;
     align-items: center;
-    position: relative;
-    top: 17px;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
@@ -339,7 +278,7 @@ h6 {
 
   .navmenu .dropdown .dropdown ul {
     top: 0;
-    left: -90%;
+    left: -10%;
     visibility: hidden;
   }
 
@@ -645,29 +584,49 @@ h6 {
   z-index: 999999;
   overflow: hidden;
   background: #000;
-  transition: all 0.6s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
+  display: none;
 }
 
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
+.loading-bar {
+  width: 10px;
+  height: 150px;
+  border: 2px solid black; 
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: transparent; 
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); 
+}
 
-  100% {
-    transform: rotate(360deg);
+.fill {
+  width: 100%;
+  height: 0;
+  background-color: var(--nav-dropdown-color);
+  animation: fillBar 2s forwards, closeBar 2s 2s forwards; 
+  box-shadow: 0 0 15px var(--accent-color), 0 0 25px var(--accent-color); 
+}
+
+@keyframes fillBar {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes closeBar {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
   }
 }
 
@@ -1768,41 +1727,76 @@ background-color: #000000;
     object-fit: contain;
    filter: brightness(0) invert(1);
   }
-  
-  .clients .swiper-slide img:hover {
-    filter: none;
-    opacity: 1;
-  }
-  
-  .clients .swiper-wrapper {
-    height: auto;
-  }
-  
-  .clients .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .clients .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    opacity: 1;
-    background-color: color-mix(in srgb, var(--default-color), transparent 80%);
-  }
-  
-  .clients .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--accent-color);
-  }
 
-  .img-fluid {
-    border-radius: 20px;
-  }
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
 
-  .img-nosotros{
-    position: relative;
-    margin-right: 100px;
-    border-style: groove;
-    border-color: var(--nav-dropdown-color);
-    border-radius: 20px;
-    width: 600px;
-  }
+.clients .swiper-wrapper {
+  height: auto;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.img-fluid {
+  border-radius: 20px;
+}
+
+.img-nosotros{
+  position: relative;
+  top: 130px;
+  border-style: groove;
+  border-color: var(--nav-dropdown-color);
+  border-radius: 20px;
+  width: 600px;
+}
+
+.tabla-integrantes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.tabla-integrantes table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background-color: #111;
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.tabla-integrantes th,
+.tabla-integrantes td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  color: #eee;
+}
+
+.tabla-integrantes th {
+  background-color: #222;
+  color: #d4af37;
+  font-size: 18px;
+  border-bottom: 2px solid #d4af37;
+}
+
+.tabla-integrantes tr:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+}
