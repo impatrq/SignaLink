@@ -156,6 +156,10 @@ h6 {
   padding: 0 1rem;
 }
 
+.logo {
+  margin-top: 15px;
+}
+
 .nav-link {
   color: var(--accent-color, #ffffff);
   margin: 0 0.75rem;
@@ -1765,6 +1769,14 @@ background-color: #171817;
   background-color: var(--accent-color);
 }
 
+.img-nosotros2 {
+  border-radius: 20px;
+  border-style: groove;
+  border-color: var(--nav-dropdown-color);
+  width: 500px;
+  height: 400px;
+}
+
 .img-fluid {
   border-radius: 20px;
 }
@@ -1812,3 +1824,12 @@ background-color: #171817;
 .tabla-integrantes tr:hover {
   background-color: rgba(212, 175, 55, 0.1);
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
