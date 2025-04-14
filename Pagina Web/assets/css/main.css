@@ -1767,6 +1767,8 @@ background-color: #171817;
 
 .img-fluid {
   border-radius: 20px;
+  border-style: groove;
+  border-color: var(--nav-dropdown-color);
 }
 
 .img-nosotros{
