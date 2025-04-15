@@ -163,6 +163,7 @@ h6 {
 .nav-link {
   color: var(--accent-color, #ffffff);
   margin: 0 0.75rem;
+  margin-top: 25px;
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.2s;
