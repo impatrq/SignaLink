@@ -1792,10 +1792,8 @@ background-color: #171817;
 }
 
 .tabla-integrantes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
+  position: relative;
+  left: 330px;
 }
 
 .tabla-integrantes table {
