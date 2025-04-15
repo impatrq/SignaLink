@@ -141,7 +141,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   height: 60px;
   backdrop-filter: blur(12px);
@@ -163,6 +163,7 @@ h6 {
 .nav-link {
   color: var(--accent-color, #ffffff);
   margin: 0 0.75rem;
+  margin-top: 25px;
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.2s;

@@ -85,10 +85,6 @@
     <header>
       <nav class="navbar navbar-expand-md fixed-top header shadow-sm">
         <div class="container d-flex align-items-center justify-content-between">
-          
-          <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
-            <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo" />
-          </a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApple" aria-controls="navbarApple" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -96,8 +92,9 @@
   
           <div class="collapse navbar-collapse justify-content-center" id="navbarApple">
             <ul class="navbar-nav">
+              <li><a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio"><img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo" /></a></li>
               <li class="nav-item"><a class="nav-link" href="#Descripción">Descripción</a></li>
-              <li class="nav-item"><a class="nav-link" href="sponsors-page.html">Sponsors</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Sponsors">Sponsors</a></li>
               <li class="nav-item"><a class="nav-link" href="galeria-page.html">Galería</a></li>
               <li class="nav-item"><a class="nav-link" href="equipo-page.html">Equipo</a></li>
               <li class="nav-item"><a class="nav-link" href="contacto-page.html">Contacto</a></li>
@@ -206,6 +203,89 @@
 
       
     </main>
+
+    <!-- Sección de Sponsors -->
+
+  <section id="Sponsors" class="clients section">
+    <div class="tituloalumnos">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nuestros apoyos</h2>
+          <p>Sponsors</p>
+        </div>
+      </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 2,
+                "spaceBetween": 40
+              },
+              "480": {
+                "slidesPerView": 3,
+                "spaceBetween": 60
+              },
+              "640": {
+                "slidesPerView": 4,
+                "spaceBetween": 80
+              },
+              "992": {
+                "slidesPerView": 6,
+                "spaceBetween": 120
+              }
+            }
+          }
+        </script>
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/mercadolibre.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/lend.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/mercadolibre.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/lend.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/mercadolibre.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/Sponsors/lend.png" class="img-fluid" alt=""></div>
+       </div>
+       <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+<!-- Termina Sección de Sponsors -->
+
+
+
+     <!-- Sección de Ayudanos -->
+    <section id="Ayudanos" class="call-to-action">  
+      <img src="assets/img/fondos/cta-bg.jpg" alt="">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Ayuda Voluntaria</h3>
+              <p>A todas las personas, organizaciones o instituciones interesadas en brindarnos su apoyo, 
+                ya sea a través de recursos, capacitaciones o ayuda económica, les agradecemos profundamente 
+                su interés y les dejamos a continuación nuestros datos de contacto.</p>
+              <a class="cta-btn" href="https://wa.me/+5491126683308"><i class="bi bi-whatsapp"></i> <span></span>Whatsapp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Termina Sección de Ayudanos -->
+
     <!-- Fin del Main -->
 
     <div class="Proyecto Escolar">
@@ -235,5 +315,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    
   </body>
 </html>
