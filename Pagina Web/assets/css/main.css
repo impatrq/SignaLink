@@ -762,7 +762,7 @@ section,
   position: relative;
 }
 
-.section-title h2 {
+.section-title h1 {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -774,7 +774,7 @@ section,
   position: relative;
 }
 
-.section-title h2::after {
+.section-title h1::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -827,14 +827,14 @@ section,
   z-index: 3;
 }
 
-.Inicio h2 {
+.Inicio h1 {
   margin: 0;
   font-size: 56px;
   font-weight: 700;
   font-family: var(--nav-font);
 }
 
-.Inicio h2 span {
+.Inicio h1 span {
   color: var(--accent-color);
 }
 
@@ -864,10 +864,10 @@ section,
 
 .Inicio .icon-box h3 {
   font-weight: 700;
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   padding: 0;
   line-height: 1;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 26px;
 }
 
@@ -885,7 +885,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .Inicio h2 {
+  .Inicio h1 {
     font-size: 32px;
   }
 
@@ -1564,7 +1564,7 @@ section,
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.portfolio-details .portfolio-description h1 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
