@@ -1832,3 +1832,29 @@ background-color: #171817;
   'opsz' 24
 }
 
+.avances {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #FFA500; 
+}
+
+.avances h2 {
+  transition: ease-in-out 0.3s;
+  font-size: 35px; 
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.avances h3 {
+  transition: ease-in-out 0.3s;
+  font-size: 30px;
+}
+
+.avances i {
+  transition: ease-in-out 0.3s;
+  font-size: 2vw;
+  display: block;
+  margin-top: 20px;
+}
