@@ -1737,10 +1737,10 @@ background-color: #171817;
     opacity: 0.5;
     transition: 0.3s;
     filter: grayscale(100);
-    width: 210px;
-   height: 120px;
+    width: 250px;
+   height: 150px;
     object-fit: contain;
-   border-radius: 8px;
+   border-radius: 10px;
     object-fit: contain;
    filter: brightness(0) invert(1);
   }
