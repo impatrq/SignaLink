@@ -1788,7 +1788,13 @@ background-color: #171817;
   border-style: groove;
   border-color: var(--nav-dropdown-color);
   border-radius: 20px;
-  width: 600px;
+  
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* opcional: para que no se pase de cierto tamaño */
+  display: block;
+  margin: auto; /* opcional: la centra */
+  margin-bottom: 20px;
 }
 
 .tabla-integrantes {
