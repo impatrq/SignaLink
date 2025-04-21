@@ -1,21 +1,48 @@
-#!/usr/bin/python3
+import time
+import RPi.GPIO as GPIO
+from bluepy.btle import Peripheral, UUID, DefaultDelegate
 
-from bluetooth import *
+# Configuracion del pin del LED
+LED_PIN = 17
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(LED_PIN, GPIO.OUT)
 
-# Dirección MAC del ESP32-C3
-esp32_mac = "E8:06:90:65:C6:38"  # Reemplázalo con la MAC del ESP32-C3
+# Delegado BLE para manejar notificaciones
+class BLEDelegate(DefaultDelegate):
+    def __init__(self):
+        super().__init__()
 
-# Conectar al ESP32-C3
-sock = BluetoothSocket(RFCOMM)
-sock.connect((esp32_mac, 1))
+    def handleNotification(self, cHandle, data):
+        print(f"Notificación recibida: {data}")
+        if data == b'ON':
+            print("LED Encendido")
+            GPIO.output(LED_PIN, GPIO.HIGH)
+        elif data == b'OFF':
+            print("LED Apagado")
+            GPIO.output(LED_PIN, GPIO.LOW)
 
-print("Conexión establecida con el ESP32-C3")
+# Funcion para conectarse a un dispositivo BLE y escuchar
+def start_ble_client(address):
+    peripheral = Peripheral(address)
+    peripheral.setDelegate(BLEDelegate())
 
-try:
-    while True:
-        data = sock.recv(1024).decode("utf-8")
-        print("Dato recibido:", data)
-        # Aquí puedes controlar tu LED basado en los datos recibidos
-finally:
-    sock.close()
-    print("Conexión cerrada")
+    print("Conectado al periferico BLE. Esperando datos...")
+
+    try:
+        while True:
+            if peripheral.waitForNotifications(1.0):
+                continue
+            print("Esperando notificaciones...")
+            time.sleep(1)
+    finally:
+        peripheral.disconnect()
+
+# Función principal
+if __name__ == '__main__':
+    try:
+        ble_address = "E8:06:90:65:C6:38"
+        start_ble_client(ble_address)
+    except KeyboardInterrupt:
+        print("Interrumpido por el usuario")
+    finally:
+        GPIO.cleanup()
