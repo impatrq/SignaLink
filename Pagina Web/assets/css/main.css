@@ -1774,8 +1774,14 @@ background-color: #171817;
   border-radius: 20px;
   border-style: groove;
   border-color: var(--nav-dropdown-color);
-  width: 500px;
+  
   height: 400px;
+  width: 100%;
+  height: auto;
+  max-width: 500px; 
+  max-height: 400px;
+  display: block;
+  margin: auto; /* opcional: la centra */
 }
 
 .img-fluid {
@@ -1869,20 +1875,40 @@ background-color: #171817;
   margin-top: 20px;
 }
 
-.signalinkmap {
-  max-width: 100%;
+.mapa-escritorio {
+  max-width: 1000px;
   height: auto;
   display: block;
-  margin: 0 auto;
   justify-content: flex-start;
+ margin-left: 550px;
+}
+
+.mapa-celu {
+  display: none;
+}
+
+/* En celulares: ocultar escritorio, mostrar celular */
+@media screen and (max-width: 768px) {
+  .mapa-escritorio {
+    display: none;
+  }
+  .mapa-celu {
+    display: block;
+    width: 100%;       /* Opcional: que se adapte al ancho del celu */
+    height: auto;
+  }
 }
 
 
 /* Mejora el ícono hamburguesa en fondo oscuro */
 .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(15, 15, 12, 0.8);
+  border-width: 2px;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+ 
+ background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+ 
 }
+
