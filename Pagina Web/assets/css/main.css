@@ -1870,10 +1870,19 @@ background-color: #171817;
 }
 
 .signalinkmap {
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
-  margin-top: 100px;
-  width: 1400px;
-  
+  justify-content: flex-start;
 }
 
+
+/* Mejora el ícono hamburguesa en fondo oscuro */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
