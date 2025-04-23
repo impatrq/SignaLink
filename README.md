@@ -131,4 +131,6 @@ https://signalink2025.com
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
+-----
 
+📄 Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
