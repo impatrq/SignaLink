@@ -1912,3 +1912,72 @@ background-color: #171817;
  
 }
 
+@media screen and (max-width: 768px) {
+  .logo2 {
+    display: block;
+    height: 70px; /* o el tamaño que quieras */
+    padding-top: 12px;
+   
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Posicionar el logo centrado y SIEMPRE visible */
+  .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1051; /* más alto que el menú */
+  }
+  
+  /* Aseguramos que el botón hamburguesa esté arriba también */
+  .navbar-toggler {
+    z-index: 1052;
+  }
+  
+  /* Fondo del menú hamburguesa */
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;  
+    padding: 30px 20px;
+    margin-top: 15px;
+    z-index: 1050;
+  }
+  
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar-collapse .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+  }
+  
+  .logo2 {
+    display: none;
+  }
+  
+  /* En celulares: mostrar imagen */
+  @media screen and (max-width: 768px) {
+    .logo2 {
+      display: block;
+      height: 70px; /* o el tamaño que quieras */
+      padding-top: 12px;
+     
+    }
+  }
+  
+  /* En pantallas pequeñas (celulares): ocultar */
+  @media screen and (max-width: 768px) {
+    .logo {
+      display: none;
+    }
+  }
+  

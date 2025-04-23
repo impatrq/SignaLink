@@ -29,26 +29,48 @@
   <link href="assets/css/main.css" rel="stylesheet">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  
+  <style>
+    /* Por defecto (escritorio) */
+.icon-box i {
+  font-size: 24px;
+}
+
+/* En celular (pantallas chicas) */
+@media screen and (max-width: 768px) {
+  .icon-box i {
+    font-size: 26px; /* Aumentá este valor si lo querés aún más grande */
+  }
+}
+
+  </style>
+
 </head>
 
 <header>
   <nav class="navbar navbar-expand-md fixed-top header shadow-sm">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApple" aria-controls="navbarApple" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
+      <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="index.html#nicio">
+        <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo2"  />
+      </a>
+
       <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav">
-          <li><a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="index.html#Inicio"><img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo" /></a></li>
-          <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
+          <li>    <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
+            <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo"  />
+          </a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="equipo-page.html">Equipo</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto-page.html">Contacto</a></li>
-          <a class="nav-item" ><a class="nav-link" href="index.html#Inicio">Volver al Inicio</a></li>
+          <li class="nav-item" ><a class="nav-link" href="index.html#Inicio">Volver al Inicio</a></li>
         </ul>
       </div>
     </div>
-  </nav>
   </nav>
   <div style="height: 70px;"></div>
 </header>
@@ -117,12 +139,10 @@
         
         <div class="avances">
           <h2>Conocé más sobre nuestro proyecto</h2>
-          <a href="https://www.instagram.com/signalink_/" target="_blank"> 
-            <div class="icon-box">
-              <i class="bi bi-instagram"></i>
-              <a href="https://www.instagram.com/signalink_/">Instagram</a>         
-            </div>
-          </a> 
+          <a href="https://www.instagram.com/signalink_/" target="_blank" class="icon-box">
+            <i class="bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
         </div>
 
       </section>
@@ -158,6 +178,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Bootstrap JS Bundle (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
