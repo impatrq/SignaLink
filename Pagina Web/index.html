@@ -53,7 +53,8 @@
 /* Fondo del menú hamburguesa */
 .navbar-collapse {
   background-color: rgba(0, 0, 0, 0.95);
-  border-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   padding: 30px 20px;
   margin-top: 15px;
   z-index: 1050;
@@ -70,6 +71,20 @@
   padding: 10px;
   text-align: center;
 }
+}
+
+.logo2 {
+  display: none;
+}
+
+/* En celulares: mostrar imagen */
+@media screen and (max-width: 768px) {
+  .logo2 {
+    display: block;
+    height: 70px; /* o el tamaño que quieras */
+    padding-top: 12px;
+   
+  }
 }
 
     </style>
@@ -133,15 +148,18 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApple" aria-controls="navbarApple" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+    
+      <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
+        <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo2"  />
+      </a>
+    
       <!-- Menú colapsable -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarApple">
         <ul class="navbar-nav text-center">
-          <li>
-            <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
-              <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo" />
-            </a>
-          </li>
+          <li>    <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
+            <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo"  />
+          </a>
+         </li>
           <li class="nav-item"><a class="nav-link" href="#Descripción">Descripción</a></li>
           <li class="nav-item"><a class="nav-link" href="#Sponsors">Sponsors</a></li>
           <li class="nav-item"><a class="nav-link" href="galeria-page.html">Galería</a></li>
@@ -186,7 +204,8 @@
                 <li><i class="bi bi-arrow-return-right"></i> <span> LCD OLED </span></li>
               </ul>
               <div style="display: flex; justify-content: center;">
-                <img class="signalinkmap" src="assets/img/maapafinal.png" style="width: 1000px ; margin-left: 550px;" alt="">
+                <img class="mapa-escritorio" src="assets/img/maapafinal.png" alt="">
+                <img class="mapa-celu" src="assets/img/mapaparacelu.png" alt="Mapa celular">
               </div>
             </div>
           </div>
@@ -375,7 +394,7 @@
     <!-- Fin del Main -->
 
     <div class="Proyecto Escolar">
-      <div class="container text-center">
+      <div class="container text-center" style="padding-top: 10px;">
         <p>© <span>2025</span> <strong class="px-1 sitename"> Sitio Oficial de SignaLink </strong> <span>Todos los derechos reservados</span></p>
     </div>
 
