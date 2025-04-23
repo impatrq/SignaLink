@@ -133,6 +133,5 @@ https://signalink2025.com
 
 -----
 
-📄 Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+## ![Status](https://img.shields.io/badge/status-active-brightgreen)
