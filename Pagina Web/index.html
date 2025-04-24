@@ -30,10 +30,45 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
 
-
   </head>
 
   <body class="index-page">
+  
+  
+    <!-- Empieza el Header -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top header shadow-sm">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApple" aria-controls="navbarApple" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
+          <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo2"/>
+        </a>
+      
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarApple">
+          <ul class="navbar-nav text-center">
+            <li><a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
+              <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo"/>
+            </a>
+          </li>
+            <li class="nav-item"><a class="nav-link" href="#Descripción">Descripción</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Sponsors">Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+  <!-- Termina el Header -->
+
     <!-- Sección de Inicio -->
     <section id="Inicio" class="Inicio section dark-background" styles="padding-top: 60px;">
       <img src="assets/img/fondos/secondnewprincipal.jpg" alt="" data-aos="fade-in">
@@ -80,45 +115,9 @@
       </div>
     </section> 
     <!-- Termina Sección de Inicio -->
-  
-    <!-- Empieza el Header -->
-    <!-- Empieza el Header -->
-<header>
-  <nav class="navbar navbar-expand-md fixed-top header shadow-sm">
-    <div class="container d-flex align-items-center justify-content-between">
 
-      <!-- Botón hamburguesa para móvil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApple" aria-controls="navbarApple" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
-        <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo2"  />
-      </a>
-    
-      <!-- Menú colapsable -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarApple">
-        <ul class="navbar-nav text-center">
-          <li>    <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#Inicio">
-            <img src="assets/img/logo/signalink_img.png" alt="Logo" height="60" class="logo"  />
-          </a>
-         </li>
-          <li class="nav-item"><a class="nav-link" href="#Descripción">Descripción</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Sponsors">Sponsors</a></li>
-          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div style="height: 70px;"></div>
-</header>
-
-    <!-- Termina el Header -->
-  
-    <main class="main">
-      <!-- Sección de Descripción -->
+  <main class="main">
+    <!-- Sección de Descripción -->
       <section id="Descripción" class="Descripcion section">       
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -154,9 +153,9 @@
           </div>
         </div>
       </section>  
-      <!-- Termina Sección de Descripciónn -->
+    <!-- Termina Sección de Descripciónn -->
 
-      <!-- Sección de Nuestra Historia -->
+    <!-- Sección de Nuestra Historia -->
       <section id="stats" class="stats section" style="background-color: rgb(6, 5, 5);">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 align-items-center justify-content-between">
@@ -209,107 +208,96 @@
             </div>
           </div>
         </div>
-      
-    </main>
+    <!-- Termina sección de Nuestra Historia -->
+  </main>
 
     <!-- Sección de Sponsors -->
-  <section id="Sponsors" class="clients section">
-    <div class="tituloalumnos">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Nuestros apoyos</h2>
-          <p>Sponsors</p>
+    <section id="Sponsors" class="clients section">
+      <div class="tituloalumnos">
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Nuestros apoyos</h2>
+            <p>Sponsors</p>
+          </div>
         </div>
-      </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-          {
-            "loop": true,
-            "speed": 600,
-            "autoplay": {
-              "delay": 5000
-            },
-            "slidesPerView": "auto",
-            "pagination": {
-              "el": ".swiper-pagination",
-              "type": "bullets",
-              "clickable": true
-            },
-            "breakpoints": {
-              "320": {
-                "slidesPerView": 2,
-                "spaceBetween": 40
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
               },
-              "480": {
-                "slidesPerView": 3,
-                "spaceBetween": 60
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
               },
-              "640": {
-                "slidesPerView": 4,
-                "spaceBetween": 80
-              },
-              "992": {
-                "slidesPerView": 6,
-                "spaceBetween": 120
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
               }
             }
-          }
-        </script>
-        <div class="swiper-wrapper align-items-center">
-          <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
-          </a> 
-          <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.lend-marketing.com/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/lend.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
-          </a> 
-          <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.lend-marketing.com/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/lend.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
-          </a> 
-          <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.lend-marketing.com/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/lend.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
-          </a> 
-          <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
-          </a>
-          <a class="swiper-slide" href="https://www.lend-marketing.com/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/Sponsors/lend.png" class="img-fluid" alt="">
-          </a>
-       </div>
-       <div class="swiper-pagination"></div>
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
+            </a> 
+            <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
+            </a>
+            <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
+            </a>
+            <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
+            </a> 
+            <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
+            </a>
+            <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
+            </a>
+            <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
+            </a> 
+            <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
+            </a>
+            <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
+            </a>
+            </a>
+            <a class="swiper-slide" href="https://www.instagram.com/cooperadoraimpa/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/cooperadora.jpg" class="img-fluid" alt="">
+            </a> 
+            <a class="swiper-slide" href="https://www.instagram.com/ciamponeabogados/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Abogados-removebg-preview.png" class="img-fluid" alt="">
+            </a>
+            <a class="swiper-slide" href="https://bairesdivan.com.ar/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/Sponsors/Baires Divan.png" class="img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </section>
-<!-- Termina Sección de Sponsors -->
+    </section>
+    <!-- Termina Sección de Sponsors -->
 
 
 
