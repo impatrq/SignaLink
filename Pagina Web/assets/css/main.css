@@ -829,7 +829,7 @@ section,
 
 .Inicio h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 700;
   font-family: var(--nav-font);
 }
@@ -886,7 +886,7 @@ section,
 
 @media (max-width: 768px) {
   .Inicio h1 {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .Inicio p {
@@ -1876,11 +1876,13 @@ background-color: #171817;
 }
 
 .mapa-escritorio {
-  max-width: 1000px;
+  max-width: 1100px;
   height: auto;
   display: block;
   justify-content: flex-start;
- margin-left: 550px;
+  margin-left: 590px;
+  margin-top: 20px;
+
 }
 
 .mapa-celu {
