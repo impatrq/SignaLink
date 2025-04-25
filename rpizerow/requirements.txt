@@ -1,0 +1,14 @@
+pyserial
+bleak
+RPi.GPIO
+spidev
+smbus2
+Adafruit-Blinka
+requests
+flask
+numpy
+pandas
+matplotlib
+pyyaml
+loguru
+python-dotenv
