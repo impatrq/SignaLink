@@ -320,12 +320,51 @@
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loading-bar">
-      <div class="fill"></div>
-      </div>
+<!-- Preloader -->
+<div id="preloader">
+  <!-- Canvas para los elementos de circuito -->
+  <canvas id="circuit-canvas" class="circuit-canvas"></canvas>
+  
+  <div class="preloader-content">
+    <!-- Logo -->
+    <div id="logo-container" class="logo-container">
+      <img src="assets/img/logo/signalink_img.png" alt="SignaLink Logo" class="logo-image">
     </div>
+    
+    <!-- Contenedor para el texto centrado -->
+    <div id="text-container" class="text-container hidden">
+      <!-- Línea superior -->
+      <div id="top-line" class="golden-line"></div>
+      
+      <!-- Título -->
+      <div id="title-container" class="title-container">
+        <div class="title-wrapper">
+          <span class="title-letter">S</span>
+          <span class="title-letter">i</span>
+          <span class="title-letter">g</span>
+          <span class="title-letter">n</span>
+          <span class="title-letter">a</span>
+          <span class="title-letter">L</span>
+          <span class="title-letter">i</span>
+          <span class="title-letter">n</span>
+          <span class="title-letter">k</span>
+        </div>
+      </div>
+      
+      <!-- Frase -->
+      <div id="phrase-container" class="phrase-container">
+        <span class="phrase-word">Tus</span>
+        <span class="phrase-word">gestos</span>
+        <span class="phrase-word">hablan,</span>
+        <span class="phrase-word">SignaLink</span>
+        <span class="phrase-word">traduce.</span>
+      </div>
+      
+      <!-- Línea inferior -->
+      <div id="bottom-line" class="golden-line"></div>
+    </div>
+  </div>
+</div>
     
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
