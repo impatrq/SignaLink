@@ -670,24 +670,25 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem; /* Reducido para acercar los elementos */
 }
 
 /* Logo */
 .logo-container {
-  width: 12rem;
-  height: 12rem;
+  width: 15rem; 
+  height: 15rem; 
   flex-shrink: 0;
   opacity: 0;
   transform: scale(0.8);
   animation: fadeInLogo 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  margin-bottom: -30px; /* Añadido margen negativo abajo */
 }
 
 @media (min-width: 768px) {
   .logo-container {
-    width: 16rem;
-    height: 16rem;
+    width: 14rem; /* Reducido para mejor proporción */
+    height: 14rem; /* Reducido para mejor proporción */
   }
 }
 
@@ -699,8 +700,8 @@ h6 {
 }
 
 .logo-container.fade-out {
-  opacity: 0;
-  transform: scale(0.8) translateY(-30px);
+  opacity: 0.8; /* Cambiado para que no desaparezca completamente */
+  transform: scale(0.9) translateY(-10px); /* Reducido el efecto */
 }
 
 .logo-image {
@@ -715,10 +716,11 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.8rem; /* Reducido para acercar elementos internos */
   max-width: 600px;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(10px); /* Reducido para menor distancia */
+  margin-top: -20px; /* Añadido margen negativo para acercar más al logo */
 }
 
 .text-container.visible {
@@ -741,7 +743,7 @@ h6 {
 
 /* Título */
 .title-container {
-  margin: 1rem 0;
+  margin: 0.5rem 0; /* Reducido para menos espacio */
   text-align: center;
 }
 
@@ -751,7 +753,7 @@ h6 {
 }
 
 .title-letter {
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Reducido para mejor proporción */
   font-weight: bold;
   color: var(--accent-color);
   display: inline-block;
@@ -763,7 +765,7 @@ h6 {
 
 @media (min-width: 768px) {
   .title-letter {
-    font-size: 3.75rem;
+    font-size: 3.4rem; /* Reducido para mejor proporción */
   }
 }
 
@@ -772,7 +774,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.3rem; /* Reducido para acercar palabras */
   font-size: 1.125rem;
   color: rgba(212, 175, 55, 0.9);
   text-align: center;
@@ -792,7 +794,7 @@ h6 {
 
 /* Texto de carga */
 .loading-text {
-  margin-top: 2rem;
+  margin-top: 1rem; /* Reducido de 2rem */
   font-size: 0.875rem;
   color: rgba(212, 175, 55, 0.8);
   opacity: 0;

@@ -154,72 +154,80 @@ window.addEventListener('load', () => {
       resizeCanvas();
     }
     
-    // Función para iniciar la secuencia de animación
-    function startAnimationSequence() {
-      // Mostrar contenedor de texto después de 1.5 segundos y ocultar logo
-      setTimeout(() => {
-        // Hacer que el logo desaparezca
-        logoContainer.classList.add('fade-out');
-        
-        // Mostrar el contenedor de texto
-        setTimeout(() => {
-          textContainer.classList.remove('hidden');
-          textContainer.classList.add('visible');
-          
-          // Mostrar línea superior
-          setTimeout(() => {
-            topLine.classList.add('visible');
-          }, 200);
-          
-          // Animar cada letra del título
-          titleLetters.forEach((letter, index) => {
-            setTimeout(() => {
-              letter.style.opacity = '1';
-              letter.style.transform = 'translateY(0)';
-              letter.style.filter = 'blur(0px)';
-              letter.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), filter 0.6s ease';
-            }, 400 + (80 * index));
-          });
-          
-          // Animar cada palabra de la frase
-          phraseWords.forEach((word, index) => {
-            setTimeout(() => {
-              word.style.opacity = '1';
-              word.style.transform = 'translateY(0)';
-              word.style.transition = 'opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)';
-            }, 1200 + (100 * index));
-          });
-          
-          // Mostrar línea inferior después de que aparezca la frase
-          setTimeout(() => {
-            bottomLine.classList.add('visible');
-          }, 1800);
-          
-          // Mostrar texto de carga
-          setTimeout(() => {
-            loadingText.classList.remove('hidden');
-            loadingText.style.opacity = '1';
-            loadingText.style.transition = 'opacity 0.8s ease';
-          }, 2200);
-        }, 400); // Pequeño retraso para que el logo desaparezca primero
-        
-      }, 1500);
-      
-      // Finalizar preloader después de 5.5 segundos
-      setTimeout(() => {
-        preloader.style.transition = 'opacity 1s ease, transform 0.8s cubic-bezier(0.65, 0, 0.35, 1)';
-        preloader.style.opacity = '0';
-        preloader.style.transform = 'translateY(-100%)';
-        
-        // Mostrar contenido principal después de que termine la animación de salida
-        setTimeout(() => {
-          preloader.style.display = 'none';
-          if (mainContent) {
-            mainContent.style.display = 'block';
-          }
-        }, 800);
-      }, 5500);
+// Función para iniciar la secuencia de animación
+function startAnimationSequence() {
+  // Mostrar contenedor de texto después de 1 segundo y mantener el logo visible
+  setTimeout(() => {
+    // En lugar de hacer que el logo desaparezca completamente, solo reducirlo un poco
+    if (logoContainer) {
+      logoContainer.classList.add('fade-out');
     }
+    
+    // Mostrar el contenedor de texto
+    setTimeout(() => {
+      if (textContainer) {
+        textContainer.classList.remove('hidden');
+        textContainer.classList.add('visible');
+      }
+      
+      // Mostrar línea superior
+      setTimeout(() => {
+        if (topLine) topLine.classList.add('visible');
+      }, 200);
+      
+      // Animar cada letra del título
+      titleLetters.forEach((letter, index) => {
+        setTimeout(() => {
+          letter.style.opacity = '1';
+          letter.style.transform = 'translateY(0)';
+          letter.style.filter = 'blur(0px)';
+          letter.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), filter 0.6s ease';
+        }, 300 + (60 * index)); // Reducido el tiempo entre letras
+      });
+      
+      // Animar cada palabra de la frase
+      phraseWords.forEach((word, index) => {
+        setTimeout(() => {
+          word.style.opacity = '1';
+          word.style.transform = 'translateY(0)';
+          word.style.transition = 'opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)';
+        }, 1000 + (80 * index)); // Reducido el tiempo entre palabras
+      });
+      
+      // Mostrar línea inferior después de que aparezca la frase
+      setTimeout(() => {
+        if (bottomLine) bottomLine.classList.add('visible');
+      }, 1500); // Reducido de 1800ms
+      
+      // Mostrar texto de carga
+      setTimeout(() => {
+        if (loadingText) {
+          loadingText.classList.remove('hidden');
+          loadingText.style.opacity = '1';
+          loadingText.style.transition = 'opacity 0.8s ease';
+        }
+      }, 1800); // Reducido de 2200ms
+      
+    }, 200); // Reducido de 400ms para que el texto aparezca más rápido
+    
+  }, 1000); // Reducido de 1500ms para iniciar la transición más rápido
+  
+  // Finalizar preloader después de 5 segundos (reducido de 5.5 segundos)
+  setTimeout(() => {
+    preloader.style.transition = 'opacity 1s ease, transform 0.8s cubic-bezier(0.65, 0, 0.35, 1)';
+    preloader.style.opacity = '0';
+    preloader.style.transform = 'translateY(-100%)';
+    
+    // Mostrar contenido principal después de que termine la animación de salida
+    setTimeout(() => {
+      preloader.style.display = 'none';
+      if (mainContent) {
+        mainContent.style.display = 'block';
+      }
+    }, 800);
+  }, 5000); // Reducido de 5500ms
+}
+
   } else {
     // Estamos en una página secundaria con el preloader simple
     setTimeout(() => {
