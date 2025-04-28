@@ -15,7 +15,6 @@ from bless import (  # type: ignore
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(name=__name__)
 
-# NOTE: Some systems require different synchronization methods.
 trigger: Union[asyncio.Event, threading.Event]
 if sys.platform in ["darwin", "win32"]:
     trigger = threading.Event()
@@ -26,14 +25,26 @@ def read_request(characteristic: BlessGATTCharacteristic, **kwargs) -> bytearray
     logger.debug(f"Reading {characteristic.value}")
     return characteristic.value
 
-
 def write_request(characteristic: BlessGATTCharacteristic, value: Any, **kwargs):
+    if isinstance(value, memoryview):
+        value = bytes(value)  # convertir a bytes bien
+    elif isinstance(value, bytearray):
+        value = bytes(value)  # convertir también
+
     characteristic.value = value
     logger.debug(f"Char value set to {characteristic.value}")
-    if characteristic.value == b"\x0f":
+    
+    if value == b"\x0f":
         logger.debug("NICE")
         trigger.set()
+    else:
+        logger.debug(f"Valor recibido: {value}")
 
+def on_connect(client_address):
+    print(f"✅ Cliente conectado desde: {client_address}")
+
+def on_disconnect(client_address):
+    print(f"❌ Cliente desconectado: {client_address}")
 
 async def run(loop):
     trigger.clear()
@@ -75,6 +86,7 @@ async def run(loop):
     await asyncio.sleep(5)
     await server.stop()
 
-
 loop = asyncio.get_event_loop()
 loop.run_until_complete(run(loop))
+server.set_connect_callback(on_connect)
+server.set_disconnect_callback(on_disconnect)
