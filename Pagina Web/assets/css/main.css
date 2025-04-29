@@ -899,7 +899,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   scroll-margin-top: 80px;
   overflow: clip;
 }
@@ -2034,11 +2034,12 @@ background-color: #171817;
 }
 
 .mapa-escritorio {
-  max-width: 1000px;
+  max-width: 1200px;
   height: auto;
   display: block;
   justify-content: flex-start;
- margin-left: 550px;
+  margin-left: 600px;
+  margin-top: 20px;
 }
 
 .mapa-celu {
