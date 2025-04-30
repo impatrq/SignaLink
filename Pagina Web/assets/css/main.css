@@ -605,7 +605,7 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: opacity 0.3s ease !important; /* Transición más rápida */
+  transition: opacity 0.3s ease !important;
 }
 
 #preloader:before {
@@ -671,19 +671,17 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
-/* Logo - Tamaño mucho más grande sin animaciones lentas */
+/* Logo con animación de aparición */
 .logo-container {
   width: 300px !important;
   height: 300px !important;
   flex-shrink: 0;
-  opacity: 1 !important;
-  transform: none !important;
-  animation: none !important; /* Eliminar animación lenta */
-  transition: none !important; /* Eliminar transición lenta */
-  position: relative;
+  opacity: 0; /* Comienza invisible */
+  transform: scale(0.8) !important; /* Comienza ligeramente más pequeño */
+  animation: logoAppear 0.6s forwards !important; /* Animación de aparición */
+  transition: none !important;
 }
 
 @media (min-width: 768px) {
@@ -693,56 +691,32 @@ h6 {
   }
 }
 
-/* Animación rápida para el logo */
-@keyframes quickFadeIn {
-  from {
+/* Animación de aparición del logo */
+@keyframes logoAppear {
+  0% {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
-  to {
+  100% {
     opacity: 1;
     transform: scale(1);
   }
-}
-
-/* Aplicar animación rápida */
-.logo-container {
-  animation: quickFadeIn 0.5s forwards !important;
-}
-
-/* Eliminar clase fade-out que causa problemas */
-.logo-container.fade-out {
-  opacity: 1 !important;
-  transform: scale(1) !important;
 }
 
 .logo-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.9)); /* Más brillo */
+  filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.9));
 }
 
-/* Contenedor de texto - ahora oculto completamente */
-.text-container {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-}
-
+/* Ocultar todo el texto y elementos relacionados */
+.text-container,
 .title-container,
 .phrase-container,
-.golden-line {
-  display: none !important;
-}
-
-/* Ocultar todas las letras y palabras */
+.golden-line,
 .title-letter,
-.phrase-word {
-  display: none !important;
-}
-
-/* Texto de carga - oculto */
+.phrase-word,
 .loading-text {
   display: none !important;
 }
@@ -750,18 +724,6 @@ h6 {
 /* Utilidades */
 .hidden {
   display: none !important;
-}
-
-/* Asegurarse de que el preloader desaparezca rápidamente */
-#preloader.exit {
-  animation: quickExit 0.3s forwards !important;
-}
-
-@keyframes quickExit {
-  to {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -2100,3 +2062,16 @@ background-color: #171817;
   }
 
   
+  #stats {
+    position: relative;
+    z-index: 0;
+  }
+
+  #stats::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Ajusta la opacidad para más/menos oscuridad */
+    z-index: -1;
+  }
+

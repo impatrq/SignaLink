@@ -63,37 +63,94 @@
 /**
  * Preloader - Versión ultra rápida
  */
-window.addEventListener('load', () => {
-  // Ejecutar inmediatamente sin esperas
+window.addEventListener('load', function() {
+  // Obtener referencias a elementos
   const preloader = document.getElementById('preloader');
   if (!preloader) return;
   
-  // Hacer el logo más grande inmediatamente
-  const logoContainer = document.getElementById('logo-container');
-  if (logoContainer) {
-    logoContainer.style.width = '300px';
-    logoContainer.style.height = '300px';
-    logoContainer.style.opacity = '1';
-    logoContainer.style.transform = 'scale(1)';
+  // Verificar si estamos en la página principal
+  const isIndexPage = window.location.pathname.endsWith('index.html') || 
+                      window.location.pathname.endsWith('/') || 
+                      window.location.pathname.split('/').pop() === '';
+  
+  // Configurar canvas si estamos en la página principal
+  if (isIndexPage) {
+    const canvas = document.getElementById('circuit-canvas');
+    if (canvas) {
+      setupCanvas(canvas);
+    }
   }
   
-  // Ocultar el texto
-  const textContainer = document.getElementById('text-container');
-  if (textContainer) {
-    textContainer.style.display = 'none';
-  }
+  // Mostrar el preloader por un tiempo suficiente para ver la animación
+setTimeout(function() {
+  // Transición rápida para ocultar el preloader
+  preloader.style.transition = 'opacity 0.3s ease';
+  preloader.style.opacity = '0';
   
-  // Mostrar el logo solo por 0.8 segundos y luego quitar el preloader
-  setTimeout(() => {
-    // Transición rápida
-    preloader.style.transition = 'opacity 0.3s ease';
-    preloader.style.opacity = '0';
+  // Eliminar el preloader después de la transición
+  setTimeout(function() {
+    preloader.style.display = 'none';
+  }, 300);
+}, 2500); 
+  
+  // Función para configurar el canvas
+  function setupCanvas(canvas) {
+    const ctx = canvas.getContext('2d');
     
-    // Quitar el preloader completamente después de la transición
-    setTimeout(() => {
-      preloader.style.display = 'none';
-    }, 300);
-  }, 800); // Solo 0.8 segundos de visualización
+    // Ajustar tamaño del canvas
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      drawCircuitElements();
+    }
+    
+    // Dibujar elementos de circuito
+    function drawCircuitElements() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.strokeStyle = '#D4AF37';
+      ctx.fillStyle = '#D4AF37';
+      
+      // Dibujar puntos
+      for (let i = 0; i < 50; i++) {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const size = Math.random() * 3 + 1;
+        
+        ctx.beginPath();
+        ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      
+      // Dibujar líneas horizontales
+      for (let i = 0; i < 15; i++) {
+        const y = Math.random() * canvas.height;
+        const x = Math.random() * canvas.width;
+        const length = Math.random() * 100 + 50;
+        
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + length, y);
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+      
+      // Dibujar líneas verticales
+      for (let i = 0; i < 15; i++) {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const length = Math.random() * 100 + 50;
+        
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x, y + length);
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    }
+    
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+  }
 });
 
   /**
