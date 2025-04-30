@@ -1,8 +1,3 @@
-import sys
-import logging
-import asyncio
-import threading
-
 from typing import Any, Union
 
 from bless import (  # type: ignore
@@ -89,4 +84,3 @@ async def run(loop):
 loop = asyncio.get_event_loop()
 loop.run_until_complete(run(loop))
 server.set_connect_callback(on_connect)
-server.set_disconnect_callback(on_disconnect)
