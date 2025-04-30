@@ -605,6 +605,7 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: opacity 0.3s ease !important; /* Transición más rápida */
 }
 
 #preloader:before {
@@ -670,139 +671,97 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem; /* Reducido para acercar los elementos */
+  gap: 1rem;
 }
 
-/* Logo */
+/* Logo - Tamaño mucho más grande sin animaciones lentas */
 .logo-container {
-  width: 15rem; 
-  height: 15rem; 
+  width: 300px !important;
+  height: 300px !important;
   flex-shrink: 0;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeInLogo 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  margin-bottom: -30px; /* Añadido margen negativo abajo */
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important; /* Eliminar animación lenta */
+  transition: none !important; /* Eliminar transición lenta */
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .logo-container {
-    width: 14rem; /* Reducido para mejor proporción */
-    height: 14rem; /* Reducido para mejor proporción */
+    width: 350px !important;
+    height: 350px !important;
   }
 }
 
-@keyframes fadeInLogo {
+/* Animación rápida para el logo */
+@keyframes quickFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
+/* Aplicar animación rápida */
+.logo-container {
+  animation: quickFadeIn 0.5s forwards !important;
+}
+
+/* Eliminar clase fade-out que causa problemas */
 .logo-container.fade-out {
-  opacity: 0.8; /* Cambiado para que no desaparezca completamente */
-  transform: scale(0.9) translateY(-10px); /* Reducido el efecto */
+  opacity: 1 !important;
+  transform: scale(1) !important;
 }
 
 .logo-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
+  filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.9)); /* Más brillo */
 }
 
-/* Contenedor de texto */
+/* Contenedor de texto - ahora oculto completamente */
 .text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem; /* Reducido para acercar elementos internos */
-  max-width: 600px;
-  opacity: 0;
-  transform: translateY(10px); /* Reducido para menor distancia */
-  margin-top: -20px; /* Añadido margen negativo para acercar más al logo */
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
-.text-container.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-/* Líneas doradas */
+.title-container,
+.phrase-container,
 .golden-line {
-  height: 1px;
-  background-color: var(--accent-color);
-  width: 0;
-  transition: width 1.5s ease-in-out;
+  display: none !important;
 }
 
-.golden-line.visible {
-  width: 100%;
-}
-
-/* Título */
-.title-container {
-  margin: 0.5rem 0; /* Reducido para menos espacio */
-  text-align: center;
-}
-
-.title-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.title-letter {
-  font-size: 2.2rem; /* Reducido para mejor proporción */
-  font-weight: bold;
-  color: var(--accent-color);
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(40px);
-  filter: blur(8px);
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
-}
-
-@media (min-width: 768px) {
-  .title-letter {
-    font-size: 3.4rem; /* Reducido para mejor proporción */
-  }
-}
-
-/* Frase */
-.phrase-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.3rem; /* Reducido para acercar palabras */
-  font-size: 1.125rem;
-  color: rgba(212, 175, 55, 0.9);
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .phrase-container {
-    font-size: 1.25rem;
-  }
-}
-
+/* Ocultar todas las letras y palabras */
+.title-letter,
 .phrase-word {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(20px);
+  display: none !important;
 }
 
-/* Texto de carga */
+/* Texto de carga - oculto */
 .loading-text {
-  margin-top: 1rem; /* Reducido de 2rem */
-  font-size: 0.875rem;
-  color: rgba(212, 175, 55, 0.8);
-  opacity: 0;
+  display: none !important;
 }
 
 /* Utilidades */
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+/* Asegurarse de que el preloader desaparezca rápidamente */
+#preloader.exit {
+  animation: quickExit 0.3s forwards !important;
+}
+
+@keyframes quickExit {
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
 /*--------------------------------------------------------------
