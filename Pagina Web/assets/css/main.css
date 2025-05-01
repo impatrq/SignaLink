@@ -242,86 +242,9 @@ header {
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Preloader Inicial
+# Preloader Principal (index.html)
 --------------------------------------------------------------*/
-.circuit-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  z-index: 0;
-}
 
-.preloader-content {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Logo con animación de aparición */
-.logo-container {
-  width: 300px !important;
-  height: 300px !important;
-  flex-shrink: 0;
-  opacity: 0; /* Comienza invisible */
-  transform: scale(0.8) !important; /* Comienza ligeramente más pequeño */
-  animation: logoAppear 0.6s forwards !important; /* Animación de aparición */
-  transition: none !important;
-}
-
-@media (min-width: 768px) {
-  .logo-container {
-    width: 350px !important;
-    height: 350px !important;
-  }
-}
-
-/* Animación de aparición del logo */
-@keyframes logoAppear {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.logo-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.9));
-}
-
-/* Ocultar todo el texto y elementos relacionados */
-.text-container,
-.title-container,
-.phrase-container,
-.golden-line,
-.title-letter,
-.phrase-word,
-.loading-text {
-  display: none !important;
-}
-
-/* Utilidades */
-.hidden {
-  display: none !important;
-}
-
-/*--------------------------------------------------------------
-# Preloader General 
---------------------------------------------------------------*/
 #preloader {
   position: fixed;
   inset: 0;
@@ -332,46 +255,164 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: opacity 0.3s ease !important;
 }
 
-#preloader:before {
-  display: none;
+#preloader-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.preloader-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.signalink-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #D4AF37;
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+  letter-spacing: 2px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 0.8s ease forwards 0.5s;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 300px;
 }
 
 .loading-bar {
-  width: 10px;
-  height: 150px;
-  border: 2px solid black; 
-  overflow: hidden;
-  margin-top: 20px;
-  background-color: transparent; 
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); 
-}
-
-.fill {
   width: 100%;
-  height: 0;
-  background-color: var(--nav-dropdown-color);
-  animation: fillBar 2s forwards, closeBar 2s 2s forwards; 
-  box-shadow: 0 0 15px var(--accent-color), 0 0 25px var(--accent-color); 
+  height: 4px;
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
 }
 
-@keyframes fillBar {
-  from {
-    height: 0%;
-  }
+.loading-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #D4AF37, #FFD700);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.loading-percentage {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  color: #D4AF37;
+  font-weight: 500;
+}
+
+#preloader.exit {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
   to {
-    height: 100%;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
-@keyframes closeBar {
-  from {
-    height: 100%;
+/*--------------------------------------------------------------
+# Preloader Secundario (galery/team/contact html)
+--------------------------------------------------------------*/
+
+#circular-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-loader {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.circle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-segment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(30deg * var(--i)));
+}
+
+.circle-segment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 10%;
+  height: 25%;
+  background: #D4AF37;
+  border-radius: 10px;
+  opacity: calc(1 - 0.075 * var(--i));
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.7),
+              0 0 20px rgba(212, 175, 55, 0.5),
+              0 0 40px rgba(212, 175, 55, 0.3);
+  filter: blur(1px);
+}
+
+#circular-preloader.exit {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
   to {
-    height: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 

@@ -53,96 +53,110 @@
   });
 
 /**
- * Preloader - Versión ultra rápida
+ * Preloader Principal
  */
-window.addEventListener('load', function() {
-  // Obtener referencias a elementos
+document.addEventListener('DOMContentLoaded', function() {
   const preloader = document.getElementById('preloader');
-  if (!preloader) return;
+  const canvas = document.getElementById('preloader-canvas');
+  const ctx = canvas.getContext('2d');
+  const loadingProgress = document.querySelector('.loading-progress');
+  const loadingPercentage = document.querySelector('.loading-percentage');
   
-  // Verificar si estamos en la página principal
-  const isIndexPage = window.location.pathname.endsWith('index.html') || 
-                      window.location.pathname.endsWith('/') || 
-                      window.location.pathname.split('/').pop() === '';
+  // Configurar canvas
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
   
-  // Configurar canvas si estamos en la página principal
-  if (isIndexPage) {
-    const canvas = document.getElementById('circuit-canvas');
-    if (canvas) {
-      setupCanvas(canvas);
+  // Líneas para el fondo
+  const lines = [];
+  const lineCount = 50;
+  
+  // Crear líneas aleatorias
+  for (let i = 0; i < lineCount; i++) {
+    lines.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      length: Math.random() * 100 + 50,
+      angle: Math.random() * Math.PI * 2,
+      speed: Math.random() * 0.5 + 0.1,
+      thickness: Math.random() * 2 + 0.5,
+      color: `rgba(212, 175, 55, ${Math.random() * 0.4 + 0.1})`
+    });
+  }
+  
+  // Animar líneas
+  function animateLines() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    lines.forEach(line => {
+      ctx.beginPath();
+      ctx.moveTo(line.x, line.y);
+      const endX = line.x + Math.cos(line.angle) * line.length;
+      const endY = line.y + Math.sin(line.angle) * line.length;
+      ctx.lineTo(endX, endY);
+      ctx.strokeStyle = line.color;
+      ctx.lineWidth = line.thickness;
+      ctx.stroke();
+      
+      // Mover línea
+      line.x += Math.cos(line.angle) * line.speed;
+      line.y += Math.sin(line.angle) * line.speed;
+      
+      // Reiniciar posición si sale del canvas
+      if (line.x < -line.length || line.x > canvas.width + line.length || 
+          line.y < -line.length || line.y > canvas.height + line.length) {
+        line.x = Math.random() * canvas.width;
+        line.y = Math.random() * canvas.height;
+        line.angle = Math.random() * Math.PI * 2;
+      }
+    });
+    
+    if (!preloader.classList.contains('exit')) {
+      requestAnimationFrame(animateLines);
     }
   }
   
-  // Mostrar el preloader por un tiempo suficiente para ver la animación
-setTimeout(function() {
-  // Transición rápida para ocultar el preloader
-  preloader.style.transition = 'opacity 0.3s ease';
-  preloader.style.opacity = '0';
+  animateLines();
   
-  // Eliminar el preloader después de la transición
-  setTimeout(function() {
-    preloader.style.display = 'none';
-  }, 300);
-}, 2500); 
+  // Simular carga
+  let progress = 0;
+  const loadingInterval = setInterval(() => {
+    progress += Math.random() * 3 + 1;
+    if (progress > 100) progress = 100;
+    
+    loadingProgress.style.width = `${progress}%`;
+    loadingPercentage.textContent = `${Math.floor(progress)}%`;
+    
+    if (progress === 100) {
+      clearInterval(loadingInterval);
+      setTimeout(() => {
+        preloader.classList.add('exit');
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 500);
+    }
+  }, 100);
   
-  // Función para configurar el canvas
-  function setupCanvas(canvas) {
-    const ctx = canvas.getContext('2d');
-    
-    // Ajustar tamaño del canvas
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      drawCircuitElements();
-    }
-    
-    // Dibujar elementos de circuito
-    function drawCircuitElements() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.strokeStyle = '#D4AF37';
-      ctx.fillStyle = '#D4AF37';
-      
-      // Dibujar puntos
-      for (let i = 0; i < 50; i++) {
-        const x = Math.random() * canvas.width;
-        const y = Math.random() * canvas.height;
-        const size = Math.random() * 3 + 1;
-        
-        ctx.beginPath();
-        ctx.arc(x, y, size, 0, Math.PI * 2);
-        ctx.fill();
-      }
-      
-      // Dibujar líneas horizontales
-      for (let i = 0; i < 15; i++) {
-        const y = Math.random() * canvas.height;
-        const x = Math.random() * canvas.width;
-        const length = Math.random() * 100 + 50;
-        
-        ctx.beginPath();
-        ctx.moveTo(x, y);
-        ctx.lineTo(x + length, y);
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      }
-      
-      // Dibujar líneas verticales
-      for (let i = 0; i < 15; i++) {
-        const x = Math.random() * canvas.width;
-        const y = Math.random() * canvas.height;
-        const length = Math.random() * 100 + 50;
-        
-        ctx.beginPath();
-        ctx.moveTo(x, y);
-        ctx.lineTo(x, y + length);
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      }
-    }
-    
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-  }
+  // Ajustar tamaño del canvas si cambia el tamaño de la ventana
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+});
+
+/**
+ * Preloader Secundario 
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const circularPreloader = document.getElementById('circular-preloader');
+  
+  // Simular carga (2 segundos)
+  setTimeout(() => {
+    circularPreloader.classList.add('exit');
+    setTimeout(() => {
+      circularPreloader.style.display = 'none';
+    }, 500);
+  }, 2000);
 });
 
   /**

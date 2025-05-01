@@ -34,6 +34,22 @@
 </head>
 
 <body class="index-page">
+
+  <!-- Preloader Principal -->
+<div id="preloader">
+  <canvas id="preloader-canvas"></canvas>
+  <div class="preloader-content">
+    <div class="signalink-text">SignaLink</div>
+      <p style="color: var(--nav-dropdown-color);">Tus gestos hablan SignaLink traduce.</p>
+    <div class="loading-bar-container">
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+      <div class="loading-percentage">0%</div>
+    </div>
+  </div>
+</div>
+
   <!-- Header -->
   <header>
     <div class="interactive-menu-container">
@@ -90,7 +106,7 @@
       <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="col-xl-6 col-lg-8">
           <h1>SignaLink</h1>
-          <p style="font-size: 18px;">Tus gestos hablan, SignaLink traduce.</p>
+          <p style="font-size: 18px; color: var(--nav-dropdown-color);">Tus gestos hablan, SignaLink traduce.</p>
         </div>
       </div>
       <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -317,16 +333,6 @@
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <canvas id="circuit-canvas" class="circuit-canvas"></canvas>
-    <div class="preloader-content">
-      <div id="logo-container" class="logo-container">
-        <img src="assets/img/logo/Logo.png" alt="SignaLink Logo" class="logo-image">
-      </div>
-    </div>
-  </div>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
