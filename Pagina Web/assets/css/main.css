@@ -1,14 +1,12 @@
 /*--------------------------------------------------------------
 # Font & Color Variables
 --------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #000000; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
@@ -18,7 +16,7 @@
   --contrast-color: #312f2f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors */
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
   --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
@@ -31,7 +29,6 @@
 .main {
   background-color: #059652;
 }
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f9f9f9;
@@ -46,7 +43,6 @@
   --contrast-color: #2a2727;
 }
 
-/* Smooth scroll */
 :root {
   scroll-behavior: smooth;
 }
@@ -134,598 +130,119 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Header
+# Header Flotante
 --------------------------------------------------------------*/
-/* === Estilos para el Menú Interactivo Flotante Minimalista === */
 header {
-  position: fixed; /* Fija el header en la pantalla */
-  top: 15px; /* Espacio desde la parte superior */
-  left: 50%; /* Centrar horizontalmente */
-  transform: translateX(-50%); /* Ajuste fino para centrado exacto */
-  width: auto; /* Ancho automático basado en el contenido */
-  z-index: 1000; /* Asegura que esté por encima de otro contenido */
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente oscuro */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
-  border-radius: 50px; /* Bordes muy redondeados para forma de píldora */
-  padding: 5px 15px; /* Padding interno (vertical, horizontal) */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  transition: top 0.3s ease; /* Transición suave si se oculta/muestra */
+  position: fixed;
+  top: 15px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: auto; 
+  z-index: 1000; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(10px); 
+  border-radius: 50px; 
+  padding: 5px 15px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  transition: top 0.3s ease; 
 }
 
-/* --- Contenedor del menú dentro del header --- */
 .interactive-menu-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centra los botones verticalmente */
+  align-items: center; 
 }
 
-/* --- Lista de botones del menú --- */
 .interactive-menu {
   display: flex;
-  gap: 10px; /* Espacio reducido entre botones */
+  gap: 10px; 
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* --- Cada botón del menú --- */
 .interactive-menu li {
   position: relative;
-  /* Tamaño reducido */
   width: 55px;
   height: 55px;
-  background: transparent; /* Fondo inicial transparente */
-  border-radius: 50%; /* Completamente redondo */
+  background: transparent; 
+  border-radius: 50%; 
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Transición más rápida y solo para transform */
   transition: transform 0.3s ease, background-color 0.3s ease;
-  overflow: visible; /* Permitir que el título se vea fuera */
-
-  /* Variable de color dorado */
+  overflow: visible; 
   --i: #ffc451;
 }
 
-/* --- Efecto al pasar el ratón sobre el botón --- */
 .interactive-menu li:hover {
-  transform: translateY(-5px); /* Levantar ligeramente */
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil al hacer hover */
-  /* No se expande en ancho para mantener minimalismo */
+  transform: translateY(-5px); 
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
-/* --- Pseudo-elemento ::before (eliminado para minimalismo) --- */
-/* .interactive-menu li::before { ... } */
-/* .interactive-menu li:hover::before { ... } */
-
-/* --- Contenedor del icono/imagen --- */
 .interactive-menu li .icon {
-  position: relative; /* Cambiado a relativo */
+  position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 2; /* Asegura que el icono esté sobre el fondo del hover */
+  z-index: 2; 
 }
 
-/* --- Iconos (Ionicons e Imagen) --- */
+/* --- Iconos --- */
 .interactive-menu li .icon ion-icon,
 .interactive-menu li .icon img {
-  color: var(--i); /* Color dorado inicial */
-  /* Tamaño de icono reducido */
+  color: var(--i);
   font-size: 1.8em;
-  /* Tamaño de imagen reducido */
   width: 30px;
   height: 30px;
   object-fit: contain;
-  /* Transición solo para color */
   transition: color 0.3s ease, transform 0.3s ease;
-  transform: scale(1); /* Estado inicial */
-  opacity: 1; /* Asegurar visibilidad */
+  transform: scale(1); 
+  opacity: 1; 
 }
 
-/* --- Iconos al pasar el ratón (ya no desaparecen) --- */
 .interactive-menu li:hover .icon ion-icon,
 .interactive-menu li:hover .icon img {
-  /* Opcional: Cambiar color del icono al hacer hover */
-  /* color: #fff; */
-  transform: scale(1.1); /* Agrandar ligeramente el icono */
+  transform: scale(1.1); 
 }
 
-/* --- Título (Tooltip) --- */
+/* --- Título --- */
 .interactive-menu li .title {
   position: absolute;
-  bottom: -30px; /* Posición debajo del botón */
+  bottom: -30px; 
   left: 50%;
-  transform: translateX(-50%) scale(0.8); /* Centrado y ligeramente pequeño */
-  background-color: #000; /* Fondo negro */
-  color: var(--i); /* Texto dorado */
-  padding: 4px 8px; /* Padding pequeño */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 0.75em; /* Tamaño de fuente pequeño */
+  transform: translateX(-50%) scale(0.8); 
+  background-color: #000; 
+  color: var(--i); 
+  padding: 4px 8px; 
+  border-radius: 5px; 
+  font-size: 0.75em; 
   font-weight: 500;
   white-space: nowrap;
-  opacity: 0; /* Invisible inicialmente */
-  visibility: hidden; /* Oculto inicialmente */
+  opacity: 0; 
+  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
   z-index: 10;
-  pointer-events: none; /* No interfiere con el hover del botón */
+  pointer-events: none; 
 }
 
-/* --- Mostrar Título (Tooltip) al pasar el ratón --- */
+/* --- Mostrar  --- */
 .interactive-menu li:hover .title {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) scale(1); /* Tamaño normal al mostrar */
-  bottom: -35px; /* Ajustar posición al mostrar */
-}
-
-/* --- Ajuste para que el contenido principal no quede debajo del header --- */
-body.index-page {
-  padding-top: 100px; /* Añade espacio arriba (ajusta según altura final del header + margen) */
+  transform: translateX(-50%) scale(1); 
+  bottom: -35px; 
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Footer
 --------------------------------------------------------------*/
-/* Navmenu - Desktop */
-@media (min-width: 1200px) {
-  .navmenu {
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 70px;
-  }
-
-  .navmenu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    width: 100%;
-    list-style: none;
-  }
-
-  .navmenu li {
-    position: relative;
-  }
-  
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-color);
-    padding: 18px 15px;
-    font-size: 19px;
-    font-family: var(--nav-font);
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-
-  .navmenu a i,
-  .navmenu a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    transition: 0.3s;
-  }
-
-  .navmenu li:last-child a {
-    padding-right: 0;
-  }
-
-  .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-hover-color);
-  }
-
-  .navmenu .dropdown ul {
-    margin: 0;
-    padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    left: 14px;
-    top: 130%;
-    opacity: 0;
-    transition: 0.3s;
-    border-radius: 0;
-    z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .navmenu .dropdown ul li {
-    min-width: 200px;
-  }
-
-  .navmenu .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-color);
-  }
-
-  .navmenu .dropdown ul a i {
-    font-size: 12px;
-  }
-
-  .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
-    background-color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -10%;
-    visibility: hidden;
-  }
-
-  .navmenu .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: -100%;
-    visibility: visible;
-  }
-}
-
-/* Navmenu - Mobile */
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-
-  .navmenu {
-    padding: 0;
-    z-index: 9997;
-  }
-
-  .navmenu ul {
-    display: none;
-    list-style: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-  }
-
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-dropdown-color);
-    padding: 10px 20px;
-    font-family: var(--nav-font);
-    font-size: 17px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-
-  .navmenu a i,
-  .navmenu a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), white 90%);
-  }
-
-  .navmenu a i:hover,
-  .navmenu a:focus i:hover {
-    background-color: color-mix(in srgb, var(--accent-color), white 90%);
-  }
-
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
-    background-color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .active i,
-  .navmenu .active:focus i {
-    transform: rotate(180deg);
-  }
-
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
-  }
-
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-
-  .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
-  }
-
-  .mobile-nav-active .navmenu {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
-    transition: 0.3s;
-  }
-
-  .mobile-nav-active .navmenu>ul {
-    display: block;
-  }
-}
 
 /*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
-.footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-size: 14px;
-  position: relative;
-}
-
-.footer .footer-top {
-  padding: 50px 0;
-  background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 10%);
-}
-
-.footer .footer-Descripcion .logo {
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.footer .footer-Descripcion .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.footer .footer-Descripcion .logo span {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: var(--heading-font);
-  color: var(--heading-color);
-}
-
-.footer .footer-Descripcion p {
-  font-size: 14px;
-  font-family: var(--heading-font);
-}
-
-.footer .social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  background-color: color-mix(in srgb, var(--default-color) 5%, white 10%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.footer .social-links a:hover {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-}
-
-.footer h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-links ul i {
-  margin-right: 4px;
-  font-size: 12px;
-  line-height: 0;
-  color: var(--accent-color);
-}
-
-.footer .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-links ul a:hover {
-  color: var(--accent-color);
-}
-
-.footer .footer-contact p {
-  margin-bottom: 5px;
-}
-
-.footer .footer-newsletter .newsletter-form {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding: 6px 8px;
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  display: flex;
-  background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 15%);
-  transition: 0.3s;
-}
-
-.footer .footer-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
-}
-
-.footer .footer-newsletter .newsletter-form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: 100%;
-  background-color: color-mix(in srgb, var(--footer-background-color) 90%, white 15%);
-  color: var(--default-color);
-}
-
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
-  outline: none;
-}
-
-.footer .footer-newsletter .newsletter-form input[type=submit] {
-  border: 0;
-  font-size: 16px;
-  padding: 0 20px;
-  margin: -7px -8px -7px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-.footer .copyright {
-  padding: 30px 0;
-}
-
-.footer .copyright p {
-  margin-bottom: 0;
-}
-
-.footer .credits {
-  margin-top: 5px;
-  font-size: 13px;
-}
-
-/*--------------------------------------------------------------
-# Preloader Original (para páginas secundarias)
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transition: opacity 0.3s ease !important;
-}
-
-#preloader:before {
-  display: none;
-}
-
-.loading-bar {
-  width: 10px;
-  height: 150px;
-  border: 2px solid black; 
-  overflow: hidden;
-  margin-top: 20px;
-  background-color: transparent; 
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); 
-}
-
-.fill {
-  width: 100%;
-  height: 0;
-  background-color: var(--nav-dropdown-color);
-  animation: fillBar 2s forwards, closeBar 2s 2s forwards; 
-  box-shadow: 0 0 15px var(--accent-color), 0 0 25px var(--accent-color); 
-}
-
-@keyframes fillBar {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 100%;
-  }
-}
-
-@keyframes closeBar {
-  from {
-    height: 100%;
-  }
-  to {
-    height: 0;
-  }
-}
-
-/*--------------------------------------------------------------
-# Preloader Personalizado (solo para index.html)
+# Preloader Inicial
 --------------------------------------------------------------*/
 .circuit-canvas {
   position: absolute;
@@ -800,6 +317,62 @@ body.index-page {
 /* Utilidades */
 .hidden {
   display: none !important;
+}
+
+/*--------------------------------------------------------------
+# Preloader General 
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.3s ease !important;
+}
+
+#preloader:before {
+  display: none;
+}
+
+.loading-bar {
+  width: 10px;
+  height: 150px;
+  border: 2px solid black; 
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: transparent; 
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); 
+}
+
+.fill {
+  width: 100%;
+  height: 0;
+  background-color: var(--nav-dropdown-color);
+  animation: fillBar 2s forwards, closeBar 2s 2s forwards; 
+  box-shadow: 0 0 15px var(--accent-color), 0 0 25px var(--accent-color); 
+}
+
+@keyframes fillBar {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes closeBar {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1882,12 +1455,10 @@ background-color: #171817;
   justify-content: center;
   }
 
- .tituloalumnos 
- {
- 
-    display: flex;             /* Activa Flexbox */
-    justify-content: center;   /* Centra los elementos horizontalmente */
-    align-items: center;       /* Centra los elementos verticalmente (si lo deseas) */
+ .tituloalumnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
   
   }
 
@@ -1940,14 +1511,14 @@ background-color: #171817;
   max-width: 500px; 
   max-height: 400px;
   display: block;
-  margin: auto; /* opcional: la centra */
+  margin: auto; 
 }
 
 .img-fluid {
   border-radius: 20px;
 }
 
-.img-nosotros{
+.img-nosotros {
   position: relative;
   top: 80px;
   border-style: groove;
@@ -1956,19 +1527,17 @@ background-color: #171817;
   
   width: 100%;
   height: auto;
-  max-width: 600px; /* opcional: para que no se pase de cierto tamaño */
+  max-width: 600px;
   display: block;
-  margin: auto; /* opcional: la centra */
+  margin: auto; 
   margin-bottom: 20px;
 }
 
-
-
 .tabla-integrantes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;   
 }
 
 .tabla-integrantes table {
@@ -2037,27 +1606,23 @@ background-color: #171817;
   display: none;
 }
 
-/* En celulares: ocultar escritorio, mostrar celular */
 @media screen and (max-width: 768px) {
   .mapa-escritorio {
     display: none;
   }
   .mapa-celu {
     display: block;
-    width: 100%;       /* Opcional: que se adapte al ancho del celu */
+    width: 100%;      
     height: auto;
   }
 }
 
-
-/* Mejora el ícono hamburguesa en fondo oscuro */
 .navbar-toggler {
   border-color: rgba(15, 15, 12, 0.8);
   border-width: 2px;
 }
 
 .navbar-toggler-icon {
- 
  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
  
 }
