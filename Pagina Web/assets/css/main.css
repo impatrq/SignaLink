@@ -346,74 +346,88 @@ header {
 /*--------------------------------------------------------------
 # Preloader Secundario (galery/team/contact html)
 --------------------------------------------------------------*/
-
+.secondaarybody {
+  background-color: #222;
+}
 #circular-preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Opcional: Fondo negro para el preloader */
+    z-index: 9999; /* Asegura que esté por encima de todo */
 }
-
-.circular-loader {
-  position: relative;
-  width: 120px;
-  height: 120px;
+#circular-loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFD700; /* Dorado */
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
-
-.circle-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  animation: rotate 1.5s linear infinite;
+#circular-loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #B8860B; /* Dorado Oscuro */
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
 }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.circle-segment {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: rotate(calc(30deg * var(--i)));
-}
-
-.circle-segment::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 45%;
-  width: 10%;
-  height: 25%;
-  background: #D4AF37;
-  border-radius: 10px;
-  opacity: calc(1 - 0.075 * var(--i));
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.7),
-              0 0 20px rgba(212, 175, 55, 0.5),
-              0 0 40px rgba(212, 175, 55, 0.3);
-  filter: blur(1px);
+#circular-loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #DAA520; /* Dorado Medio */
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
 }
 
 #circular-preloader.exit {
-  animation: fadeOut 0.5s ease forwards;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 /*--------------------------------------------------------------

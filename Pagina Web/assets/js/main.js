@@ -145,18 +145,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /**
- * Preloader Secundario 
+ * Preloader Secundario
  */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const circularPreloader = document.getElementById('circular-preloader');
-  
+
   // Simular carga (2 segundos)
   setTimeout(() => {
     circularPreloader.classList.add('exit');
-    setTimeout(() => {
+
+    // Esperar a que termine la animación de opacidad antes de ocultar
+    circularPreloader.addEventListener('transitionend', () => {
       circularPreloader.style.display = 'none';
-    }, 500);
-  }, 2000);
+    }, { once: true }); // Solo se ejecuta una vez
+  }, 1000);
 });
 
   /**
