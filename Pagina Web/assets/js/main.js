@@ -52,113 +52,120 @@
     });
   });
 
-/**
- * Preloader Principal
- */
-document.addEventListener('DOMContentLoaded', function() {
-  const preloader = document.getElementById('preloader');
-  const canvas = document.getElementById('preloader-canvas');
-  const ctx = canvas.getContext('2d');
-  const loadingProgress = document.querySelector('.loading-progress');
-  const loadingPercentage = document.querySelector('.loading-percentage');
-  
-  // Configurar canvas
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  
-  // Líneas para el fondo
-  const lines = [];
-  const lineCount = 50;
-  
-  // Crear líneas aleatorias
-  for (let i = 0; i < lineCount; i++) {
-    lines.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      length: Math.random() * 100 + 50,
-      angle: Math.random() * Math.PI * 2,
-      speed: Math.random() * 0.5 + 0.1,
-      thickness: Math.random() * 2 + 0.5,
-      color: `rgba(212, 175, 55, ${Math.random() * 0.4 + 0.1})`
-    });
-  }
-  
-  // Animar líneas
-  function animateLines() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    lines.forEach(line => {
-      ctx.beginPath();
-      ctx.moveTo(line.x, line.y);
-      const endX = line.x + Math.cos(line.angle) * line.length;
-      const endY = line.y + Math.sin(line.angle) * line.length;
-      ctx.lineTo(endX, endY);
-      ctx.strokeStyle = line.color;
-      ctx.lineWidth = line.thickness;
-      ctx.stroke();
-      
-      // Mover línea
-      line.x += Math.cos(line.angle) * line.speed;
-      line.y += Math.sin(line.angle) * line.speed;
-      
-      // Reiniciar posición si sale del canvas
-      if (line.x < -line.length || line.x > canvas.width + line.length || 
-          line.y < -line.length || line.y > canvas.height + line.length) {
-        line.x = Math.random() * canvas.width;
-        line.y = Math.random() * canvas.height;
-        line.angle = Math.random() * Math.PI * 2;
-      }
-    });
-    
-    if (!preloader.classList.contains('exit')) {
-      requestAnimationFrame(animateLines);
-    }
-  }
-  
-  animateLines();
-  
-  // Simular carga
-  let progress = 0;
-  const loadingInterval = setInterval(() => {
-    progress += Math.random() * 3 + 1;
-    if (progress > 100) progress = 100;
-    
-    loadingProgress.style.width = `${progress}%`;
-    loadingPercentage.textContent = `${Math.floor(progress)}%`;
-    
-    if (progress === 100) {
-      clearInterval(loadingInterval);
-      setTimeout(() => {
-        preloader.classList.add('exit');
-        setTimeout(() => {
-          preloader.style.display = 'none';
-        }, 500);
-      }, 500);
-    }
-  }, 100);
-  
-  // Ajustar tamaño del canvas si cambia el tamaño de la ventana
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
-});
+
+  // Detectar recarga de pagina
+if (performance.navigation.type === 1) {
+  sessionStorage.removeItem('preloaderShown');
+}
 
 /**
- * Preloader Secundario
+ * Preloader Principal y Secundario combinados (corregido)
  */
 document.addEventListener('DOMContentLoaded', function () {
+  const preloader = document.getElementById('preloader');
   const circularPreloader = document.getElementById('circular-preloader');
 
-  // Simular carga (2 segundos)
-  setTimeout(() => {
-    circularPreloader.classList.add('exit');
+  const hasShownPreloader = sessionStorage.getItem('preloaderShown');
 
-    // Esperar a que termine la animación de opacidad antes de ocultar
-    circularPreloader.addEventListener('transitionend', () => {
-      circularPreloader.style.display = 'none';
-    }, { once: true }); // Solo se ejecuta una vez
-  }, 1000);
+  if (!hasShownPreloader && preloader) {
+    // Mostrar preloader principal solo una vez
+    sessionStorage.setItem('preloaderShown', 'true');
+
+    if (circularPreloader) {
+      circularPreloader.style.display = 'none'; // Asegurarse de ocultar el secundario
+    }
+
+    const canvas = document.getElementById('preloader-canvas');
+    const ctx = canvas.getContext('2d');
+    const loadingProgress = document.querySelector('.loading-progress');
+    const loadingPercentage = document.querySelector('.loading-percentage');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const lines = [];
+    const lineCount = 50;
+    for (let i = 0; i < lineCount; i++) {
+      lines.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        length: Math.random() * 100 + 50,
+        angle: Math.random() * Math.PI * 2,
+        speed: Math.random() * 0.5 + 0.1,
+        thickness: Math.random() * 2 + 0.5,
+        color: `rgba(212, 175, 55, ${Math.random() * 0.4 + 0.1})`
+      });
+    }
+
+    function animateLines() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      lines.forEach(line => {
+        ctx.beginPath();
+        ctx.moveTo(line.x, line.y);
+        const endX = line.x + Math.cos(line.angle) * line.length;
+        const endY = line.y + Math.sin(line.angle) * line.length;
+        ctx.lineTo(endX, endY);
+        ctx.strokeStyle = line.color;
+        ctx.lineWidth = line.thickness;
+        ctx.stroke();
+
+        line.x += Math.cos(line.angle) * line.speed;
+        line.y += Math.sin(line.angle) * line.speed;
+
+        if (line.x < -line.length || line.x > canvas.width + line.length ||
+            line.y < -line.length || line.y > canvas.height + line.length) {
+          line.x = Math.random() * canvas.width;
+          line.y = Math.random() * canvas.height;
+          line.angle = Math.random() * Math.PI * 2;
+        }
+      });
+
+      if (!preloader.classList.contains('exit')) {
+        requestAnimationFrame(animateLines);
+      }
+    }
+
+    animateLines();
+
+    let progress = 0;
+    const loadingInterval = setInterval(() => {
+      progress += Math.random() * 3 + 1;
+      if (progress > 100) progress = 100;
+
+      loadingProgress.style.width = `${progress}%`;
+      loadingPercentage.textContent = `${Math.floor(progress)}%`;
+
+      if (progress === 100) {
+        clearInterval(loadingInterval);
+        setTimeout(() => {
+          preloader.classList.add('exit');
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 500);
+        }, 500);
+      }
+    }, 100);
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+  } else if (circularPreloader) {
+    // Mostrar solo el preloader secundario si el principal ya se mostró
+    circularPreloader.style.display = 'block';
+
+    setTimeout(() => {
+      circularPreloader.classList.add('exit');
+      circularPreloader.addEventListener('transitionend', () => {
+        circularPreloader.style.display = 'none';
+      }, { once: true });
+    }, 1000);
+
+    if (preloader) {
+      preloader.style.display = 'none'; // Asegurarse que el principal no estorbe
+    }
+  }
 });
 
   /**
