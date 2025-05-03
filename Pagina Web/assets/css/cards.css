@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -103,42 +102,6 @@ a {
   font-size: 1rem;
   letter-spacing: 0.031rem;
 }
-.sectioncards .card-body .progress {
-  margin-top: 0.938rem;
-}
-.sectioncards .card-body .progress .progress-bar {
-  position: relative;
-  width: 100%;
-  background: #363636;
-  height: 0.313rem;
-  display: block;
-  border-radius: 3.125rem;
-}
-.sectioncards .card-body .progress .progress-bar:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  display: block;
-  border-radius: 3.125rem;
-}
-.sectioncards .card-body .progress span:first-of-type {
-  color: #fff;
-  text-align: left;
-  font-weight: 600;
-  width: 100%;
-  display: block;
-  margin-bottom: 0.313rem;
-}
-.sectioncards .card-body .progress span {
-  margin-top: 0.313rem;
-  text-align: right;
-  display: block;
-  color: #fff;
-}
 .sectioncards .card-footer {
   position: absolute;
   bottom: 0;
@@ -196,10 +159,6 @@ a {
 .sectioncards .green .btn-add {
   background: #01c3a8;
 }
-.sectioncards .green .progress-bar:after {
-  width: 90%;
-  background: #01c3a8;
-}
 .sectioncards .green .btn-countdown:hover {
   background: #01c3a8;
 }
@@ -210,10 +169,6 @@ a {
   background: linear-gradient(45deg, #232228, #232228, #232228, #232228, #1890ff) border-box;
 }
 .sectioncards .blue .btn-add {
-  background: #1890ff;
-}
-.sectioncards .blue .progress-bar:after {
-  width: 20%;
   background: #1890ff;
 }
 .sectioncards .blue .btn-countdown:hover {
@@ -228,10 +183,6 @@ a {
 .sectioncards .orange .btn-add {
   background: #ffb741;
 }
-.sectioncards .orange .progress-bar:after {
-  width: 30%;
-  background: #ffb741;
-}
 .sectioncards .orange .btn-countdown:hover {
   background: #ffb741;
 }
@@ -244,10 +195,38 @@ a {
 .sectioncards .red .btn-add {
   background: #a63d2a;
 }
-.sectioncards .red .progress-bar:after {
-  width: 90%;
-  background: #a63d2a;
-}
 .sectioncards .red .btn-countdown:hover {
   background: #a63d2a;
+}
+
+label {
+  padding-right: 0;
+  font-size: 1rem;
+}
+
+progress {
+  color: goldenrod;
+  height: 4px;
+  border-radius: 5px;
+  width: 90%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: transparent;
+}
+
+progress::-moz-progress-bar {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: transparent;
+}
+
+.progress-value {
+  font-size: 1rem;
+  color: goldenrod;
+  vertical-align: middle;
 }/*# sourceMappingURL=cards.css.map */

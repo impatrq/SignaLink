@@ -113,45 +113,6 @@ a {
         font-size: 1rem;
         letter-spacing: 0.031rem;
       }
-      .progress {
-        margin-top: 0.938rem;
-
-        .progress-bar {
-          position: relative;
-          width: 100%;
-          background: #363636;
-          height: 0.313rem;
-          display: block;
-          border-radius: 3.125rem;
-
-          &:after {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 100%;
-            display: block;
-            border-radius: 3.125rem;
-          }
-        }
-        span:first-of-type {
-          color: #fff;
-          text-align: left;
-          font-weight: 600;
-          width: 100%;
-          display: block;
-          margin-bottom: 0.313rem;
-        }
-
-        span {
-          margin-top: 0.313rem;
-          text-align: right;
-          display: block;
-          color: #fff;
-        }
-      }
     }
     &-footer {
       position: absolute;
@@ -230,10 +191,6 @@ a {
     .btn-add {
       background: $clr-green;
     }
-    .progress-bar:after {
-      width: 90%;
-      background: $clr-green;
-    }
 
     .btn-countdown {
       &:hover {
@@ -263,10 +220,6 @@ a {
     .btn-add {
       background: $clr-blue;
     }
-    .progress-bar:after {
-      width: 20%;
-      background: $clr-blue;
-    }
     .btn-countdown {
       &:hover {
         background: $clr-blue;
@@ -293,10 +246,6 @@ a {
         border-box;
     }
     .btn-add {
-      background: $clr-orange;
-    }
-    .progress-bar:after {
-      width: 30%;
       background: $clr-orange;
     }
 
@@ -328,10 +277,6 @@ a {
     .btn-add {
       background: $clr-red;
     }
-    .progress-bar:after {
-      width: 90%;
-      background: $clr-red;
-    }
 
     .btn-countdown {
       &:hover {
@@ -339,4 +284,36 @@ a {
       }
     }
   }
+}
+
+label {
+  padding-right: 0;
+  font-size: 1rem;
+}
+
+progress {
+  color: goldenrod; 
+  height: 4px; 
+  border-radius: 5px;
+  width: 90%; 
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+progress::-webkit-progress-value {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: transparent;
+}
+
+progress::-moz-progress-bar {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: transparent;
+}
+
+.progress-value {
+  font-size: 1rem;
+  color: goldenrod; 
+  vertical-align: middle; 
 }
