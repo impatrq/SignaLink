@@ -389,6 +389,7 @@ color: #878787;
   animation: fadeInText 0.8s ease forwards 0.5s;
 }
 
+
 @keyframes fadeInText {
   to {
     opacity: 1;
@@ -774,7 +775,7 @@ section,
 
 @media (max-width: 768px) {
   .Inicio h1 {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   .Inicio p {
@@ -1984,3 +1985,5 @@ background-color: #171817;
     bottom: 100%;
   }
 }
+
+
