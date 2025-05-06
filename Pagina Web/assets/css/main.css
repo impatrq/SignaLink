@@ -152,7 +152,7 @@ header {
   align-items: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
   overflow: visible; 
-  --i: #ffc451;
+  --i: #ffc451; 
 }
 
 .interactive-menu li:hover {
@@ -298,7 +298,7 @@ border-radius: 50%;
 color: #fff;
 font-size: 20px;
 font-weight: 600;
-margin-bottom: 40px;
+
 position: relative;
 }
 .footer-widget ul li {
@@ -379,15 +379,16 @@ color: #878787;
 
 .signalink-text {
   font-family: 'Raleway', sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  color: #D4AF37;
+  color: #ffc451;
   text-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
   letter-spacing: 2px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInText 0.8s ease forwards 0.5s;
 }
+
 
 @keyframes fadeInText {
   to {
@@ -420,7 +421,7 @@ color: #878787;
   left: 0;
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #D4AF37, #FFD700);
+  background: linear-gradient(90deg, #ffc451, #ffc451);
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
   border-radius: 2px;
   transition: width 0.3s ease;
@@ -429,7 +430,7 @@ color: #878787;
 .loading-percentage {
   font-family: 'Poppins', sans-serif;
   font-size: 0.875rem;
-  color: #D4AF37;
+  color: #ffc451;
   font-weight: 500;
 }
 
@@ -469,7 +470,7 @@ color: #878787;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #FFD700; /* Dorado */
+    border-top-color: #ffc451; /* Dorado */
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -482,7 +483,7 @@ color: #878787;
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #B8860B; /* Dorado Oscuro */
+    border-top-color: #ffc451; /* Dorado Oscuro */
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -495,7 +496,7 @@ color: #878787;
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #DAA520; /* Dorado Medio */
+    border-top-color: #ffc451; /* Dorado Medio */
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
@@ -773,12 +774,8 @@ section,
 }
 
 @media (max-width: 768px) {
-  .Inicio h1 {
-    font-size: 32px;
-  }
-
-  .Inicio p {
-    font-size: 18px;
+  .mobile-padding-bottom {
+    padding-bottom: 160px;
   }
 }
 
@@ -1608,15 +1605,20 @@ background-color: #171817;
 
 .row
 {
+  display: flex;
   justify-content: center;
-  }
-
- .tituloalumnos {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
   
   }
+
+
+  
+ 
+  @media (max-width: 480px) {
+    .h3galery {
+      margin-top: 40px;
+    }
+  }
+  
 
   
   .clients .swiper-slide img {
@@ -1703,6 +1705,14 @@ background-color: #171817;
   background-color: #111;
   border: 2px solid #d4af37;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  
+}
+
+@media screen and (max-width: 768px) {
+  .tabla-integrantes table {
+    margin-bottom: 130px;
+   
+  }
 }
 
 .tabla-integrantes th,
@@ -1735,8 +1745,7 @@ background-color: #171817;
 .avances {
   width: 100%;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
   color: #FFA500; 
 }
 
@@ -1982,5 +1991,18 @@ background-color: #171817;
   }
   50%, 100% {
     bottom: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-widget-heading {
+    display: flex; 
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-listas {
+    margin-left: 90px;
   }
 }
