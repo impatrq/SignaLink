@@ -52,7 +52,6 @@
     });
   });
 
-
   // Detectar recarga de pagina
 if (performance.navigation.type === 1) {
   sessionStorage.removeItem('preloaderShown');
@@ -155,6 +154,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mostrar solo el preloader secundario si el principal ya se mostró
     circularPreloader.style.display = 'block';
 
+  } else {
+    // Estamos en una página secundaria con el preloader simple
     setTimeout(() => {
       circularPreloader.classList.add('exit');
       circularPreloader.addEventListener('transitionend', () => {

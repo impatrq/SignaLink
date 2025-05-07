@@ -13,6 +13,10 @@
 ## 🔗 Acceso a pagina web:
 https://signalink2025.com
 
+<a href="https://github.com/albornozthiagoo/SignaLink-Web" target="_blank">
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-SignaLinkWeb-000?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
 ## 🗓️ Objetivo de Proyecto:
  SignaLink tiene como objetivo principal traducir la lengua de señas para lograr la inclusión de personas sordo-mudas en el ámbito escolar. 
  
@@ -44,13 +48,6 @@ https://signalink2025.com
 | Sensor Giroscopo y Acelerometro | [MPU6050 - Mercado Libre](https://articulo.mercadolibre.com.ar/MLA-1464073846-acelerometro-giroscopo-mpu6050-6-ejes-gy-521-pic-arduino-_JM#polycard_client=search-nordic&position=4&search_layout=grid&type=item&tracking_id=1592b6fb-67c2-4128-a466-704776d0e915&wid=MLA1464073846&sid=search) |  
 |  LCD OLED   | [LCD SSD-1306 - Mercado libre](https://articulo.mercadolibre.com.ar/MLA-832803465-display-oled-091-pulgadas-128x32-ssd1306-i2c-blanco-arduino-_JM#polycard_client=search-nordic&position=6&search_layout=grid&type=item&tracking_id=9fc3ed54-f3c3-4b96-9f93-8db0a3d194bd&wid=MLA832803465&sid=search)  |
 
-## 🤝 Colaboración:
- Este es el comienzo de un prototipo realizado a base de nuestros conocimientos, si le gustaria formar parte de SignaLink, nos ayudaría su colaboración en:
- - Perfeccionar el código.
- - Mejorar la infraestructura tecnológica.
- - Creación de manuales y realización de pruebas.
- - Apoyo financiero para la investigación y el desarrollo.
- 
 
 ## 🧑🏽‍💻 Integrantes
 
@@ -63,6 +60,13 @@ https://signalink2025.com
 | Poggi Lorenzo | Registro de Seguimiento | Programación del sistema |
 | Sarniguette Valentino | Prueba electronica | Armado de circuitos | 
 
+## 🤝 Colaboración:
+ Este es el comienzo de un prototipo realizado a base de nuestros conocimientos, si le gustaria formar parte de SignaLink, nos ayudaría su colaboración en:
+ - Perfeccionar el código.
+ - Mejorar la infraestructura tecnológica.
+ - Creación de manuales y realización de pruebas.
+ - Apoyo financiero para la investigación y el desarrollo.
+ 
 ## 📱 Contactanos: 
 
  <div style="display: flex; justify-content: space-around;">
