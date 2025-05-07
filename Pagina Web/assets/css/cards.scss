@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
+$clr-blue: #1890ff;
+$clr-green: #01c3a8;
+$clr-orange: #ffb741;
+$clr-red: #a63d2a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bodycards {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: #232228;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sectioncards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-inline: auto;
+  gap: 3.25rem;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  padding: 5em 0;
+
+  .card {
+    position: relative;
+    z-index: 555;
+    max-width: 20rem;
+    min-height: 20rem;
+    width: 90%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0.063em 0.75em 1.563em rgb(0 0 0 / 78%);
+    border-radius: 2.25rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 2.25rem;
+      z-index: -1;
+      border: 0.155rem solid transparent;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    &-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8em 0.5em 0em 1.5em;
+
+      .date {
+        color: #ddd;
+      }
+
+      svg {
+        color: #fff;
+        width: 2.5rem;
+        cursor: pointer;
+      }
+    }
+
+    &-body {
+      position: absolute;
+      width: 100%;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0.7em 1.25em 0.5em 1.5em;
+
+      h3 {
+        color: #fff;
+        font-size: 1.375rem;
+        margin-top: 0.625em;
+        margin-bottom: 0.188em;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+
+      p {
+        color: #ddd;
+        font-size: 1rem;
+        letter-spacing: 0.031rem;
+      }
+    }
+    &-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-top: 0.063rem solid #292929;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.7em 1.25em 0.5em 1.5em;
+      background: #151419;
+      border-bottom-left-radius: 2.25rem;
+      border-bottom-right-radius: 2.25rem;
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          list-style-type: none;
+          display: flex;
+          margin-right: -0.625rem;
+
+          img {
+            border-radius: 50%;
+            width: 1.875rem;
+            height: 1.875rem;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .btn-add {
+        width: 1.375rem;
+        height: 1.375rem;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: 1rem;
+        }
+      }
+
+      .btn-countdown {
+        background: #222127;
+        color: #fff;
+        border-radius: 2em;
+        padding: 0.625rem 1.5rem;
+      }
+    }
+  }
+
+  .green {
+    background: radial-gradient(
+      ellipse at right top,
+      #107667ed 0%,
+      #151419 47%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #01c3a8
+        )
+        border-box;
+    }
+    .btn-add {
+      background: $clr-green;
+    }
+
+    .btn-countdown {
+      &:hover {
+        background: $clr-green;
+      }
+    }
+  }
+  .blue {
+    background: radial-gradient(
+      ellipse at right top,
+      #00458f8f 0%,
+      #151419 45%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #1890ff
+        )
+        border-box;
+    }
+    .btn-add {
+      background: $clr-blue;
+    }
+    .btn-countdown {
+      &:hover {
+        background: $clr-blue;
+      }
+    }
+  }
+  .orange {
+    background: radial-gradient(
+      ellipse at right top,
+      #ffb74194 0%,
+      #151419 47%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #ffb741
+        )
+        border-box;
+    }
+    .btn-add {
+      background: $clr-orange;
+    }
+
+    .btn-countdown {
+      &:hover {
+        background: $clr-orange;
+      }
+    }
+  }
+  .red {
+    background: radial-gradient(
+      ellipse at right top,
+      #a63d2a82 0%,
+      #151419 47%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #a63d2a
+        )
+        border-box;
+    }
+    .btn-add {
+      background: $clr-red;
+    }
+
+    .btn-countdown {
+      &:hover {
+        background: $clr-red;
+      }
+    }
+  }
+}
+
+label {
+  padding-right: 0;
+  font-size: 1rem;
+}
+
+progress {
+  color: goldenrod; 
+  height: 4px; 
+  border-radius: 5px;
+  width: 90%; 
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+progress::-webkit-progress-value {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: transparent;
+}
+
+progress::-moz-progress-bar {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: transparent;
+}
+
+.progress-value {
+  font-size: 1rem;
+  color: goldenrod; 
+  vertical-align: middle; 
+}

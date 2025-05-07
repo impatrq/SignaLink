@@ -1,11 +1,3 @@
-/**
-* Template Name: Gp
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Updated: Aug 15 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -60,187 +52,120 @@
     });
   });
 
-/**
- * Preloader
- */
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
-  const mainContent = document.getElementById('main-content');
-  
-  // Verificar si estamos en la página principal (index.html)
-  const isIndexPage = window.location.pathname.endsWith('index.html') || 
-                      window.location.pathname.endsWith('/') || 
-                      window.location.pathname.split('/').pop() === '';
-  
-  // Verificar si existe el preloader personalizado (solo en index.html)
-  const logoContainer = document.getElementById('logo-container');
-  const textContainer = document.getElementById('text-container');
-  
-  if (isIndexPage && logoContainer && textContainer) {
-    // Estamos en index.html con el preloader personalizado
-    const titleContainer = document.getElementById('title-container');
-    const phraseContainer = document.getElementById('phrase-container');
-    const canvas = document.getElementById('circuit-canvas');
-    const topLine = document.getElementById('top-line');
-    const bottomLine = document.getElementById('bottom-line');
-    const loadingText = document.getElementById('loading-text');
-    
-    // Elementos de título y frase
-    const titleLetters = document.querySelectorAll('.title-letter');
-    const phraseWords = document.querySelectorAll('.phrase-word');
-    
-    // Configurar canvas
-    setupCanvas();
-    
-    // Iniciar secuencia de animación
-    startAnimationSequence();
-    
-    // Función para configurar el canvas
-    function setupCanvas() {
-      const ctx = canvas.getContext('2d');
-      
-      // Ajustar tamaño del canvas
-      function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        drawCircuitElements();
-      }
-      
-      // Dibujar elementos de circuito
-      function drawCircuitElements() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.strokeStyle = '#D4AF37';
-        ctx.fillStyle = '#D4AF37';
-        
-        // Dibujar puntos
-        for (let i = 0; i < 50; i++) {
-          const x = Math.random() * canvas.width;
-          const y = Math.random() * canvas.height;
-          const size = Math.random() * 3 + 1;
-          
-          ctx.beginPath();
-          ctx.arc(x, y, size, 0, Math.PI * 2);
-          ctx.fill();
-        }
-        
-        // Dibujar líneas horizontales
-        for (let i = 0; i < 15; i++) {
-          const y = Math.random() * canvas.height;
-          const x = Math.random() * canvas.width;
-          const length = Math.random() * 100 + 50;
-          
-          ctx.beginPath();
-          ctx.moveTo(x, y);
-          ctx.lineTo(x + length, y);
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
-        
-        // Dibujar líneas verticales
-        for (let i = 0; i < 15; i++) {
-          const x = Math.random() * canvas.width;
-          const y = Math.random() * canvas.height;
-          const length = Math.random() * 100 + 50;
-          
-          ctx.beginPath();
-          ctx.moveTo(x, y);
-          ctx.lineTo(x, y + length);
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
-      }
-      
-      window.addEventListener('resize', resizeCanvas);
-      resizeCanvas();
-    }
-    
-// Función para iniciar la secuencia de animación
-function startAnimationSequence() {
-  // Mostrar contenedor de texto después de 1 segundo y mantener el logo visible
-  setTimeout(() => {
-    // En lugar de hacer que el logo desaparezca completamente, solo reducirlo un poco
-    if (logoContainer) {
-      logoContainer.classList.add('fade-out');
-    }
-    
-    // Mostrar el contenedor de texto
-    setTimeout(() => {
-      if (textContainer) {
-        textContainer.classList.remove('hidden');
-        textContainer.classList.add('visible');
-      }
-      
-      // Mostrar línea superior
-      setTimeout(() => {
-        if (topLine) topLine.classList.add('visible');
-      }, 200);
-      
-      // Animar cada letra del título
-      titleLetters.forEach((letter, index) => {
-        setTimeout(() => {
-          letter.style.opacity = '1';
-          letter.style.transform = 'translateY(0)';
-          letter.style.filter = 'blur(0px)';
-          letter.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), filter 0.6s ease';
-        }, 300 + (60 * index)); // Reducido el tiempo entre letras
-      });
-      
-      // Animar cada palabra de la frase
-      phraseWords.forEach((word, index) => {
-        setTimeout(() => {
-          word.style.opacity = '1';
-          word.style.transform = 'translateY(0)';
-          word.style.transition = 'opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)';
-        }, 1000 + (80 * index)); // Reducido el tiempo entre palabras
-      });
-      
-      // Mostrar línea inferior después de que aparezca la frase
-      setTimeout(() => {
-        if (bottomLine) bottomLine.classList.add('visible');
-      }, 1500); // Reducido de 1800ms
-      
-      // Mostrar texto de carga
-      setTimeout(() => {
-        if (loadingText) {
-          loadingText.classList.remove('hidden');
-          loadingText.style.opacity = '1';
-          loadingText.style.transition = 'opacity 0.8s ease';
-        }
-      }, 1800); // Reducido de 2200ms
-      
-    }, 200); // Reducido de 400ms para que el texto aparezca más rápido
-    
-  }, 1000); // Reducido de 1500ms para iniciar la transición más rápido
-  
-  // Finalizar preloader después de 5 segundos (reducido de 5.5 segundos)
-  setTimeout(() => {
-    preloader.style.transition = 'opacity 1s ease, transform 0.8s cubic-bezier(0.65, 0, 0.35, 1)';
-    preloader.style.opacity = '0';
-    preloader.style.transform = 'translateY(-100%)';
-    
-    // Mostrar contenido principal después de que termine la animación de salida
-    setTimeout(() => {
-      preloader.style.display = 'none';
-      if (mainContent) {
-        mainContent.style.display = 'block';
-      }
-    }, 800);
-  }, 5000); // Reducido de 5500ms
+  // Detectar recarga de pagina
+if (performance.navigation.type === 1) {
+  sessionStorage.removeItem('preloaderShown');
 }
+
+/**
+ * Preloader Principal y Secundario combinados (corregido)
+ */
+document.addEventListener('DOMContentLoaded', function () {
+  const preloader = document.getElementById('preloader');
+  const circularPreloader = document.getElementById('circular-preloader');
+
+  const hasShownPreloader = sessionStorage.getItem('preloaderShown');
+
+  if (!hasShownPreloader && preloader) {
+    // Mostrar preloader principal solo una vez
+    sessionStorage.setItem('preloaderShown', 'true');
+
+    if (circularPreloader) {
+      circularPreloader.style.display = 'none'; // Asegurarse de ocultar el secundario
+    }
+
+    const canvas = document.getElementById('preloader-canvas');
+    const ctx = canvas.getContext('2d');
+    const loadingProgress = document.querySelector('.loading-progress');
+    const loadingPercentage = document.querySelector('.loading-percentage');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const lines = [];
+    const lineCount = 50;
+    for (let i = 0; i < lineCount; i++) {
+      lines.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        length: Math.random() * 100 + 50,
+        angle: Math.random() * Math.PI * 2,
+        speed: Math.random() * 0.5 + 0.1,
+        thickness: Math.random() * 2 + 0.5,
+        color: `rgba(212, 175, 55, ${Math.random() * 0.4 + 0.1})`
+      });
+    }
+
+    function animateLines() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      lines.forEach(line => {
+        ctx.beginPath();
+        ctx.moveTo(line.x, line.y);
+        const endX = line.x + Math.cos(line.angle) * line.length;
+        const endY = line.y + Math.sin(line.angle) * line.length;
+        ctx.lineTo(endX, endY);
+        ctx.strokeStyle = line.color;
+        ctx.lineWidth = line.thickness;
+        ctx.stroke();
+
+        line.x += Math.cos(line.angle) * line.speed;
+        line.y += Math.sin(line.angle) * line.speed;
+
+        if (line.x < -line.length || line.x > canvas.width + line.length ||
+            line.y < -line.length || line.y > canvas.height + line.length) {
+          line.x = Math.random() * canvas.width;
+          line.y = Math.random() * canvas.height;
+          line.angle = Math.random() * Math.PI * 2;
+        }
+      });
+
+      if (!preloader.classList.contains('exit')) {
+        requestAnimationFrame(animateLines);
+      }
+    }
+
+    animateLines();
+
+    let progress = 0;
+    const loadingInterval = setInterval(() => {
+      progress += Math.random() * 3 + 1;
+      if (progress > 100) progress = 100;
+
+      loadingProgress.style.width = `${progress}%`;
+      loadingPercentage.textContent = `${Math.floor(progress)}%`;
+
+      if (progress === 100) {
+        clearInterval(loadingInterval);
+        setTimeout(() => {
+          preloader.classList.add('exit');
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 500);
+        }, 500);
+      }
+    }, 100);
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+  } else if (circularPreloader) {
+    // Mostrar solo el preloader secundario si el principal ya se mostró
+    circularPreloader.style.display = 'block';
 
   } else {
     // Estamos en una página secundaria con el preloader simple
     setTimeout(() => {
-      preloader.style.transition = 'opacity 1s ease';
-      preloader.style.opacity = '0';
+      circularPreloader.classList.add('exit');
+      circularPreloader.addEventListener('transitionend', () => {
+        circularPreloader.style.display = 'none';
+      }, { once: true });
+    }, 1000);
 
-      setTimeout(() => {
-        preloader.style.display = 'none';
-        if (mainContent) {
-          mainContent.style.display = 'block';
-        }
-      }, 1000);
-    }, 2000);
+    if (preloader) {
+      preloader.style.display = 'none'; // Asegurarse que el principal no estorbe
+    }
   }
 });
 
@@ -392,3 +317,4 @@ function startAnimationSequence() {
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
