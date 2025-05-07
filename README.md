@@ -14,7 +14,7 @@
 https://signalink2025.com
 
 <a href="https://github.com/albornozthiagoo/SignaLink-Web" target="_blank">
-  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-SignaLink-Web-000?style=for-the-badge&logo=github&logoColor=white" />
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-SignaLink-000?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
 ## 🗓️ Objetivo de Proyecto:
