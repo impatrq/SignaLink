@@ -37,7 +37,7 @@ static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 #define GATTS_DESCR_UUID_TEST_B 0x2222
 #define GATTS_NUM_HANDLE_TEST_B 4
 
-static char test_device_name[ESP_BLE_ADV_NAME_LEN_MAX] = "ESP_SIGNALINK_";
+static char test_device_name[ESP_BLE_ADV_NAME_LEN_MAX] = "ESP_SIGNALINK_SERVER";
 
 #define TEST_MANUFACTURER_DATA_LEN 17
 
