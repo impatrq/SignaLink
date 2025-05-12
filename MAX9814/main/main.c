@@ -10,7 +10,7 @@
 #include "math.h" // Para fabs()
 
 // --- Configuraciones ---
-#define LED_PIN GPIO_NUM_5              // Pin del LED (GPIO5)
+#define LED_PIN GPIO_NUM_2             // Pin del LED (GPIO2)
 #define MIC_ADC_CHANNEL ADC_CHANNEL_4   // Canal ADC conectado al micrófono (GPIO4 -> ADC1_CH4 en ESP32-C3)
 #define ADC_ATTENUATION ADC_ATTEN_DB_11 // Atenuación para rango completo (0-3.3V aprox. dependiendo de Vref)
 
