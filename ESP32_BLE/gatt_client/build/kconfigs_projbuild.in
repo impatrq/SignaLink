@@ -1,6 +1,0 @@
-source "C:/Users/ferna/esp/v5.4.1/esp-idf/components/bootloader/Kconfig.projbuild"
-source "C:/Users/ferna/esp/v5.4.1/esp-idf/components/esp_app_format/Kconfig.projbuild"
-source "C:/Users/ferna/esp/v5.4.1/esp-idf/components/esp_rom/Kconfig.projbuild"
-source "C:/Users/ferna/esp/v5.4.1/esp-idf/components/esptool_py/Kconfig.projbuild"
-source "C:/Users/ferna/esp/v5.4.1/esp-idf/components/partition_table/Kconfig.projbuild"
-source "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/main/Kconfig.projbuild"
