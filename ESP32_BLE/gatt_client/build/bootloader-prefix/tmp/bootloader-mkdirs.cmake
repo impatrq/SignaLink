@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Users/ferna/esp/v5.4.1/esp-idf/components/bootloader/subprojec
   file(MAKE_DIRECTORY "C:/Users/ferna/esp/v5.4.1/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader"
-  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix"
-  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix/tmp"
-  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix/src"
-  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader"
+  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix"
+  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix/tmp"
+  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix/src"
+  "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

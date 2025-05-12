@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/main
+# Install script for directory: C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

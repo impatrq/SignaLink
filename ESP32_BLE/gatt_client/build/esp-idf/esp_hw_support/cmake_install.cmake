@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake")
+  include("C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/C++/gatt_client/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client/build/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 

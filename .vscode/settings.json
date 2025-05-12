@@ -1,0 +1,7 @@
+{
+    "idf.espIdfPathWin": "C:\\Users\\ferna\\esp\\v5.4.1\\esp-idf",
+    "idf.toolsPathWin": "C:\\Users\\ferna\\.espressif",
+    "idf.pythonInstallPath": "C:\\Users\\ferna\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.portWin": "COM3",
+    "cmake.sourceDirectory": "C:/Users/ferna/OneDrive/Documentos/Escuela/Proyecto 7mo/SignaLink/ESP32_BLE/gatt_client"
+}
