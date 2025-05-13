@@ -16,10 +16,18 @@ https://signalink2025.com
 	• CSS3
 	• JavaScript (Vanilla)
 
-
 ## 👉🏼 Acceso al repositorio principal
 
 <a href="https://github.com/albornozthiagoo/SignaLink-Web" target="_blank">
   <img alt="GitHub" src="https://img.shields.io/badge/GitHub-SignaLink-000?style=for-the-badge&logo=github&logoColor=white" />
 </a>
+
+## Preview de Página Web
+
+ <img alt="" src="../SignaLink/Images/Preview Preloader Web .png" /><img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+ <img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+ <img alt="" src="../SignaLink/Images/Preview Inicio Web.png" /><img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+ <img alt="" src="../SignaLink/Images/Preview Objetivo Web.png" /><img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+
+ 
 
