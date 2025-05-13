@@ -16,7 +16,7 @@ https://signalink2025.com
 	• CSS3
 	• JavaScript (Vanilla)
 
-## 👉🏼 Acceso al repositorio principal
+## 👉🏼 Acceso al repositorio de alojamiento
 
 <a href="https://github.com/albornozthiagoo/SignaLink-Web" target="_blank">
   <img alt="GitHub" src="https://img.shields.io/badge/GitHub-SignaLink-000?style=for-the-badge&logo=github&logoColor=white" />
