@@ -24,10 +24,10 @@ https://signalink2025.com
 
 ## Preview de Página Web
 
- <img alt="" src="../SignaLink/Images/Preview Preloader Web .png" /><img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+ <img alt="" src="../SignaLink/Images/Preview Preloader Web .png" /> <img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
  <img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
- <img alt="" src="../SignaLink/Images/Preview Inicio Web.png" /><img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
- <img alt="" src="../SignaLink/Images/Preview Objetivo Web.png" /><img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+ <img alt="" src="../SignaLink/Images/Preview Inicio Web.png" /> <img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
+ <img alt="" src="../SignaLink/Images/Preview Objetivo Web.png" /> <img alt="" src="../SignaLink/Images/Preview Equipo Web.png" />
 
  
 
