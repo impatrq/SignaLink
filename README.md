@@ -24,11 +24,4 @@ https://signalink2025.com
 
 ## Preview de Página Web
 
-## Preview de Página Web
-
-![Vista del Preloader](SignaLink/Images/Preview-Preloader-Web.png)
-![Vista del Equipo](SignaLink/Images/Preview-Equipo-Web.png)
-![Vista de Inicio](SignaLink/Images/Preview-Inicio-Web.png)
-![Vista del Objetivo](SignaLink/Images/Preview-Objetivo-Web.png)
-
 <img src="/Imagenes/Preview-Equipo-Web.png" alt="PENE" width="30%"/>
