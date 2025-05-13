@@ -24,7 +24,7 @@ https://signalink2025.com
 
 ## Preview de Página Web
 
-Preview de preloader
+<div align="center"> Preview de preloader 
 <img src="/Images/Preview-Preloader-Web .png" alt="Preview" />
 
 Preview de Inicio
