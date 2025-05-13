@@ -24,4 +24,4 @@ https://signalink2025.com
 
 ## Preview de Página Web
 
-<img src="/Imagenes/Preview-Equipo-Web.png" alt="PENE" width="30%"/>
+<img src="/Imagenes/Preview-Equipo-Web.png" alt="" width="30%"/>
