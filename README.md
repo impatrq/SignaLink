@@ -28,6 +28,8 @@ https://signalink2025.com
 	
 <img src="/Images/Preview-Preloader-Web .png" alt="Preview" />
 
+###----
+
 <div align="center"> Preview de Inicio
 	
 <img src="/Images/Preview-Inicio-Web.png" alt="Preview" />
