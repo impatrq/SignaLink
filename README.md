@@ -23,3 +23,5 @@ https://signalink2025.com
 </a>
 
 ## Preview de Página Web
+
+<img src="/Images/Preview-Equipo-Web.png" alt="Preview" />
