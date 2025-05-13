@@ -22,16 +22,14 @@ https://signalink2025.com
   <img alt="GitHub" src="https://img.shields.io/badge/GitHub-SignaLink-000?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
-## Preview de Página Web
-
 ## <div align="center"> Preview de preloader 
 <img src="/Images/Preview-Preloader-Web .png" alt="Preview" />
 
-<div align="center"> Preview de Inicio
+## <div align="center"> Preview de Inicio
 <img src="/Images/Preview-Inicio-Web.png" alt="Preview" />
 
-<div align="center"> Preview de Objetivo
+## <div align="center"> Preview de Objetivo
 <img src="/Images/Preview-Objetivo-Web.png" alt="Preview" />
 
-<div align="center"> Preview de Equipo	
+## <div align="center"> Preview de Equipo	
 <img src="/Images/Preview-Equipo-Web.png" alt="Preview" />
