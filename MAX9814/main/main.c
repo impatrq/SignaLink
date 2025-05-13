@@ -2,13 +2,13 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/uart.h"
-#include "driver/gpio.h" // ¡Incluimos la cabecera GPIO!
+#include "driver/gpio.h" 
 #include "esp_adc/adc_oneshot.h"
 #include "esp_log.h"
 #include "esp_timer.h"
 
-#define TXD_PIN (GPIO_NUM_4)
-#define RXD_PIN (GPIO_NUM_5)
+#define TXD_PIN (GPIO_NUM_20)
+#define RXD_PIN (GPIO_NUM_21)
 #define UART_PORT_NUM UART_NUM_0
 #define BUF_SIZE (1024)
 #define ADC_CHANNEL ADC_CHANNEL_4
