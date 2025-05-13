@@ -31,3 +31,4 @@ https://signalink2025.com
 ![Vista de Inicio](SignaLink/Images/Preview-Inicio-Web.png)
 ![Vista del Objetivo](SignaLink/Images/Preview-Objetivo-Web.png)
 
+<img src="/Imagenes/Preview-Equipo-Web.png" alt="PENE" width="30%"/>
