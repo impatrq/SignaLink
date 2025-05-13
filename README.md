@@ -1,1 +1,1 @@
-# Carpeta de Trabajo de MAX9814 - Confíguracion del Microfono 
+# Carpeta de Trabajo MAX9814 - Confíguracion del Microfono 
