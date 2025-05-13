@@ -1,7 +1,7 @@
 # Carpeta de Trabajo Giroscopo y Acelerometro
----------------------------------------------
+
 ### El MPU6050 es un sensor que integra un giroscopio de 3 ejes y un acelerómetro de 3 ejes en un mismo chip, lo que permite medir movimiento en 6 grados de libertad. Combina la medición de la aceleración (acelerómetro) y la velocidad angular (giroscopio) para obtener información sobre el movimiento y la orientación de un objeto. 
----------------------------------------------
+
 ## Giroscopio:
 ### Mide la velocidad angular, es decir, la velocidad a la que se rota en cada uno de los tres ejes (X, Y, Z). Utiliza un sistema MEMS (Micro-Electro-Mechanical Systems) para detectar la rotación. El MPU6050 tiene un rango programable para la velocidad angular, que puede ser ajustado a 250, 500, 1000 o 2000 grados por segundo. La sensibilidad del giroscopio se mide en grados por segundo. 
 
