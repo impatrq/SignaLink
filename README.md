@@ -10,7 +10,7 @@ Mide la velocidad angular, es decir, la velocidad a la que se rota en cada uno d
 
 Mide la aceleración en cada uno de los tres ejes (X, Y, Z), es decir, el cambio de velocidad. También utiliza un sistema MEMS para detectar la aceleración. El MPU6050 tiene un rango programable para la aceleración, que puede ser ajustado a ±2, ±4, ±8 o ±16 g. La aceleración en el eje Z, en un objeto estático, corresponde a la gravedad, mientras que en los ejes X e Y, idealmente, debería ser cero.
 
-## ✋ Interpretación de Movimientos de la Mano (Basado en el Código):
+## ✋ Interpretación de Movimientos de la Mano:
 
 En nuestro código, hemos configurado el MPU6050 para interpretar los movimientos de tu mano de una manera más intuitiva, asumiendo que el sensor está colocado sobre el empeine. Para lograr esto y asegurar que los ángulos se muestren de forma precisa, hemos llevado a cabo:
 
