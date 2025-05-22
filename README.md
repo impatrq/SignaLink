@@ -1,6 +1,6 @@
-# Carpeta de Trabajo Giroscopo y Acelerometro
+# Carpeta de Trabajo MPU6050 
 
-El MPU6050 es un sensor que integra un giroscopio de 3 ejes y un acelerómetro de 3 ejes en un mismo chip, lo que permite medir movimiento en 6 grados de libertad. Combina la medición de la aceleración (acelerómetro) y la velocidad angular (giroscopio) para obtener información sobre el movimiento y la orientación de nuestra mano.
+El MPU6050 es un sensor que integra un giroscopo de 3 ejes y un acelerómetro de 3 ejes en un mismo chip, lo que permite medir movimiento en 6 grados de libertad. Combina la medición de la aceleración (acelerómetro) y la velocidad angular (giroscopio) para obtener información sobre el movimiento y la orientación de nuestra mano.
 
 ## 🧭 Giroscopo:
 
