@@ -1,0 +1,6 @@
+{
+    "idf.espIdfPath": "/Users/lorenzo.poggi/esp-idf/v5.4.1/esp-idf",
+    "idf.toolsPath": "/Users/lorenzo.poggi/.espressif",
+    "idf.pythonInstallPath": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "idf.port": "/dev/tty.usbmodem101"
+}
