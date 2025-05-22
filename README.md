@@ -10,10 +10,10 @@ Mide la velocidad angular, es decir, la velocidad a la que se rota en cada uno d
 
 Mide la aceleración en cada uno de los tres ejes (X, Y, Z), es decir, el cambio de velocidad. También utiliza un sistema MEMS para detectar la aceleración. El MPU6050 tiene un rango programable para la aceleración, que puede ser ajustado a ±2, ±4, ±8 o ±16 g. La aceleración en el eje Z, en un objeto estático, corresponde a la gravedad, mientras que en los ejes X e Y, idealmente, debería ser cero.
 
-## 📷 Imagen del Microcontrolador MPU6050
+## 📷 Imagen del Microcontrolador MPU6050 - Entendimiento de Ejes
 
 ![](img/mpu6050.jpg)
-
+![](img/https://naylampmechatronics.com/img/cms/Blog/Tutorial%20MPU6050/Ejes%20MPU6050.jpg)
 ## 🔗 Datasheet
 
 https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
