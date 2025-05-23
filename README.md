@@ -27,10 +27,6 @@ En el proyecto SignaLink, estos sensores están colocados sobre los dedos de un 
 ## 🎯 ¿Para qué sirve esto?
 
 El propósito principal en SignaLink es reconocer las señas del lenguaje de señas manual. Al combinar los valores de varios sensores flex (uno por dedo, por ejemplo), se puede inferir qué gesto está haciendo la persona.
-
-Luego:
-• Esa seña se traduce por voz, usando un sistema de síntesis (TTS) en la Raspberry Pi del sistema.
-
 ## 🛠️ Aplicaciones Comunes
 
 - Interfaces de usuario flexibles
