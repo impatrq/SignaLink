@@ -28,3 +28,7 @@ El sensor funciona como un divisor de voltaje.
 - Evita doblar el sensor más allá de su límite especificado para prolongar su vida útil.
 - Asegúrate de que las conexiones estén firmes para obtener lecturas precisas.
 - La resistencia puede variar ligeramente entre diferentes unidades debido a la tolerancia de fabricación.
+
+## Datasheet
+
+https://www.mouser.com/datasheet/2/381/Flex_Sensor_Datasheet_v2019a-3304101.pdf
