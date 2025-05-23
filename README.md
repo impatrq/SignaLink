@@ -1,4 +1,4 @@
-# Sensor de Flexión 4.5" (10–30 kΩ)
+# Carpeta de trabajo Sensor de Flexión 4.5" (10–30 kΩ)
 
 Este repositorio contiene información y ejemplos de uso para el sensor de flexión de 4.5 pulgadas, que varía su resistencia entre 10 kΩ (en posición recta) y aproximadamente 30 kΩ (cuando se flexiona a 45°). Este tipo de sensor es útil para detectar movimientos o cambios de ángulo en diversas aplicaciones.
 
