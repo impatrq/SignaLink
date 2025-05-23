@@ -24,21 +24,6 @@ Típicamente, un sensor flex consiste en:
 
 En el proyecto SignaLink, estos sensores están colocados sobre los dedos de un guante, de modo que: 1. Cada vez que un dedo se flexiona o se estira, el sensor detecta ese movimiento como un cambio de resistencia. 2. Ese cambio de resistencia se convierte en una señal analógica, que puede ser leída por un microcontrolador.. 3. Estas señales permiten determinar la posición aproximada de cada dedo en tiempo real.
 
-## 🎯 ¿Para qué sirve esto?
-
-El propósito principal en SignaLink es reconocer las señas del lenguaje de señas manual. Al combinar los valores de varios sensores flex (uno por dedo, por ejemplo), se puede inferir qué gesto está haciendo la persona.
-
-Luego:
-• Esa seña se traduce por voz, usando un sistema de síntesis (TTS) en la Raspberry Pi del sistema.
-
-## 🛠️ Aplicaciones Comunes
-
-- Interfaces de usuario flexibles
-- Guantes para captura de movimiento
-- Controladores de juegos
-- Dispositivos médicos y de rehabilitación
-- Instrumentos musicales electrónicos
-
 ## Referencias 📚
 
 - [Flex Sensor Datasheet (Spectra Symbol)](https://www.spectrasymbol.com/wp-content/uploads/2016/08/FLEX-SENSOR-DATA-SHEET.pdf)
