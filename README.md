@@ -42,4 +42,3 @@ Luego:
 ## Referencias 📚
 
 - [Flex Sensor Datasheet (Spectra Symbol)](https://www.spectrasymbol.com/wp-content/uploads/2016/08/FLEX-SENSOR-DATA-SHEET.pdf)
-- Ejemplo de uso en guantes inteligentes: [Smart_Glove](https://github.com/bufferboy-commits/Smart_Glove)
