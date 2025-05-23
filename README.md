@@ -28,6 +28,4 @@ En el proyecto SignaLink, estos sensores están colocados sobre los dedos de un 
 
 El propósito principal en SignaLink es reconocer las señas del lenguaje de señas manual. Al combinar los valores de varios sensores flex (uno por dedo, por ejemplo), se puede inferir qué gesto está haciendo la persona.
 
-## Referencias 📚
-
-- [Flex Sensor Datasheet (Spectra Symbol)](https://www.spectrasymbol.com/wp-content/uploads/2016/08/FLEX-SENSOR-DATA-SHEET.pdf)
+---
