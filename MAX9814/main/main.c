@@ -11,6 +11,7 @@
 #define RXD_PIN (GPIO_NUM_21)
 #define UART_PORT_NUM UART_NUM_0
 #define BUF_SIZE (1024)
+#define ADC_UNIT ADC_UNIT_1
 #define ADC_CHANNEL ADC_CHANNEL_4
 #define ADC_ATTEN ADC_ATTEN_DB_11 // ¡Volvemos a la constante anterior!
 #define SAMPLE_RATE 16000
@@ -63,11 +64,12 @@ void app_main(void) {
 }
 
 void adc_sample_and_send(void *arg) {
-    int adc_reading = 0;
-    esp_err_t ret = adc_oneshot_read(adc1_handle, ADC_CHANNEL, &adc_reading);
+    uint16_t adc_reading = 0;
+    esp_err_t ret = adc_oneshot_read(adc1_handle, ADC_CHANNEL, (int*)&adc_reading);
     if (ret == ESP_OK) {
+        ESP_LOGI(TAG, "Enviando por UART: %d (0x%04X)", adc_reading, (uint16_t)adc_reading);
         uart_write_bytes(UART_PORT_NUM, (const char *)&adc_reading, sizeof(adc_reading));
     } else {
         ESP_LOGE(TAG, "Error al leer el ADC: %s", esp_err_to_name(ret));
     }
-}
+} 
