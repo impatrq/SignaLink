@@ -44,6 +44,7 @@ static float current_yaw = 0.0;  // Ángulo de guiñada (Yaw) integrado actual
 
 // Umbrales para mensajes de movimiento de la mano (ajustar según necesidad)
 #define THRESHOLD_CENTERED_RANGE 30.0f // Rango para considerar la mano centrada (ej. +/- 30 grados de 0/360 para X, y +/- 30 grados de 180 para Y)
+#define THRESHOLD_REVERSE_RANGE 30.0f // Rango para considerar la mano invertida (ej. +/- 30 grados de 0/360 para Y)
 #define THRESHOLD_X_RIGHT 30.0f    // Inclinación derecha de la mano (Eje X)
 #define THRESHOLD_X_LEFT 330.0f     // Inclinación izquierda de la mano (Eje X)
 #define THRESHOLD_Y_FORWARD 45.0f   // Mano levantada hacia adelante (Eje Y)
@@ -54,6 +55,7 @@ static float current_yaw = 0.0;  // Ángulo de guiñada (Yaw) integrado actual
 
 // Banderas para controlar los mensajes (evitar repetición)
 static bool msg_hand_centered_triggered = false; // Nueva bandera para el estado centrado
+static bool msg_hand_reverse_triggered = false; 
 static bool msg_x_right_triggered = false;
 static bool msg_x_left_triggered = false;
 static bool msg_y_forward_triggered = false;
@@ -292,6 +294,25 @@ void app_main(void) {
             msg_hand_centered_triggered = false; // Resetear bandera de centrado si la mano se mueve
         }
 
+        // Logica para el estado "Mano Al Reves"
+        // Se considera al reves si X está cerca de 180 Y Y está cerca de 0/360.
+
+        bool is_x_reverse = (angle_x_deg >= (180.0f - THRESHOLD_REVERSE_RANGE) && angle_x_deg <= (180.0f + THRESHOLD_REVERSE_RANGE));
+        bool is_y_reverse = (angle_y_deg <= THRESHOLD_REVERSE_RANGE || angle_y_deg >= (360.0f - THRESHOLD_REVERSE_RANGE));
+
+        if (is_x_reverse && is_y_reverse) {
+            if (!msg_hand_reverse_triggered) {
+                printf("¡MANO AL REVES!\n");
+                msg_hand_reverse_triggered = true;
+                // Resetear otras banderas cuando la mano está al reves para permitir nuevas detecciones
+                msg_x_right_triggered = false;
+                msg_x_left_triggered = false;
+                msg_y_forward_triggered = false;
+                msg_y_backward_triggered = false;
+            }
+        } else {
+            msg_hand_reverse_triggered = false; // Resetear bandera de centrado si la mano se mueve
+        }
 
         // Lógica para el Eje X (Roll de la mano) - Inclinación lateral
         // Solo activar si no está en estado centrado para evitar mensajes duplicados
@@ -366,6 +387,6 @@ void app_main(void) {
             msg_z_270_triggered = false;
         }
 
-        vTaskDelay(pdMS_TO_TICKS(3000)); // Esperar 3 segundos
+        vTaskDelay(pdMS_TO_TICKS(2000)); // Esperar 2 segundos
     }
 }
