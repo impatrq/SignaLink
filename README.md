@@ -25,8 +25,6 @@ Este repositorio contiene información y ejemplos de uso para el sensor de flexi
 El sensor funciona como un divisor de voltaje. 
 
 ## ⚠️ Consideraciones
-	•	Evita doblar el sensor más allá de su límite especificado para prolongar su vida útil.
-	•	Asegúrate de que las conexiones estén firmes para obtener lecturas precisas.
-	•	La resistencia puede variar ligeramente entre diferentes unidades debido a la tolerancia de fabricación.
-
-
+- Evita doblar el sensor más allá de su límite especificado para prolongar su vida útil.
+- Asegúrate de que las conexiones estén firmes para obtener lecturas precisas.
+- La resistencia puede variar ligeramente entre diferentes unidades debido a la tolerancia de fabricación.
