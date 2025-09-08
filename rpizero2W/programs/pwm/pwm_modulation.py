@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import pigpio, numpy as np, time
+import pigpio
+import numpy as np, time
 
 PIN = 12
-FS = 16000          # audio sample rate
-F_PWM = 96000      # PWM carrier
+FS = 16000         
+F_PWM = 96000      
 
 pi = pigpio.pi()
 if not pi.connected:
@@ -24,7 +25,6 @@ Ts = 1.0 / FS
 try:
     for d in duties:
         pi.hardware_PWM(PIN, F_PWM, int(d))
-        # ⚠️ este sleep NO alcanza para 16kHz estables!
         time.sleep(Ts)
 finally:
     pi.hardware_PWM(PIN, 0, 0)
