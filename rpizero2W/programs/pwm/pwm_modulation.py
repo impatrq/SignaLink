@@ -2,7 +2,7 @@
 import pigpio
 import numpy as np, time
 
-PIN = 12
+PIN = 19
 FS = 16000         
 F_PWM = 96000      
 
