@@ -1,0 +1,12 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32c3-builtin.cfg"
+  ],
+  "idf.currentSetup": "c:\\Tareas\\ESP32\\v5.4.1\\esp-idf",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32c3"
+  },
+  "idf.portWin": "COM11",
+  "idf.flashType": "UART"
+}
