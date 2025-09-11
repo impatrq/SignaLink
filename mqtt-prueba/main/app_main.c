@@ -15,30 +15,77 @@
 // Includes para los sensores
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "driver/i2c.h"
 #include "esp_timer.h"
 #include "esp_adc/adc_oneshot.h"
 #include "esp_adc/adc_cali.h"
 #include "esp_adc/adc_cali_scheme.h"
 
-// Includes para I2C y OLED
-#include "esp_lcd_panel_io.h"
-#include "esp_lcd_panel_ops.h"
-#include "esp_err.h"
-#include "driver/i2c_master.h"
-#include "esp_lvgl_port.h"
-#include "lvgl.h"
-
-#include "i2c_oled.h"
-
 static const char *TAG = "sensor_mqtt";
 
-// Declaro los handles del bus y del dispositivo como globales
-static i2c_master_bus_handle_t i2c_bus_handle = NULL;
-static i2c_master_dev_handle_t mpu6050_dev_handle = NULL;
+// Global MQTT client handle
+static esp_mqtt_client_handle_t global_mqtt_client = NULL;
+static bool mqtt_is_connected = false;
 
-// Definiciones para MPU6050
+static void log_error_if_nonzero(const char *message, int error_code)
+{
+    if (error_code != 0) {
+        ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
+    }
+}
+
+/*
+ * @brief Event handler registered to receive MQTT events
+ */
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
+{
+    ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%" PRIi32 "", base, event_id);
+    esp_mqtt_event_handle_t event = event_data;
+    switch ((esp_mqtt_event_id_t)event_id) {
+    case MQTT_EVENT_CONNECTED:
+        ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+        mqtt_is_connected = true;
+        // No se suscribe ni publica aquí, la tarea de los sensores lo hará
+        break;
+    case MQTT_EVENT_DISCONNECTED:
+        ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
+        mqtt_is_connected = false;
+        break;
+    case MQTT_EVENT_PUBLISHED:
+        ESP_LOGI(TAG, "MQTT_EVENT_PUBLISHED, msg_id=%d", event->msg_id);
+        break;
+    case MQTT_EVENT_ERROR:
+        ESP_LOGI(TAG, "MQTT_EVENT_ERROR");
+        if (event->error_handle->error_type == MQTT_ERROR_TYPE_TCP_TRANSPORT) {
+            log_error_if_nonzero("reported from esp-tls", event->error_handle->esp_tls_last_esp_err);
+            log_error_if_nonzero("reported from tls stack", event->error_handle->esp_tls_stack_err);
+            log_error_if_nonzero("captured as transport's socket errno",  event->error_handle->esp_transport_sock_errno);
+            ESP_LOGI(TAG, "Last errno string (%s)", strerror(event->error_handle->esp_transport_sock_errno));
+        }
+        break;
+    default:
+        ESP_LOGI(TAG, "Other event id:%d", event->event_id);
+        break;
+    }
+}
+
+static void mqtt_app_start(void)
+{
+    esp_mqtt_client_config_t mqtt_cfg = {
+        .broker.address.uri = "mqtt://192.168.127.44:1884",
+        .credentials.username = "franco",
+        .credentials.authentication.password = "_fr4nco_",
+    };
+    
+    global_mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
+    esp_mqtt_client_register_event(global_mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    esp_mqtt_client_start(global_mqtt_client);
+}
+
+// ==== MPU6050 Y SENSORES FLEX CONFIGURACIÓN Y FUNCIONES ====
 #define I2C_MASTER_SDA_IO 6
 #define I2C_MASTER_SCL_IO 7
+#define I2C_MASTER_NUM 0
 #define I2C_MASTER_FREQ_HZ 400000
 
 #define MPU6050_ADDR 0x69
@@ -52,7 +99,6 @@ static i2c_master_dev_handle_t mpu6050_dev_handle = NULL;
 #define GYRO_CONFIG 0x1B
 #define ACCEL_CONFIG 0x1C
 
-// Definiciones para sensores Flex
 #define ADC_UNIT ADC_UNIT_1
 #define R_FIXED 10000.0
 #define VCC 3.3
@@ -82,19 +128,31 @@ static adc_cali_handle_t cali_handle[5];
 static char ultimo_gesto[64] = "";
 static char ultimo_estado_flex[5][20] = {"", "", "", "", ""};
 
-// ==== Funciones del MPU6050 adaptadas al nuevo driver I2C ====
+static esp_err_t i2c_master_init(void)
+{
+    i2c_config_t conf = {
+        .mode = I2C_MODE_MASTER,
+        .sda_io_num = I2C_MASTER_SDA_IO,
+        .scl_io_num = I2C_MASTER_SCL_IO,
+        .sda_pullup_en = GPIO_PULLUP_ENABLE,
+        .scl_pullup_en = GPIO_PULLUP_ENABLE,
+        .master.clk_speed = I2C_MASTER_FREQ_HZ,
+    };
+    esp_err_t err = i2c_param_config(I2C_MASTER_NUM, &conf);
+    if (err != ESP_OK)
+        return err;
+    return i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
+}
 
 static esp_err_t mpu6050_register_write_byte(uint8_t reg_addr, uint8_t data)
 {
     uint8_t write_buf[2] = {reg_addr, data};
-    // Ahora usamos el handle del dispositivo, no el del bus
-    return i2c_master_transmit(mpu6050_dev_handle, write_buf, sizeof(write_buf), 1000 / portTICK_PERIOD_MS);
+    return i2c_master_write_to_device(I2C_MASTER_NUM, MPU6050_ADDR, write_buf, 2, 1000 / portTICK_PERIOD_MS);
 }
 
 static esp_err_t mpu6050_register_read_bytes(uint8_t reg_addr, uint8_t *data, size_t len)
 {
-    // Ahora usamos el handle del dispositivo, no el del bus
-    return i2c_master_transmit_receive(mpu6050_dev_handle, &reg_addr, 1, data, len, 1000 / portTICK_PERIOD_MS);
+    return i2c_master_write_read_device(I2C_MASTER_NUM, MPU6050_ADDR, &reg_addr, 1, data, len, 1000 / portTICK_PERIOD_MS);
 }
 
 static void mpu6050_init(void)
@@ -178,7 +236,6 @@ static void get_sensor_data(float *accel_x_g, float *accel_y_g, float *accel_z_g
     *angle_z_deg = current_yaw;
 }
 
-// ==== Funciones de los sensores flex (ADC) ====
 static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, char *estado_out, size_t len)
 {
     static int initialized = 0;
@@ -213,61 +270,6 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
     }
 }
 
-// Global MQTT client handle
-static esp_mqtt_client_handle_t global_mqtt_client = NULL;
-static bool mqtt_is_connected = false;
-
-static void log_error_if_nonzero(const char *message, int error_code)
-{
-    if (error_code != 0) {
-        ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
-    }
-}
-
-static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
-{
-    ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%" PRIi32 "", base, event_id);
-    esp_mqtt_event_handle_t event = event_data;
-    switch ((esp_mqtt_event_id_t)event_id) {
-    case MQTT_EVENT_CONNECTED:
-        ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-        mqtt_is_connected = true;
-        break;
-    case MQTT_EVENT_DISCONNECTED:
-        ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
-        mqtt_is_connected = false;
-        break;
-    case MQTT_EVENT_PUBLISHED:
-        ESP_LOGI(TAG, "MQTT_EVENT_PUBLISHED, msg_id=%d", event->msg_id);
-        break;
-    case MQTT_EVENT_ERROR:
-        ESP_LOGI(TAG, "MQTT_EVENT_ERROR");
-        if (event->error_handle->error_type == MQTT_ERROR_TYPE_TCP_TRANSPORT) {
-            log_error_if_nonzero("reported from esp-tls", event->error_handle->esp_tls_last_esp_err);
-            log_error_if_nonzero("reported from tls stack", event->error_handle->esp_tls_stack_err);
-            log_error_if_nonzero("captured as transport's socket errno",  event->error_handle->esp_transport_sock_errno);
-            ESP_LOGI(TAG, "Last errno string (%s)", strerror(event->error_handle->esp_transport_sock_errno));
-        }
-        break;
-    default:
-        ESP_LOGI(TAG, "Other event id:%d", event->event_id);
-        break;
-    }
-}
-
-static void mqtt_app_start(void)
-{
-    esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = "mqtt://192.168.127.44:1884",
-        .credentials.username = "franco",
-        .credentials.authentication.password = "_fr4nco_",
-    };
-    
-    global_mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_register_event(global_mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
-    esp_mqtt_client_start(global_mqtt_client);
-}
-
 static void sensor_task(void *arg)
 {
     float ang_x, ang_y, ang_z;
@@ -275,11 +277,13 @@ static void sensor_task(void *arg)
 
     while (1)
     {
+        // Espera a que el cliente MQTT se conecte
         if (!mqtt_is_connected) {
             vTaskDelay(pdMS_TO_TICKS(500));
             continue;
         }
 
+        // Obtener valores de los sensores y armar el mensaje
         float ax, ay, az, gx, gy, gz;
         get_sensor_data(&ax, &ay, &az, &gx, &gy, &gz, &ang_x, &ang_y, &ang_z);
         char notify_mpu_msg[64];
@@ -292,6 +296,7 @@ static void sensor_task(void *arg)
         leer_estado_flex(3, FLEX3_CHANNEL, cali_handle[3], estado_flex[3], sizeof(estado_flex[3]));
         leer_estado_flex(4, FLEX4_CHANNEL, cali_handle[4], estado_flex[4], sizeof(estado_flex[4]));
 
+        // Solo publicar si hay cambios en los datos
         bool flex_cambio = false;
         for (int i = 0; i < 5; i++)
         {
@@ -319,6 +324,7 @@ static void sensor_task(void *arg)
                 ESP_LOGE(TAG, "Fallo al publicar, msg_id=%d", msg_id);
             }
 
+            // Actualiza los últimos estados
             strcpy(ultimo_gesto, notify_mpu_msg);
             for (int i = 0; i < 5; i++)
             {
@@ -326,87 +332,9 @@ static void sensor_task(void *arg)
             }
         }
         
-        vTaskDelay(pdMS_TO_TICKS(500));
+        vTaskDelay(pdMS_TO_TICKS(500)); // Publicar cada 500 ms
     }
 }
-
-void oled_task(void *params)
-{
-    ESP_LOGI(TAG, "Initialize I2C bus for OLED");
-    esp_lcd_panel_io_handle_t io_handle = NULL;
-    esp_lcd_panel_io_i2c_config_t io_config = {
-        .dev_addr = EXAMPLE_I2C_HW_ADDR,
-        .scl_speed_hz = EXAMPLE_LCD_PIXEL_CLOCK_HZ,
-        .control_phase_bytes = 1,               
-        .lcd_cmd_bits = EXAMPLE_LCD_CMD_BITS,   
-        .lcd_param_bits = EXAMPLE_LCD_CMD_BITS, 
-#if CONFIG_EXAMPLE_LCD_CONTROLLER_SSD1306
-        .dc_bit_offset = 6,                     
-#elif CONFIG_EXAMPLE_LCD_CONTROLLER_SH1107
-        .dc_bit_offset = 0,                     
-        .flags =
-        {
-            .disable_control_phase = 1,
-        }
-#endif
-    };
-    ESP_ERROR_CHECK(esp_lcd_new_panel_io_i2c(i2c_bus_handle, &io_config, &io_handle));
-
-    ESP_LOGI(TAG, "Install panel driver");
-    esp_lcd_panel_handle_t panel_handle = NULL;
-    esp_lcd_panel_dev_config_t panel_config = {
-        .bits_per_pixel = 1,
-        .reset_gpio_num = EXAMPLE_PIN_NUM_RST,
-    };
-#if CONFIG_EXAMPLE_LCD_CONTROLLER_SSD1306
-    esp_lcd_panel_ssd1306_config_t ssd1306_config = {
-        .height = EXAMPLE_LCD_V_RES,
-    };
-    panel_config.vendor_config = &ssd1306_config;
-    ESP_ERROR_CHECK(esp_lcd_new_panel_ssd1306(io_handle, &panel_config, &panel_handle));
-#elif CONFIG_EXAMPLE_LCD_CONTROLLER_SH1107
-    ESP_ERROR_CHECK(esp_lcd_new_panel_sh1107(io_handle, &panel_config, &panel_handle));
-#endif
-
-    ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
-    ESP_ERROR_CHECK(esp_lcd_panel_init(panel_handle));
-    ESP_ERROR_CHECK(esp_lcd_panel_disp_on_off(panel_handle, true));
-
-#if CONFIG_EXAMPLE_LCD_CONTROLLER_SH1107
-    ESP_ERROR_CHECK(esp_lcd_panel_invert_color(panel_handle, true));
-#endif
-
-    ESP_LOGI(TAG, "Initialize LVGL");
-    const lvgl_port_cfg_t lvgl_cfg = ESP_LVGL_PORT_INIT_CONFIG();
-    lvgl_port_init(&lvgl_cfg);
-
-    const lvgl_port_display_cfg_t disp_cfg = {
-        .io_handle = io_handle,
-        .panel_handle = panel_handle,
-        .buffer_size = EXAMPLE_LCD_H_RES * EXAMPLE_LCD_V_RES,
-        .double_buffer = true,
-        .hres = EXAMPLE_LCD_H_RES,
-        .vres = EXAMPLE_LCD_V_RES,
-        .monochrome = true,
-        .rotation = {
-            .swap_xy = false,
-            .mirror_x = false,
-            .mirror_y = false,
-        }
-    };
-    lv_disp_t *disp = lvgl_port_add_disp(&disp_cfg);
-
-    lv_disp_set_rotation(disp, LV_DISP_ROT_NONE);
-
-    ESP_LOGI(TAG, "Display LVGL Scroll Text");
-    while(1) {
-        if (lvgl_port_lock(0)) {
-            example_lvgl_demo_ui(disp);
-            lvgl_port_unlock();
-        }
-    }
-}
-
 
 void app_main(void)
 {
@@ -429,29 +357,9 @@ void app_main(void)
     /* This helper function configures Wi-Fi or Ethernet */
     ESP_ERROR_CHECK(example_connect());
 
-    // ==== INICIALIZACIÓN DEL ÚNICO BUS I2C PARA AMBOS DISPOSITIVOS ====
-    ESP_LOGI(TAG, "Inicializando I2C bus master...");
-    i2c_master_bus_config_t bus_config = {
-        .clk_source = I2C_CLK_SRC_DEFAULT,
-        .glitch_ignore_cnt = 7,
-        .i2c_port = I2C_NUM_0, // Usa un puerto explícito
-        .sda_io_num = I2C_MASTER_SDA_IO,
-        .scl_io_num = I2C_MASTER_SCL_IO,
-        .flags.enable_internal_pullup = true,
-    };
-    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_config, &i2c_bus_handle));
-
-    // === AGREGAR EL MPU6050 AL BUS COMO UN DISPOSITIVO ===
-    i2c_device_config_t mpu6050_dev_cfg = {
-        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
-        .scl_speed_hz = I2C_MASTER_FREQ_HZ,
-        .device_address = MPU6050_ADDR
-    };
-    ESP_ERROR_CHECK(i2c_master_bus_add_device(i2c_bus_handle, &mpu6050_dev_cfg, &mpu6050_dev_handle));
-
-
     // === INICIALIZACIÓN MPU6050 ===
-    ESP_LOGI(MPU_TAG, "Inicializando MPU6050...");
+    ESP_LOGI(MPU_TAG, "Inicializando I2C y MPU6050...");
+    ESP_ERROR_CHECK(i2c_master_init());
     mpu6050_init();
     calibrate_mpu6050(500);
 
@@ -479,6 +387,6 @@ void app_main(void)
     // === INICIO DEL CLIENTE MQTT Y LA TAREA DE SENSORES ===
     mqtt_app_start();
 
+    // La tarea de sensores se inicia aquí, pero espera a que MQTT esté conectado para publicar
     xTaskCreate(sensor_task, "sensor_task", 4096, NULL, 5, NULL);
-    xTaskCreate(oled_task, "oled_task", 4096, NULL, 5, NULL);
 }
