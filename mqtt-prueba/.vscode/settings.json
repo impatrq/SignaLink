@@ -8,5 +8,10 @@
     "IDF_TARGET": "esp32c3"
   },
   "idf.portWin": "COM11",
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "idf.port": "/dev/tty.usbmodem101",
+  "files.associations": {
+    "esp_lcd_sh1107.h": "c",
+    "i2c_oled.h": "c"
+  }
 }
