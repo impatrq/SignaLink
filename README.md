@@ -45,3 +45,62 @@ Los módulos más comunes tienen pines como:
 | **SCK** | (GND)                   |
 
 ---
+
+## Configuración
+
+- ### Editar boot.txt
+
+  ```bash
+  sudo nano /boot/config.txt
+  ```
+
+  - ### Modificar estas lineas
+
+  ```bash
+  # Descomentar esta linea
+  dtparam=i2s=on
+  # Comentar esta linea
+  dtparam=audio=on => #dtparam=audio=on
+  # Agregar esto al final
+  dtoverlay=hifiberry-dac
+  ```
+
+- ### Crear un archivo asound.conf
+
+  ```bash
+  # Ejecutar este comando
+  sudo nano /etc/asound.conf
+  ```
+
+  - ### Agregar estas lineas
+
+  ```bash
+  pcm.!default  {
+  type hw card 0
+  }
+  ctl.!default {
+  type hw card 0
+  }
+  ```
+
+- ### Reiniciar
+
+```bash
+sudo reboot
+```
+
+### Probar nuestros cambios
+
+```bash
+# Ejecutar este comando
+aplay -l
+
+# Deberias ver algo asi
+pi@raspberrypi:~ $ aplay -l
+ **** List of PLAYBACK Hardware Devices ****
+ card 0: sndrpihifiberry [snd_rpi_hifiberry_dac], device 0: HifiBerry DAC HiFi pcm5102a-hifi-0 []
+   Subdevices: 1/1
+   Subdevice #0: subdevice #0
+```
+
+---
