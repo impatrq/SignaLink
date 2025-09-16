@@ -7,16 +7,23 @@ import unicodedata
 import re
 from vosk import Model, KaldiRecognizer
 
-# === Configuración ===
+# Colores
+COLOR_CIAN = "\033[36m"    # Cian
+COLOR_VERDE = "\033[32m"  # Verde
+COLOR_MAGENTA = "\033[35m"     # Magenta
+COLOR_ERROR = "\033[31m"   # Rojo
+COLOR_RESET = "\033[0m"
+
+# Configuración
 SAMPLE_RATE = 32000
 BLOCK_DURATION = 0.1
 MODEL_PATH = "../vosk_model/vosk-model-small-es-0.42"
 
-# === Configuración UART ===
+# Configuración UART
 SERIAL_PORT = '/dev/ttyAMA0'
 BAUD_RATE = 115200
 
-# === Inicializar modelo ===
+# Inicializar modelo 
 try:
     vosk_model_obj = Model(MODEL_PATH)
     recognizer = KaldiRecognizer(vosk_model_obj, SAMPLE_RATE)
@@ -48,24 +55,8 @@ def normalize_text(text):
 
     return cleaned_text
 
-# === Función para enviar texto por UART ===
-def send_text_via_uart(text, ser):
-    try:
-        ser.write((text + '\n').encode('ascii')) 
-        # Prefijo normal, texto enviado en cian negrita
-        print(f"UART: Enviado \033[1;36m{text}\033[0m")
-    except UnicodeEncodeError as e:
-        print(f"Error Unicode al enviar por UART: {e}. El carácter no ASCII es: '{text.encode('unicode_escape').decode('ascii')}'", file=sys.stderr)
-        print("Esto significa que normalize_text no eliminó algún carácter no ASCII.", file=sys.stderr)
-    except Exception as e:
-        print(f"Error al enviar por UART: {e}", file=sys.stderr)
-
-# === Iniciar grabación ===
+# Iniciar grabación
 try:
-    # Inicializar la comunicación serial
-    ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
-    print(f"UART: Conectado a {SERIAL_PORT} a {BAUD_RATE} baudios.")
-
     with sd.RawInputStream(samplerate=SAMPLE_RATE, blocksize=int(SAMPLE_RATE * BLOCK_DURATION),
                             dtype='int16', channels=1, callback=audio_callback):
         print("Esperando voz...")
@@ -94,9 +85,6 @@ try:
 
 except KeyboardInterrupt:
     print("\n Finalizado")
-except serial.SerialException as e:
-    print(f"\n Error de puerto serial: {e}", file=sys.stderr)
-    print("Asegúrate de que el puerto serial no esté en uso y los permisos sean correctos.", file=sys.stderr)
 except Exception as e:
     print(f"\n  Ocurrió un error inesperado: {e}", file=sys.stderr)
 finally:

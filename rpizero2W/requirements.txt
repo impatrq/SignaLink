@@ -21,6 +21,7 @@ tinydb
 
 # --- Peticiones a Internet (APIs, Web) ---
 requests
+paho-mqtt
 
 # --- Utilidades Opcionales ---
 tqdm

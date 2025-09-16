@@ -35,7 +35,7 @@ sudo apt update
 sudo apt upgrade -y 
 echo -e "${greenColour}[+] Sistema Actualizado${endColour}\n"
 echo -e "\n${blueColour}[+] Instalando dependencias necesarias${endColour}"
-sudo apt install -y python3-pip python3-venv python3-pyaudio git espeak-ng portaudio19-dev libasound2-dev
+sudo apt install -y python3-pip python3-venv python3-pyaudio git espeak-ng portaudio19-dev libasound2-dev mosquitto mosquitto-clients
 echo -e "${greenColour}[+] Dependencias del sistema instaladas.${endColour}"
 
 # --- 2. Crear el entorno virtual de Python ---
