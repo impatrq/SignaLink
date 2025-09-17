@@ -1,12 +1,8 @@
 # **Funcionalidad de la comunicación MQTT**
 
----
-
 La comunicación entre el **ESP32** (el guante con sensores) y la **Raspberry Pi Zero 2W** (el cerebro del sistema) se gestiona a través del protocolo **MQTT** (Message Queuing Telemetry Transport). MQTT es un protocolo de mensajería ligero, ideal para una comunicación eficiente y escalable.
 
 La Raspberry Pi actúa como el **broker MQTT**, el servidor central que recibe, filtra y distribuye todos los mensajes. El ESP32 funciona como un **cliente MQTT**, que se conecta a este broker para publicar y suscribirse a tópicos específicos.
-
----
 
 ## **Tópicos y flujo de datos**
 
@@ -24,8 +20,6 @@ El proyecto utiliza dos flujos de comunicación principales, cada uno con sus pr
     * **Tópico (Raspberry Pi publica)**: `comandos/esp32`
     * **Mensaje**: La Raspberry Pi publica un mensaje de texto que representa el discurso capturado por el micrófono.
     * **Descripción**: El ESP32 se suscribe a este tópico. Cuando detecta un nuevo mensaje, actualiza el texto en la pantalla OLED, permitiendo que el usuario con discapacidad auditiva "lea" lo que se le está diciendo.
-
----
 
 ## **Ventajas del uso de MQTT**
 
