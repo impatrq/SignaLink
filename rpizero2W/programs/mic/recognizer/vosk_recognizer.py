@@ -6,6 +6,7 @@ import serial
 import unicodedata
 import re
 from vosk import Model, KaldiRecognizer
+from paho.mqtt import client as mqtt
 
 # Colores
 COLOR_CIAN = "\033[36m"    # Cian
@@ -19,9 +20,13 @@ SAMPLE_RATE = 32000
 BLOCK_DURATION = 0.1
 MODEL_PATH = "../vosk_model/vosk-model-small-es-0.42"
 
-# Configuración UART
-SERIAL_PORT = '/dev/ttyAMA0'
-BAUD_RATE = 115200
+# Configuración Mqtt
+MQTT_BROKER = "localhost" # O la IP de tu broker
+MQTT_PORT = 1884
+TOPIC_DISPLAY = "display/lcd"
+start_processing = False
+username = 'franco'
+password = '_fr4nco_'
 
 # Inicializar modelo 
 try:
@@ -54,6 +59,35 @@ def normalize_text(text):
     cleaned_text = re.sub(r'[^\x20-\x7E]', '', cleaned_text)
 
     return cleaned_text
+    
+# --- Funciones de Callbacks de MQTT ---
+def on_connect(client, userdata, flags, reasoncode, properties):
+    # Función llamada cuando el cliente se conecta al broker.
+    print("Conectado a MQTT con resultado de código {}".format(reasoncode))
+    client.subscribe(TOPIC_STATUS)
+
+def on_message(client, userdata, msg):
+    # Función llamada cuando se recibe un mensaje en un tópico suscrito."""
+    print("Mensaje recibido en '{}': '{}'".format(msg.topic, msg.payload.decode()))
+    global start_processing 
+
+    if msg.topic == TOPIC_STATUS and msg.payload.decode() == "ON":
+        print(f"{COLOR_VERDE}¡LCD listo! Iniciando reconocimiento de voz...{COLOR_RESET}")
+        start_processing = True
+
+# --- Lógica principal ---
+print("Esperando la señal de MQTT...")
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
+client.username_pw_set(username, password)
+
+# Callbacks
+client.on_connect = on_connect
+client.on_message = on_message
+client.connect(MQTT_BROKER, MQTT_PORT)
+
+# Bucle en segundo plano para manejar los mensajes de MQTT
+client.loop_start()
+
 
 # Iniciar grabación
 try:
@@ -68,15 +102,20 @@ try:
                 sd.sleep(10)
                 continue
 
+        if start_processing:
             if recognizer.AcceptWaveform(data):
                 result = json.loads(recognizer.Result())
                 detected_text = result.get("text", "").strip()
                 if detected_text:
                     cleaned_text = normalize_text(detected_text)
                     
-                    print(f"Texto detectado (original): \033[1;32m{detected_text}\033[0m")
-                    print(f"Texto detectado (limpio para OLED): \033[1;34m{cleaned_text}\033[0m")
-                    send_text_via_uart(cleaned_text, ser)
+		        print(f"Texto detectado (original): \033[1;32m{detected_text}\033[0m")
+                print(f"Texto detectado (limpio para OLED): \033[1;34m{cleaned_text}\033[0m")
+                client.publish(TOPIC_DISPLAY, cleaned_text)
+                print(f"Texto publicado en MQTT en el tópico '{TOPIC_DISPLAY}'")
+                # Envía una línea vacía al LCD después de la frase completa
+                client.publish(TOPIC_DISPLAY, "")                   
+            
             else:
                 partial = json.loads(recognizer.PartialResult())
                 partial_text = partial.get("partial", "").strip()
@@ -89,7 +128,6 @@ except Exception as e:
     print(f"\n  Ocurrió un error inesperado: {e}", file=sys.stderr)
 finally:
     print("Cerrando stream de audio...", file=sys.stderr)
-    if 'ser' in locals() and ser.is_open:
-        ser.close()
-        print("Puerto serial cerrado.", file=sys.stderr)
+    client.loop_stop()
+    client.disconnect()
     print("Recursos liberados.", file=sys.stderr)
