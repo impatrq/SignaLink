@@ -2,17 +2,16 @@ import queue
 import sounddevice as sd
 import sys
 import json
-import serial 
 import unicodedata
 import re
 from vosk import Model, KaldiRecognizer
 from paho.mqtt import client as mqtt
 
 # Colores
-COLOR_CIAN = "\033[36m"    # Cian
-COLOR_VERDE = "\033[32m"  # Verde
-COLOR_MAGENTA = "\033[35m"     # Magenta
-COLOR_ERROR = "\033[31m"   # Rojo
+COLOR_CIAN = "\033[36m"# Cian
+COLOR_VERDE = "\033[32m"# Verde
+COLOR_MAGENTA = "\033[35m"# Magenta
+COLOR_ERROR = "\033[31m"# Rojo
 COLOR_RESET = "\033[0m"
 
 # Configuración
@@ -23,7 +22,8 @@ MODEL_PATH = "../vosk_model/vosk-model-small-es-0.42"
 # Configuración Mqtt
 MQTT_BROKER = "localhost" # O la IP de tu broker
 MQTT_PORT = 1884
-TOPIC_DISPLAY = "display/lcd"
+TOPIC_STATUS = "display/lcd"
+# Bandera para controlar la ejecución
 start_processing = False
 username = 'franco'
 password = '_fr4nco_'
@@ -63,13 +63,13 @@ def normalize_text(text):
 # --- Funciones de Callbacks de MQTT ---
 def on_connect(client, userdata, flags, reasoncode, properties):
     # Función llamada cuando el cliente se conecta al broker.
-    print("Conectado a MQTT con resultado de código {}".format(reasoncode))
+    print(f"Conectado a MQTT con resultado de código {reasoncode}")
     client.subscribe(TOPIC_STATUS)
 
 def on_message(client, userdata, msg):
-    # Función llamada cuando se recibe un mensaje en un tópico suscrito."""
-    print("Mensaje recibido en '{}': '{}'".format(msg.topic, msg.payload.decode()))
-    global start_processing 
+    # Función llamada cuando se recibe un mensaje en un tópico suscrito.
+    global start_processing # <-- ¡IMPORTANTE! Se usa para modificar la variable global
+    print(f"Mensaje recibido en '{msg.topic}': '{msg.payload.decode()}'")
 
     if msg.topic == TOPIC_STATUS and msg.payload.decode() == "ON":
         print(f"{COLOR_VERDE}¡LCD listo! Iniciando reconocimiento de voz...{COLOR_RESET}")
@@ -88,13 +88,15 @@ client.connect(MQTT_BROKER, MQTT_PORT)
 # Bucle en segundo plano para manejar los mensajes de MQTT
 client.loop_start()
 
+# Esperar hasta recibir la señal para iniciar el procesamiento de voz
+while not start_processing:
+    sd.sleep(1000) # Espera 1 segundo para no consumir mucho CPU
 
-# Iniciar grabación
+# Iniciar grabación y reconocimiento una vez que la bandera es True
 try:
     with sd.RawInputStream(samplerate=SAMPLE_RATE, blocksize=int(SAMPLE_RATE * BLOCK_DURATION),
                             dtype='int16', channels=1, callback=audio_callback):
-        print("Esperando voz...")
-
+        print("¡Audio stream iniciado! Esperando voz...")
         while True:
             try:
                 data = audio_q.get_nowait()
@@ -102,30 +104,28 @@ try:
                 sd.sleep(10)
                 continue
 
-        if start_processing:
             if recognizer.AcceptWaveform(data):
                 result = json.loads(recognizer.Result())
                 detected_text = result.get("text", "").strip()
                 if detected_text:
                     cleaned_text = normalize_text(detected_text)
                     
-		        print(f"Texto detectado (original): \033[1;32m{detected_text}\033[0m")
-                print(f"Texto detectado (limpio para OLED): \033[1;34m{cleaned_text}\033[0m")
-                client.publish(TOPIC_DISPLAY, cleaned_text)
-                print(f"Texto publicado en MQTT en el tópico '{TOPIC_DISPLAY}'")
-                # Envía una línea vacía al LCD después de la frase completa
-                client.publish(TOPIC_DISPLAY, "")                   
-            
+                    print(f"Texto detectado (original): {COLOR_VERDE}{detected_text}{COLOR_RESET}")
+                    print(f"Texto detectado (limpio para OLED): {COLOR_CIAN}{cleaned_text}{COLOR_RESET}")
+                    
+                    # PUBLICAR EL TEXTO LIMPIO EN EL TÓPICO DE MQTT
+                    client.publish(TOPIC_STATUS, cleaned_text)
+
             else:
                 partial = json.loads(recognizer.PartialResult())
                 partial_text = partial.get("partial", "").strip()
                 if partial_text:
-                    print(f"Parcial: \033[1;33m{partial_text}\033[0m", end="\r")
+                    print(f"Parcial: {COLOR_MAGENTA}{partial_text}{COLOR_RESET}", end="\r")
 
 except KeyboardInterrupt:
     print("\n Finalizado")
 except Exception as e:
-    print(f"\n  Ocurrió un error inesperado: {e}", file=sys.stderr)
+    print(f"\n Ocurrió un error inesperado: {e}", file=sys.stderr)
 finally:
     print("Cerrando stream de audio...", file=sys.stderr)
     client.loop_stop()
