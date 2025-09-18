@@ -35,10 +35,10 @@
 --------------------------- */
 
 #ifndef EXAMPLE_PIN_NUM_SDA
-#define EXAMPLE_PIN_NUM_SDA 6   
+#define EXAMPLE_PIN_NUM_SDA 6
 #endif
 #ifndef EXAMPLE_PIN_NUM_SCL
-#define EXAMPLE_PIN_NUM_SCL 7  
+#define EXAMPLE_PIN_NUM_SCL 7
 #endif
 #ifndef EXAMPLE_PIN_NUM_RST
 #define EXAMPLE_PIN_NUM_RST -1
@@ -50,7 +50,7 @@
 #define EXAMPLE_LCD_H_RES 128
 #endif
 #ifndef EXAMPLE_LCD_V_RES
-#define EXAMPLE_LCD_V_RES 64
+#define EXAMPLE_LCD_V_RES 32
 #endif
 #ifndef EXAMPLE_LCD_CMD_BITS
 #define EXAMPLE_LCD_CMD_BITS 8
@@ -65,8 +65,8 @@
 #define ADC_UNIT ADC_UNIT_1
 #define R_FIXED 10000.0
 #define VCC 3.3f
-#define N 8                     /* muestras promedio */
-#define PUBLISH_PERIOD_MS 1000  /* publicar cada 1000 ms */
+#define N 8                    /* muestras promedio */
+#define PUBLISH_PERIOD_MS 1000 /* publicar cada 1000 ms */
 
 #define FLEX0_CHANNEL ADC_CHANNEL_0
 #define FLEX1_CHANNEL ADC_CHANNEL_1
@@ -96,17 +96,24 @@ static lv_obj_t *g_label = NULL;
 /* Actualiza el único label centrado. Safe para llamar desde cualquier task. */
 void lcd_set_text(const char *txt)
 {
-    if (!txt) return;
-    if (lvgl_port_lock(0)) {
-        if (g_label) {
+    if (!txt)
+        return;
+    if (lvgl_port_lock(0))
+    {
+        if (g_label)
+        {
             lv_label_set_text(g_label, txt);
             /* activar scroll circular para textos largos */
             lv_label_set_long_mode(g_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
-        } else {
+        }
+        else
+        {
             ESP_LOGW(TAG, "lcd_set_text: label no inicializado");
         }
         lvgl_port_unlock();
-    } else {
+    }
+    else
+    {
         ESP_LOGW(TAG, "lcd_set_text: no se pudo tomar lock lvgl");
     }
 }
@@ -139,7 +146,8 @@ static esp_err_t mpu6050_read_regs(uint8_t dev_addr_7bit, uint8_t reg, uint8_t *
     i2c_master_write_byte(cmd, reg, true);
     i2c_master_start(cmd);
     i2c_master_write_byte(cmd, (dev_addr_7bit << 1) | I2C_MASTER_READ, true);
-    if (len > 1) {
+    if (len > 1)
+    {
         i2c_master_read(cmd, data, len - 1, I2C_MASTER_ACK);
     }
     i2c_master_read_byte(cmd, data + len - 1, I2C_MASTER_NACK);
@@ -153,9 +161,11 @@ static esp_err_t mpu6050_read_regs(uint8_t dev_addr_7bit, uint8_t reg, uint8_t *
 static bool mpu6050_init_if_present(uint8_t dev_addr_7bit)
 {
     uint8_t whoami = 0;
-    if (mpu6050_read_regs(dev_addr_7bit, 0x75, &whoami, 1) == ESP_OK) {
+    if (mpu6050_read_regs(dev_addr_7bit, 0x75, &whoami, 1) == ESP_OK)
+    {
         ESP_LOGI(TAG, "MPU6050 WHO_AM_I = 0x%02x", whoami);
-        if (mpu6050_write_reg(dev_addr_7bit, 0x6B, 0x00) == ESP_OK) {
+        if (mpu6050_write_reg(dev_addr_7bit, 0x6B, 0x00) == ESP_OK)
+        {
             vTaskDelay(pdMS_TO_TICKS(50));
             return true;
         }
@@ -167,14 +177,15 @@ static bool mpu6050_init_if_present(uint8_t dev_addr_7bit)
 static bool mpu6050_read_gyro_deg(int *gx, int *gy, int *gz)
 {
     uint8_t buf[6];
-    if (mpu6050_read_regs(mpu_addr, 0x43, buf, 6) != ESP_OK) return false;
+    if (mpu6050_read_regs(mpu_addr, 0x43, buf, 6) != ESP_OK)
+        return false;
     int16_t raw_x = (int16_t)((buf[0] << 8) | buf[1]);
     int16_t raw_y = (int16_t)((buf[2] << 8) | buf[3]);
     int16_t raw_z = (int16_t)((buf[4] << 8) | buf[5]);
     /* sensibilidad por defecto +/-250 deg/s -> 131 LSB/(deg/s) */
-    *gx = (int) (raw_x / 131.0f + (raw_x >= 0 ? 0.5f : -0.5f));
-    *gy = (int) (raw_y / 131.0f + (raw_y >= 0 ? 0.5f : -0.5f));
-    *gz = (int) (raw_z / 131.0f + (raw_z >= 0 ? 0.5f : -0.5f));
+    *gx = (int)(raw_x / 131.0f + (raw_x >= 0 ? 0.5f : -0.5f));
+    *gy = (int)(raw_y / 131.0f + (raw_y >= 0 ? 0.5f : -0.5f));
+    *gz = (int)(raw_z / 131.0f + (raw_z >= 0 ? 0.5f : -0.5f));
     return true;
 }
 
@@ -185,28 +196,38 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
 {
     static int initialized = 0;
     static int flex_init_val[5] = {0};
-    if (!initialized) {
-        for (int i = 0; i < 5; i++) flex_init_val[i] = 10000;
+    if (!initialized)
+    {
+        for (int i = 0; i < 5; i++)
+            flex_init_val[i] = 10000;
         initialized = 1;
     }
     int sum_adc = 0;
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++)
+    {
         int adc_raw = 0;
-        if (adc_oneshot_read(adc_handle, channel, &adc_raw) == ESP_OK) sum_adc += adc_raw;
+        if (adc_oneshot_read(adc_handle, channel, &adc_raw) == ESP_OK)
+            sum_adc += adc_raw;
         vTaskDelay(pdMS_TO_TICKS(2));
     }
     int adc_avg = sum_adc / N;
     int voltage_mv = 0;
-    if (cali) adc_cali_raw_to_voltage(cali, adc_avg, &voltage_mv);
-    else voltage_mv = (adc_avg * 3300) / 4095;
+    if (cali)
+        adc_cali_raw_to_voltage(cali, adc_avg, &voltage_mv);
+    else
+        voltage_mv = (adc_avg * 3300) / 4095;
     float voltage = voltage_mv / 1000.0f;
     float R_flex = 0.0f;
-    if (voltage > 0.01f) R_flex = R_FIXED * (VCC / voltage - 1.0f);
+    if (voltage > 0.01f)
+        R_flex = R_FIXED * (VCC / voltage - 1.0f);
 
-    if (flex_init_val[flex_idx] == 10000) {
+    if (flex_init_val[flex_idx] == 10000)
+    {
         snprintf(estado_out, len, "%d", 10000);
         flex_init_val[flex_idx] = (int)R_flex;
-    } else {
+    }
+    else
+    {
         snprintf(estado_out, len, "%d", (int)R_flex);
     }
 }
@@ -218,17 +239,22 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
 static void sensor_publish_task(void *arg)
 {
     ESP_LOGI(TAG, "sensor_publish_task iniciado (cada %d ms)", PUBLISH_PERIOD_MS);
-    while (1) {
+    while (1)
+    {
         char estado_flex[5][20];
-        for (int i = 0; i < 5; ++i) {
+        for (int i = 0; i < 5; ++i)
+        {
             leer_estado_flex(i, (adc_channel_t)(ADC_CHANNEL_0 + i), cali_handle[i], estado_flex[i], sizeof(estado_flex[i]));
         }
 
         int gx = 0, gy = 0, gz = 0;
         char mpu_part[64];
-        if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz)) {
+        if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz))
+        {
             snprintf(mpu_part, sizeof(mpu_part), "MPU6050: x=%d, y=%d, z=%d - ", gx, gy, gz);
-        } else {
+        }
+        else
+        {
             snprintf(mpu_part, sizeof(mpu_part), "MPU6050: N/A - ");
         }
 
@@ -242,7 +268,8 @@ static void sensor_publish_task(void *arg)
         ESP_LOGI(TAG, "%s", mensaje);
 
         /* MQTT: publicar en el topico de sensors/data si cliente disponible */
-        if (mqtt_client) {
+        if (mqtt_client)
+        {
             int msg_id = esp_mqtt_client_publish(mqtt_client, "sensors/mpu_flex", mensaje, 0, 1, 0);
             ESP_LOGI(TAG, "Publicado sensors/mpu_flex, msg_id=%d", msg_id);
         }
@@ -256,7 +283,8 @@ static void sensor_publish_task(void *arg)
 --------------------------- */
 static void log_error_if_nonzero(const char *message, int error_code)
 {
-    if (error_code != 0) ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
+    if (error_code != 0)
+        ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
 }
 
 static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
@@ -264,13 +292,16 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
     esp_mqtt_event_handle_t event = event_data;
     mqtt_client = event->client;
 
-    switch ((esp_mqtt_event_id_t)event_id) {
-    case MQTT_EVENT_CONNECTED: {
+    switch ((esp_mqtt_event_id_t)event_id)
+    {
+    case MQTT_EVENT_CONNECTED:
+    {
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
         int msg_id = esp_mqtt_client_subscribe(mqtt_client, "comandos/esp32", 0);
         ESP_LOGI(TAG, "Suscrito a 'comandos/esp32', msg_id=%d", msg_id);
         /* Anunciar LCD si ya inicializó */
-        if (lcd_ready) {
+        if (lcd_ready)
+        {
             const char *payload = "ON";
             int id = esp_mqtt_client_publish(mqtt_client, "display/lcd", payload, 0, 1, 1);
             ESP_LOGI(TAG, "Publicado estado LCD '%s' en 'display/lcd' (retained), msg_id=%d", payload, id);
@@ -287,7 +318,8 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
         break;
     case MQTT_EVENT_ERROR:
         ESP_LOGE(TAG, "MQTT_EVENT_ERROR");
-        if (event->error_handle) {
+        if (event->error_handle)
+        {
             log_error_if_nonzero("esp_tls", event->error_handle->esp_tls_last_esp_err);
             log_error_if_nonzero("tls stack", event->error_handle->esp_tls_stack_err);
             log_error_if_nonzero("sock errno", event->error_handle->esp_transport_sock_errno);
@@ -329,7 +361,8 @@ static void mqtt5_app_start(void)
     };
 
     /* IDF v5 mqtt client uses 'credentials' field; set if available */
-    if (mqtt_user || mqtt_pass) {
+    if (mqtt_user || mqtt_pass)
+    {
         mqtt5_cfg.credentials.username = mqtt_user;
         mqtt5_cfg.credentials.authentication.password = mqtt_pass;
     }
@@ -342,10 +375,12 @@ static void mqtt5_app_start(void)
 /* ---------------------------
    LVGL UI task (label único centrado y desplazable)
 --------------------------- */
-static void lvgl_ui_task(void *pvParameter) {
+static void lvgl_ui_task(void *pvParameter)
+{
     lv_disp_t *disp = (lv_disp_t *)pvParameter;
     ESP_LOGI(TAG, "lvgl_ui_task: UI single centered scrolling label (full screen)");
-    if (lvgl_port_lock(0)) {
+    if (lvgl_port_lock(0))
+    {
         lv_obj_t *scr = lv_disp_get_scr_act(disp);
         lv_obj_clean(scr); /* borrar objetos previos */
 
@@ -353,15 +388,17 @@ static void lvgl_ui_task(void *pvParameter) {
            Usar scroll circular para permitir leer frases largas. */
         g_label = lv_label_create(scr);
         lv_label_set_long_mode(g_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
-        lv_label_set_text(g_label, "nose gordo por que?"); /* texto inicial */
+        lv_label_set_text(g_label, "nose gordo por que?");    /* texto inicial */
         lv_obj_set_width(g_label, disp->driver->hor_res - 4); /* ancho completo menos padding */
         lv_obj_align(g_label, LV_ALIGN_CENTER, 0, 0);
 
         lvgl_port_unlock();
     }
 
-    while (1) {
-        if (lvgl_port_lock(0)) {
+    while (1)
+    {
+        if (lvgl_port_lock(0))
+        {
             lv_timer_handler();
             lvgl_port_unlock();
         }
@@ -388,9 +425,17 @@ static esp_err_t ssd1306_write_cmd_raw(uint8_t dev_addr_7bit, uint8_t cmd)
 static bool ssd1306_raw_test(uint8_t dev_addr_7bit)
 {
     ESP_LOGI(LCD_TAG, "SSD1306 raw test: enviar DISPLAY OFF then ON a 0x%02x", dev_addr_7bit);
-    if (ssd1306_write_cmd_raw(dev_addr_7bit, 0xAE) != ESP_OK) { ESP_LOGW(LCD_TAG, "raw 0xAE falló"); return false; }
+    if (ssd1306_write_cmd_raw(dev_addr_7bit, 0xAE) != ESP_OK)
+    {
+        ESP_LOGW(LCD_TAG, "raw 0xAE falló");
+        return false;
+    }
     vTaskDelay(pdMS_TO_TICKS(20));
-    if (ssd1306_write_cmd_raw(dev_addr_7bit, 0xAF) != ESP_OK) { ESP_LOGW(LCD_TAG, "raw 0xAF falló"); return false; }
+    if (ssd1306_write_cmd_raw(dev_addr_7bit, 0xAF) != ESP_OK)
+    {
+        ESP_LOGW(LCD_TAG, "raw 0xAF falló");
+        return false;
+    }
     ESP_LOGI(LCD_TAG, "ssd1306 raw write OK");
     return true;
 }
@@ -433,7 +478,8 @@ void app_main(void)
     ESP_ERROR_CHECK(adc_oneshot_config_channel(adc_handle, FLEX2_CHANNEL, &chan_cfg));
     ESP_ERROR_CHECK(adc_oneshot_config_channel(adc_handle, FLEX3_CHANNEL, &chan_cfg));
     ESP_ERROR_CHECK(adc_oneshot_config_channel(adc_handle, FLEX4_CHANNEL, &chan_cfg));
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+    {
         adc_cali_curve_fitting_config_t cali_cfg;
         cali_cfg.unit_id = ADC_UNIT;
         cali_cfg.chan = ADC_CHANNEL_0 + i;
@@ -450,7 +496,7 @@ void app_main(void)
         .scl_io_num = EXAMPLE_PIN_NUM_SCL,
         .sda_pullup_en = GPIO_PULLUP_ENABLE,
         .scl_pullup_en = GPIO_PULLUP_ENABLE,
-        .master = { .clk_speed = EXAMPLE_LCD_PIXEL_CLOCK_HZ },
+        .master = {.clk_speed = EXAMPLE_LCD_PIXEL_CLOCK_HZ},
     };
     ESP_ERROR_CHECK(i2c_param_config(I2C_BUS_PORT, &i2c_conf));
     ESP_ERROR_CHECK(i2c_driver_install(I2C_BUS_PORT, I2C_MODE_MASTER, 0, 0, 0));
@@ -458,50 +504,66 @@ void app_main(void)
     /* Escaneo I2C */
     ESP_LOGI(LCD_TAG, "Escaneando bus I2C (puerto %d) ...", I2C_BUS_PORT);
     int detected_addr = -1;
-    for (int addr = 1; addr < 127; addr++) {
+    for (int addr = 1; addr < 127; addr++)
+    {
         i2c_cmd_handle_t cmd = i2c_cmd_link_create();
         i2c_master_start(cmd);
         i2c_master_write_byte(cmd, (addr << 1) | I2C_MASTER_WRITE, true);
         i2c_master_stop(cmd);
         esp_err_t r = i2c_master_cmd_begin(I2C_BUS_PORT, cmd, pdMS_TO_TICKS(50));
         i2c_cmd_link_delete(cmd);
-        if (r == ESP_OK) {
+        if (r == ESP_OK)
+        {
             ESP_LOGI(LCD_TAG, "I2C device encontrado en 0x%02x", addr);
-            if (detected_addr == -1) detected_addr = addr;
-            if (addr == EXAMPLE_I2C_HW_ADDR) { detected_addr = addr; break; }
+            if (detected_addr == -1)
+                detected_addr = addr;
+            if (addr == EXAMPLE_I2C_HW_ADDR)
+            {
+                detected_addr = addr;
+                break;
+            }
         }
     }
-    if (detected_addr == -1) ESP_LOGW(LCD_TAG, "No se detectó device I2C");
-    else ESP_LOGI(LCD_TAG, "Direccion I2C detectada: 0x%02x", detected_addr);
+    if (detected_addr == -1)
+        ESP_LOGW(LCD_TAG, "No se detectó device I2C");
+    else
+        ESP_LOGI(LCD_TAG, "Direccion I2C detectada: 0x%02x", detected_addr);
 
     /* detectar MPU6050 (misma linea I2C) */
-    if (mpu6050_init_if_present(mpu_addr)) {
+    if (mpu6050_init_if_present(mpu_addr))
+    {
         mpu_present = true;
         ESP_LOGI(TAG, "MPU6050 detectado en 0x%02x", mpu_addr);
-    } else {
+    }
+    else
+    {
         ESP_LOGI(TAG, "MPU6050 no detectado (bus I2C %d, addr 0x%02x)", I2C_BUS_PORT, mpu_addr);
     }
 
-    if (detected_addr != -1) {
+    if (detected_addr != -1)
+    {
         bool ok = ssd1306_raw_test((uint8_t)detected_addr);
-        if (!ok) ESP_LOGW(LCD_TAG, "ssd1306_raw_test falló");
+        if (!ok)
+            ESP_LOGW(LCD_TAG, "ssd1306_raw_test falló");
     }
 
-    // Crear panel IO: scl_speed_hz = 0 para legacy i2c_lcd driver 
+    // Crear panel IO: scl_speed_hz debe ser la velocidad real del bus I2C
     ESP_LOGI(LCD_TAG, "Install panel IO (i2c port)");
     esp_lcd_panel_io_handle_t io_handle = NULL;
     esp_lcd_panel_io_i2c_config_t io_config = {
         .dev_addr = EXAMPLE_I2C_HW_ADDR,
-        .scl_speed_hz = 0,
+        .scl_speed_hz = 0, // Debe ser 0 para usar un bus I2C pre-inicializado
         .control_phase_bytes = 1,
         .lcd_cmd_bits = EXAMPLE_LCD_CMD_BITS,
         .lcd_param_bits = EXAMPLE_LCD_CMD_BITS,
         .dc_bit_offset = 6,
     };
-    if (detected_addr != -1) io_config.dev_addr = detected_addr;
+    if (detected_addr != -1)
+        io_config.dev_addr = detected_addr;
 
     esp_err_t ret = esp_lcd_new_panel_io_i2c(I2C_BUS_PORT, &io_config, &io_handle);
-    if (ret != ESP_OK) {
+    if (ret != ESP_OK)
+    {
         ESP_LOGE(LCD_TAG, "esp_lcd_new_panel_io_i2c failed: %s", esp_err_to_name(ret));
         return;
     }
@@ -513,20 +575,24 @@ void app_main(void)
         .bits_per_pixel = 1,
         .reset_gpio_num = EXAMPLE_PIN_NUM_RST,
     };
-    esp_lcd_panel_ssd1306_config_t ssd1306_config = { .height = EXAMPLE_LCD_V_RES };
+    esp_lcd_panel_ssd1306_config_t ssd1306_config = {.height = EXAMPLE_LCD_V_RES};
     panel_config.vendor_config = &ssd1306_config;
 
     ret = esp_lcd_new_panel_ssd1306(io_handle, &panel_config, &panel_handle);
-    if (ret != ESP_OK) {
+    if (ret != ESP_OK)
+    {
         ESP_LOGE(LCD_TAG, "esp_lcd_new_panel_ssd1306 failed: %s", esp_err_to_name(ret));
         return;
     }
     ESP_LOGI(LCD_TAG, "SSD1306 driver creado correctamente");
 
-    if (EXAMPLE_PIN_NUM_RST >= 0) {
+    if (EXAMPLE_PIN_NUM_RST >= 0)
+    {
         ESP_LOGI(LCD_TAG, "Reset físico del panel (gpio %d)", EXAMPLE_PIN_NUM_RST);
         ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
-    } else {
+    }
+    else
+    {
         ESP_LOGI(LCD_TAG, "No hay pin RST definido, se omite reset físico");
     }
 
@@ -537,31 +603,32 @@ void app_main(void)
 
     /* marcar listo y (si mqtt ya conectado) publicar LCD ON en device/lcd */
     lcd_ready = true;
-    if (mqtt_client ) {
+    if (mqtt_client)
+    {
         int id = esp_mqtt_client_publish(mqtt_client, "display/lcd", "ON", 0, 1, 1);
         ESP_LOGI(TAG, "Publicado estado LCD 'ON' en 'display/lcd' (retained), msg_id=%d", id);
-    } else {
+    }
+    else
+    {
         ESP_LOGI(TAG, "LCD listo pero mqtt_client no inicializado aún; se publicará al conectar");
     }
 
-    // Initialize LVGL 
+    // Initialize LVGL
     ESP_LOGI(LCD_TAG, "Initialize LVGL");
     const lvgl_port_cfg_t lvgl_cfg = ESP_LVGL_PORT_INIT_CONFIG();
     ESP_ERROR_CHECK(lvgl_port_init(&lvgl_cfg));
 
-    
     const lvgl_port_display_cfg_t disp_cfg = {
         .io_handle = io_handle,
         .panel_handle = panel_handle,
         .buffer_size = EXAMPLE_LCD_H_RES * EXAMPLE_LCD_V_RES,
-        // probar double buffer activado para mejor rendering en LVGL/SSD1306 
+        // probar double buffer activado para mejor rendering en LVGL/SSD1306
         .double_buffer = true,
         .hres = EXAMPLE_LCD_H_RES,
         .vres = EXAMPLE_LCD_V_RES,
         .monochrome = true,
         // probar mirror_x/y true (si no funciona probar false/false)
-        .rotation = { .swap_xy = false, .mirror_x = true, .mirror_y = true }
-    };
+        .rotation = {.swap_xy = false, .mirror_x = true, .mirror_y = true}};
     lv_disp_t *disp = lvgl_port_add_disp(&disp_cfg);
     lv_disp_set_rotation(disp, LV_DISP_ROT_NONE);
 

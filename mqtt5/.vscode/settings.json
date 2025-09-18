@@ -1,34 +1,10 @@
 {
-  "C_Cpp.intelliSenseEngine": "default",
-  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
-  "idf.espIdfPath": "/Users/lorenzo.poggi/esp/v5.4.2/esp-idf",
-  "idf.toolsPath": "/Users/lorenzo.poggi/.espressif",
-  "idf.pythonInstallPath": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
-  "idf.port": "/dev/tty.usbmodem101",
   "idf.openOcdConfigs": [
     "board/esp32c3-builtin.cfg"
   ],
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32c3"
   },
-  "clangd.path": "/Users/lorenzo.poggi/.espressif/tools/esp-clang/esp-18.1.2_20240912/esp-clang/bin/clangd",
-  "clangd.arguments": [
-    "--background-index",
-    "--query-driver=/Users/lorenzo.poggi/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
-    "--compile-commands-dir=/Users/lorenzo.poggi/Downloads/mqtt5/build"
-  ],
-  "idf.flashType": "UART",
-  "files.associations": {
-    "i2c.h": "c",
-    "esp_err.h": "c",
-    "adc_oneshot.h": "c",
-    "adc_cali_scheme.h": "c",
-    "esp_lcd_panel_vendor.h": "c",
-    "lvgl.h": "c",
-    "i2c_oled.h": "c",
-    "esp_lcd_sh1107.h": "c",
-    "inttypes.h": "c",
-    "string.h": "c",
-    "mqtt_client.h": "c"
-  }
+  "idf.portWin": "COM7",
+  "idf.flashType": "UART"
 }

@@ -6627,41 +6627,21 @@
                             {
                                 "children": [],
                                 "depends_on": "SOC_GDMA_SUPPORTED",
-                                "help": "Place GDMA ISR handler functions in IRAM to reduce latency caused by cache miss.",
-                                "id": "GDMA_ISR_HANDLER_IN_IRAM",
-                                "name": "GDMA_ISR_HANDLER_IN_IRAM",
-                                "range": null,
-                                "title": "Place GDMA ISR handler in IRAM to reduce latency",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "SOC_GDMA_SUPPORTED",
-                                "help": "This will ensure the GDMA object is DRAM-Safe, allow to avoid external memory\ncache misses, and also be accessible whilst the cache is disabled.",
-                                "id": "GDMA_OBJ_DRAM_SAFE",
-                                "name": "GDMA_OBJ_DRAM_SAFE",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "SOC_GDMA_SUPPORTED",
-                                "help": "If enabled, GDMA driver component will:\n1. ignore the global logging settings\n2. compile all log messages into the binary\n3. set the runtime log level to VERBOSE\nPlease enable this option by caution, as it will increase the binary size.",
-                                "id": "GDMA_ENABLE_DEBUG_LOG",
-                                "name": "GDMA_ENABLE_DEBUG_LOG",
-                                "range": null,
-                                "title": "Force enable debug log",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "SOC_GDMA_SUPPORTED",
-                                "help": "This will ensure the GDMA interrupt handler is IRAM-Safe, allow to avoid flash\ncache misses, and also be able to run whilst the cache is disabled.\n(e.g. SPI Flash write).\nIf this option is enabled, ALL GDMA channel's ISR handlers should be placed in IRAM, which is a overkill.\nIt's recommend to set the \"isr_cache_safe\" in the \"gdma_channel_alloc_config_t\".\nThen other GDMA channels won't be influenced.",
+                                "help": "This will ensure the GDMA interrupt handler is IRAM-Safe, allow to avoid flash\ncache misses, and also be able to run whilst the cache is disabled.\n(e.g. SPI Flash write).",
                                 "id": "GDMA_ISR_IRAM_SAFE",
                                 "name": "GDMA_ISR_IRAM_SAFE",
                                 "range": null,
-                                "title": "GDMA ISR IRAM-Safe (Deprecated. Read Help!)",
+                                "title": "GDMA ISR IRAM-Safe",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SOC_GDMA_SUPPORTED",
+                                "help": "Whether to enable the debug log message for GDMA driver.\nNote that, this option only controls the GDMA driver log, won't affect other drivers.",
+                                "id": "GDMA_ENABLE_DEBUG_LOG",
+                                "name": "GDMA_ENABLE_DEBUG_LOG",
+                                "range": null,
+                                "title": "Enable debug log",
                                 "type": "bool"
                             }
                         ],
@@ -7493,10 +7473,7 @@
                                 "help": "The timeout of the watchdog, in milliseconds. Make this higher than the FreeRTOS tick rate.",
                                 "id": "ESP_INT_WDT_TIMEOUT_MS",
                                 "name": "ESP_INT_WDT_TIMEOUT_MS",
-                                "range": [
-                                    10,
-                                    10000
-                                ],
+                                "range": null,
                                 "title": "Interrupt watchdog timeout (ms)",
                                 "type": "int"
                             },
@@ -7549,10 +7526,7 @@
                                         "help": "Timeout period configuration for the Task Watchdog Timer in seconds.\nThis is also configurable at run time (see Task Watchdog Timer API Reference)",
                                         "id": "ESP_TASK_WDT_TIMEOUT_S",
                                         "name": "ESP_TASK_WDT_TIMEOUT_S",
-                                        "range": [
-                                            1,
-                                            60
-                                        ],
+                                        "range": null,
                                         "title": "Task Watchdog timeout period (seconds)",
                                         "type": "int"
                                     },
@@ -9121,7 +9095,7 @@
                             {
                                 "children": [],
                                 "depends_on": null,
-                                "help": "Enable ANSI terminal color codes.\nIn order to view these, your terminal program must support ANSI color codes.\n\nThis is disabled by default, as colors are added in IDF Monitor. If you want to use new lines\nin the messages or you are using a different terminal program, you may want to enable this option.",
+                                "help": "Enable ANSI terminal color codes.\nIn order to view these, your terminal program must support ANSI color codes.",
                                 "id": "LOG_COLORS",
                                 "name": "LOG_COLORS",
                                 "range": null,
@@ -9591,16 +9565,6 @@
                             },
                             {
                                 "children": [],
-                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
-                                "help": "Flash suspend has defect on ESP32C6 until v0.2 and ESP32H2 until v1.2. If you already use suspend\nfeature for massive protection, you can enable this for bypassing check after knowing the risk.\nBut if you are new users, or developing new applications, or producing a new batch,\nplease DO NOT enable this config option.\n\nFor more information, please refer to errata or connect to Espressif business support team.",
-                                "id": "SPI_FLASH_FORCE_ENABLE_C6_H2_SUSPEND",
-                                "name": "SPI_FLASH_FORCE_ENABLE_C6_H2_SUSPEND",
-                                "range": null,
-                                "title": "Enable chip suspend feature on c6 or h2 anyway (DO NOT ENABLE FOR NEW USERS OR APPLICATIONS)",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
                                 "depends_on": "SPI_FLASH_AUTO_SUSPEND && FREERTOS_UNICORE && IDF_EXPERIMENTAL_FEATURES && !APP_BUILD_TYPE_PURE_RAM_APP",
                                 "help": "Enable this config will disable auto-resume from hardware. Thus the software will resume the chip\nafter any higher priority task/interrupt which suspend the chip. The benefit is that the suspend-resume\nwill not disturb the higher priority task and interrupt.\n\nThis currently is only valid on single core chip.",
                                 "id": "SPI_FLASH_SOFTWARE_RESUME",
@@ -9667,7 +9631,7 @@
                             }
                         ],
                         "depends_on": "!SPI_FLASH_ROM_IMPL && !APP_BUILD_TYPE_PURE_RAM_APP",
-                        "help": "If this option is enabled, any time SPI flash is written then the data will be read\nback and verified. This can catch hardware problems with SPI flash, or flash which\nwas not erased before verification.\n\nThis will slightly influence the write performance.",
+                        "help": "If this option is enabled, any time SPI flash is written then the data will be read\nback and verified. This can catch hardware problems with SPI flash, or flash which\nwas not erased before verification.",
                         "id": "SPI_FLASH_VERIFY_WRITE",
                         "name": "SPI_FLASH_VERIFY_WRITE",
                         "range": null,
@@ -10011,7 +9975,7 @@
     {
         "children": [],
         "depends_on": null,
-        "help": "By enabling this option, ESP-IDF experimental feature options will be visible.\n\nNote you should still enable a certain experimental feature option to use it, and you\nshould read the corresponding risk warning and known issue list carefully.\n\nCurrent experimental feature list:\n\n- CONFIG_ESPTOOLPY_FLASHFREQ_120M && CONFIG_ESPTOOLPY_FLASH_SAMPLE_MODE_DTR\n- CONFIG_SPIRAM_SPEED_120M && CONFIG_SPIRAM_MODE_OCT\n- CONFIG_BOOTLOADER_CACHE_32BIT_ADDR_QUAD_FLASH\n- CONFIG_ESP_WIFI_EAP_TLS1_3\n- CONFIG_ESP_WIFI_ENABLE_ROAMING_APP\n- CONFIG_USB_HOST_EXT_PORT_RESET_ATTEMPTS",
+        "help": "By enabling this option, ESP-IDF experimental feature options will be visible.\n\nNote you should still enable a certain experimental feature option to use it, and you\nshould read the corresponding risk warning and known issue list carefully.\n\nCurrent experimental feature list:\n\n- CONFIG_ESPTOOLPY_FLASHFREQ_120M && CONFIG_ESPTOOLPY_FLASH_SAMPLE_MODE_DTR\n- CONFIG_SPIRAM_SPEED_120M && CONFIG_SPIRAM_MODE_OCT\n- CONFIG_BOOTLOADER_CACHE_32BIT_ADDR_QUAD_FLASH\n- CONFIG_ESP_WIFI_EAP_TLS1_3\n- CONFIG_ESP_WIFI_ENABLE_ROAMING_APP\n- CONFIG_USB_HOST_EXT_PORT_SUPPORT_LS\n- CONFIG_USB_HOST_EXT_PORT_RESET_ATTEMPTS",
         "id": "IDF_EXPERIMENTAL_FEATURES",
         "name": "IDF_EXPERIMENTAL_FEATURES",
         "range": null,

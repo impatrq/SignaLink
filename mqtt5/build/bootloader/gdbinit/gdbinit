@@ -1,2 +1,2 @@
-source /Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader/gdbinit/symbols
-source /Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader/gdbinit/connect
+source C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader/gdbinit/symbols
+source C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader/gdbinit/connect

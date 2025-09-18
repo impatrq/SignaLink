@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION 3.5)
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/Users/lorenzo.poggi/esp/v5.4.2/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "/Users/lorenzo.poggi/esp/v5.4.2/esp-idf/components/bootloader/subproject")
+if(NOT EXISTS "C:/Users/ferna/ESP-IDF/v5.4.1/esp-idf/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "C:/Users/ferna/ESP-IDF/v5.4.1/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader"
-  "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix"
-  "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix/tmp"
-  "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix/src"
-  "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader"
+  "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix"
+  "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix/tmp"
+  "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix/src"
+  "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/lorenzo.poggi/Downloads/mqtt5/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/ferna/Documentos/Escuela/Proyecto_7mo/SignaLink/mqtt5/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

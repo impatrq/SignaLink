@@ -49,7 +49,6 @@ $<TARGET_FILE:__idf_esp_netif>
 $<TARGET_FILE:__idf_wpa_supplicant>
 $<TARGET_FILE:__idf_esp_coex>
 $<TARGET_FILE:__idf_esp_wifi>
-$<TARGET_FILE:__idf_esp_gdbstub>
 $<TARGET_FILE:__idf_unity>
 $<TARGET_FILE:__idf_cmock>
 $<TARGET_FILE:__idf_console>
@@ -58,6 +57,7 @@ $<TARGET_FILE:__idf_esp-tls>
 $<TARGET_FILE:__idf_esp_adc>
 $<TARGET_FILE:__idf_esp_driver_cam>
 $<TARGET_FILE:__idf_esp_eth>
+$<TARGET_FILE:__idf_esp_gdbstub>
 $<TARGET_FILE:__idf_esp_hid>
 $<TARGET_FILE:__idf_tcp_transport>
 $<TARGET_FILE:__idf_esp_http_client>
