@@ -100,3 +100,96 @@
 2025-09-16 17:33:20.168281 - MPU6050: x=-6, y=0, z=-1 - Flex 1=16357, Flex 2=11667, Flex 3=5744, Flex 4=14682, Flex 5=51682
 2025-09-16 17:33:21.308297 - MPU6050: x=-6, y=0, z=-1 - Flex 1=16357, Flex 2=11710, Flex 3=5751, Flex 4=14663, Flex 5=54077
 2025-09-16 17:33:22.180731 - MPU6050: x=-6, y=0, z=-1 - Flex 1=16421, Flex 2=11625, Flex 3=5751, Flex 4=14663, Flex 5=59037
+2025-09-17 13:12:07.483676 - MPU6050: x=-5, y=0, z=-1 - Flex 1=58607, Flex 2=56132, Flex 3=1305, Flex 4=15287, Flex 5=78235
+2025-09-17 13:12:08.489447 - MPU6050: x=-5, y=0, z=-1 - Flex 1=56265, Flex 2=55737, Flex 3=1305, Flex 4=15248, Flex 5=73123
+2025-09-17 13:12:09.518819 - MPU6050: x=-5, y=0, z=-1 - Flex 1=57622, Flex 2=56132, Flex 3=1305, Flex 4=15229, Flex 5=78471
+2025-09-17 13:12:10.487495 - MPU6050: x=-5, y=0, z=-1 - Flex 1=56937, Flex 2=55868, Flex 3=1305, Flex 4=15267, Flex 5=76387
+2025-09-17 13:12:11.510394 - MPU6050: x=-5, y=0, z=-1 - Flex 1=57901, Flex 2=56132, Flex 3=1305, Flex 4=15133, Flex 5=78709
+2025-09-17 13:12:12.581835 - MPU6050: x=-5, y=0, z=-1 - Flex 1=57484, Flex 2=55868, Flex 3=1305, Flex 4=15152, Flex 5=80163
+2025-09-17 13:12:13.485038 - MPU6050: x=-5, y=0, z=-1 - Flex 1=58181, Flex 2=56000, Flex 3=1305, Flex 4=15152, Flex 5=78709
+2025-09-17 13:12:14.537046 - MPU6050: x=-5, y=0, z=-1 - Flex 1=57901, Flex 2=55868, Flex 3=1305, Flex 4=15075, Flex 5=78709
+2025-09-17 13:12:15.489345 - MPU6050: x=-6, y=0, z=-1 - Flex 1=58893, Flex 2=56666, Flex 3=1305, Flex 4=14962, Flex 5=80659
+2025-09-17 13:12:16.496400 - MPU6050: x=-6, y=0, z=-1 - Flex 1=57901, Flex 2=55868, Flex 3=1305, Flex 4=15037, Flex 5=77533
+2025-09-17 13:12:17.482266 - MPU6050: x=-5, y=0, z=-1 - Flex 1=57346, Flex 2=55868, Flex 3=1305, Flex 4=15095, Flex 5=78235
+2025-09-17 14:46:24.075014 - MPU6050: x=-5, y=0, z=-1 - Flex 1=60512, Flex 2=59915, Flex 3=1305, Flex 4=14849, Flex 5=66388
+2025-09-17 14:46:25.104691 - MPU6050: x=-5, y=0, z=-1 - Flex 1=58322, Flex 2=58322, Flex 3=1305, Flex 4=14830, Flex 5=63008
+2025-09-17 14:46:26.072782 - MPU6050: x=-5, y=0, z=-1 - Flex 1=57484, Flex 2=58893, Flex 3=1305, Flex 4=14886, Flex 5=61274
+2025-09-17 14:46:27.103392 - MPU6050: x=-5, y=0, z=-1 - Flex 1=56666, Flex 2=58750, Flex 3=1305, Flex 4=14868, Flex 5=56937
+2025-09-17 14:46:28.080896 - MPU6050: x=-5, y=0, z=-1 - Flex 1=55868, Flex 2=57484, Flex 3=1305, Flex 4=14868, Flex 5=57622
+2025-09-17 14:46:29.098167 - MPU6050: x=-5, y=0, z=-1 - Flex 1=55868, Flex 2=57346, Flex 3=1305, Flex 4=14868, Flex 5=56532
+2025-09-17 14:46:30.075230 - MPU6050: x=-5, y=0, z=-1 - Flex 1=55868, Flex 2=56937, Flex 3=1305, Flex 4=14868, Flex 5=56937
+2025-09-17 14:46:31.079450 - MPU6050: x=-5, y=0, z=-1 - Flex 1=55868, Flex 2=56937, Flex 3=1305, Flex 4=14682, Flex 5=58893
+2025-09-17 14:46:32.080571 - MPU6050: x=-5, y=0, z=-1 - Flex 1=55217, Flex 2=56265, Flex 3=1305, Flex 4=14905, Flex 5=59182
+2025-09-17 14:46:33.099369 - MPU6050: x=-5, y=0, z=-1 - Flex 1=56132, Flex 2=56265, Flex 3=1305, Flex 4=14868, Flex 5=59620
+2025-09-17 14:46:34.079323 - MPU6050: x=-5, y=0, z=-1 - Flex 1=56398, Flex 2=56801, Flex 3=1305, Flex 4=14868, Flex 5=61428
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=55737, Flex 2=56265, Flex 3=1305, Flex 4=14480, Flex 5=58322
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=54327, Flex 2=55868, Flex 3=1305, Flex 4=14608, Flex 5=55737
+sensor -> MPU6050: x=-5, y=0, z=-1 - Flex 1=54833, Flex 2=55476, Flex 3=1305, Flex 4=14553, Flex 5=55476
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=54579, Flex 2=55088, Flex 3=1305, Flex 4=14426, Flex 5=56937
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53829, Flex 2=54705, Flex 3=1305, Flex 4=14608, Flex 5=44999
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53218, Flex 2=54579, Flex 3=1305, Flex 4=14663, Flex 5=43833
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53339, Flex 2=54960, Flex 3=1305, Flex 4=14608, Flex 5=43140
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53953, Flex 2=54960, Flex 3=1305, Flex 4=14608, Flex 5=41162
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53097, Flex 2=54833, Flex 3=1305, Flex 4=14608, Flex 5=40769
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53583, Flex 2=54960, Flex 3=1305, Flex 4=14849, Flex 5=41401
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52977, Flex 2=54579, Flex 3=1305, Flex 4=14663, Flex 5=39773
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53953, Flex 2=54960, Flex 3=1305, Flex 4=14608, Flex 5=40535
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53706, Flex 2=54579, Flex 3=1305, Flex 4=14590, Flex 5=41083
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53461, Flex 2=54579, Flex 3=1305, Flex 4=14590, Flex 5=39624
+sensor -> MPU6050: x=-5, y=0, z=-1 - Flex 1=52618, Flex 2=54453, Flex 3=1305, Flex 4=14608, Flex 5=40458
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52381, Flex 2=54202, Flex 3=1305, Flex 4=14663, Flex 5=41401
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52381, Flex 2=54202, Flex 3=1305, Flex 4=14608, Flex 5=40535
+sensor -> MPU6050: x=-5, y=0, z=-1 - Flex 1=52381, Flex 2=54579, Flex 3=1305, Flex 4=14626, Flex 5=41562
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51797, Flex 2=54327, Flex 3=1305, Flex 4=14608, Flex 5=42969
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52857, Flex 2=54579, Flex 3=1305, Flex 4=14645, Flex 5=60815
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52977, Flex 2=54579, Flex 3=1305, Flex 4=14571, Flex 5=62687
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52977, Flex 2=54202, Flex 3=1305, Flex 4=14626, Flex 5=60362
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53097, Flex 2=54327, Flex 3=1305, Flex 4=14608, Flex 5=59767
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52977, Flex 2=54202, Flex 3=1305, Flex 4=14849, Flex 5=59473
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52977, Flex 2=54327, Flex 3=1305, Flex 4=14608, Flex 5=57346
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=47391, Flex 2=45183, Flex 3=1305, Flex 4=14682, Flex 5=41004
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=47093, Flex 2=45369, Flex 3=1305, Flex 4=14663, Flex 5=39773
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=47793, Flex 2=45932, Flex 3=1305, Flex 4=14608, Flex 5=40769
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=48098, Flex 2=46410, Flex 3=1305, Flex 4=14626, Flex 5=49139
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=48614, Flex 2=47192, Flex 3=1305, Flex 4=14608, Flex 5=51452
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=47996, Flex 2=47391, Flex 3=1305, Flex 4=14626, Flex 5=50661
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=47591, Flex 2=47793, Flex 3=1305, Flex 4=14608, Flex 5=47291
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=56265, Flex 2=55868, Flex 3=1305, Flex 4=14590, Flex 5=55868
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=55088, Flex 2=55088, Flex 3=1305, Flex 4=14590, Flex 5=55088
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=54453, Flex 2=54579, Flex 3=1305, Flex 4=14553, Flex 5=55737
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=54202, Flex 2=54579, Flex 3=1305, Flex 4=14608, Flex 5=53706
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=54077, Flex 2=54453, Flex 3=1305, Flex 4=14590, Flex 5=47793
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52737, Flex 2=54077, Flex 3=1305, Flex 4=14498, Flex 5=46313
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52030, Flex 2=54077, Flex 3=1305, Flex 4=14608, Flex 5=43484
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52737, Flex 2=53953, Flex 3=1305, Flex 4=14608, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52618, Flex 2=54202, Flex 3=1305, Flex 4=14590, Flex 5=54202
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52618, Flex 2=53829, Flex 3=1305, Flex 4=14590, Flex 5=52737
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51913, Flex 2=53583, Flex 3=1305, Flex 4=14590, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52857, Flex 2=53829, Flex 3=1305, Flex 4=14553, Flex 5=53829
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52857, Flex 2=53829, Flex 3=1305, Flex 4=14608, Flex 5=52737
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52737, Flex 2=53583, Flex 3=1305, Flex 4=14553, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53218, Flex 2=53829, Flex 3=1305, Flex 4=14608, Flex 5=53461
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52737, Flex 2=53461, Flex 3=1305, Flex 4=14608, Flex 5=52737
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52381, Flex 2=53461, Flex 3=1305, Flex 4=14590, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52737, Flex 2=53706, Flex 3=1305, Flex 4=14553, Flex 5=54453
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52857, Flex 2=53461, Flex 3=1305, Flex 4=14608, Flex 5=52618
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52618, Flex 2=53583, Flex 3=1305, Flex 4=14608, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52737, Flex 2=53583, Flex 3=1305, Flex 4=14571, Flex 5=54077
+sensor -> MPU6050: x=-5, y=0, z=-1 - Flex 1=52618, Flex 2=53829, Flex 3=1305, Flex 4=14608, Flex 5=52381
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52500, Flex 2=53461, Flex 3=1305, Flex 4=14590, Flex 5=52977
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52857, Flex 2=53461, Flex 3=1305, Flex 4=14571, Flex 5=54202
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52857, Flex 2=53583, Flex 3=1305, Flex 4=14626, Flex 5=52737
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52030, Flex 2=53583, Flex 3=1305, Flex 4=14626, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=52264, Flex 2=53829, Flex 3=1305, Flex 4=14480, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51452, Flex 2=53706, Flex 3=1305, Flex 4=14626, Flex 5=51452
+sensor -> MPU6050: x=-5, y=0, z=-1 - Flex 1=51567, Flex 2=53461, Flex 3=1305, Flex 4=14608, Flex 5=53097
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51452, Flex 2=53583, Flex 3=1305, Flex 4=14553, Flex 5=54833
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51452, Flex 2=53461, Flex 3=1305, Flex 4=14590, Flex 5=52737
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51224, Flex 2=53461, Flex 3=1305, Flex 4=14608, Flex 5=44276
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51111, Flex 2=53461, Flex 3=1305, Flex 4=14626, Flex 5=39475
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51111, Flex 2=53461, Flex 3=1305, Flex 4=14590, Flex 5=38458
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51452, Flex 2=53829, Flex 3=1305, Flex 4=14608, Flex 5=38744
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51452, Flex 2=53461, Flex 3=1305, Flex 4=14645, Flex 5=39327
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=51452, Flex 2=53218, Flex 3=1305, Flex 4=14608, Flex 5=38387
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53461, Flex 2=53583, Flex 3=1305, Flex 4=14608, Flex 5=38888
+sensor -> MPU6050: x=-6, y=0, z=-1 - Flex 1=53461, Flex 2=53706, Flex 3=1305, Flex 4=14571, Flex 5=40151

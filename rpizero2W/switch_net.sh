@@ -9,10 +9,17 @@ sudo systemctl restart NetworkManager
 # Esperar conexión
 sleep 10
 
+# Variables 
+Path = ""
+Commands = ""
+
+# Input
+read -p "Ingresar PATH:" Path
+read -p "Ingresar comandos a ejecutar:" Commands
+read -p "Continue? (Y/N)" confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+
 # Hacer lo que quieras (ejemplo: update y git push)
-cd /home/fr4nco/Documents/SignaLink/rpizero2W && git add . && git commit -m "feat: microfono asociado con MQTT y readme de mqtt 
-Co-authored-by: Thiago Agustin Albornoz <tatotatuaje099@gmail.com>
-Co-authored-by: Valentin Franco <valentinfranco2506@gmail.com>" && git push
+cd $PATH && $Commands
 
 # Volver a modo AP
 sudo systemctl stop wpa_supplicant
