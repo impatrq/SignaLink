@@ -1,5 +1,22 @@
 # VsCode
 .vscode/
 
-# Build
+# Build artifacts
 build/
+*.bin
+*.elf
+*.map
+
+# ESP-IDF specific
+# sdkconfig is often generated locally. It's better to track sdkconfig.defaults.
+sdkconfig
+sdkconfig.old
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
