@@ -299,6 +299,11 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
         int msg_id = esp_mqtt_client_subscribe(mqtt_client, "comandos/esp32", 0);
         ESP_LOGI(TAG, "Suscrito a 'comandos/esp32', msg_id=%d", msg_id);
+
+        /* Suscribir tambien al topic que muestra frases del micrófono */
+        int msg_id2 = esp_mqtt_client_subscribe(mqtt_client, "display/lcd", 0);
+        ESP_LOGI(TAG, "Suscrito a 'display/lcd', msg_id=%d", msg_id2);
+
         /* Anunciar LCD si ya inicializó */
         if (lcd_ready)
         {
@@ -315,6 +320,39 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
         ESP_LOGI(TAG, "MQTT_EVENT_DATA");
         ESP_LOGI(TAG, "TOPIC=%.*s", event->topic_len, event->topic);
         ESP_LOGI(TAG, "DATA=%.*s", event->data_len, event->data);
+
+        /* Copiar topic y payload a cadenas nulas-terminadas */
+        {
+            char topic_buf[128];
+            size_t tlen = event->topic_len < sizeof(topic_buf) - 1 ? event->topic_len : sizeof(topic_buf) - 1;
+            memcpy(topic_buf, event->topic, tlen);
+            topic_buf[tlen] = '\0';
+
+            size_t dlen = event->data_len;
+            char *data_buf = malloc(dlen + 1);
+            if (data_buf)
+            {
+                memcpy(data_buf, event->data, dlen);
+                data_buf[dlen] = '\0';
+
+                /* Si el topic es display/lcd mostrar en el LCD (seguro para llamar desde task) */
+                if (strcmp(topic_buf, "display/lcd") == 0)
+                {
+                    ESP_LOGI(TAG, "Actualizar LCD con texto MQTT: %s", data_buf);
+                    lcd_set_text(data_buf);
+                }
+                else
+                {
+                    ESP_LOGI(TAG, "Mensaje recibido en topic diferente: %s", topic_buf);
+                }
+
+                free(data_buf);
+            }
+            else
+            {
+                ESP_LOGW(TAG, "No hay memoria para copiar payload MQTT");
+            }
+        }
         break;
     case MQTT_EVENT_ERROR:
         ESP_LOGE(TAG, "MQTT_EVENT_ERROR");
@@ -388,8 +426,8 @@ static void lvgl_ui_task(void *pvParameter)
            Usar scroll circular para permitir leer frases largas. */
         g_label = lv_label_create(scr);
         lv_label_set_long_mode(g_label, LV_LABEL_LONG_SCROLL_CIRCULAR);
-        lv_label_set_text(g_label, "nose gordo por que?");    /* texto inicial */
-        lv_obj_set_width(g_label, disp->driver->hor_res - 4); /* ancho completo menos padding */
+        lv_label_set_text(g_label, "Esperando Conexion. . ."); /* texto inicial */
+        lv_obj_set_width(g_label, disp->driver->hor_res - 4);  /* ancho completo menos padding */
         lv_obj_align(g_label, LV_ALIGN_CENTER, 0, 0);
 
         lvgl_port_unlock();

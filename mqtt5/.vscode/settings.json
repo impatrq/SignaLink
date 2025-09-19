@@ -1,10 +1,10 @@
 {
+  "idf.portWin": "COM3",
   "idf.openOcdConfigs": [
     "board/esp32c3-builtin.cfg"
   ],
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32c3"
   },
-  "idf.portWin": "COM7",
   "idf.flashType": "UART"
 }
