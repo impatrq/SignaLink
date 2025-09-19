@@ -1,8 +1,8 @@
 # VsCode
-.vscode/
+.vscode/*
 
 # Build artifacts
-build/
+build/*
 *.bin
 *.elf
 *.map
