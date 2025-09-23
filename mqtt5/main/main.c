@@ -66,7 +66,7 @@
 #define R_FIXED 10000.0
 #define VCC 3.3f
 #define N 8                  
-#define PUBLISH_PERIOD_MS 100 /* publicar cada 1000 ms */
+#define PUBLISH_PERIOD_MS 100 /* publicar cada 100 ms */
 
 #define FLEX0_CHANNEL ADC_CHANNEL_0
 #define FLEX1_CHANNEL ADC_CHANNEL_1
@@ -217,9 +217,20 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
     else
         voltage_mv = (adc_avg * 3300) / 4095;
     float voltage = voltage_mv / 1000.0f;
+
     float R_flex = 0.0f;
-    if (voltage > 0.01f)
-        R_flex = R_FIXED * (VCC / voltage - 1.0f);
+    if (flex_idx == 2) // Dedo mayor: divisor distinto
+    {
+        // Suponiendo que la resistencia fija es 47k (ajustá según tu hardware real)
+        float R_FIXED_MAYOR = 56000.0f;
+        if (voltage > 0.01f)
+            R_flex = R_FIXED_MAYOR * (VCC / voltage - 1.0f);
+    }
+    else
+    {
+        if (voltage > 0.01f)
+            R_flex = R_FIXED * (VCC / voltage - 1.0f);
+    }
 
     if (flex_init_val[flex_idx] == 10000)
     {
