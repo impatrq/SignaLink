@@ -65,8 +65,8 @@
 #define ADC_UNIT ADC_UNIT_1
 #define R_FIXED 10000.0
 #define VCC 3.3f
-#define N 8                    /* muestras promedio */
-#define PUBLISH_PERIOD_MS 1000 /* publicar cada 1000 ms */
+#define N 8                  
+#define PUBLISH_PERIOD_MS 100 /* publicar cada 1000 ms */
 
 #define FLEX0_CHANNEL ADC_CHANNEL_0
 #define FLEX1_CHANNEL ADC_CHANNEL_1
@@ -251,7 +251,7 @@ static void sensor_publish_task(void *arg)
         char mpu_part[64];
         if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz))
         {
-            snprintf(mpu_part, sizeof(mpu_part), "MPU6050: x=%d, y=%d, z=%d - ", gx, gy, gz);
+            snprintf(mpu_part, sizeof(mpu_part), "MPU: x=%d, y=%d, z=%d - ", gx, gy, gz);
         }
         else
         {
@@ -260,7 +260,7 @@ static void sensor_publish_task(void *arg)
 
         char mensaje[512];
         snprintf(mensaje, sizeof(mensaje),
-                 "%sFlex 1=%s, Flex 2=%s, Flex 3=%s, Flex 4=%s, Flex 5=%s",
+                 "%sPulgar=%s, Indice=%s, Mayor=%s, Anulaar=%s, Meñique=%s",
                  mpu_part,
                  estado_flex[0], estado_flex[1], estado_flex[2], estado_flex[3], estado_flex[4]);
 
