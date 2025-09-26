@@ -222,7 +222,7 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
     if (flex_idx == 2) // Dedo mayor: divisor distinto
     {
         // Suponiendo que la resistencia fija es 47k (ajustá según tu hardware real)
-        float R_FIXED_MAYOR = 56000.0f;
+        float R_FIXED_MAYOR = 420000.0f;
         if (voltage > 0.01f)
             R_flex = R_FIXED_MAYOR * (VCC / voltage - 1.0f);
     }
