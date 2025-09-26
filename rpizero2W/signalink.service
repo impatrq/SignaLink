@@ -5,10 +5,10 @@ Wants=Wants=network.target mosquitto.service
 
 [Service]
 Type=simple
-WorkingDirectory=/home/Documents/SignaLink/rpizero2W
-ExecStart=/home/fr4nco/Documents/SiganLink/rpizero2W/wifi-ap/start_ap.sh
+WorkingDirectory=/home/signalink/SignaLink/rpizero2W
+ExecStart=/home/signalink/SiganLink/rpizero2W/wifi-ap/start_ap.sh
 Restart=always
-User=fr4nco
+User=signalink
 
 [Install]
 WantedBy=multi-user.target
