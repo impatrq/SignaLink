@@ -1,0 +1,14 @@
+[Unit]
+Description=SignaLink MQTT Handler
+After=network.target mosquitto.service
+Wants=Wants=network.target mosquitto.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/Documents/SignaLink/rpizero2W
+ExecStart=/home/fr4nco/Documents/SiganLink/rpizero2W/wifi-ap/start_ap.sh
+Restart=always
+User=fr4nco
+
+[Install]
+WantedBy=multi-user.target
