@@ -21,7 +21,7 @@ function ctrl_c(){
 	tput cnorm; exit 1
 }
 
-# --- Script de instalación para el proyecto SignaLink en Raspberry Pi Zero 2W ---
+# --- Script de instalación para el proyecto SignaLink ---
 echo -e "\n${yellowColour}=========================================${endColour}"
 echo -e "${yellowColour}  Iniciando la instalación de SignaLink  ${endColour}"
 echo -e "${yellowColour}=========================================${endColour}"
