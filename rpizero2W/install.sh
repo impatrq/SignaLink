@@ -17,8 +17,8 @@ SERVICE_FILE="signalink.service"
 SERVICE_PATH="/etc/systemd/system/$SERVICE_FILE"
 MOSQUITTO_CONF_FILE="mosquitto_conf/default.conf"
 MOSQUITTO_PASSWD_FILE="mosquitto_conf/passwd"
-HOSTAPD_CONF_FILE="wifi_ap/hostapd.conf"
-DNSMASQ_CONF_FILE="wifi_ap/dnsmasq.conf"
+HOSTAPD_CONF_FILE="wifi-ap/hostapd.conf"
+DNSMASQ_CONF_FILE="wifi-ap/dnsmasq.conf"
 
 tmp_file=$(mktemp) # Archivo temporal para Mosquitto
 

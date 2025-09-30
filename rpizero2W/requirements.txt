@@ -13,6 +13,7 @@ adafruit-circuitpython-busdevice
 smbus2
 spidev
 RPi.GPIO
+piper-tts
 
 # --- Machine Learning y Datos ---
 numpy
