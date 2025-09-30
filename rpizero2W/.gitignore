@@ -1,2 +1,5 @@
 # Ignoro Entorno Virtual
 venv/
+
+# Ignoro Modelos de Piper
+models/
