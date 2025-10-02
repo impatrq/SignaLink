@@ -54,26 +54,22 @@ Los módulos más comunes tienen pines como:
   sudo nano /boot/config.txt
   ```
 
-  - ### Modificar estas lineas
+- ### Comenta estas lineas:
+  ```bash
+  dtparam=audio=on
+  ```
+- ### Descomenta estas lineas:
 
   ```bash
-  # Esto define el hardware de tu DAC I2S
-pcm.hifiberry {
-    type hw
-    card 0
-    device 0
-}
+  dtparam=i2c_arm=on
+  dtparam=i2s=on
+  ```
 
-# Esto crea un dispositivo virtual que adapta la salida a tu hardware
-pcm.!default {
-    type plug
-    slave {
-        pcm "hifiberry"
-        channels 2
-        rate 44100  # O la frecuencia de muestreo que uses
-    }
-}
-    ```
+- ### Agrega esto al final
+
+  ```bash
+  dtoverlay=hifiberry-dac
+  ```
 
 - ### Crear un archivo asound.conf
 
@@ -85,11 +81,21 @@ pcm.!default {
   - ### Agregar estas lineas
 
   ```bash
-  pcm.!default  {
-  type hw card 0
+  # Esto define el hardware de tu DAC I2S
+  pcm.hifiberry {
+    type hw
+    card 0
+    device 0
   }
-  ctl.!default {
-  type hw card 0
+
+  # Esto crea un dispositivo virtual que adapta la salida a tu hardware
+  pcm.!default {
+    type plug
+    slave {
+      pcm "hifiberry"
+      channels 2
+      rate 44100  # O la frecuencia de muestreo que uses
+    }
   }
   ```
 
