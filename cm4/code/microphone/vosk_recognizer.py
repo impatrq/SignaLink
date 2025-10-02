@@ -15,7 +15,7 @@ COLOR_ERROR = "\033[31m"# Rojo
 COLOR_RESET = "\033[0m"
 
 # Configuración
-SAMPLE_RATE = 32000
+SAMPLE_RATE = 48000
 BLOCK_DURATION = 0.1
 MODEL_PATH = "../vosk_model/vosk-model-small-es-0.42"
 

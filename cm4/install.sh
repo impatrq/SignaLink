@@ -13,12 +13,12 @@ turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
 # Variables
-SERVICE_FILE="signalink.service"
+SERVICE_FILE="config/signalink.service"
 SERVICE_PATH="/etc/systemd/system/$SERVICE_FILE"
-MOSQUITTO_CONF_FILE="mosquitto_conf/default.conf"
-MOSQUITTO_PASSWD_FILE="mosquitto_conf/passwd"
-HOSTAPD_CONF_FILE="wifi-ap/hostapd.conf"
-DNSMASQ_CONF_FILE="wifi-ap/dnsmasq.conf"
+MOSQUITTO_CONF_FILE="config/mosquitto_conf/default.conf"
+MOSQUITTO_PASSWD_FILE="config/mosquitto_conf/passwd"
+HOSTAPD_CONF_FILE="config/wifi-ap/hostapd.conf"
+DNSMASQ_CONF_FILE="config/wifi-ap/dnsmasq.conf"
 
 tmp_file=$(mktemp) # Archivo temporal para Mosquitto
 
@@ -42,7 +42,7 @@ set -e
 echo -e "${blueColour}\n[+] Actualizando el sistema...${endColour}"
 
 sudo apt update
-sudo apt upgrade -y 
+sudo apt upgrade -y
 
 # 2. Instalar dependencias del sistema.
 echo -e "\n${blueColour}[+] Instalando dependencias necesarias${endColour}"
@@ -56,7 +56,7 @@ sudo apt install -y \
     mosquitto mosquitto-clients \
     hostapd dnsmasq \
     git build-essential
-    
+
 echo -e "${greenColour}[+] Dependencias del sistema instaladas.${endColour}"
 
 # 3. Configuración de Mosquitto (MQTT Broker).

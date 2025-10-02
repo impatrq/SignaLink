@@ -19,7 +19,7 @@ topic_lcd = "display/lcd"
 username = 'franco'
 password = '_fr4nco_'
 
-log_file = "/home/fr4nco/Documents/SignaLink/rpizero2W/code/mqtt_broker/gestures.log"
+log_file = "/home/signalink/SignaLink/rpizero2W/code/mqtt_broker/gestures.log"
 
 
 # Callback cuando se conecta
