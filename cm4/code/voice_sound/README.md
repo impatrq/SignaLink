@@ -57,13 +57,23 @@ Los módulos más comunes tienen pines como:
   - ### Modificar estas lineas
 
   ```bash
-  # Descomentar esta linea
-  dtparam=i2s=on
-  # Comentar esta linea
-  dtparam=audio=on => #dtparam=audio=on
-  # Agregar esto al final
-  dtoverlay=hifiberry-dac
-  ```
+  # Esto define el hardware de tu DAC I2S
+pcm.hifiberry {
+    type hw
+    card 0
+    device 0
+}
+
+# Esto crea un dispositivo virtual que adapta la salida a tu hardware
+pcm.!default {
+    type plug
+    slave {
+        pcm "hifiberry"
+        channels 2
+        rate 44100  # O la frecuencia de muestreo que uses
+    }
+}
+    ```
 
 - ### Crear un archivo asound.conf
 

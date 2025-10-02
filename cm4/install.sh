@@ -13,7 +13,7 @@ turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
 # Variables
-SERVICE_FILE="config/signalink.service"
+SERVICE_FILE="signalink.service"
 SERVICE_PATH="/etc/systemd/system/$SERVICE_FILE"
 MOSQUITTO_CONF_FILE="config/mosquitto_conf/default.conf"
 MOSQUITTO_PASSWD_FILE="config/mosquitto_conf/passwd"
@@ -128,7 +128,7 @@ fi
 
 # 6. Instalar dependencias de Python con pip.
 echo -e "\n${turquoiseColour}[+] Activando dependencias Python...${endColour}"
-source venv/bin/activate 
+source venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 deactivate

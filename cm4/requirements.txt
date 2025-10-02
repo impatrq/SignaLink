@@ -2,7 +2,7 @@
 
 # --- Reconocimiento y Síntesis de Voz ---
 vosk
-SpeechRecognition==3.8.1
+piper-tts
 espeakng
 
 # --- Audio y Hardware ---
@@ -10,10 +10,10 @@ pyserial
 pyaudio
 sounddevice
 adafruit-circuitpython-busdevice
+webrtcvad
 smbus2
 spidev
 RPi.GPIO
-piper-tts
 
 # --- Machine Learning y Datos ---
 numpy
