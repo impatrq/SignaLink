@@ -77,6 +77,9 @@
 /* ---------------------------
    Globals
 --------------------------- */
+static float mpu_angle_x = 0.0f, mpu_angle_y = 0.0f, mpu_angle_z = 0.0f; // Ángulos acumulados
+static int64_t last_mpu_time = 0;
+
 static const char *TAG = "ManoMQTT";
 static const char *LCD_TAG = "example";
 
@@ -250,6 +253,8 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
 static void sensor_publish_task(void *arg)
 {
     ESP_LOGI(TAG, "sensor_publish_task iniciado (cada %d ms)", PUBLISH_PERIOD_MS);
+    last_mpu_time = esp_timer_get_time(); // microsegundos
+
     while (1)
     {
         char estado_flex[5][20];
@@ -260,9 +265,19 @@ static void sensor_publish_task(void *arg)
 
         int gx = 0, gy = 0, gz = 0;
         char mpu_part[64];
+
+        int64_t now = esp_timer_get_time();
+        float delta_t = (now - last_mpu_time) / 1000000.0f; // segundos
+        last_mpu_time = now;
+
         if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz))
         {
-            snprintf(mpu_part, sizeof(mpu_part), "MPU: x=%d, y=%d, z=%d - ", gx, gy, gz);
+            // Integrar velocidad angular para obtener ángulo acumulado
+            mpu_angle_x += gx * delta_t;
+            mpu_angle_y += gy * delta_t;
+            mpu_angle_z += gz * delta_t;
+
+            snprintf(mpu_part, sizeof(mpu_part), "MPU: x=%.1f, y=%.1f, z=%.1f - ", mpu_angle_x, mpu_angle_y, mpu_angle_z);
         }
         else
         {
@@ -275,10 +290,8 @@ static void sensor_publish_task(void *arg)
                  mpu_part,
                  estado_flex[0], estado_flex[1], estado_flex[2], estado_flex[3], estado_flex[4]);
 
-        /* Serial */
         ESP_LOGI(TAG, "%s", mensaje);
 
-        /* MQTT: publicar en el topico de sensors/data si cliente disponible */
         if (mqtt_client)
         {
             int msg_id = esp_mqtt_client_publish(mqtt_client, "sensors/mpu_flex", mensaje, 0, 1, 0);
