@@ -126,6 +126,72 @@ static bool mpu_present = false;
 static uint8_t mpu_addr = 0x68; /* dirección 7-bit típica MPU6050 */
 
 /* ---------------------------
+   Filtro Kalman para ángulo MPU6050
+--------------------------- */
+typedef struct {
+    float angle; // ángulo estimado
+    float bias;  // sesgo estimado
+    float rate;  // velocidad angular
+    float P[2][2]; // matriz de error
+    float Q_angle; // varianza proceso ángulo
+    float Q_bias;  // varianza proceso sesgo
+    float R_measure; // varianza medición
+} Kalman_t;
+
+static Kalman_t kalmanX, kalmanY, kalmanZ;
+
+void kalman_init(Kalman_t *kalman) {
+    kalman->angle = 0.0f;
+    kalman->bias = 0.0f;
+    kalman->rate = 0.0f;
+    kalman->P[0][0] = 1.0f;
+    kalman->P[0][1] = 0.0f;
+    kalman->P[1][0] = 0.0f;
+    kalman->P[1][1] = 1.0f;
+    kalman->Q_angle = 0.001f;
+    kalman->Q_bias = 0.003f;
+    kalman->R_measure = 0.03f;
+}
+
+// Filtro Kalman para un eje
+float kalman_update(Kalman_t *kalman, float newAngle, float newRate, float dt) {
+    // Predicción
+    kalman->rate = newRate - kalman->bias;
+    kalman->angle += dt * kalman->rate;
+
+    // Actualización de la matriz de error
+    kalman->P[0][0] += dt * (dt*kalman->P[1][1] - kalman->P[0][1] - kalman->P[1][0] + kalman->Q_angle);
+    kalman->P[0][1] -= dt * kalman->P[1][1];
+    kalman->P[1][0] -= dt * kalman->P[1][1];
+    kalman->P[1][1] += kalman->Q_bias * dt;
+
+    // Medición
+    float S = kalman->P[0][0] + kalman->R_measure;
+    float K[2];
+    K[0] = kalman->P[0][0] / S;
+    K[1] = kalman->P[1][0] / S;
+
+    float y = newAngle - kalman->angle;
+    kalman->angle += K[0] * y;
+    kalman->bias += K[1] * y;
+
+    // Actualización de la matriz de error
+    float P00_temp = kalman->P[0][0];
+    float P01_temp = kalman->P[0][1];
+
+    kalman->P[0][0] -= K[0] * P00_temp;
+    kalman->P[0][1] -= K[0] * P01_temp;
+    kalman->P[1][0] -= K[1] * P00_temp;
+    kalman->P[1][1] -= K[1] * P01_temp;
+
+    // Limitar ángulo
+    if (kalman->angle > 360.0f) kalman->angle -= 360.0f;
+    if (kalman->angle < -360.0f) kalman->angle += 360.0f;
+
+    return kalman->angle;
+}
+
+/* ---------------------------
    Helpers I2C / MPU6050
  --------------------------- */
 static esp_err_t mpu6050_write_reg(uint8_t dev_addr_7bit, uint8_t reg, uint8_t data)
@@ -250,6 +316,21 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
    Tarea periódica: publicar MPU + flex cada 1s
    - Imprime por serial y publica en MQTT si está conectado.
 --------------------------- */
+// Lee acelerómetro (reg 0x3B..0x40), devuelve valores en g (float)
+static bool mpu6050_read_accel_g(float *ax, float *ay, float *az)
+{
+    uint8_t buf[6];
+    if (mpu6050_read_regs(mpu_addr, 0x3B, buf, 6) != ESP_OK)
+        return false;
+    int16_t raw_x = (int16_t)((buf[0] << 8) | buf[1]);
+    int16_t raw_y = (int16_t)((buf[2] << 8) | buf[3]);
+    int16_t raw_z = (int16_t)((buf[4] << 8) | buf[5]);
+    *ax = raw_x / 16384.0f;
+    *ay = raw_y / 16384.0f;
+    *az = raw_z / 16384.0f;
+    return true;
+}
+
 static void sensor_publish_task(void *arg)
 {
     ESP_LOGI(TAG, "sensor_publish_task iniciado (cada %d ms)", PUBLISH_PERIOD_MS);
@@ -264,20 +345,28 @@ static void sensor_publish_task(void *arg)
         }
 
         int gx = 0, gy = 0, gz = 0;
+        float ax = 0, ay = 0, az = 0;
         char mpu_part[64];
 
         int64_t now = esp_timer_get_time();
         float delta_t = (now - last_mpu_time) / 1000000.0f; // segundos
         last_mpu_time = now;
 
-        if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz))
-        {
-            // Integrar velocidad angular para obtener ángulo acumulado
-            mpu_angle_x += gx * delta_t;
-            mpu_angle_y += gy * delta_t;
-            mpu_angle_z += gz * delta_t;
+        float angle_acc_x = 0, angle_acc_y = 0, angle_acc_z = 0;
 
-            snprintf(mpu_part, sizeof(mpu_part), "MPU: x=%.1f, y=%.1f, z=%.1f - ", mpu_angle_x, mpu_angle_y, mpu_angle_z);
+        if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz) && mpu6050_read_accel_g(&ax, &ay, &az))
+        {
+            // Calcular ángulo absoluto del acelerómetro (ejemplo: pitch y roll)
+            angle_acc_x = atan2(ay, az) * 180.0f / 3.14159265f; // Roll
+            angle_acc_y = atan2(-ax, sqrt(ay*ay + az*az)) * 180.0f / 3.14159265f; // Pitch
+            // Z no se calcula directamente con acelerómetro, se mantiene con giroscopio
+
+            // Actualizar filtro Kalman
+            float kalman_angle_x = kalman_update(&kalmanX, angle_acc_x, gx, delta_t);
+            float kalman_angle_y = kalman_update(&kalmanY, angle_acc_y, gy, delta_t);
+            float kalman_angle_z = kalman_update(&kalmanZ, 0, gz, delta_t); // Z solo con gyro
+
+            snprintf(mpu_part, sizeof(mpu_part), "MPU: x=%.1f, y=%.1f, z=%.1f - ", kalman_angle_x, kalman_angle_y, kalman_angle_z);
         }
         else
         {
@@ -321,14 +410,17 @@ static void mqtt5_event_handler(void *handler_args, esp_event_base_t base, int32
     case MQTT_EVENT_CONNECTED:
     {
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+        // Inicializar filtros Kalman en 0 al conectar
+        kalman_init(&kalmanX);
+        kalman_init(&kalmanY);
+        kalman_init(&kalmanZ);
+
         int msg_id = esp_mqtt_client_subscribe(mqtt_client, "comandos/esp32", 0);
         ESP_LOGI(TAG, "Suscrito a 'comandos/esp32', msg_id=%d", msg_id);
 
-        /* Suscribir tambien al topic que muestra frases del micrófono */
         int msg_id2 = esp_mqtt_client_subscribe(mqtt_client, "display/lcd", 0);
         ESP_LOGI(TAG, "Suscrito a 'display/lcd', msg_id=%d", msg_id2);
 
-        /* Anunciar LCD si ya inicializó */
         if (lcd_ready)
         {
             const char *payload = "ON";
