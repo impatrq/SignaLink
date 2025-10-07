@@ -28,6 +28,7 @@
 #include "esp_lvgl_port.h"
 #include "lvgl.h"
 #include "esp_lcd_panel_vendor.h"
+#include <math.h> 
 #include "esp_lcd_panel_ssd1306.h"
 
 /* ---------------------------
@@ -77,7 +78,7 @@
 /* ---------------------------
    Globals
 --------------------------- */
-static float mpu_angle_x = 0.0f, mpu_angle_y = 0.0f, mpu_angle_z = 0.0f; // Ángulos acumulados
+// static float mpu_angle_x = 0.0f, mpu_angle_y = 0.0f, mpu_angle_z = 0.0f; // Ángulos acumulados
 static int64_t last_mpu_time = 0;
 
 static const char *TAG = "ManoMQTT";
@@ -159,23 +160,28 @@ float kalman_update(Kalman_t *kalman, float newAngle, float newRate, float dt) {
     kalman->rate = newRate - kalman->bias;
     kalman->angle += dt * kalman->rate;
 
-    // Actualización de la matriz de error
-    kalman->P[0][0] += dt * (dt*kalman->P[1][1] - kalman->P[0][1] - kalman->P[1][0] + kalman->Q_angle);
+    // Actualización de la matriz de error (misma lógica)
+    kalman->P[0][0] += dt * (dt * kalman->P[1][1] - kalman->P[0][1] - kalman->P[1][0] + kalman->Q_angle);
     kalman->P[0][1] -= dt * kalman->P[1][1];
     kalman->P[1][0] -= dt * kalman->P[1][1];
     kalman->P[1][1] += kalman->Q_bias * dt;
 
-    // Medición
+    // Medición: calculamos la diferencia con corrección por wrapping [-180,180]
     float S = kalman->P[0][0] + kalman->R_measure;
     float K[2];
     K[0] = kalman->P[0][0] / S;
     K[1] = kalman->P[1][0] / S;
 
+    // Residual (nuevo ángulo - estimado). Corregir por paso por +/-180°
     float y = newAngle - kalman->angle;
-    kalman->angle += K[0] * y;
-    kalman->bias += K[1] * y;
+    if (y > 180.0f)  y -= 360.0f;
+    if (y < -180.0f) y += 360.0f;
 
-    // Actualización de la matriz de error
+    // Aplicar corrección
+    kalman->angle += K[0] * y;
+    kalman->bias  += K[1] * y;
+
+    // Actualizar matriz de error
     float P00_temp = kalman->P[0][0];
     float P01_temp = kalman->P[0][1];
 
@@ -184,9 +190,9 @@ float kalman_update(Kalman_t *kalman, float newAngle, float newRate, float dt) {
     kalman->P[1][0] -= K[1] * P00_temp;
     kalman->P[1][1] -= K[1] * P01_temp;
 
-    // Limitar ángulo
-    if (kalman->angle > 360.0f) kalman->angle -= 360.0f;
-    if (kalman->angle < -360.0f) kalman->angle += 360.0f;
+    // Mantener ángulo en rango -180..+180 para la continuidad interna
+    if (kalman->angle > 180.0f)  kalman->angle -= 360.0f;
+    if (kalman->angle < -180.0f) kalman->angle += 360.0f;
 
     return kalman->angle;
 }
@@ -288,10 +294,10 @@ static void leer_estado_flex(int flex_idx, int channel, adc_cali_handle_t cali, 
     float voltage = voltage_mv / 1000.0f;
 
     float R_flex = 0.0f;
-    if (flex_idx == 2) // Dedo mayor: divisor distinto
+    if (flex_idx == 2) // Dedo mayor: ajustar calibración
     {
-        // Suponiendo que la resistencia fija es 47k (ajustá según tu hardware real)
-        float R_FIXED_MAYOR = 420000.0f;
+        // Resistencia fija para normalizar lecturas (~20kΩ)
+        float R_FIXED_MAYOR = 42000.0f;  
         if (voltage > 0.01f)
             R_flex = R_FIXED_MAYOR * (VCC / voltage - 1.0f);
     }
@@ -352,21 +358,40 @@ static void sensor_publish_task(void *arg)
         float delta_t = (now - last_mpu_time) / 1000000.0f; // segundos
         last_mpu_time = now;
 
-        float angle_acc_x = 0, angle_acc_y = 0, angle_acc_z = 0;
+        float angle_acc_x = 0, angle_acc_y = 0;
 
         if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz) && mpu6050_read_accel_g(&ax, &ay, &az))
         {
-            // Calcular ángulo absoluto del acelerómetro (ejemplo: pitch y roll)
-            angle_acc_x = atan2(ay, az) * 180.0f / 3.14159265f; // Roll
-            angle_acc_y = atan2(-ax, sqrt(ay*ay + az*az)) * 180.0f / 3.14159265f; // Pitch
-            // Z no se calcula directamente con acelerómetro, se mantiene con giroscopio
+            // Fórmulas estándar (medición del acelerómetro) -> rango: -180..+180
+            angle_acc_x = atan2f(ay, az) * 180.0f / M_PI;   // Roll
+            angle_acc_y = atan2f(ax, az) * 180.0f / M_PI;   // Pitch
 
-            // Actualizar filtro Kalman
+            // NO normalizar aquí a 0..360 — mantener -180..+180 para Kalman
+            // Filtro Kalman (gyro en deg/s)
             float kalman_angle_x = kalman_update(&kalmanX, angle_acc_x, gx, delta_t);
             float kalman_angle_y = kalman_update(&kalmanY, angle_acc_y, gy, delta_t);
-            float kalman_angle_z = kalman_update(&kalmanZ, 0, gz, delta_t); // Z solo con gyro
+            static float yaw = 0.0f;  // mantener estado
+            yaw += gz * delta_t;      // sumar rotación en grados/seg * segundos
+            if (yaw >= 360.0f) yaw -= 360.0f;
+            if (yaw < 0.0f) yaw += 360.0f;
+            float kalman_angle_z = yaw;
 
-            snprintf(mpu_part, sizeof(mpu_part), "MPU: x=%.1f, y=%.1f, z=%.1f - ", kalman_angle_x, kalman_angle_y, kalman_angle_z);
+            // Para mostrar/publicar convertimos a 0..360 (visual)
+            float disp_x = kalman_angle_x;
+            float disp_y = kalman_angle_y;
+            float disp_z = kalman_angle_z;
+
+            if (disp_x < 0.0f) disp_x += 360.0f;
+            if (disp_y < 0.0f) disp_y += 360.0f;
+            if (disp_z < 0.0f) disp_z += 360.0f;
+
+            if (disp_x >= 360.0f) disp_x -= 360.0f;
+            if (disp_y >= 360.0f) disp_y -= 360.0f;
+            if (disp_z >= 360.0f) disp_z -= 360.0f;
+
+            snprintf(mpu_part, sizeof(mpu_part),
+                     "MPU: x=%.1f°, y=%.1f°, z=%.1f° - ",
+                     disp_x, disp_y, disp_z);
         }
         else
         {
@@ -375,7 +400,7 @@ static void sensor_publish_task(void *arg)
 
         char mensaje[512];
         snprintf(mensaje, sizeof(mensaje),
-                 "%sPulgar=%s, Indice=%s, Mayor=%s, Anulaar=%s, Meñique=%s",
+                 "%sPulgar=%s, Indice=%s, Mayor=%s, Anular=%s, Meñique=%s",
                  mpu_part,
                  estado_flex[0], estado_flex[1], estado_flex[2], estado_flex[3], estado_flex[4]);
 
