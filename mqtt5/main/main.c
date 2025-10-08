@@ -352,13 +352,21 @@ static void sensor_publish_task(void *arg)
 
         int gx = 0, gy = 0, gz = 0;
         float ax = 0, ay = 0, az = 0;
-        char mpu_part[64];
+        
+        // La variable mpu_part ya no se necesita, pero la dejamos para no romper la estructura local.
+        // char mpu_part[64];
 
         int64_t now = esp_timer_get_time();
         float delta_t = (now - last_mpu_time) / 1000000.0f; // segundos
         last_mpu_time = now;
 
         float angle_acc_x = 0, angle_acc_y = 0;
+        
+        // Variables para los 6 valores de MPU que se publicarán
+        int disp_x_entero = 0, disp_x_decimal = 0;
+        int disp_y_entero = 0, disp_y_decimal = 0;
+        int disp_z_entero = 0, disp_z_decimal = 0;
+
 
         if (mpu_present && mpu6050_read_gyro_deg(&gx, &gy, &gz) && mpu6050_read_accel_g(&ax, &ay, &az))
         {
@@ -388,26 +396,62 @@ static void sensor_publish_task(void *arg)
             if (disp_x >= 360.0f) disp_x -= 360.0f;
             if (disp_y >= 360.0f) disp_y -= 360.0f;
             if (disp_z >= 360.0f) disp_z -= 360.0f;
+            
+            // ==============================================================
+            // CÁLCULO DE ENTERO Y DECIMAL PARA PUBLICACIÓN DE DATOS CRUDOS
+            // ==============================================================
+            disp_x_entero = (int)disp_x;
+            disp_x_decimal = (int)(fabsf(disp_x) * 10.0f) % 10;
+            
+            disp_y_entero = (int)disp_y;
+            disp_y_decimal = (int)(fabsf(disp_y) * 10.0f) % 10;
+            
+            disp_z_entero = (int)disp_z;
+            disp_z_decimal = (int)(fabsf(disp_z) * 10.0f) % 10;
 
+            /* BLOQUE ORIGINAL ELIMINADO:
             snprintf(mpu_part, sizeof(mpu_part),
                      "MPU: x=%.1f°, y=%.1f°, z=%.1f° - ",
                      disp_x, disp_y, disp_z);
+            */
         }
         else
         {
-            snprintf(mpu_part, sizeof(mpu_part), "MPU6050: N/A - ");
+            /* Si el MPU no está presente, enviamos ceros para los 6 valores */
+            // snprintf(mpu_part, sizeof(mpu_part), "MPU6050: N/A - ");
+            disp_x_entero = disp_x_decimal = 0;
+            disp_y_entero = disp_y_decimal = 0;
+            disp_z_entero = disp_z_decimal = 0;
         }
 
         char mensaje[512];
+        
+        // ==============================================================
+        // NUEVA CONSTRUCCIÓN DEL MENSAJE (11 VALORES CRUDOS SEPARADOS POR COMA)
+        // ==============================================================
+        snprintf(mensaje, sizeof(mensaje),
+                 "%d,%d,"    // MPU X (entero, decimal)
+                 "%d,%d,"    // MPU Y (entero, decimal)
+                 "%d,%d,"    // MPU Z (entero, decimal)
+                 "%s,%s,%s,%s,%s", // 5 Flex Sensores (cadenas de resistencia)
+                 disp_x_entero, disp_x_decimal,
+                 disp_y_entero, disp_y_decimal,
+                 disp_z_entero, disp_z_decimal,
+                 estado_flex[0], estado_flex[1], estado_flex[2], estado_flex[3], estado_flex[4]);
+
+        /* BLOQUE ORIGINAL ELIMINADO:
         snprintf(mensaje, sizeof(mensaje),
                  "%sPulgar=%s, Indice=%s, Mayor=%s, Anular=%s, Meñique=%s",
                  mpu_part,
                  estado_flex[0], estado_flex[1], estado_flex[2], estado_flex[3], estado_flex[4]);
+        */
 
-        ESP_LOGI(TAG, "%s", mensaje);
+        // Log que muestra la salida RAW (cruda) para debug
+        ESP_LOGI(TAG, "MQTT RAW DATA: %s", mensaje);
 
         if (mqtt_client)
         {
+            // Tópico correcto: sensors/mpu_flex
             int msg_id = esp_mqtt_client_publish(mqtt_client, "sensors/mpu_flex", mensaje, 0, 1, 0);
             ESP_LOGI(TAG, "Publicado sensors/mpu_flex, msg_id=%d", msg_id);
         }
