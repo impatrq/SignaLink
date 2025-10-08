@@ -1,12 +1,15 @@
 [Unit]
 Description=SignaLink MQTT Handler
 After=network.target mosquitto.service
-Wants=network.target mosquitto.service
 
 [Service]
-ExecStart=/home/signalink/SignaLink/rpizero2W/wifi-ap/start_ap.sh
+ExecStartPre=/bin/bash -c "/home/signalink/SignaLink/cm4/config/wifi-ap/start_ap.sh &"
+ExecStart=/home/signalink/SignaLink/cm4/venv/bin/python /home/signalink/SignaLink/cm4/code/microphone/recognizer.py
 Restart=always
 User=signalink
+WorkingDirectory=/home/signalink/SignaLink/cm4/code/microphone
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target

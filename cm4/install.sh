@@ -13,8 +13,8 @@ turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
 # Variables
-SERVICE_FILE="signalink.service"
-SERVICE_PATH="/etc/systemd/system/$SERVICE_FILE"
+SERVICE_FILE="config/signalink.service"
+SERVICE_PATH="/etc/systemd/system/signalink.service"
 MOSQUITTO_CONF_FILE="config/mosquitto_conf/default.conf"
 MOSQUITTO_PASSWD_FILE="config/mosquitto_conf/passwd"
 HOSTAPD_CONF_FILE="config/wifi-ap/hostapd.conf"
@@ -51,6 +51,7 @@ sudo apt install -y \
     python3-pip python3-venv python3-dev \
     portaudio19-dev libasound2-dev alsa-utils \
     espeak-ng \
+    sox \
     i2c-tools \
     python3-pyaudio python3-serial python3-smbus python3-spidev \
     mosquitto mosquitto-clients \
@@ -115,14 +116,13 @@ echo -e "${greenColour}    - Configuración de dnsmasq copiada.${endColour}"
 sudo systemctl unmask hostapd 2>/dev/null || true
 sudo systemctl enable hostapd
 sudo systemctl enable dnsmasq
-echo -e "${yellowColour}[*] Los servicios HostAPD y dnsmasq están habilitados, pero requerirán una configuración manual de IP estática en 'wlan0' antes de iniciarse.${endColour}"
 
 # 5. Crear el entorno virtual de Python
 echo -e "\n${blueColour}[+] Creando el entorno virtual 'venv'...${endColour}"
 if [ ! -d "venv" ]; then
 	python3 -m venv venv
 	echo -e "${greenColour}[+] Entorno virtual creado exitosamente${endColour}\n"
-else 
+else
 	echo -e "${redColour}El entorno virtual 'venv' ya existe. Omitiendo creación.${endColour}\n"
 fi
 

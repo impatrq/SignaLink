@@ -3,14 +3,17 @@
 # --- Reconocimiento y Síntesis de Voz ---
 vosk
 piper-tts
-espeakng
 
-# --- Audio y Hardware ---
+# --- Audio ---
 pyserial
 pyaudio
 sounddevice
+simpleaudio
+playsound
+scipy
+
+# --- Hardware --
 adafruit-circuitpython-busdevice
-webrtcvad
 smbus2
 spidev
 RPi.GPIO
@@ -18,7 +21,7 @@ RPi.GPIO
 # --- Machine Learning y Datos ---
 numpy
 tflite-runtime
-tinydb
+scikit-learn
 
 # --- Comunicación y Red ---
 requests
@@ -27,4 +30,6 @@ websockets
 
 # --- Utilidades ---
 tqdm
+loguru
 psutil
+webrtcvad

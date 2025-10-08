@@ -27,7 +27,7 @@ username = 'franco'
 password = '_fr4nco_'
 
 # Variables para el control de la grabación
-num_grabaciones = 20
+num_grabaciones = 30
 duracion_grabacion = 3 # segundos
 grabaciones_realizadas = 0
 grabando = False
@@ -56,7 +56,7 @@ def setup_folder():
         print(f"Carpeta creada: {current_dir}")
     
     print(f"Guardado en: {current_dir}")
-    print("Presiona ENTER para iniciar la grabación de 20 sesiones (3 segundos cada una)...")
+    print("Presiona ENTER para iniciar la grabación de 30 sesiones (3 segundos cada una)...")
     input() 
 
 def parse_data_line(line):
@@ -111,7 +111,7 @@ try:
         print(f"Grabación {grabaciones_realizadas} finalizada.")
         time.sleep(1) # Pequeña pausa entre grabaciones
 
-    print("¡20 grabaciones finalizadas! El programa se cerrará.")
+    print("¡30 grabaciones finalizadas! El programa se cerrará.")
     client.loop_stop()
     client.disconnect()
     sys.exit(0)
