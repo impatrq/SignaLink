@@ -1,0 +1,17 @@
+menu "Example Configuration"
+
+    config BROKER_URL
+    string "MQTT Broker URL"
+    default "mqtt://192.168.4.1:1884"
+    help
+      Dirección URI por defecto del broker MQTT.
+
+    config EXAMPLE_MQTT_USERNAME
+    string "MQTT username"
+    default "franco"
+
+    config EXAMPLE_MQTT_PASSWORD
+    string "MQTT password"
+    default "_fr4nco_"
+
+endmenu
