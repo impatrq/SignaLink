@@ -1,13 +1,13 @@
 [Unit]
-Description=SignaLink MQTT Handler
+Description=SignaLink MQTT + Reconocimiento de voz
 After=network.target mosquitto.service
 
 [Service]
-ExecStartPre=/bin/bash -c "/home/signalink/SignaLink/cm4/config/wifi-ap/start_ap.sh &"
-ExecStart=/home/signalink/SignaLink/cm4/venv/bin/python /home/signalink/SignaLink/cm4/code/microphone/recognizer.py
+ExecStartPre=/bin/bash -c '/home/signalink/SignaLink/cm4/config/wifi-ap/start_ap.sh &'
+ExecStart=/bin/bash /home/signalink/SignaLink/cm4/config/services.sh
 Restart=always
 User=signalink
-WorkingDirectory=/home/signalink/SignaLink/cm4/code/microphone
+WorkingDirectory=/home/signalink/SignaLink/cm4/code
 StandardOutput=journal
 StandardError=journal
 

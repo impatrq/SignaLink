@@ -3,3 +3,6 @@ venv/
 
 # Ignoro Modelos de Piper
 models/
+
+# Ignoro Testeo de MQTT
+mqtt_test/

@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 from paho.mqtt import client as mqtt_client
 from datetime import datetime
 import sys
@@ -19,7 +19,7 @@ topic_lcd = "display/lcd"
 username = 'franco'
 password = '_fr4nco_'
 
-log_file = "/home/signalink/SignaLink/cm4/code/mqtt_broker/gestures.log"
+log_file = "/home/signalink/SignaLink/cm4/code/mqtt_broker/mqtt_test/gestures.log"
 
 
 # Callback cuando se conecta
