@@ -19,7 +19,7 @@ spidev
 RPi.GPIO
 
 # --- Machine Learning y Datos ---
-numpy
+numpy<=2.0
 tflite-runtime
 scikit-learn
 
@@ -27,6 +27,7 @@ scikit-learn
 requests
 paho-mqtt
 websockets
+bluez
 
 # --- Utilidades ---
 tqdm

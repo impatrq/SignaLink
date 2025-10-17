@@ -120,7 +120,7 @@ sudo systemctl enable dnsmasq
 # 5. Crear el entorno virtual de Python
 echo -e "\n${blueColour}[+] Creando el entorno virtual 'venv'...${endColour}"
 if [ ! -d "venv" ]; then
-	python3 -m venv venv
+	python3.11 -m venv venv
 	echo -e "${greenColour}[+] Entorno virtual creado exitosamente${endColour}\n"
 else
 	echo -e "${redColour}El entorno virtual 'venv' ya existe. Omitiendo creación.${endColour}\n"

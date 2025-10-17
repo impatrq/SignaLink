@@ -26,7 +26,7 @@ BROKER = 'localhost'
 PORT = 1884
 TOPIC_SENSOR = "sensors/mpu_flex"
 USERNAME = 'franco'
-PASSWORD = '_fr4nco_'
+PASSWORD = 'fr4nco'
 
 MODEL_PATH = "/home/signalink/SignaLink/cm4/code/mqtt_broker/tfmodel/signalink_model.tflite"
 LABEL_PATH = "/home/signalink/SignaLink/cm4/code/mqtt_broker/tfmodel/label_encoder.pkl"
@@ -43,8 +43,17 @@ COOLDOWN_SECONDS = 0.8
 
 MOVEMENT_RANGE_THRESHOLD = 20.0
 
-TEMPO = 0.9
-GAIN_DB = -11
+TEMPO = 0.5
+GAIN_DB = -12
+
+# -----------------------
+# CONFIGURACIÓN BLUETOOTH
+# -----------------------
+JBL_MAC = "20:18:5B:75:84:51"
+JBL_SINK = f"bluez_sink.{JBL_MAC.replace(':', '_')}.a2dp_sink"
+JBL_CARD = f"bluez_card.{JBL_MAC.replace(':', '_')}"
+BLUETOOTH_CONNECT_TIMEOUT = 20 # Segundos para intentar la conexión
+
 
 # -----------------------
 # LOGGER
@@ -82,6 +91,58 @@ prediction_buffer = deque(maxlen=PRED_BUFFER_LEN)
 last_triggered = None
 last_trigger_time = 0.0
 audio_cache = {}
+audio_lock = threading.Lock() 
+
+# -----------------------
+# CONEXIÓN BLUETOOTH Y AUDIO
+# -----------------------
+
+def connect_bluetooth_jbl():
+    """Intenta conectar el altavoz JBL y configurar PulseAudio."""
+    logger.info(f"Iniciando conexión Bluetooth a {JBL_MAC}...")
+
+    # 1. Intentar la conexión con bluetoothctl
+    try:
+        # El comando 'bluetoothctl connect' puede tardar y no siempre sale con error si falla.
+        # Es mejor usar un bucle simple o un timeout.
+        logger.debug(f"Ejecutando: bluetoothctl connect {JBL_MAC}")
+
+        # Ejecutar el comando de conexión
+        connect_cmd = f'bluetoothctl connect {JBL_MAC}'
+
+        # Correr el comando y limitar el tiempo de espera (timeout)
+        result = subprocess.run(connect_cmd, shell=True, timeout=BLUETOOTH_CONNECT_TIMEOUT, 
+                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+        if "Connection successful" not in result.stdout:
+            logger.error(f"Fallo la conexión Bluetooth. Asegúrese de que el JBL esté encendido y en modo emparejamiento. Salida: {result.stdout.strip()}")
+            return False
+
+        logger.success("Conexión Bluetooth exitosa!")
+        time.sleep(2) # Dar tiempo para que el sink aparezca en PulseAudio
+
+        # 2. Configurar PulseAudio
+        logger.info(f"Configurando audio PulseAudio ({JBL_SINK})...")
+
+        # Establecer perfil A2DP (Alta Calidad)
+        subprocess.run(["pactl", "set-card-profile", JBL_CARD, "a2dp_sink"], check=True)
+
+        # Establecer el JBL como sink predeterminado
+        subprocess.run(["pactl", "set-default-sink", JBL_SINK], check=True)
+        
+        logger.success("JBL configurado como salida de audio predeterminada.")
+        return True
+
+    except subprocess.TimeoutExpired:
+        logger.error(f"La conexión Bluetooth excedió el tiempo de espera de {BLUETOOTH_CONNECT_TIMEOUT} segundos.")
+        return False
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Error al configurar PulseAudio: {e}. Verifique que el servicio esté corriendo.")
+        return False
+    except Exception as e:
+        logger.error(f"Error inesperado en la conexión Bluetooth: {e}")
+        return False
+
 
 # -----------------------
 # UTILIDADES
@@ -141,18 +202,32 @@ def ensure_adjusted_audio(pred):
     audio_cache[key] = adjusted
     return adjusted
 
-def _play_blocking(path, pred):
+def _play_blocking(file_path, pred):
+    global audio_lock
     try:
-        wave_obj = sa.WaveObject.from_wave_file(path)
-        play_obj = wave_obj.play()
-        play_obj.wait_done()
-        logger.success(f"Reproducción finalizada: {pred}")
+        if not audio_lock.acquire(blocking=False): 
+           logger.warning(f"Dispositivo ocupado, no se puede reproducir ahora")
+           return
+        logger.debug(f"Reproduciendo {pred} desde {file_path}")
+        
+        # Se usa 'aplay' sin especificar la tarjeta para que use el sink predeterminado (JBL)
+        result = subprocess.run(["aplay", file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        
+        if result.returncode != 0:
+           logger.error(f"Error reproduciendo '{pred}': {result.stderr.strip()}")
+        else:
+           logger.debug(f"Reproducción de {pred} finalizada") 
     except Exception as e:
-        logger.error(f"Error reproduciendo {pred}: {e}")
+        logger.error(f"Error general en _play_blocking ({pred}): {e}")
+    finally:
+        if audio_lock.locked():
+           audio_lock.release()
+        time.sleep(0.1)
 
 def play_audio(pred):
-    if pred.lower() == "reposo":
-        logger.debug(f"Prediccion 'reposo ' -> no se reproduce audio")
+    # Lógica de Reposo: No reproducir si empieza con 'reposo'
+    if pred.lower().startswith("reposo"):
+        logger.debug(f"Prediccion '{pred}' -> no se reproduce audio (Es un estado de reposo)")
         return
 
     try:
@@ -227,6 +302,11 @@ def on_message(client, userdata, msg):
 # MAIN
 # -----------------------
 def main():
+    # 1. Conexión Bluetooth al inicio
+    if not connect_bluetooth_jbl():
+        logger.warning("El script continuará, pero el audio no saldrá por el JBL.")
+
+    # 2. Lógica MQTT/Modelo
     logger.info("Conectando al broker MQTT...")
     client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
     client.username_pw_set(USERNAME, PASSWORD)
