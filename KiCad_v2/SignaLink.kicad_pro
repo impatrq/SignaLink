@@ -728,6 +728,12 @@
           "label": "SNAPEDA_PACKAGE_ID",
           "name": "SNAPEDA_PACKAGE_ID",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
         }
       ],
       "filter_string": "",

@@ -1,5 +1,5 @@
 
-(footprint IC_BNO085 (layer F.Cu) (tedit 68FA4AC8)
+(footprint IC_BNO085 (layer F.Cu) (tedit 68FBF2D7)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at 0.332 -2.6936 0) (layer F.SilkS)

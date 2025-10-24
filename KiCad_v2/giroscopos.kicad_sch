@@ -4166,7 +4166,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprint KiCad:IC_BNO085"
+		(property "Footprint" "Custom_Footprints:IC_BNO085"
 			(at 88.9 104.14 0)
 			(effects
 				(font

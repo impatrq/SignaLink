@@ -1,5 +1,5 @@
 
-(footprint MSOP-16_MSE (layer F.Cu) (tedit 68FB9A60)
+(footprint MSOP-16_MSE (layer F.Cu) (tedit 68FBF492)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -1.8829 -2.79103 0) (layer F.SilkS)

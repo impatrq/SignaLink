@@ -2908,7 +2908,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 88.9) (xy 109.22 109.22)
+			(xy 109.22 83.82) (xy 109.22 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4348,7 +4348,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 72.39) (xy 109.22 81.28)
+			(xy 109.22 72.39) (xy 109.22 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4815,7 +4815,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Footprint KiCad:B340A"
+		(property "Footprint" "Custom_Footprints:B340A"
 			(at 200.66 86.36 0)
 			(effects
 				(font
@@ -6435,7 +6435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprint KiCad:DIOM7959X265N"
+		(property "Footprint" "Custom_Footprints:DIOM7959X265N"
 			(at 99.06 72.39 0)
 			(effects
 				(font
@@ -6988,7 +6988,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 109.22 85.09 0)
+		(at 109.22 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6997,7 +6997,7 @@
 		(fields_autoplaced yes)
 		(uuid "82b57e55-1213-44e6-a273-eb1210f921d2")
 		(property "Reference" "C2"
-			(at 113.03 83.8199 0)
+			(at 113.03 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7006,7 +7006,7 @@
 			)
 		)
 		(property "Value" "28uF"
-			(at 113.03 86.3599 0)
+			(at 113.03 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7015,7 +7015,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 110.1852 88.9 0)
+			(at 110.1852 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7024,7 +7024,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 85.09 0)
+			(at 109.22 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7033,7 +7033,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 109.22 85.09 0)
+			(at 109.22 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7042,7 +7042,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 109.22 85.09 0)
+			(at 109.22 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8649,7 +8649,7 @@
 				)
 			)
 		)
-		(property "Value" "22uH-4.7u"
+		(property "Value" "4.7uH"
 			(at 85.09 62.23 90)
 			(effects
 				(font
@@ -9246,7 +9246,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprint KiCad:SOP8"
+		(property "Footprint" "Custom_Footprints:SOP8"
 			(at 168.91 87.63 0)
 			(effects
 				(font

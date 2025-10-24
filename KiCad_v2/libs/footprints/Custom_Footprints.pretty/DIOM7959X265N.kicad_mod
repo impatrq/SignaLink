@@ -1,5 +1,5 @@
 
-(footprint DIOM7959X265N (layer F.Cu) (tedit 68FBAD37)
+(footprint DIOM7959X265N (layer F.Cu) (tedit 68FBFB76)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -0.555 -4.889 0) (layer F.SilkS)

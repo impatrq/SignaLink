@@ -4112,6 +4112,24 @@
 						)
 					)
 				)
+				(pin input clock
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at 12.7 0 180)
 					(length 5.08)
@@ -4141,26 +4159,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "DM-OLED096-636_1_0"
-				(pin input line
-					(at 12.7 2.54 180)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5803,12 +5801,6 @@
 		(uuid "349a8830-86d8-4f1b-a014-6f9f520d59df")
 	)
 	(junction
-		(at 45.72 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64f3b307-b8af-4c5d-90d1-7b397bb74b59")
-	)
-	(junction
 		(at 83.82 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5867,6 +5859,10 @@
 	(no_connect
 		(at 116.84 173.99)
 		(uuid "6a200df3-ebe0-4f34-bacc-883746538776")
+	)
+	(no_connect
+		(at 52.07 87.63)
+		(uuid "8e5f2aab-6706-42ea-94b2-34bd8865513b")
 	)
 	(no_connect
 		(at 116.84 168.91)
@@ -6084,16 +6080,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 38.1) (xy 49.53 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a75c9f7-7530-4f5c-abf7-22af4ed67388")
-	)
-	(wire
-		(pts
 			(xy 46.99 95.25) (xy 52.07 95.25)
 		)
 		(stroke
@@ -6121,16 +6107,6 @@
 			(type default)
 		)
 		(uuid "5361245b-45d0-4ccf-835c-a3515f639d04")
-	)
-	(wire
-		(pts
-			(xy 46.99 87.63) (xy 52.07 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5449da97-f084-4e1b-b974-6c1cfd399caf")
 	)
 	(wire
 		(pts
@@ -6324,16 +6300,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 35.56) (xy 44.45 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bacf925-b595-4ad3-8b97-10ff76bf8df8")
-	)
-	(wire
-		(pts
 			(xy -60.96 107.95) (xy -49.53 107.95)
 		)
 		(stroke
@@ -6371,16 +6337,6 @@
 			(type default)
 		)
 		(uuid "905d7590-8c09-4de4-bcb9-1341bbedb364")
-	)
-	(wire
-		(pts
-			(xy 45.72 33.02) (xy 45.72 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93da719b-fd07-4a4f-993d-0bb59d6a503e")
 	)
 	(wire
 		(pts
@@ -6574,16 +6530,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 49.53) (xy 45.72 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c705b8b8-9a35-470f-bf2f-f92987028554")
-	)
-	(wire
-		(pts
 			(xy 120.65 158.75) (xy 118.11 158.75)
 		)
 		(stroke
@@ -6611,16 +6557,6 @@
 			(type default)
 		)
 		(uuid "ca56eaf1-156c-4aac-ad25-b4a348fc572e")
-	)
-	(wire
-		(pts
-			(xy 45.72 38.1) (xy 45.72 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d08300f3-4476-4daf-9c0c-0aefc1a676a1")
 	)
 	(wire
 		(pts
@@ -6711,16 +6647,6 @@
 			(type default)
 		)
 		(uuid "e83d3669-19b4-42d6-9dc4-27ae4ea40b1d")
-	)
-	(wire
-		(pts
-			(xy 44.45 38.1) (xy 45.72 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5899c08-ccc7-461f-a3a9-6654088fabc2")
 	)
 	(wire
 		(pts
@@ -6932,16 +6858,6 @@
 		)
 		(uuid "9d372bf5-927b-4dcc-81a1-197871678f7e")
 	)
-	(label "A0"
-		(at 49.53 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9ea7034f-d7b5-4389-88d7-962256be0bac")
-	)
 	(label "5V"
 		(at -57.15 54.61 0)
 		(effects
@@ -6971,16 +6887,6 @@
 			(justify right bottom)
 		)
 		(uuid "afa4bcbb-fa1c-4641-a4a6-5ef04b1787b9")
-	)
-	(label "A0"
-		(at 46.99 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b72870ac-7adf-4c0c-bbb3-38097ff75a80")
 	)
 	(label "SDA"
 		(at 127 100.33 180)
@@ -8497,152 +8403,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 45.72 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40a51b82-712e-443f-840a-96ae092a2c03")
-		(property "Reference" "#PWR04"
-			(at 45.72 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 45.72 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 45.72 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aad1b567-4846-4ed2-864f-e2292d73edfc")
-		)
-		(instances
-			(project ""
-				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 39.37 38.1 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4768e4ad-a5d0-4e40-89e0-fb59a120c546")
-		(property "Reference" "S1"
-			(at 39.37 40.386 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SF 1"
-			(at 37.846 38.354 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 39.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 39.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 39.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45a82bad-2467-4d93-9a99-e189b7c5a1c2")
-		)
-		(pin "2"
-			(uuid "3ad32d84-5f1a-4217-b581-943d3777dc67")
-		)
-		(instances
-			(project ""
-				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "S1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 22.86 172.72 0)
 		(unit 1)
@@ -8814,7 +8574,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "esp32-huella:MODULE_ESP32-C3_SUPERMINI_TH"
+		(property "Footprint" "Custom_Footprints:MODULE_ESP32-C3_SUPERMINI_TH"
 			(at 58.166 125.984 0)
 			(effects
 				(font
@@ -8963,7 +8723,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Sim.Library" ".\\"
 			(at 69.85 92.71 0)
 			(effects
 				(font
@@ -9024,72 +8784,6 @@
 			(project ""
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 45.72 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "611df7f2-dc3e-4330-a54a-c44f956f458f")
-		(property "Reference" "#PWR012"
-			(at 45.72 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc0e001e-80be-4918-80f4-9b776cef107e")
-		)
-		(instances
-			(project ""
-				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -9188,7 +8882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 52.07 38.1 0)
 			(effects
 				(font
@@ -10296,7 +9990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprint KiCad:MSOP-16_MSE"
+		(property "Footprint" "Custom_Footprints:MSOP-16_MSE"
 			(at 50.8 158.75 0)
 			(effects
 				(font
@@ -10665,7 +10359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 64.77 38.1 0)
 			(effects
 				(font
@@ -10941,7 +10635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 77.47 38.1 0)
 			(effects
 				(font
@@ -11059,85 +10753,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 45.72 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca56791b-d110-4ba6-977f-f8ef8fb9896d")
-		(property "Reference" "R1"
-			(at 48.26 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 48.26 46.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 43.942 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d3b47a8-6fdb-43c8-95cb-be4cb261d983")
-		)
-		(pin "2"
-			(uuid "53907820-b954-434e-b0f8-29152453bb8d")
-		)
-		(instances
-			(project ""
-				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "DM-OLED096-636:DM-OLED096-636")
 		(at 110.49 100.33 0)
 		(unit 1)
@@ -11163,7 +10778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Custom_Footprints:MODULE_DM-OLED096-636"
 			(at 110.49 100.33 0)
 			(effects
 				(font
@@ -11311,7 +10926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "Sim.Library" ".\\"
 			(at 110.49 100.33 0)
 			(effects
 				(font
