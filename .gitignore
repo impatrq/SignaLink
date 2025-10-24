@@ -1,4 +1,6 @@
+# ---------
 # ESP-IDF build output
+# ---------
 build/
 sdkconfig.old
 sdkconfig.local
@@ -15,3 +17,67 @@ sdkconfig.local
 .vscode/
 *.DS_Store
 Thumbs.db
+
+# ---------
+# Kicad
+# ---------
+
+# Archivos de respaldo y autosave
+*~*
+*.bak
+*.bck
+*.tmp
+*.autosave
+*-backups/
+*.kicad_prl-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Archivos de lock temporales
+*.lck
+
+# Archivos de caché del sistema
+_pycache_/
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local (no necesarios para otros usuarios)
+*.kicad_prl       # Preferencias de vista y zoom
+*.kicad_wks       # Configs de hoja personalizada (si es personal)
+*.kicad_dru       # Reglas DRC locales (si no son del proyecto compartido)
+
+# Archivos temporales generados por KiCad o herramientas
+*.net
+*.xml
+*.csv
+*.rpt
+*.pro
+*.cmp
+*.out
+*.cache.lib
+*.bak.lib
+*.bak.kicad_mod
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_prl-bak
+
+# Carpeta de autosave
+.kicad_autosave/
+
+# Archivos de simulación (Ngspice)
+*.raw
+*.log
+
+# Archivos de fabricación generados (opcional subirlos a /gerbers)
+*.gbr
+*.drl
+*.zip
+*.pos
+*.bom
+*.step
+*.stp
+
+# Archivos de proyecto específicos de usuario
+*.swp
+*.tmp
+*.lock
