@@ -2670,6 +2670,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 217.17 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cf2dadce-517f-4bcf-8b9b-7600f2c4bc67")
 		)
@@ -2940,6 +2949,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 119.38 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8821cd51-c28c-478d-8c64-e4d89e7bb96c")
 		)
@@ -3002,6 +3020,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 166.37 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
 			(at 166.37 88.9 0)
 			(effects
 				(font
@@ -3143,6 +3170,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 198.12 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "038311ab-de82-4f40-b4ab-55384be370d9")
 		)
@@ -3213,6 +3249,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 133.35 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fc4185e3-e267-4a11-9578-3b260b8b1519")
 		)
@@ -3274,6 +3319,15 @@
 			)
 		)
 		(property "Description" "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C"
+			(at 191.77 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
 			(at 191.77 102.87 0)
 			(effects
 				(font
@@ -3483,6 +3537,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 128.27 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "56067ed9-96c0-4d95-8785-4f318dd23e4b")
 		)
@@ -3545,6 +3608,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
 			(at 160.02 88.9 0)
 			(effects
 				(font
@@ -3688,6 +3760,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 39.37 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "18870110-16aa-4082-ab13-6f2700979226")
 		)
@@ -3758,6 +3839,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 22.86 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e2d6f6f6-36a1-4afa-9489-27776f6fef3f")
 		)
@@ -3819,6 +3909,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
 			(at 210.82 118.11 0)
 			(effects
 				(font
@@ -4212,6 +4311,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 88.9 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -4693,6 +4801,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 48.26 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c42a9cc-ad36-4b9e-bb48-ae7b55f4d9f2")
 		)
@@ -4819,6 +4936,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 185.42 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 185.42 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5087,6 +5213,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 127 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 127 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)

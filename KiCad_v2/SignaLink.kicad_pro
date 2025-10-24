@@ -722,6 +722,12 @@
           "label": "MANUFACTURER_PART_NUMBER",
           "name": "MANUFACTURER_PART_NUMBER",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PACKAGE_ID",
+          "name": "SNAPEDA_PACKAGE_ID",
+          "show": false
         }
       ],
       "filter_string": "",
