@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "B340A-13-F")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/B340A-13-F.kicad_sym")(options "")(descr ""))
+  (lib (name "BNO085")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/BNO085.kicad_sym")(options "")(descr ""))
+  (lib (name "CM4IO")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/CM4IO.kicad_sym")(options "")(descr ""))
+  (lib (name "DM-OLED096-636")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/DM-OLED096-636.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-C3_SUPERMINI_TH")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/ESP32-C3_SUPERMINI_TH.kicad_sym")(options "")(descr ""))
+  (lib (name "LTC4415IMSEPBF")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/LTC4415IMSEPBF.kicad_sym")(options "")(descr ""))
+  (lib (name "SimbolosKiCad_sym")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/SimbolosKiCad_sym.kicad_sym")(options "")(descr ""))
+  (lib (name "SS34")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/SS34.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS54331D")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/TPS54331D.kicad_sym")(options "")(descr ""))
+)

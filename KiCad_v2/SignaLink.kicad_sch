@@ -8882,7 +8882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 52.07 38.1 0)
 			(effects
 				(font
