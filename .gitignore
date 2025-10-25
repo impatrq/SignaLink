@@ -68,15 +68,6 @@ Thumbs.db
 *.raw
 *.log
 
-# Archivos de fabricación generados (opcional subirlos a /gerbers)
-*.gbr
-*.drl
-*.zip
-*.pos
-*.bom
-*.step
-*.stp
-
 # Archivos de proyecto específicos de usuario
 *.swp
 *.tmp
