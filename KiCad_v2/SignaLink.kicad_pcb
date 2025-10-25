@@ -13341,7 +13341,7 @@
 	(footprint "CM4IO:Raspberry-Pi-4-Compute-Module"
 		(layer "F.Cu")
 		(uuid "a4f7dc58-e26d-498b-93f8-d709b755f29c")
-		(at 87.625 86.145 90)
+		(at 88 86 90)
 		(descr "Raspberry Pi 4 Compute Module")
 		(tags "Raspberry Pi 4 Compute Module")
 		(property "Reference" "Module1"
@@ -15567,15 +15567,15 @@
 			(uuid "2495094f-bf31-4a99-b3bd-35cde644eb15")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_3DMODELS}/CM4.step"
+		(model "${KIPRJMOD}/libs/3dmodels/CM4.step"
 			(offset
-				(xyz 52.4 51.5 -2.8)
+				(xyz -19.3 -3 -2.8)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -180 -90)
+				(xyz -180 -0 -90)
 			)
 		)
 	)
@@ -20417,7 +20417,7 @@
 	(footprint "Custom_Footprints:MODULE_ESP32-C3_SUPERMINI_TH"
 		(layer "F.Cu")
 		(uuid "f766723a-0723-4be3-9b48-6d08b424c864")
-		(at 68.93 71.395)
+		(at 69.38 70.62)
 		(property "Reference" "U2"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -20852,7 +20852,7 @@
 			(uuid "39d7bcd1-99bb-4411-b3d3-fb44f465186e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_3DMODELS}/ESP32-C3_SUPERMINI_TH.step"
+		(model "${KIPRJMOD}/libs/3dmodels/ESP32-C3_SUPERMINI_TH.step"
 			(offset
 				(xyz 0 0 0)
 			)

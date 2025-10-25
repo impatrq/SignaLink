@@ -217,4 +217,15 @@
 		(uuid "406dd46a-fe2a-4f3a-b61f-006965bc6088")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3dmodels/ESP32-C3_SUPERMINI_TH.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
