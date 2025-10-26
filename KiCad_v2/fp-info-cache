@@ -1,4 +1,4 @@
-26731231708269474
+26734754870432948
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59381,12 +59381,19 @@ IC_BNO085
 28
 28
 Custom_Footprints
+IND_SRP6540-100M
+
+
+0
+2
+2
+Custom_Footprints
 MODULE_DM-OLED096-636
 
 
 0
 8
-8
+4
 Custom_Footprints
 MODULE_ESP32-C3_SUPERMINI_TH
 
@@ -59408,6 +59415,13 @@ MT3608
 0
 4
 4
+Custom_Footprints
+QFN50P300X300X80-17N
+
+
+0
+17
+17
 Custom_Footprints
 SOIC127P599X175-8N
 
