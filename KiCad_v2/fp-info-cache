@@ -1,4 +1,4 @@
-26736517636944105
+26741802472769913
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59443,6 +59443,27 @@ SOP8
 0
 8
 8
+Custom_Footprints
+SOT230P700X180-4N
+
+
+0
+4
+4
+Custom_Footprints
+SS24
+
+
+0
+2
+2
+Custom_Footprints
+SS34
+
+
+0
+2
+2
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator

@@ -6418,6 +6418,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 97.79 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "191c77f8-0327-4c70-999f-09e1e28731c8")
 		)
@@ -6625,6 +6634,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 59.69 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c6c67717-6b05-4095-a3fe-64482e9d3853")
 		)
@@ -6767,6 +6785,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 72.39 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f6faf7c-01e9-4ae5-ae46-4751d016b559")
 		)
@@ -6892,6 +6919,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 208.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 208.28 154.94 0)
 			(effects
 				(font
@@ -7174,6 +7210,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 85.09 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "45cdf36e-4a06-4a4e-9bed-a8dea9178e27")
 		)
@@ -7322,6 +7367,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 107.95 87.63 0)
 			(effects
 				(font
@@ -8065,6 +8119,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 91.44 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f95f686f-3839-4593-8cfa-b6774e005199")
 		)
@@ -8187,6 +8250,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 133.35 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 133.35 113.03 0)
 			(effects
 				(font
@@ -8458,6 +8530,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 48.26 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "b6b26e4d-8a01-4fcf-b662-ed0242019e69")
 		)
@@ -8625,6 +8706,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 208.28 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 208.28 144.78 0)
 			(effects
 				(font
@@ -8832,6 +8922,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 53.34 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 53.34 27.94 0)
 			(effects
 				(font
@@ -9122,6 +9221,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 175.26 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 175.26 82.55 0)
 			(effects
 				(font
@@ -10063,6 +10171,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5ae687f4-15dc-4631-a9a0-3256225671b6")
 		)
@@ -10188,6 +10305,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 133.35 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 133.35 93.98 0)
 			(effects
 				(font
@@ -10601,6 +10727,15 @@
 				(hide yes)
 			)
 		)
+		(property "VALUE" ""
+			(at 78.74 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00db01c3-5897-4a6a-a1c5-0a248311e473")
 		)
@@ -10854,6 +10989,15 @@
 			)
 		)
 		(property "VENDOR" ""
+			(at 107.95 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE" ""
 			(at 107.95 85.09 0)
 			(effects
 				(font
