@@ -368,6 +368,31 @@
 	(net 288 "unconnected-(C26-Pad2)")
 	(net 289 "+3V3")
 	(net 290 "Net-(Module1A-GPIO2)")
+	(net 291 "unconnected-(U1-SYNC1-Pad19)")
+	(net 292 "unconnected-(U1-SWB2-Pad13)")
+	(net 293 "unconnected-(U1-RT1-Pad21)")
+	(net 294 "unconnected-(U1-*SHDN1-Pad22)")
+	(net 295 "unconnected-(U1-SYNC2-Pad18)")
+	(net 296 "unconnected-(U1-PG2-Pad10)")
+	(net 297 "unconnected-(U1-CLKOUT2-Pad14)")
+	(net 298 "unconnected-(U1-VIN1-Pad2)")
+	(net 299 "unconnected-(U1-CLKOUT1-Pad23)")
+	(net 300 "unconnected-(U1-FBX2-Pad7)")
+	(net 301 "unconnected-(U1-GATE2-Pad9)")
+	(net 302 "unconnected-(U1-VC2-Pad8)")
+	(net 303 "unconnected-(U1-VIN2-Pad11)")
+	(net 304 "unconnected-(U1-VC1-Pad5)")
+	(net 305 "unconnected-(U1-SWA2-Pad12)")
+	(net 306 "unconnected-(U1-SS1-Pad20)")
+	(net 307 "unconnected-(U1-SWB1-Pad24)")
+	(net 308 "unconnected-(U1-SWA1-Pad1)")
+	(net 309 "unconnected-(U1-GATE1-Pad4)")
+	(net 310 "unconnected-(U1-*SHDN2-Pad15)")
+	(net 311 "unconnected-(U1-RT2-Pad16)")
+	(net 312 "unconnected-(U1-GND-Pad25)")
+	(net 313 "unconnected-(U1-PG1-Pad3)")
+	(net 314 "unconnected-(U1-FBX1-Pad6)")
+	(net 315 "unconnected-(U1-SS2-Pad17)")
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "03bc5bfa-9b88-4213-8f75-301331b87a4b")
@@ -426,6 +451,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9de8754a-f6da-43a6-9028-42a3468058b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0063be66-aff0-4239-8166-4316e12a7c16")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d69701e4-f5e2-48da-8459-fb51cc5a851a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48ecc9e0-8f3e-45b3-bb71-efd69d8436b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9998a97-39dc-4681-a28e-23a17e9e0834")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d449ea7-91eb-4874-9545-7a3c4dadbd7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e08a01a4-2578-4795-807b-e6614101e9ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "022a0d68-2318-4e81-beba-abac512c879c")
 			(effects
 				(font
 					(size 1 1)
@@ -645,6 +761,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a39a288-4cc2-4180-a060-942005283375")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29af2ea1-5ca1-4bdf-bbbc-bd0afc36dcaa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd159e3a-9ed8-49d6-8a0e-64f4974e4e92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1449b253-964e-4649-bf25-e9e899a098db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b609d216-aacc-4a56-be8a-da46656455bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84a40540-95a0-4323-bdf5-eb2af0210c8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "534d546a-b1d1-42b6-a842-e64a325cbb0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/34749434-09b2-4a41-a8b2-bf0e7656b1cc")
 		(sheetname "/power_supply/")
@@ -845,7 +1052,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/d9ae79f7-d49c-447e-b127-dc1cb01b763d")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -1049,6 +1255,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eefdfe2a-d443-4bb0-b4d4-39f4685203c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b932ed93-f4eb-47ae-bbb0-2c6de059dbca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4b50540-18f8-4475-afc5-8eb2ad64e211")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74174125-6e12-429e-ac95-26242009b4e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "819baf6d-e62f-4a1e-bdbb-54a1c31941d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99bfd08e-eb33-42f1-b31a-b49ca5415ee6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8fc8759-4237-4f25-8379-388de0e60a5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d3c6af1-66f6-485b-b571-f9a4c5e11496")
 			(effects
 				(font
 					(size 1 1)
@@ -1617,7 +1914,6 @@
 				)
 			)
 		)
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/01b020b2-eff2-4df1-a0fc-bbf94755a5fd")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -2112,6 +2408,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b27e017-1974-4114-84f9-48df69198c56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c15414df-c18d-497a-bd7b-005b7b1721a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e755a1fc-9a97-4b12-bcf3-b339b6ae45c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad2b6cf2-3b09-416a-a472-734ee1d01dfc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83b068d7-b76e-47fb-8cd7-cc45d24780b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8503046f-4166-4aa1-b82c-760ac0227838")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65f087ae-edf5-407c-b98d-02afc2e83562")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/2e7c9969-4fea-4481-aad6-4acd9befeb6f")
 		(sheetname "/power_supply/")
@@ -2317,6 +2704,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0f0aece2-1606-468a-adac-0c2160042605")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e3870ca-a2ac-4089-aa15-b1320bac5433")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2186763a-493b-482a-99b0-94952c0783f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "026cc0b0-7449-4cdc-a1b7-4f00fcd7fa6b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8074db7e-3b4a-4b72-96ab-186304ad1dce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8117a2f4-dcc6-4bf7-a851-bd525dc3b290")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ee145db-4cc3-4a86-bf45-c87dc795c23e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4110ce39-fbd2-4a3f-84f1-7b2b2d537e21")
 			(effects
 				(font
 					(size 1 1)
@@ -2727,7 +3205,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
+			(net 266 "/power_supply/PGEN")
 			(pinfunction "~{PG}")
 			(pintype "open_collector")
 			(uuid "8b467028-36ab-4f72-b04a-93ca32f456e1")
@@ -2961,6 +3439,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e6b171c-8a70-4117-8ff7-5027113c02c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd736942-d54c-4904-8e0c-978cb1c210e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "229f6acf-6ac3-42b9-8e9f-f8e678a72f1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6405480b-c997-4ab3-b2f0-b0e01ca2a3d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e791efe1-3b65-42d8-a2c6-2b513c22c222")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ef7d951-ac01-4657-aca0-5511ef909ef9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5148fba2-734e-4790-9a0f-cec926bae420")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8a7116bd-bd79-4b86-b409-f716f8575102/89f05d3a-6d19-49c0-a843-3eb7ac4430d3")
 		(sheetname "/giroscopos/")
@@ -3166,6 +3735,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e0d814aa-8190-4bbf-8a93-35f9112ba786")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b820eeaf-bc83-4028-9495-eacfbd55df15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5892e5ce-7704-4eee-a741-76bd95314b00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "892dab59-fadc-4937-a59a-3e0dbaa3f761")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "750c66f0-12bc-4b30-8b24-fdd0be848986")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "746927cb-bc5b-4b0c-aa0a-daf30d6c679c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d3eea8c-1dca-414d-bdc0-f9f47df595e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acef6afd-abf8-41cc-9633-2f843f45e9b8")
 			(effects
 				(font
 					(size 1 1)
@@ -3596,6 +4256,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76f62a06-0fc3-420b-bf9f-7acf012ca829")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "589fdbb2-202f-41f4-a444-aef1ccf6ff96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c919560-0882-4d76-a9d9-5d9336faa10b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31a84eec-de82-4651-8cca-3f90985b8841")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f224929-6ee8-4134-92bb-dd14f0bde58b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca399233-5968-4d1c-ae45-cf249f87c669")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "366e30f2-be63-4794-ad4c-ef2e33430e84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/7f8b680b-1c11-4fba-95e2-3d449f4e2254")
 		(sheetname "/power_supply/")
@@ -3796,7 +4547,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/867ad940-10c3-43ab-ac25-6f44edfd4d67")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -4007,6 +4757,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9570d34-ee12-467d-86fb-02baa87d74df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c7bd478-1db1-40ab-a95f-d9053637ae44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e9029fe-e3b5-4038-bf6c-95f64f37ff58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20d90a09-39f1-4fa6-8307-101f84ab39dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a50b01ff-fa11-4eed-98cc-9a0dd0126303")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "696d3cfb-9308-40c4-82b5-3cea9eca6fc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df319920-913d-439f-b668-e4e8efbf6868")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8a7116bd-bd79-4b86-b409-f716f8575102/e6c4f797-11f2-4384-90ab-e6a427e9ec38")
 		(sheetname "/giroscopos/")
@@ -4207,7 +5048,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/09e64575-5fdc-48a5-9172-434d0dcecce2")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -4411,6 +5251,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "000ecccd-b7a9-4adb-8499-dc809f05b3d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57e87a72-8740-4449-8a52-80aa4fddbd84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc96d779-15d2-4571-bce5-5d37f67a2327")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6748cde-d286-4cc0-ad0c-b6f374ddc2ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "464331e6-0a1a-4b70-80c1-1e1848bef4be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b3c6230-ad30-4d71-8467-5f260beb1fae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8497765-1e3a-4744-9fad-e83da298704f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fb04379-0fb3-4e71-b29a-1012211a8618")
 			(effects
 				(font
 					(size 1 1)
@@ -4777,6 +5708,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8e2cab87-92de-4768-a1e2-a7b6c75c3ef9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe94f523-92ca-4bca-b995-7df134eda696")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8aaef19-6e10-4c78-9776-d12772793fdd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1db37df0-ae51-4bda-b4ad-93560ffedd9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40cbdf23-1362-4104-9d98-cea99759bb03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7958eea-b8a6-44cf-924d-f1126b38e2cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61b9bfe1-4801-4af3-89aa-67e2bdf3dd0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20ff92a3-a1a2-4a7b-8c65-2fafb137ba40")
 			(effects
 				(font
 					(size 1 1)
@@ -5288,6 +6310,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bbf064f-f61e-4b3b-b383-48e79412ffea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30b2a460-40fd-4cb0-bf93-12e94a7f25bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd5aa00f-9bdd-4bed-97a6-267e930e171d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82167d07-a4d1-41e3-9c1d-4562c0338c6e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ec790a9-6f7a-45f7-8548-9d24e590225d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac1320a1-0cdf-4492-81b4-41faae888763")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7c47b69-fb2e-4fd0-a1c9-f0efc0161ae1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/bcaaa5ee-f111-4173-b021-b97bb3d7b7a9")
 		(sheetname "/power_supply/")
@@ -5493,6 +6606,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eac0b5f2-5aaa-43f2-9d52-b3f027fc0472")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2cb9611f-9e3e-455d-81bd-1ddd090206fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d2c9ea4-c334-4c36-bd8a-bcb5e66abeb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40d0d6ce-e68f-452e-9f0a-ff606c414659")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82bcdaa3-0d78-4d04-a1ce-81b8ad2a2bba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "802fb577-b3f7-47a8-b96e-228d457ce2b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74af80f4-880d-48c3-a83a-b30747bf1894")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b6237fa-d701-4abc-bbd2-b2e0b7f3930d")
 			(effects
 				(font
 					(size 1 1)
@@ -5712,6 +6916,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7504b92b-980d-435d-948a-1a3dce23ff8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8463550-5519-4832-8818-d8c942ecdf6e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1eb902c3-499e-43cf-badc-924f7495b407")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb8c8eb8-a24c-4e2d-916d-a50aa64fe9fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d71d83b0-e79c-415c-b706-a23b8d6bb6c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33190770-375e-4d99-a4fc-70634670cc61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc548dd5-ba0d-48c8-aeb3-9c612847869f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/8eb147ca-06b5-4c4a-9f62-a331181c66e9")
 		(sheetname "/power_supply/")
@@ -5917,6 +7212,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8a8f3e3e-0cd7-480e-b4bb-3681a65ee6bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b439ba3a-191f-48e2-886e-42559a6f1a05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c58ec33-3171-42df-9b66-2da12f5efc6a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7dcd2e5-ca25-40e4-a51d-cc723a3fe550")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e7bf15a-8cbc-44f7-b461-ad681f78beb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba629960-a3ce-4247-9f95-30f3d682faba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c68679d6-0eb7-45bf-9e45-1629c6f28afd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5de44136-f9fb-4191-9a08-50f5bbb0f70e")
 			(effects
 				(font
 					(size 1 1)
@@ -6136,6 +7522,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca4a4ffa-0363-45bf-8474-0e49dbb0b83d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f753b6bc-2eee-4955-9a20-acdfc0526080")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80710cfe-ecd5-4e72-be18-e92eafaa108b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfc6a7d4-d905-4530-b40c-abdb67051f72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd8cfa4f-ca48-4572-8585-b856a69b4e69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce4ff534-4970-4595-a2af-e9d948c297b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b94c6d95-465c-44c0-8668-6fa4773ebbed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8a7116bd-bd79-4b86-b409-f716f8575102/4484d322-a94a-47b5-b8c1-2bbeca17cacc")
 		(sheetname "/giroscopos/")
@@ -6341,6 +7818,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "323b9928-f695-497b-beff-bab98787b60e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5adbc4e6-9529-4d42-87ca-d3cea1c29e1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd8ede77-d817-42e9-a032-bb637fb953b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3657c9a4-97e6-4105-8fab-19a6acedf058")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62b7c14a-03e0-492c-9029-58890f938795")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2acb11a-3783-4fa9-8c9c-80fe42843bbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fd683a2-b964-4593-90f2-cf8fad2ccaa8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5d9d200-1708-419b-a00a-d44f23ae5394")
 			(effects
 				(font
 					(size 1 1)
@@ -6560,6 +8128,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8dcbccc4-25f5-4825-be1c-e18d81d1e7d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78e81b3d-e895-4f2b-a125-44298545366a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07335d07-1a7c-4f80-990a-0145c4d85f32")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b09aef1a-0082-4fd9-a307-9ced31f4706f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0586d4ed-e68c-4870-97df-13a52339cfbd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c34c4f03-032a-4f33-b41a-71a29b340169")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1852e07-5205-45d8-ae7a-90120b8d01ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8a7116bd-bd79-4b86-b409-f716f8575102/2e4dc9f1-3925-4105-895f-681793dd3bac")
 		(sheetname "/giroscopos/")
@@ -6765,6 +8424,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "264f2233-dcaf-4789-b49c-75f593af689d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44b5b69c-ddc8-456e-b2db-645ec88af388")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a72ca89-fd73-4c12-97d7-6f43a21eae5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb7425f9-fa51-4324-9202-c39ab38e7a98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edb5bbfe-4472-4b41-a444-ab2a0e262089")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3e8bcda-48be-407d-a30e-3675ec94c60c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94cd3406-0302-4996-8892-59ee76d6211c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b36c50d-e259-4336-aa47-ccee11bbe122")
 			(effects
 				(font
 					(size 1 1)
@@ -6990,6 +8740,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a2895d87-a9fb-4f57-8095-6684411f16df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7a59e46-6695-4df4-8530-4683db2960f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70bdcafd-d386-4855-802e-80e89812933b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4d972c3-e6f7-407e-b5ed-6cc2a720ce1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b34af5e-21df-4880-9910-9106ef5ac81a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "703cbfd9-a711-4dc2-80b3-5c35042f7985")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "978d1ade-dc03-44ae-a07f-10c4a6beab6b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "464d48c0-34f4-4bcc-a3c9-0f4faef072d8")
 			(effects
 				(font
 					(size 1 1)
@@ -7442,6 +9283,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a59876e9-0f9c-4339-8835-249061ac4f2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e50e2729-1bcd-4ae3-9a85-44f950ec06ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f79817dd-09b4-45e8-84a5-fb019073e4b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ece7e88a-409b-4a4c-a29d-bd22c7f79529")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9961c6fc-cfda-4a37-82e1-7b48bef13f38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d23cfd10-e639-4567-a7e0-86b809b03dd7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c323cec1-38b6-4e7a-926a-a6a4f4de5ecc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/f1602a64-e7a1-4967-b960-3a427c1744e8")
 		(sheetname "/power_supply/")
@@ -7782,7 +9714,6 @@
 				)
 			)
 		)
-		(path "/9b3aadef-8499-4ae3-8b2c-f98a5fd5369e")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
 		(attr smd)
@@ -8766,6 +10697,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a5c9fbe-6bee-46e0-873d-fe3ae884f95a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a753eb8-c200-4283-8225-4622bd2b357e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52cf8828-a740-4da4-9c5a-b20269e259ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44bd9ac2-3388-4f8d-92ab-0da238efcb76")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdffef72-1035-46c9-970e-4f125aff06a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bfa83f0-861e-4024-bad7-4079270eac74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0ec780a-8802-4af1-8844-5c20c2c81890")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2474d9af-16bc-4e7d-b912-6fb27429ec3d")
 		(sheetname "/")
@@ -8971,6 +10993,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4d126309-0f12-4a7d-aa77-ee4285e2fce9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6979fe4-4cfc-4ff4-9b81-fb3e07d468b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da307595-5656-4ac8-90d5-323760a67368")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cae12a99-9b59-446c-b869-fc79a0bcbaef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c5d6356-ad33-4336-9bd1-aa8fc4233ad8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a580d40-e5e2-48ab-8b99-754f6d42b6af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85906b4c-781b-4fb4-a0bf-265d9b317100")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0a42fab-5227-4226-ad5a-0cdc8c653772")
 			(effects
 				(font
 					(size 1 1)
@@ -9618,6 +11731,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66f3813d-311b-4af2-8382-31e6664cd7d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c4be449-c8d0-4c9f-a348-979621571b16")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24c6e3f8-76ff-4284-9ac4-3592ebeb0f6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "594823f2-8483-411e-b90b-b277c1b7fa25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1733afcd-fe85-4c23-87cc-a572c0e062d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3f5c791-6450-4250-afc2-d0f6d4bff827")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7d21284-0ed3-4803-981e-2bdc36b5cf7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/bfcbfb81-e09f-4511-8b60-7fad22271510")
 		(sheetname "/")
@@ -10025,6 +12229,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a686675-6448-45da-bfdb-55e1a6e9a0c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "834aac05-e4e9-4825-b83a-be6703c027fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9bcc856d-33c1-47fe-b516-7e59fe4a93ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3cb07217-f77e-4941-a1ef-c0d2d895fa8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebbb323a-9c54-40c4-8e6c-8eed22dc1b17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4fdd8395-7f20-4f7b-84d4-aecda2e9d478")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53bb2334-b312-49ce-9e32-509070567f63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/531458ea-ba8a-48ed-806d-ed276bc9777f")
 		(sheetname "/power_supply/")
@@ -10225,7 +12520,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/bb3ca142-47b0-4316-9a03-9a5b638a6f28")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -10427,6 +12721,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3cf64471-1713-48e4-a85c-caa79ac01355")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3edaa151-e9df-4097-8f28-971c7a9f209c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55edc30a-21cd-4a85-8a8d-aa2dbe875438")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d19eeac2-6789-4d39-8f34-9139c8a52bb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27322900-709f-404a-aaed-d6520768d66a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "391ecb33-5db8-4d3a-9cb3-8f2b684384fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7dfcf26-ceeb-4b86-b8c1-8b3c91730582")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d93c6e1b-32f7-4dd3-9c18-36696f31a5d4")
 			(effects
 				(font
 					(size 1 1)
@@ -10678,7 +13063,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/4f43278f-d15f-4813-811f-108e525e13a2")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
 		(attr smd)
@@ -10882,6 +13266,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9613bdd0-57f9-4bb3-841d-3f88846b12c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5c8cce7-f6d7-4fc2-bf04-3d221825760d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a368e3b-d0ef-4796-8d89-f146dfdcabde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a5d3bb2-2c60-4c78-9c14-a6c5fbbac438")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2d95e74-abd8-4bab-9881-de63a8c04e9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3af1ef8c-f7d1-41ee-9e96-24eef97c004e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31522a2e-13a3-4738-bf10-105173e5c0cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d30c1bb8-b3f7-447c-a283-9f9ea6898bc9")
 			(effects
 				(font
 					(size 1 1)
@@ -11296,7 +13771,6 @@
 				)
 			)
 		)
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/703f8127-5e95-4628-917e-f65b33f44b1f")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -11758,6 +14232,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b44bf6f2-c42a-45cd-b41a-de20561f40d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf5a1e85-6d7c-4321-8eb2-db51f409a001")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e1a9b48-7716-4427-b75a-10cd00c7649d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "293b9e4a-044d-44a2-a62d-67dc565264b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e09de409-0e33-4cf6-8f66-1323813c9463")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17a947ce-07be-45d5-a5ef-2e50e5aee658")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0ecbfe0-e70d-441e-9b9d-3a253c62546b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/dede3e8a-204d-442b-90a4-c465878e935d")
 		(sheetname "/power_supply/")
@@ -11971,7 +14536,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/83f3bdf2-8097-4422-b945-165a8d1ee26d")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
 		(attr smd)
@@ -12367,6 +14931,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7973717b-1484-44f5-9ab3-393aba855d25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06e97552-6e69-42aa-9945-6880620e0967")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f1c4bed-28b9-4605-b2f5-4498c9fc87de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04dbd81b-a1d9-4695-8883-ffa642e10915")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91bc67e0-5232-42a6-a4bc-3ab34425a981")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23e4d88e-8a68-443f-860e-0d3a6caf0ce4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a39e21d2-d4d2-4533-8000-87c9f9a7f94d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/734908d5-23e6-445d-91f1-8cddefdc2245")
 		(sheetname "/")
@@ -12725,6 +15380,778 @@
 			)
 		)
 	)
+	(footprint "Custom_Footprints:DKD_ADI-M"
+		(layer "F.Cu")
+		(uuid "73c462c0-df08-419f-a829-4bc2a24e31ca")
+		(at 104.9939 52.749998)
+		(tags "LT8582EDKD-PBF ")
+		(property "Reference" "U1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "a5fae821-0014-42f3-8638-f7c55aa21710")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "LT8582EDKD-PBF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "1169bc98-b4ee-4146-b58f-6293d9ee4ba7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/8582f.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0390ead6-abd4-42ee-b861-ed5cd7f64742")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d009f030-c6cf-459b-bdf8-bcf99bbe03c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43687e84-08fd-453c-9f71-d2e8766deec6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c297390e-6af3-474b-bd2c-a3006fe06d9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b456de1d-6a4f-47c8-830e-c9911174e077")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "232b7c60-d4a5-411a-801e-ac8c4d0133ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29e2b5f1-0eff-4719-9c5e-8340f57a96af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf772e97-901d-413b-ac58-67ebc05f68ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43031caa-ecb4-4026-89e4-8ed4b28380e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "DKD_ADI DKD_ADI-M DKD_ADI-L")
+		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/da497742-1e7f-4d06-bf69-7d94ac2dfc07")
+		(sheetname "/power_supply/")
+		(sheetfile "power_supply.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -2.1717 -3.683)
+			(end -2.1717 -3.20974)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "606127b0-a0a7-4024-aeed-78ce03b43001")
+		)
+		(fp_line
+			(start -2.1717 3.20974)
+			(end -2.1717 3.683)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8a8f150e-e40d-42a0-a6bf-47c6aa6a9b78")
+		)
+		(fp_line
+			(start -2.1717 3.683)
+			(end 2.1717 3.683)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2a7502fb-f3ad-463e-bb4c-8ca294ea4829")
+		)
+		(fp_line
+			(start 2.1717 -3.683)
+			(end -2.1717 -3.683)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "585c4ef3-7f9c-49b2-9b11-e410e4d2a0e9")
+		)
+		(fp_line
+			(start 2.1717 -3.20974)
+			(end 2.1717 -3.683)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d5f5ce92-cf5c-472d-89ec-72fab64df0f7")
+		)
+		(fp_line
+			(start 2.1717 3.683)
+			(end 2.1717 3.20974)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f02fadf5-a926-49c8-b232-98cbd48f2ee9")
+		)
+		(fp_circle
+			(center -3.0019 -2.75)
+			(end -2.9003 -2.75)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "16b59282-b6ee-4b38-b5e4-4133cb2b4ebb")
+		)
+		(fp_poly
+			(pts
+				(xy -1.2716 -3.1639) (xy -1.2716 -2.05834) (xy -0.1 -2.05834) (xy -0.1 -3.1639)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "a2addce6-3782-4ffc-bfb9-3d89cacaf1f2")
+		)
+		(fp_poly
+			(pts
+				(xy -1.2716 -1.85834) (xy -1.2716 -0.75278) (xy -0.1 -0.75278) (xy -0.1 -1.85834)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "cf9ecc13-6661-41ab-a9eb-4b00e0e3ab7d")
+		)
+		(fp_poly
+			(pts
+				(xy -1.2716 -0.55278) (xy -1.2716 0.55278) (xy -0.1 0.55278) (xy -0.1 -0.55278)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "7efb8804-e137-461d-af7b-4d1c4491745c")
+		)
+		(fp_poly
+			(pts
+				(xy -1.2716 0.75278) (xy -1.2716 1.85834) (xy -0.1 1.85834) (xy -0.1 0.75278)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "75c26b91-1098-40c2-9def-7472faf6339b")
+		)
+		(fp_poly
+			(pts
+				(xy -1.2716 2.05834) (xy -1.2716 3.1639) (xy -0.1 3.1639) (xy -0.1 2.05834)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "8575501e-3fcc-4aa7-8ea8-2a65060aba32")
+		)
+		(fp_poly
+			(pts
+				(xy 0.1 -3.1639) (xy 0.1 -2.05834) (xy 1.2716 -2.05834) (xy 1.2716 -3.1639)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "f8c6e9ad-be38-4d06-9966-c7b754cabf88")
+		)
+		(fp_poly
+			(pts
+				(xy 0.1 -1.85834) (xy 0.1 -0.75278) (xy 1.2716 -0.75278) (xy 1.2716 -1.85834)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "5c6a9cbe-e948-48e1-9ea1-081b3bce4f23")
+		)
+		(fp_poly
+			(pts
+				(xy 0.1 -0.55278) (xy 0.1 0.55278) (xy 1.2716 0.55278) (xy 1.2716 -0.55278)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "5a5f1936-bb1d-4250-99b1-8d6604307df2")
+		)
+		(fp_poly
+			(pts
+				(xy 0.1 0.75278) (xy 0.1 1.85834) (xy 1.2716 1.85834) (xy 1.2716 0.75278)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "243ca41f-b13e-4fc1-9730-6530a7f4a952")
+		)
+		(fp_poly
+			(pts
+				(xy 0.1 2.05834) (xy 0.1 3.1639) (xy 1.2716 3.1639) (xy 1.2716 2.05834)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Paste")
+			(uuid "6441abb0-953e-421e-921e-9d9c9c3a5389")
+		)
+		(fp_line
+			(start -2.9591 -3.385)
+			(end -2.5527 -3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "24034d9f-c7f2-444d-bbd1-db9b0b8f81c6")
+		)
+		(fp_line
+			(start -2.9591 3.385)
+			(end -2.9591 -3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "103d4dd6-d100-442b-af2d-dfbeccfe417f")
+		)
+		(fp_line
+			(start -2.9591 3.385)
+			(end -2.5527 3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ab52d9f4-4d89-4629-83e3-6719eb5c8075")
+		)
+		(fp_line
+			(start -2.5527 -4.064)
+			(end 2.5527 -4.064)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9175830d-6de7-43c7-b9c2-7d2a1c7a6511")
+		)
+		(fp_line
+			(start -2.5527 -3.385)
+			(end -2.5527 -4.064)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "fcdcbcd1-9145-4417-ab2b-119f260703ea")
+		)
+		(fp_line
+			(start -2.5527 4.064)
+			(end -2.5527 3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "65aed3f5-e8a2-4c03-bbf1-3da1c1f03a69")
+		)
+		(fp_line
+			(start 2.5527 -4.064)
+			(end 2.5527 -3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3e0fd63b-656c-4716-bf37-947fa2cd87d8")
+		)
+		(fp_line
+			(start 2.5527 3.385)
+			(end 2.5527 4.064)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dd227785-4841-41de-b4dd-76947710dc9f")
+		)
+		(fp_line
+			(start 2.5527 4.064)
+			(end -2.5527 4.064)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "347b2ebe-f92e-410a-91e8-ff2831692074")
+		)
+		(fp_line
+			(start 2.9591 -3.385)
+			(end 2.5527 -3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f5318c4d-f081-49e9-bd22-9458f754189f")
+		)
+		(fp_line
+			(start 2.9591 -3.385)
+			(end 2.9591 3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "87e99c03-6cfb-4786-9726-8736f5a5ee22")
+		)
+		(fp_line
+			(start 2.9591 3.385)
+			(end 2.5527 3.385)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9a8e7c47-9815-456b-b0cd-28a923ec5800")
+		)
+		(fp_line
+			(start -2.0447 -3.556)
+			(end -2.0447 3.556)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3e6058b2-1919-4101-a6d2-cbd2484d3c9a")
+		)
+		(fp_line
+			(start -2.0447 3.556)
+			(end 2.0447 3.556)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "815a4c2a-e862-460e-8699-436970aad8cb")
+		)
+		(fp_line
+			(start 2.0447 -3.556)
+			(end -2.0447 -3.556)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0c885d12-871c-415e-a470-0fc0c5b21d27")
+		)
+		(fp_line
+			(start 2.0447 3.556)
+			(end 2.0447 -3.556)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "684d2fb4-c70b-42db-b4f2-1a76c9cf294c")
+		)
+		(fp_arc
+			(start 0.3048 -3.556)
+			(mid 0 -3.2512)
+			(end -0.3048 -3.556)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "16b8d88b-85b6-446c-a4a7-2a3eefe937c3")
+		)
+		(fp_circle
+			(center -1.5367 -2.75)
+			(end -1.4605 -2.75)
+			(stroke
+				(width 0.0254)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "89c69e59-d09d-4c79-8b2e-8e7d550c62c5")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "55212e6f-59d8-4f30-b8b9-df5829b0ab9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -1.9939 -2.75)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 308 "unconnected-(U1-SWA1-Pad1)")
+			(pinfunction "SWA1")
+			(pintype "bidirectional")
+			(uuid "93cbd132-7954-46b6-8266-06e6b05b9322")
+		)
+		(pad "2" smd rect
+			(at -1.9939 -2.250001)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 298 "unconnected-(U1-VIN1-Pad2)")
+			(pinfunction "VIN1")
+			(pintype "input")
+			(uuid "45062e81-301a-41fb-9b41-2facf47d92c6")
+		)
+		(pad "3" smd rect
+			(at -1.9939 -1.749999)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 313 "unconnected-(U1-PG1-Pad3)")
+			(pinfunction "PG1")
+			(pintype "bidirectional")
+			(uuid "d4481aba-ab33-4d62-83c8-d9289c9854e3")
+		)
+		(pad "4" smd rect
+			(at -1.9939 -1.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 309 "unconnected-(U1-GATE1-Pad4)")
+			(pinfunction "GATE1")
+			(pintype "bidirectional")
+			(uuid "98fb887a-008b-4b80-b49e-0cbfab76f8d1")
+		)
+		(pad "5" smd rect
+			(at -1.9939 -0.749998)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 304 "unconnected-(U1-VC1-Pad5)")
+			(pinfunction "VC1")
+			(pintype "bidirectional")
+			(uuid "79c5ac63-ca89-47cb-835f-0c2ed4c3b3c6")
+		)
+		(pad "6" smd rect
+			(at -1.9939 -0.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 314 "unconnected-(U1-FBX1-Pad6)")
+			(pinfunction "FBX1")
+			(pintype "bidirectional")
+			(uuid "e5c41aa1-8024-40a4-9218-117ddf111854")
+		)
+		(pad "7" smd rect
+			(at -1.9939 0.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 300 "unconnected-(U1-FBX2-Pad7)")
+			(pinfunction "FBX2")
+			(pintype "bidirectional")
+			(uuid "5b18e3b5-1811-496c-a326-4ea7428d3314")
+		)
+		(pad "8" smd rect
+			(at -1.9939 0.750001)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 302 "unconnected-(U1-VC2-Pad8)")
+			(pinfunction "VC2")
+			(pintype "bidirectional")
+			(uuid "62cebf1c-0c0a-4040-911a-71f56ead6aa2")
+		)
+		(pad "9" smd rect
+			(at -1.9939 1.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 301 "unconnected-(U1-GATE2-Pad9)")
+			(pinfunction "GATE2")
+			(pintype "bidirectional")
+			(uuid "5cf80236-d100-453a-9642-b1782d0c0e59")
+		)
+		(pad "10" smd rect
+			(at -1.9939 1.750002)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 296 "unconnected-(U1-PG2-Pad10)")
+			(pinfunction "PG2")
+			(pintype "bidirectional")
+			(uuid "3b65ad13-6740-4762-8b64-6b73313e4488")
+		)
+		(pad "11" smd rect
+			(at -1.9939 2.250001)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 303 "unconnected-(U1-VIN2-Pad11)")
+			(pinfunction "VIN2")
+			(pintype "input")
+			(uuid "683ea3a2-82ae-4294-b55f-9d6697dd727a")
+		)
+		(pad "12" smd rect
+			(at -1.9939 2.75)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 305 "unconnected-(U1-SWA2-Pad12)")
+			(pinfunction "SWA2")
+			(pintype "bidirectional")
+			(uuid "8a0696bd-016a-4915-a902-5819b94b184e")
+		)
+		(pad "13" smd rect
+			(at 1.9939 2.75)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 292 "unconnected-(U1-SWB2-Pad13)")
+			(pinfunction "SWB2")
+			(pintype "bidirectional")
+			(uuid "0f19eb70-dfb9-42e1-8693-954539aed5a9")
+		)
+		(pad "14" smd rect
+			(at 1.9939 2.250001)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 297 "unconnected-(U1-CLKOUT2-Pad14)")
+			(pinfunction "CLKOUT2")
+			(pintype "output")
+			(uuid "40d90446-955f-4d91-82c7-514db2eeae85")
+		)
+		(pad "15" smd rect
+			(at 1.9939 1.749999)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 310 "unconnected-(U1-*SHDN2-Pad15)")
+			(pinfunction "*SHDN2")
+			(pintype "bidirectional")
+			(uuid "9c02a6d2-285d-4635-8d1d-be39f5b9a252")
+		)
+		(pad "16" smd rect
+			(at 1.9939 1.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 311 "unconnected-(U1-RT2-Pad16)")
+			(pinfunction "RT2")
+			(pintype "bidirectional")
+			(uuid "b033efec-19bc-4588-97e8-327a5ec871ec")
+		)
+		(pad "17" smd rect
+			(at 1.9939 0.749998)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 315 "unconnected-(U1-SS2-Pad17)")
+			(pinfunction "SS2")
+			(pintype "bidirectional")
+			(uuid "e6e04640-2f3f-476e-b8f9-5815d246d868")
+		)
+		(pad "18" smd rect
+			(at 1.9939 0.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 295 "unconnected-(U1-SYNC2-Pad18)")
+			(pinfunction "SYNC2")
+			(pintype "bidirectional")
+			(uuid "395d9570-9a46-487d-b693-afd7f4b1c534")
+		)
+		(pad "19" smd rect
+			(at 1.9939 -0.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 291 "unconnected-(U1-SYNC1-Pad19)")
+			(pinfunction "SYNC1")
+			(pintype "bidirectional")
+			(uuid "0c2aeb4d-d8ac-4ea6-ae43-e3ca68be0426")
+		)
+		(pad "20" smd rect
+			(at 1.9939 -0.750001)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 306 "unconnected-(U1-SS1-Pad20)")
+			(pinfunction "SS1")
+			(pintype "bidirectional")
+			(uuid "8f2651b5-cbe8-47be-ab85-540b09ffd88d")
+		)
+		(pad "21" smd rect
+			(at 1.9939 -1.25)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 293 "unconnected-(U1-RT1-Pad21)")
+			(pinfunction "RT1")
+			(pintype "bidirectional")
+			(uuid "1766df03-939f-4808-b781-f0394a382f7e")
+		)
+		(pad "22" smd rect
+			(at 1.9939 -1.750002)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 294 "unconnected-(U1-*SHDN1-Pad22)")
+			(pinfunction "*SHDN1")
+			(pintype "bidirectional")
+			(uuid "2b386b14-968b-4c06-96bc-deb72496dc8a")
+		)
+		(pad "23" smd rect
+			(at 1.9939 -2.250001)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 299 "unconnected-(U1-CLKOUT1-Pad23)")
+			(pinfunction "CLKOUT1")
+			(pintype "output")
+			(uuid "484f6d41-f1f3-4b15-acef-16daa177db9d")
+		)
+		(pad "24" smd rect
+			(at 1.9939 -2.75)
+			(size 0.9144 0.254)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 307 "unconnected-(U1-SWB1-Pad24)")
+			(pinfunction "SWB1")
+			(pintype "bidirectional")
+			(uuid "9099b961-3b61-49ba-9e1a-e2b742d86449")
+		)
+		(pad "25" smd rect
+			(at 0 0)
+			(size 2.7432 6.5278)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 312 "unconnected-(U1-GND-Pad25)")
+			(pinfunction "GND")
+			(pintype "power_out")
+			(uuid "c8d03aef-652d-4379-a71c-e10068c5f220")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/libs/3dmodels/DKD_ADI.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "74e94111-3243-4157-80ce-d77bf6ef6f30")
@@ -12989,7 +16416,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/e7cfb7c4-be30-4ccf-8e60-be5dbba5bc6a")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -13193,6 +16619,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "59a3a895-d64c-4687-adee-e70ec120c57f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9f93763-b09c-4915-9924-0aedb47d161b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "644453cb-4480-4d27-bde2-8442388d15b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93e292c6-1c73-4299-bd40-ea84f6fd9fba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60f14de7-a649-4416-b8b8-1c2841648033")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d8c6787-e8ad-4836-8616-897e32eeaaae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b4a394a-b2cd-44a3-bdae-f3d2dbeb7bb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "386dad55-151e-47b8-9144-9af17b5a319b")
 			(effects
 				(font
 					(size 1 1)
@@ -13798,6 +17315,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3e7dd094-d2f4-4b39-9240-11c542a731c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ff9f952-7c09-41b1-8b03-ed81b6668632")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50406a6c-32fc-474b-9089-0669f6d7563b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe716756-8ad6-4653-9cf9-f27df8e37d8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b258923-dcea-41e7-bd2d-9efb7aa3b96e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1993fdf7-526f-40c2-8045-0a0633c96f16")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05a3fd43-a64b-441e-bc40-1bb0317f875c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b31c1ad-040c-4af3-99ef-7a7bd33bcc00")
 			(effects
 				(font
 					(size 1 1)
@@ -14580,6 +18188,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93b9d42b-32fc-4f6b-ab53-9a37ff8f630b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b24d1869-eafd-4775-b6d2-a43d55c98145")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cb75a5c-d8a3-4bfb-84b0-ceb4947c93dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bdb888b-8e3e-4a70-a733-4b52b9248eb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1840928d-5cb6-41ff-a7e3-40ecde631c26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0408dfef-eaba-4c6c-b562-1dbdac070aec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e51971f9-7076-4277-911f-a0c0c5076c27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/017d451d-e3b1-4b7e-86f6-4ebbce9a2f52")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
@@ -14799,6 +18498,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c6cee3fa-87b9-4de8-854b-4aa58fca843e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d4f1808-79c4-4ff7-8775-cc45e64c0ff3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84e4cb0e-b0a6-4032-971a-bed41e796cdf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "438c7d7c-f0e0-4240-a86b-0f043e4ab04e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53035ca6-2778-4a09-a6ae-cb8f7303479d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0da83fb1-73f8-4bc6-9c01-843adc3c2971")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0295663c-39ea-4635-bef2-8b08f8ac1a87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad01ebb5-fb19-4049-8019-36f3bd38da58")
 			(effects
 				(font
 					(size 1 1)
@@ -15514,6 +19304,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48c1724f-7806-4b1d-b482-0c7b0f0107e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b4d5768-cfc5-4a94-b980-720d765d707e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "306786b3-af8c-4a68-b4ad-1367e26d382b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6b7ef9f-a9f3-4da4-a0e4-b035f9387f48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5819840b-03bf-4852-a0d6-04be64c88773")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34897b06-715b-40c1-8841-217e0fe67170")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6f7d973-df71-472f-b81d-af22ae7ebeb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/f3ef6fc7-d65e-4738-bfa2-552f00057854")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
@@ -15856,6 +19737,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "19e735b0-6b5a-4cf2-a41b-4fd79b3238ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "866193d5-7f02-4fd5-b6c7-ae2ae433c15b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3cd10cdd-a76e-43ff-950e-72b1e8030595")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00a0f737-ee3a-4d81-94e9-1a04e4f4c89d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b2c5a1c-c2cf-49e2-b41a-7ffa733d514d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8a22add-c067-4522-b2cb-3516883f2a06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba1affb8-7361-4688-ab17-c87a06dcde38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bd2d6ce-02fb-4257-97bc-503657a6f062")
 			(effects
 				(font
 					(size 1 1)
@@ -16279,6 +20251,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07ff34aa-2c65-430f-9c27-a12d5139b5b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2de0865-18d8-4c3c-8533-a0946ad78039")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8368ea50-12a7-4a52-af7b-497ef8053807")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb71a20b-ad22-4f15-a3cf-7b48e5ecd7d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b343b5fd-c9a9-488c-90cc-21f534f9a2c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe3d2fda-ed0b-4160-b8e3-6efc0c6162bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b0c207d-c5e6-4c8d-b85a-e5c0fd018aa4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bfa9d6a-e768-4b42-bd40-7fdf0c751780")
 			(effects
 				(font
 					(size 1 1)
@@ -16873,6 +20936,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faac2d1b-add6-4dbb-a8ee-5ca0a76348b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4b3631f-61f8-47de-837a-edb04bcc874a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a886b7d-c230-4edc-968e-dc9092520452")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67ac21a9-5eef-46f1-b8c7-10038e6e253a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e99df355-de95-4db9-a06c-37facfc4b5ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9755c44a-76df-4c32-b1a5-41648f2d2f20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b4d0b9a-1e2d-4e68-b1c7-898f5172c2fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/65f87eff-6183-4807-b551-85558f5d692d")
 		(sheetname "/power_supply/")
@@ -17073,7 +21227,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/1a4664fc-5616-4d03-af5f-c950c4b13628")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -17270,7 +21423,6 @@
 			)
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/fb8cf06c-0ad2-46ee-9c33-d016b3900789")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -17505,6 +21657,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "623180fa-d309-49f5-a50a-263e14a5110e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51d96d6f-ed39-4366-87ed-bf791005897a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e12e208-44ab-4951-b21d-48bf07245d4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83e40384-8f86-4de4-84c6-d909e46f7f3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b4e0112-5823-444f-bbfd-3386efa26212")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9961038c-dbaa-4e86-810f-40a4217803b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da0dd4f6-1e3d-4510-91d2-f00435c4233c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a714c600-cfa7-4632-8980-854ba3511307")
 			(effects
 				(font
 					(size 1 1)
@@ -18300,6 +22543,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f3c1c82-4ea2-449e-8adc-9fb6c135bfd8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b23b4b98-c093-41c3-b8b1-8c256a4b5892")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da767378-f2bf-41a8-9e79-09c956a25283")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b31b6e4f-23ce-4a59-be27-f051720d81aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "375d25ec-2f74-4683-857a-53e857e7c672")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20de78ab-024e-4596-bdb2-b34194fa9b39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13732e80-9543-45b3-919e-093e7e48a3a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/cf188508-0fc6-4860-828a-ee4b8e99f9f7")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
@@ -18652,6 +22986,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0c31526-fdf1-44b0-acc9-52124b900ad4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93a51d14-8bb9-4d52-82bf-14db906a82bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f382a042-1498-4bcb-ba69-dee33cdbb6ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9eb0665e-fe4a-4372-96de-aac251d1d27f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77cd6367-24e7-44fa-9806-3c515bf3ff0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4f54702-73e3-40e7-82ce-383e417b96f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6e123ac-18ee-4a6b-831b-d2d64295a25e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/d5e77e37-e1cc-4088-9f31-a42c55eee7ce")
 		(sheetname "/power_supply/")
@@ -18865,7 +23290,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/25ed9ba8-9048-4ef6-b348-f1f1510027e7")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
 		(attr smd)
@@ -19069,6 +23493,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "58c7298a-9b93-4b7d-8ddf-ceafec18d237")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40891f05-6429-4b2c-a8ea-17c92c63830d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93b94a4e-d77f-4a92-8bf2-9f59ba725352")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "159999dd-4295-42ed-b20f-a0a5df2fc4d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7def6524-1ce7-480c-994f-8db29bcd43db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cd368a7-c763-462a-b89e-a8d98edb2ea1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "951376fa-cc3f-4ab0-8545-3830ae436cab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0e51dd9-2559-41e9-bf46-d8bbfea1587b")
 			(effects
 				(font
 					(size 1 1)
@@ -19288,6 +23803,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4056bf75-e71d-49d3-80d1-2770f82ffc85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe865b4b-0f2f-4e9e-bd6f-24b3f82a3e92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e5933e2-02b8-4d3b-bba0-0f0bd738180c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ee2c65c-559e-4e62-8d59-23177d42f0f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85ad52c1-aa25-43a1-8b3e-c0cb645eede7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b8e4a97-9c4f-453a-a320-43e87b700d2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f2efd7a-94fd-49b3-902f-76e1208d4881")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0bee89d7-e433-47a5-bd02-0b93fe738ef2")
 		(sheetname "/")
@@ -19500,6 +24106,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d7c553b-c53f-4d3f-ab1c-5edea1bedae4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f74fcf2-fd7e-45f5-a2f2-f72b3a9f8542")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dcae8c8c-c153-4e03-9615-c6359e68f5f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f918bcee-48c5-452b-b08f-c4b0fcc766b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e13e9d5-a501-4af2-b459-d034ce11e8cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "961bd9ab-4699-4509-9daa-a61d63767b51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dec97aa9-f43d-42d1-9672-a49ec9657e66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/2656fc53-d3b2-40f0-8aa4-186d15921b20")
 		(sheetname "/power_supply/")
@@ -19705,6 +24402,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3905c1cd-c8a0-45a5-ab55-bd93477c56dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61d25420-4267-4d53-a733-0b8c86243b00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7094fb31-c52e-42bc-ac0a-fc1ca0b6d504")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1d3b079-8212-47e8-ac2d-d596b1c1e359")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f1bb1d6-bd9c-4c11-b2ea-f7126a726e72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b091b30b-ec88-405e-8969-5c08a1bfb1b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d942251d-112b-4ac7-adda-91ece46ab53a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9fa55e4-3a0e-4221-89e6-ea9cd50307ac")
 			(effects
 				(font
 					(size 1 1)
@@ -19925,7 +24713,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/a2345aed-7cbf-4aa2-afe8-0a0ef251000c")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
 		(attr smd)
@@ -20546,7 +25333,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/e058f5e9-2bad-447b-88fc-68bf4b28d260")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -20757,6 +25543,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11345763-c0cc-4260-895e-5da49a4b07e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d34a95d0-8332-457d-8d3a-7d1c3a5f3de4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a62e942c-ff84-49c4-ace9-8ed19f545781")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a3911a0-f22b-4c3e-ad6b-325b15e54861")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5209de66-8fad-4ae3-912c-215e24bd077f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8fc04f2-9cb8-4abb-973a-249daed08ed3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8432dbe1-c68f-40b2-9c06-b7c1d70c3647")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/a4fcce82-acd6-488b-8d1e-0ddb4f2c792c")
 		(sheetname "/power_supply/")
@@ -20952,6 +25829,97 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66137c64-126f-435f-9b9f-5322e0e45877")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30de03e6-c17a-42b1-a9c8-e820aa63e64e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef429cf2-00f4-4a49-9ee0-7597df5e7044")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79ebcb3e-0c36-45d4-82be-91a75f2e68fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aae3b562-fc20-424e-ab4c-ebb09ece455d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "572c1097-63f8-4e9d-8197-e9350ad1b37f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e143f2c2-f74c-4ebf-a8ee-b562571f43de")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21161,6 +26129,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8513a7b3-8852-4904-b285-d00497ac753b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2de0ae4-41d2-423d-b846-b2b34cd506bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4af7a25b-c920-4169-a213-dbaf24d07887")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd34a3fa-583a-4985-9f14-65c2f285e326")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "492eaefa-18c2-4dc7-8c9a-fc20d7bfc44e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7255a074-4b6e-4099-b94a-d8e3ed73db0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d407538-0378-46ec-8447-6947ffee9f18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86e617f4-7111-49d8-80bd-aad0708eb124")
 			(effects
 				(font
 					(size 1 1)
@@ -21386,6 +26445,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b13be326-4a81-4481-81fa-68f854c84982")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07af4883-9c46-4dc5-b04e-b01446ca2e88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7552556-c5c0-43be-80dc-9ecb37de6269")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb062df9-0646-4dac-9b54-085a542f718e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9432b0a8-2c21-4bb4-95bb-01b20b562c27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46489277-a279-40a1-bb62-f159fe26be00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e504424b-0386-46f0-abd4-775b2768dec5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ce8a0a1-92ce-4d66-8f91-09e2e9151169")
 			(effects
 				(font
 					(size 1 1)
@@ -21627,6 +26777,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5aaf5757-70e6-4ff4-9eea-02654350a9dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5fd8e67-55bd-443a-a29e-d91dca87a0fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0db56f7a-1dee-4be0-88e1-6e04f07192bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ce042d0-c3a7-4c71-ae7d-384253823e66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a938888-fdf4-4469-9462-9324369095f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be6e40af-d3dd-42c6-88cb-844241e62b02")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "589d9d0a-6928-42f1-b63c-e87b0e07bae7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8a7116bd-bd79-4b86-b409-f716f8575102/0d2c0d8e-8865-4aa8-abae-54464fecdde4")
 		(sheetname "/giroscopos/")
@@ -21827,7 +27068,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/8099a82b-d2bc-48d9-b44a-9d8b17ad4cdd")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -22031,6 +27271,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ed4a8269-f770-45b3-9a37-cf1a47707dfc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55ef4e08-8eba-4e1c-8f79-847ee911e15f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "071c8ea0-05e3-4d90-8710-1097e97adba7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9de6beec-d346-41a2-84a5-a5296d659a4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c9a2b57-313c-4f29-8c22-35586d3608c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d9bb62f-16e1-4d3f-ac0c-0d52907d75a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ec94998-7401-4379-9b50-57128b2a6216")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dce2c637-3d97-41d8-959f-12d6a5082b63")
 			(effects
 				(font
 					(size 1 1)
@@ -22250,6 +27581,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35b921ed-3d39-4fea-99ae-3a22f52292e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8722e28c-efa3-41fd-a67a-13fea5364b57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77f55483-d3bd-44f4-b9b5-48f23d043691")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e97ebbf-8fd3-42e3-a3d0-53ca02eee66f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "201c58f7-375c-4b32-b644-16162270d949")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49e8207d-b394-436d-854c-b433939838d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98be21d7-eef7-40f7-8c90-6476c6b60114")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/2fb5e8da-531f-4041-bd2a-8cee18882493")
 		(sheetname "/power_supply/")
@@ -22455,6 +27877,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d399bba8-486d-4c56-b722-db2ad51f8d04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7eade0bf-b5f5-433b-b568-5dec84a2529c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9e1ba22-585a-4419-800b-aee37abd9663")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a6eb01a-aad2-48b6-8c6d-507e0dcc6704")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c626c13-a232-46d1-a984-91af137cd47f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81b86a9d-da62-4429-a088-79d739fbb641")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2aa212f9-1296-4a19-a917-1cd688b6b80c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84975e62-3f0b-4c76-835f-ca6ba3bc1a27")
 			(effects
 				(font
 					(size 1 1)
@@ -22674,6 +28187,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "caaee7d0-4c84-4757-87f7-4da27d87d66b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5251900-bdb9-4cb9-88e7-6726edc863b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0de4089b-fa3b-4865-9d04-02bba47854ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b05a341b-3bd7-48a0-8181-622d4da92a31")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67ab4e8f-bc97-41bc-a956-85cf594c5392")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5e9f11b-0bd7-4fbd-b2ed-80ab86f9ba84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cab1a2bd-3d67-4c6e-997e-cf5360975e8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8a7116bd-bd79-4b86-b409-f716f8575102/5e8ba699-4abe-4a51-a9e2-b776bf5d8bc3")
 		(sheetname "/giroscopos/")
@@ -22874,7 +28478,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/b001c633-2660-4329-a49e-16c66b1f570a")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -23091,6 +28694,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d1083ac5-4b54-4354-b643-aff29d2a6e9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac5f465d-fa24-4ad4-b314-11dd37d139f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cef1abf3-8d65-4ac2-892d-4071f785c81f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abd7c947-af0d-48c4-ae21-300a77efad88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fb7ca35-3a0e-4662-b5ef-a6270cff53c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30fcf76a-a28e-49ba-aad4-3de3bc78c2b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04047d30-c083-4104-a82c-be12084f94bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7808b21e-9279-40a0-a78f-bca018a087e6")
 			(effects
 				(font
 					(size 1 1)
@@ -23332,6 +29026,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a5c750b-ad45-46c5-ac94-53c016da6bf8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4133ea10-0aaf-4146-ba8e-e5c3d58702c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dcc5a2b0-894c-4f97-a034-36b153fb9b9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afc630dc-4574-49ac-bce5-9e7e6b694f7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e864ef8-2d18-419e-91cb-93c0d1a2d0f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08ae08ee-a739-435b-9573-a38ac87c3f03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48731877-407c-4bb4-8552-af82a4b23a59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/14e432f7-b41d-441e-9de9-b92cbde0968b")
 		(sheetname "/")
@@ -23545,6 +29330,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56d81a1c-e1c5-4bf0-b0a8-47502ed2880e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "451d6880-fce0-4582-9287-9fe6644b495b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "763796f9-48c5-4b64-a3fe-15045706ea99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13f2dd4d-97b7-4894-a050-9eb98ee82f20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0eb86fdf-b512-4def-8e0a-3ff3e9e759ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab1a7a35-7a77-4c0d-8deb-031569e5f751")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3af274c-7c1c-4e4b-bf40-b0bb15b7c16f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1bfe23e4-6e0c-4d5b-8a6d-2f4dafa6eee7")
 		(sheetname "/")
@@ -23742,6 +29618,97 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4cd9f24-f9ec-4bfb-8793-69e8cf0efe9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5171f107-4feb-4964-87a4-7eed17585fb8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed8da19c-71db-41f6-850e-d7446ea3b851")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76c301ff-a269-49ff-ada6-177c29d3502f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d83abed3-0603-4699-8cbc-56e738f4099e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e071945-691e-4274-b021-435d4875ef96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d2421d7-3261-4120-bbf5-caf1572f59cf")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -24055,7 +30022,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/230474d9-d0af-4159-8824-953fb09cce3c")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
 		(attr smd)
@@ -24254,7 +30220,6 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/2b822ec5-c52c-4c4f-a4fb-21d856f1ab56")
 		(sheetname "/power_supply/")
 		(sheetfile "power_supply.kicad_sch")
 		(attr smd)
@@ -24458,6 +30423,97 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6c89686c-2c25-466c-815d-8c41956a9d4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d122e3e-fc10-4fd7-be50-b73be8d06ac4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31e35902-3ac7-4e5d-bbc2-066d572bddcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d6153ef-88c9-4951-ad02-c9707e93be41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c989d63-fb43-45fb-880a-25b39659d35e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d714e36-a92f-4f6b-9381-43759b43c9a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66aad5f0-8a48-4626-bb3c-13421da25fe9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d5ccbe8-7e0b-4737-b9a3-44d4dafe5946")
 			(effects
 				(font
 					(size 1 1)
@@ -25030,6 +31086,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ee525a0-c4ff-4e3e-8c5c-b333a3dcb361")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49121246-0c22-4e70-b893-841fd1ee82e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8fe3a46-6c1b-44dc-99f9-41800651d01f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39485425-9b5b-4b72-bc95-5ba30374f066")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e15a692d-7dbc-48e4-9f1e-9e8504b75cec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b24c2452-44f2-4f7b-817c-1cc4a545afcb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "410cc3e1-d147-4173-94b6-acdc90540c67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/5a811a4d-723f-4594-860f-6ec551eae74e")
 		(sheetname "/")
 		(sheetfile "SignaLink.kicad_sch")
@@ -25322,6 +31469,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4326332-2394-4d0b-8068-881b0a08f55a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc3e08b8-1a49-42fb-bb59-1b1fa13207fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc679aa1-a59d-4715-9d92-0ea1fd66a887")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50047772-a3ce-4e0c-9ebb-aa1a1c2b87fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa662375-dc98-428e-b800-b4b940a8002e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9b3cc5c-75aa-49df-83df-9ec1d89d5e23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9563f687-f0e3-455c-a9d7-6eb351826a08")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/5431a017-6dba-480d-824c-930160216975")
 		(sheetname "/power_supply/")
@@ -25534,6 +31772,97 @@
 				)
 			)
 		)
+		(property "AVAILABILITY" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec6bcbbb-1a13-482f-8a23-2a164b88bbd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a89860e-81b7-4d19-889b-1cc5c5bd499b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0274f815-3177-4c43-9671-456b6df488ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1da10889-7382-4e9a-aa2b-b69dead9a390")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "addfaf78-1b67-4f4b-889c-e2d68c024c49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e89ecf15-9b21-4811-b748-933f47e6281c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfe98d93-e977-4962-adde-2316b6d4cdb1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/950de23e-fb2c-4bf8-9e16-f2d0f97a3085/8438d5fb-c310-4097-88bf-9433ea678220")
 		(sheetname "/power_supply/")
@@ -25655,7 +31984,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 1 "GND")
+			(net 266 "/power_supply/PGEN")
 			(pintype "passive")
 			(uuid "5d8d1c75-b396-409a-85a1-3b5da992d22d")
 		)
@@ -25771,6 +32100,104 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "220b09ca-ada2-405b-88f3-53f41626587f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "AVAILABILITY" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1b9105ac-eb6a-48a2-9ba7-1173085a0660")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1a82f503-6d9f-4db9-bba2-b87e99535590")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a24a07ca-e5c9-45de-8c93-b174b5124b20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "PACKAGE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "28c9d6ed-33f8-4ead-83a7-e1e91ae34482")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "PRICE" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4d61126b-18c2-4a6e-b2f5-887f9a057e1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "SNAPEDA_PACKAGE_ID" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f5d83965-a763-423d-88b8-e61890328453")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "VENDOR" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7d902686-8e55-4c27-8bf3-10cec382ab8b")
 			(effects
 				(font
 					(size 1 1)

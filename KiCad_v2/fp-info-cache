@@ -1,4 +1,4 @@
-26734756031677246
+26736517636944105
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59373,6 +59373,13 @@ DIOM7959X265N
 0
 2
 2
+Custom_Footprints
+DKD_ADI-M
+
+LT8582EDKD-PBF 
+0
+25
+25
 Custom_Footprints
 IC_BNO085
 

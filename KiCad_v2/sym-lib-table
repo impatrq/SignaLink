@@ -10,4 +10,5 @@
   (lib (name "SS34")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/SS34.kicad_sym")(options "")(descr ""))
   (lib (name "TPS54331D")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/TPS54331D.kicad_sym")(options "")(descr ""))
   (lib (name "TPS55340RTER")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/TPS55340RTER.kicad_sym")(options "")(descr ""))
+  (lib (name "LT8582")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/LT8582.kicad_sym")(options "")(descr ""))
 )
