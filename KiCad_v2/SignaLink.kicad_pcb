@@ -8706,7 +8706,7 @@
 	(footprint "Custom_Footprints:DIOM7959X265N"
 		(layer "F.Cu")
 		(uuid "414281e9-b5bf-425b-ae9d-c4e05cef5437")
-		(at 104 18.5 180)
+		(at 125.545 21.5 180)
 		(property "Reference" "D4"
 			(at -0.555 -4.889 0)
 			(layer "F.SilkS")

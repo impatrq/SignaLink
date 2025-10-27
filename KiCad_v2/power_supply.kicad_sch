@@ -2296,16 +2296,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Texas Instruments"
+			(property "Description" "Boost Switching Regulator IC Positive, Isolation Capable Adjustable 2.9V 1 Output 5.25A _Switch_ 16-WFQFN Exposed Pad"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2315,7 +2306,7 @@
 					(hide yes)
 				)
 			)
-			(property "DESCRIPTION" "Boost Switching Regulator IC Positive, Isolation Capable Adjustable 2.9V 1 Output 5.25A _Switch_ 16-WFQFN Exposed Pad"
+			(property "MF" "Texas Instruments"
 				(at 0 0 0)
 				(effects
 					(font
