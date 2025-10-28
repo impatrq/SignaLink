@@ -11,4 +11,6 @@
   (lib (name "LT8582")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/LT8582.kicad_sym")(options "")(descr ""))
   (lib (name "LM3940IMP-3.3")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/LM3940IMP-3.3.kicad_sym")(options "")(descr ""))
   (lib (name "CM4102008")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/CM4102008.kicad_sym")(options "")(descr ""))
+  (lib (name "MMBT3904")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/MMBT3904.kicad_sym")(options "")(descr ""))
+  (lib (name "MIC94063")(type "KiCad")(uri "${KICAD_SIGNALINK_LIBS}/symbols/Custom_Symbols.kicad_sym/MIC94063.kicad_sym")(options "")(descr ""))
 )
