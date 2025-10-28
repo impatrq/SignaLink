@@ -72,3 +72,8 @@ Thumbs.db
 *.swp
 *.tmp
 *.lock
+
+# ---------
+# Ignoro Entorno Virtual de CM4
+# ---------
+venv/
