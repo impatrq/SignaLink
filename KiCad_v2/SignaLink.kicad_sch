@@ -8698,8 +8698,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bf0fe50-1c2b-4f73-a15c-8496b8d1292d")
-		(property "Reference" "R5"
-			(at 59.69 158.75 90)
+		(property "Reference" "R5-MIC1"
+			(at 59.69 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8707,7 +8707,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 59.69 156.21 90)
+			(at 59.69 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8750,7 +8750,7 @@
 		(instances
 			(project ""
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "R5")
+					(reference "R5-MIC1")
 					(unit 1)
 				)
 			)
@@ -13197,7 +13197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e254b2b7-3839-423e-ba46-fe4803815d13")
-		(property "Reference" "R3"
+		(property "Reference" "R3-MIC1"
 			(at 36.83 165.1 90)
 			(effects
 				(font
@@ -13249,7 +13249,7 @@
 		(instances
 			(project ""
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "R3")
+					(reference "R3-MIC1")
 					(unit 1)
 				)
 			)

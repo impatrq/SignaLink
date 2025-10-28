@@ -1480,12 +1480,13 @@
 					)
 				)
 			)
-			(property "Value" "LT8582EDKD-PBF"
-				(at 26.162 0 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "DKD_ADI"
@@ -1518,15 +1519,6 @@
 				)
 			)
 			(property "AVAILABILITY" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DESCRIPTION" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1572,15 +1564,6 @@
 				)
 			)
 			(property "VENDOR" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "VALUE" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2839,12 +2822,6 @@
 		(uuid "34a26f89-eb9a-494c-8eb9-ba8903bcb4c3")
 	)
 	(junction
-		(at 123.19 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "364ce820-ee6a-45d3-a566-3dd488d3b007")
-	)
-	(junction
 		(at 38.1 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2873,12 +2850,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "514987fc-cf9d-420c-8843-56fa5b3e610f")
-	)
-	(junction
-		(at 127 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f5b681d-2282-4e63-b769-173be10c2cf2")
 	)
 	(junction
 		(at 215.9 74.93)
@@ -2911,22 +2882,10 @@
 		(uuid "73281caa-312e-460d-adfa-5ba61662f4f6")
 	)
 	(junction
-		(at 38.1 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "74bebae4-9249-4ade-a014-36796a3e2249")
-	)
-	(junction
 		(at 48.26 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ef7ac16-0e27-4061-96c7-99781151a6c9")
-	)
-	(junction
-		(at 30.48 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8667905d-9701-41a5-a515-acff14728f8c")
 	)
 	(junction
 		(at 107.95 41.91)
@@ -2971,12 +2930,6 @@
 		(uuid "cb8b564f-30fa-403a-9908-2ddda3b8217a")
 	)
 	(junction
-		(at 127 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d19a16bd-bedd-484f-a88b-23180d0c5804")
-	)
-	(junction
 		(at 48.26 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2987,12 +2940,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2a418a8-aaee-41b3-aad0-9675366a2822")
-	)
-	(junction
-		(at 30.48 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ef3a165a-c890-4914-b734-09715f6336a2")
 	)
 	(junction
 		(at 116.84 74.93)
@@ -3178,16 +3125,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 138.43) (xy 38.1 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16c24262-72da-4797-b7ef-ff776a9ffd11")
-	)
-	(wire
-		(pts
 			(xy 107.95 140.97) (xy 113.03 140.97)
 		)
 		(stroke
@@ -3295,16 +3232,6 @@
 			(type default)
 		)
 		(uuid "25299d2a-d74c-4c75-b8a7-d5d413be8596")
-	)
-	(wire
-		(pts
-			(xy 30.48 138.43) (xy 30.48 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2703c958-7900-4941-92cf-898bd3cf9372")
 	)
 	(wire
 		(pts
@@ -3485,16 +3412,6 @@
 			(type default)
 		)
 		(uuid "5623d324-f19b-402c-84c9-d54ce7be7349")
-	)
-	(wire
-		(pts
-			(xy 30.48 138.43) (xy 38.1 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56b36e2c-47a0-4c66-8d51-314c2ae3f289")
 	)
 	(wire
 		(pts
@@ -3698,16 +3615,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 135.89) (xy 127 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "720704bc-c129-46bc-92da-81baa24fc01e")
-	)
-	(wire
-		(pts
 			(xy 41.91 143.51) (xy 41.91 153.67)
 		)
 		(stroke
@@ -3828,16 +3735,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 135.89) (xy 127 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "837d0576-04b9-4e69-96a6-0c941fe11815")
-	)
-	(wire
-		(pts
 			(xy 46.99 48.26) (xy 46.99 53.34)
 		)
 		(stroke
@@ -3875,16 +3772,6 @@
 			(type default)
 		)
 		(uuid "89009b01-21e8-468f-82a4-c89f08e1d594")
-	)
-	(wire
-		(pts
-			(xy 30.48 133.35) (xy 30.48 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cccee6e-d69a-47a2-8cd3-d14f2ebc324f")
 	)
 	(wire
 		(pts
@@ -4008,7 +3895,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 181.61) (xy 127 184.15)
+			(xy 127 133.35) (xy 127 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4128,16 +4015,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 181.61) (xy 30.48 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c07068b3-5ce2-4bb0-bee2-7027fa677322")
-	)
-	(wire
-		(pts
 			(xy 77.47 33.02) (xy 77.47 35.56)
 		)
 		(stroke
@@ -4228,7 +4105,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 184.15) (xy 30.48 181.61)
+			(xy 30.48 133.35) (xy 30.48 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4255,16 +4132,6 @@
 			(type default)
 		)
 		(uuid "d5a84f86-97bc-4ecf-866c-fcd7ea3d1bcc")
-	)
-	(wire
-		(pts
-			(xy 127 133.35) (xy 127 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d81d44a5-6a0b-438f-81d6-c44c41f625fd")
 	)
 	(wire
 		(pts
@@ -4298,7 +4165,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 133.35) (xy 38.1 138.43)
+			(xy 38.1 133.35) (xy 38.1 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4851,7 +4718,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "107k"
+		(property "Value" "120k"
 			(at 120.904 141.732 0)
 			(effects
 				(font
@@ -4940,7 +4807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 143.51 50.8 0)
 			(effects
 				(font
@@ -5159,7 +5026,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8uH"
+		(property "Value" "2.7uH"
 			(at 57.15 106.68 90)
 			(effects
 				(font
@@ -5303,7 +5170,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47.3k"
+		(property "Value" "45.3k"
 			(at 55.88 158.7499 0)
 			(effects
 				(font
@@ -5381,7 +5248,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "68uF"
 			(at 148.336 129.54 0)
 			(effects
 				(font
@@ -5525,7 +5392,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2uF"
+		(property "Value" "10uF"
 			(at 78.74 104.14 90)
 			(effects
 				(font
@@ -5825,7 +5692,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "22uF"
 			(at 36.068 152.146 0)
 			(effects
 				(font
@@ -8624,7 +8491,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "68uF"
 			(at 148.336 118.364 0)
 			(effects
 				(font
@@ -8769,7 +8636,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6.8uH"
+		(property "Value" "2.7uH"
 			(at 85.09 114.2999 0)
 			(effects
 				(font
