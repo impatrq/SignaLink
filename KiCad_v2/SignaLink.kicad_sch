@@ -10152,7 +10152,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Custom_Footprints:MODULE_ESP32-C3_SUPERMINI_TH"
+		(property "Footprint" "Custom_Footprints:MODULE_ESP32-C3_SUPERMINI"
 			(at 26.416 104.394 0)
 			(effects
 				(font
