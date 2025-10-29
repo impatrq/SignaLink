@@ -7878,6 +7878,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 60.96 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 60.96 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "191c77f8-0327-4c70-999f-09e1e28731c8")
 		)
@@ -8094,6 +8112,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 22.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 22.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c6c67717-6b05-4095-a3fe-64482e9d3853")
 		)
@@ -8245,6 +8281,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 35.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 35.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f6faf7c-01e9-4ae5-ae46-4751d016b559")
 		)
@@ -8379,6 +8433,24 @@
 			)
 		)
 		(property "VALUE" ""
+			(at 184.15 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 184.15 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 184.15 130.81 0)
 			(effects
 				(font
@@ -8670,6 +8742,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 49.53 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 49.53 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1318c727-7210-469b-bd8d-244a1fb31b0a")
 		)
@@ -8734,6 +8824,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 59.69 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 59.69 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 59.69 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8884,6 +8992,24 @@
 			)
 		)
 		(property "VALUE" ""
+			(at 48.26 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 48.26 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 48.26 34.29 0)
 			(effects
 				(font
@@ -9109,6 +9235,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 54.61 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 54.61 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f95f686f-3839-4593-8cfa-b6774e005199")
 		)
@@ -9240,6 +9384,24 @@
 			)
 		)
 		(property "VALUE" ""
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 110.49 123.19 0)
 			(effects
 				(font
@@ -9434,6 +9596,24 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 149.86 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 149.86 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -10382,6 +10562,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 38.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 38.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "b6b26e4d-8a01-4fcf-b662-ed0242019e69")
 		)
@@ -10552,6 +10750,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 53.34 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 53.34 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 53.34 168.91 0)
 			(effects
 				(font
@@ -10781,6 +10997,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 184.15 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f755f3ad-d2c0-40a3-99d0-c0aea93c14c3")
 		)
@@ -10989,6 +11223,24 @@
 			)
 		)
 		(property "VALUE" ""
+			(at 16.51 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 16.51 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 16.51 26.67 0)
 			(effects
 				(font
@@ -11448,6 +11700,24 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 250.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -12207,6 +12477,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 29.21 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 29.21 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5ae687f4-15dc-4631-a9a0-3256225671b6")
 		)
@@ -12341,6 +12629,24 @@
 			)
 		)
 		(property "VALUE" ""
+			(at 110.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 110.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 110.49 111.76 0)
 			(effects
 				(font
@@ -12830,6 +13136,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 41.91 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 41.91 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00db01c3-5897-4a6a-a1c5-0a248311e473")
 		)
@@ -13100,6 +13424,24 @@
 				(hide yes)
 			)
 		)
+		(property "Field4" ""
+			(at 33.02 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 33.02 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "c6c47bf5-4a19-4861-b563-d574af7d08ec")
 		)
@@ -13233,6 +13575,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 36.83 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 36.83 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 36.83 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
