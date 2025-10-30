@@ -228,8 +228,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 4.0,
-          "drill": 3.8
+          "diameter": 0.3,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false
@@ -514,7 +514,7 @@
   "pcbnew": {
     "last_paths": {
       "gencad": "",
-      "idf": "",
+      "idf": "SignaLink.emn",
       "netlist": "",
       "plot": "C:/Users/totia/Downloads",
       "pos_files": "",

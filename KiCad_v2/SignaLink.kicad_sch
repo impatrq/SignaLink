@@ -7871,7 +7871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cc4a6d6-1af7-4d3c-98c1-b2ccee827e22")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 35.56 46.99 0)
 			(effects
 				(font
@@ -7921,7 +7921,7 @@
 		(instances
 			(project "SignaLink"
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -8738,7 +8738,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bf0fe50-1c2b-4f73-a15c-8496b8d1292d")
-		(property "Reference" "R5-MIC1"
+		(property "Reference" "R5"
 			(at 59.69 146.05 90)
 			(effects
 				(font
@@ -8808,7 +8808,7 @@
 		(instances
 			(project ""
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "R5-MIC1")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -10198,7 +10198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56fdc8ac-bc1d-4fc1-8423-d4a33c41ff62")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR05"
 			(at 40.64 171.45 0)
 			(effects
 				(font
@@ -10249,7 +10249,7 @@
 		(instances
 			(project ""
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -12698,7 +12698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b41b979b-c343-46de-a28a-03ba77d95ac4")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 35.56 25.4 0)
 			(effects
 				(font
@@ -12748,7 +12748,7 @@
 		(instances
 			(project "SignaLink"
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -13491,7 +13491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e254b2b7-3839-423e-ba46-fe4803815d13")
-		(property "Reference" "R3-MIC1"
+		(property "Reference" "R3"
 			(at 40.64 165.1 90)
 			(effects
 				(font
@@ -13561,7 +13561,7 @@
 		(instances
 			(project ""
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "R3-MIC1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
