@@ -7304,16 +7304,6 @@
 	)
 	(wire
 		(pts
-			(xy -57.15 57.15) (xy -49.53 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b87c2d85-2611-422d-abb9-e9c7d6c8fd83")
-	)
-	(wire
-		(pts
 			(xy 22.86 26.67) (xy 26.67 26.67)
 		)
 		(stroke
@@ -7621,16 +7611,6 @@
 			(justify right bottom)
 		)
 		(uuid "9d372bf5-927b-4dcc-81a1-197871678f7e")
-	)
-	(label "5V"
-		(at -57.15 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a0547357-c912-4ad9-a1de-cf20118c07c9")
 	)
 	(label "A4"
 		(at 64.77 26.67 180)
@@ -8766,7 +8746,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "4k7"
 			(at 59.69 148.59 90)
 			(effects
 				(font
@@ -13955,16 +13935,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "5V" input
-			(at -49.53 57.15 180)
-			(uuid "642f00f9-8eb2-4cb6-96c5-73cd7edaece2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "GND" input
