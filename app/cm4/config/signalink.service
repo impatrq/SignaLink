@@ -1,0 +1,15 @@
+[Unit]
+Description=SignaLink MQTT + Reconocimiento de voz
+After=network.target mosquitto.service
+
+[Service]
+ExecStartPre=/bin/bash -c '/home/signalink/SignaLink/app/cm4/config/wifi-ap/start_ap.sh &'
+ExecStart=/bin/bash /home/signalink/SignaLink/app/cm4/config/services.sh
+Restart=always
+User=signalink
+WorkingDirectory=/home/signalink/SignaLink/app/cm4/code
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
