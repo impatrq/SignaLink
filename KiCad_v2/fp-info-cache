@@ -1,4 +1,4 @@
-25643385077138548
+25646908937726473
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57176,6 +57176,13 @@ B340A
 2
 2
 Custom_Footprints
+CAP_6TPB68M
+
+
+0
+2
+2
+Custom_Footprints
 COILSR
 
 
@@ -57254,6 +57261,13 @@ MSOP-16_MSE
 17
 Custom_Footprints
 MT3608
+
+
+0
+4
+4
+Custom_Footprints
+PULSADOR
 
 
 0
