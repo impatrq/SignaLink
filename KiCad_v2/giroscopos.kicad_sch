@@ -2192,16 +2192,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 148.59) (xy 228.6 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7e5c85d-0993-4279-ab83-0b382d09cbf1")
-	)
-	(wire
-		(pts
 			(xy 127 55.88) (xy 127 59.69)
 		)
 		(stroke
@@ -2430,16 +2420,6 @@
 		)
 		(uuid "5a266684-db9e-4f0c-87bc-37668215aa0f")
 	)
-	(label "A5"
-		(at 214.63 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7e1205e6-2b60-4b2c-b7b4-d49ca0b5a5cf")
-	)
 	(label "SCL"
 		(at 201.93 86.36 0)
 		(effects
@@ -2480,17 +2460,6 @@
 			(justify left)
 		)
 		(uuid "06969139-1307-4e1e-b00f-dfd8d6a6302f")
-	)
-	(hierarchical_label "A5"
-		(shape input)
-		(at 228.6 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "141e70b1-e8bd-43a3-9136-4f83241f8c04")
 	)
 	(hierarchical_label "SCL"
 		(shape input)

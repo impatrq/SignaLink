@@ -11417,6 +11417,10 @@
 		(uuid "f3c0f46d-ac43-485e-aaf2-5a7030da7f4a")
 	)
 	(no_connect
+		(at 20.32 78.74)
+		(uuid "f3d998f5-2ba4-440e-b363-2b8ec212a0d2")
+	)
+	(no_connect
 		(at 280.67 53.34)
 		(uuid "f4619072-4308-45de-84bb-731b89c4a041")
 	)
@@ -11581,16 +11585,6 @@
 			(type default)
 		)
 		(uuid "2ddf558c-d331-467a-b9a5-4b1677441390")
-	)
-	(wire
-		(pts
-			(xy -58.42 66.04) (xy -49.53 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e9f0867-28d3-46ea-8a01-8e0482cc4a19")
 	)
 	(wire
 		(pts
@@ -11874,16 +11868,6 @@
 	)
 	(wire
 		(pts
-			(xy -60.96 96.52) (xy -49.53 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bbbb514-5306-4e6c-b120-751cb491b441")
-	)
-	(wire
-		(pts
 			(xy 48.26 30.48) (xy 48.26 26.67)
 		)
 		(stroke
@@ -12074,6 +12058,16 @@
 	)
 	(wire
 		(pts
+			(xy -59.69 63.5) (xy -49.53 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c467739d-357c-410d-b5b5-3b15a6c3836a")
+	)
+	(wire
+		(pts
 			(xy 109.22 176.53) (xy 109.22 173.99)
 		)
 		(stroke
@@ -12111,16 +12105,6 @@
 			(type default)
 		)
 		(uuid "dc4c0e27-0e37-4f11-8ca1-ca8a1e888595")
-	)
-	(wire
-		(pts
-			(xy 15.24 78.74) (xy 20.32 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcb7f2db-b48c-4213-863a-efa2f2398870")
 	)
 	(wire
 		(pts
@@ -12292,26 +12276,6 @@
 		)
 		(uuid "6fc9b7e2-3c03-47a5-8578-3868048dea62")
 	)
-	(label "A5"
-		(at 15.24 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7289dee5-68b6-4928-93ff-1d3b9947fe27")
-	)
-	(label "A5"
-		(at -60.96 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "765e02b0-26e9-4374-aa13-54b0cb977775")
-	)
 	(label "GND"
 		(at 115.57 30.48 0)
 		(effects
@@ -12413,7 +12377,7 @@
 		(uuid "c1373cf1-da12-4473-9622-4ba7fed9cf82")
 	)
 	(label "USB_PORT"
-		(at -58.42 66.04 0)
+		(at -59.69 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19059,16 +19023,6 @@
 				(justify left)
 			)
 		)
-		(pin "A5" input
-			(at -49.53 96.52 180)
-			(uuid "d61b4b7c-485b-472a-9424-4454046d1788")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "SCL" input
 			(at -49.53 93.98 180)
 			(uuid "14052cdc-19fc-4c4c-9685-ec59dde29aff")
@@ -19132,7 +19086,7 @@
 			)
 		)
 		(pin "USB" input
-			(at -49.53 66.04 180)
+			(at -49.53 63.5 180)
 			(uuid "616aaf51-14d0-4ae2-942f-65d3a8ea53cf")
 			(effects
 				(font
