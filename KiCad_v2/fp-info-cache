@@ -1,4 +1,4 @@
-25636337365967204
+25643385077138548
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -25480,6 +25480,13 @@ connector Molex Sabre horizontal
 90
 6
 Connector_Molex
+Molex_Signalink
+
+
+0
+2
+2
+Connector_Molex
 Molex_SlimStack_52991-0208_2x10_P0.50mm_Vertical
 Molex SlimStack Fine-Pitch SMT Board-to-Board Connectors, 52991-0208, 20 Pins (http://www.molex.com/pdm_docs/sd/529910308_sd.pdf), generated with kicad-footprint-generator
 connector Molex SlimStack vertical
@@ -25941,6 +25948,20 @@ connector Molex SlimStack vertical
 0
 80
 80
+Connector_Molex
+Untitled
+
+
+0
+2
+2
+Connector_Molex
+Untitled_1
+
+
+0
+2
+2
 Connector_PCBEdge
 4UCON_10156_2x40_P1.27mm_Socket_Horizontal
 4UCON 10156 Card edge socket with 80 contacts (40 each side), through-hole, http://www.4uconnector.com/online/object/4udrawing/10156.pdf
@@ -57149,6 +57170,13 @@ ceramic
 3
 Custom_Footprints
 B340A
+
+
+0
+2
+2
+Custom_Footprints
+COILSR
 
 
 0

@@ -4985,7 +4985,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Custom_Footprints:IND_SRP6540-100M"
+		(property "Footprint" "Custom_Footprints:COILSR"
 			(at 57.15 109.22 0)
 			(effects
 				(font
@@ -5244,7 +5244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Custom_Footprints:CAP_6TPB68M"
 			(at 147.0152 132.08 0)
 			(effects
 				(font
@@ -8981,7 +8981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Custom_Footprints:CAP_6TPB68M"
 			(at 147.0152 121.92 0)
 			(effects
 				(font
@@ -9144,7 +9144,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Custom_Footprints:IND_SRP6540-100M"
+		(property "Footprint" "Custom_Footprints:COILSR"
 			(at 86.36 113.03 0)
 			(effects
 				(font

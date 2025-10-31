@@ -10187,53 +10187,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "PULSADOR:TS11-674-43-BK-100-RA-D"
 			(pin_names
 				(offset 1.016)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+			(property "Reference" "S"
+				(at -7.62 8.128 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Value" "TS11-674-43-BK-100-RA-D"
+				(at -7.62 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
+			(property "Footprint" "TS11-674-43-BK-100-RA-D:SW_TS11-674-43-BK-100-RA-D"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -10242,7 +10231,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -10251,12 +10240,144 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(property "MF" "Same Sky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "6 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/TS11-674-43-BK-100-RA-D/Same+Sky/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "1.01"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TS11-674-43-BK-100-RA-D/Same+Sky/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "TS11-674-43-BK-100-RA-D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "6 x 7.4 mm, 4.3 mm Actuator Height, 100 gf, Black, Right Angle, Through Hole, SPST, Tactile Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "CUI Devices"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "TS11-674-43-BK-100-RA-D_0_0"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 7.62)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -10265,10 +10386,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy -2.54 2.54) (xy 2.794 4.6736)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -10276,10 +10397,10 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
-					(radius 0.508)
+					(center 2.54 2.54)
+					(radius 0.3302)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -10288,10 +10409,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy 7.62 2.54) (xy 2.921 2.54)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -10299,37 +10420,73 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -10845,7 +11002,7 @@
 		(uuid "706bdf5e-7040-4fb6-b0e7-9882ef5a7fdf")
 	)
 	(junction
-		(at 110.49 116.84)
+		(at 107.95 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70e180d3-201b-4f84-95e9-070516088a30")
@@ -11568,7 +11725,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 115.57) (xy 110.49 116.84)
+			(xy 107.95 115.57) (xy 107.95 116.84)
 		)
 		(stroke
 			(width 0)
@@ -11748,7 +11905,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 116.84) (xy 110.49 118.11)
+			(xy 107.95 116.84) (xy 107.95 118.11)
 		)
 		(stroke
 			(width 0)
@@ -11948,7 +12105,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 116.84) (xy 119.38 116.84)
+			(xy 107.95 116.84) (xy 119.38 116.84)
 		)
 		(stroke
 			(width 0)
@@ -13801,7 +13958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Signalink"
 			(at 54.61 26.67 0)
 			(effects
 				(font
@@ -13943,32 +14100,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 110.49 123.19 270)
+		(lib_id "power:GND")
+		(at 107.95 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "32d0b006-103f-463d-a4b2-96ef2b59877f")
-		(property "Reference" "SW1"
-			(at 104.14 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Wake"
-			(at 106.172 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_Tactile_Straight_KSA0Axx1LFTR"
-			(at 115.57 123.19 0)
+		(fields_autoplaced yes)
+		(uuid "3d7c4e1a-879a-4eb2-807d-b74b60e2adff")
+		(property "Reference" "#PWR067"
+			(at 107.95 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13976,8 +14118,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 115.57 123.19 0)
+		(property "Value" "GND"
+			(at 107.95 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13985,8 +14135,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 110.49 123.19 0)
+		(property "Datasheet" ""
+			(at 107.95 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13994,106 +14144,22 @@
 				(hide yes)
 			)
 		)
-		(property "AVAILABILITY" ""
-			(at 110.49 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "DESCRIPTION" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PRICE" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VENDOR" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VALUE" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field4" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1b98cb5e-016d-43bf-b4f4-81a8d7030610")
 		)
 		(pin "1"
-			(uuid "7c7a0711-6123-4e68-8534-4e213e097bc5")
+			(uuid "9dfc959a-c83c-4075-bf5c-d3c1723b6085")
 		)
 		(instances
-			(project ""
+			(project "SignaLink"
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
-					(reference "SW1")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -15940,6 +16006,203 @@
 		)
 	)
 	(symbol
+		(lib_id "PULSADOR:TS11-674-43-BK-100-RA-D")
+		(at 105.41 130.81 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73f2db00-0b7e-453c-a156-98d0286f264c")
+		(property "Reference" "S5"
+			(at 114.3 130.1749 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 114.3 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom_Footprints:PULSADOR"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Same Sky"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "6 mm"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TS11-674-43-BK-100-RA-D/Same+Sky/view-part/?ref=eda"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.01"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TS11-674-43-BK-100-RA-D/Same+Sky/view-part/?ref=snap"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "TS11-674-43-BK-100-RA-D"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "6 x 7.4 mm, 4.3 mm Actuator Height, 100 gf, Black, Right Angle, Through Hole, SPST, Tactile Switch"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "CUI Devices"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78f57cbe-5755-4948-b490-3afe05ec07c7")
+		)
+		(pin "4"
+			(uuid "6171810a-5cfd-4670-91ff-35463fa8d230")
+		)
+		(pin "1"
+			(uuid "a2fe54e7-77df-405d-ad84-24db1708515b")
+		)
+		(pin "3"
+			(uuid "69b5560d-2ca0-42f0-82ca-8a3cb25bbec0")
+		)
+		(instances
+			(project ""
+				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 45.72 110.49 270)
 		(unit 1)
@@ -16033,7 +16296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Signalink"
 			(at 16.51 26.67 0)
 			(effects
 				(font
@@ -16176,16 +16439,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 110.49 128.27 0)
+		(at 102.87 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "85a4f39c-0a47-480a-afae-66501083ea95")
+		(uuid "7cf0173e-dff0-4229-b2c8-4eed99937560")
 		(property "Reference" "#PWR018"
-			(at 110.49 134.62 0)
+			(at 102.87 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16194,16 +16457,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 129.5399 0)
+			(at 102.87 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 128.27 0)
+			(at 102.87 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16212,7 +16474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 128.27 0)
+			(at 102.87 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16221,7 +16483,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 128.27 0)
+			(at 102.87 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16230,10 +16492,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e72e70b-531c-407d-9327-2fc40876257a")
+			(uuid "026c1d11-970e-498c-b948-5698fc1e8663")
 		)
 		(instances
-			(project ""
+			(project "SignaLink"
 				(path "/a1f5fcc2-f8ff-418d-9afd-dd6d7b5c6dc3"
 					(reference "#PWR018")
 					(unit 1)
@@ -17268,7 +17530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Signalink"
 			(at 29.21 26.67 0)
 			(effects
 				(font
@@ -17478,7 +17740,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 110.49 111.76 0)
+		(at 107.95 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17487,7 +17749,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9a88141-3e68-4bc5-814e-31b31c0f8977")
 		(property "Reference" "R7"
-			(at 113.03 110.4899 0)
+			(at 110.49 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17496,7 +17758,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 113.03 113.0299 0)
+			(at 110.49 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17505,7 +17767,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 108.712 111.76 90)
+			(at 106.172 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17514,7 +17776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17523,7 +17785,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17532,7 +17794,7 @@
 			)
 		)
 		(property "AVAILABILITY" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17541,7 +17803,7 @@
 			)
 		)
 		(property "DESCRIPTION" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17550,7 +17812,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17559,7 +17821,7 @@
 			)
 		)
 		(property "PACKAGE" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17568,7 +17830,7 @@
 			)
 		)
 		(property "PRICE" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17577,7 +17839,7 @@
 			)
 		)
 		(property "SNAPEDA_PACKAGE_ID" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17586,7 +17848,7 @@
 			)
 		)
 		(property "VENDOR" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17595,7 +17857,7 @@
 			)
 		)
 		(property "VALUE" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17604,7 +17866,7 @@
 			)
 		)
 		(property "Field4" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17613,7 +17875,7 @@
 			)
 		)
 		(property "Field5" ""
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17705,7 +17967,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 110.49 107.95 0)
+		(at 107.95 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17714,7 +17976,7 @@
 		(fields_autoplaced yes)
 		(uuid "aaf3c99e-1deb-40a9-bcc7-c01d17345c71")
 		(property "Reference" "#PWR017"
-			(at 110.49 111.76 0)
+			(at 107.95 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17723,7 +17985,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 110.49 102.87 0)
+			(at 107.95 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17731,7 +17993,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 107.95 0)
+			(at 107.95 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17740,7 +18002,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 107.95 0)
+			(at 107.95 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17749,7 +18011,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 110.49 107.95 0)
+			(at 107.95 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18061,7 +18323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Signalink"
 			(at 41.91 26.67 0)
 			(effects
 				(font
