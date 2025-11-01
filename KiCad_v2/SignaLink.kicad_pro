@@ -517,7 +517,7 @@
       "idf": "SignaLink.emn",
       "netlist": "",
       "plot": "C:/Users/totia/Downloads",
-      "pos_files": "",
+      "pos_files": "./",
       "specctra_dsn": "../../../Downloads/SignaLink.dsn",
       "step": "SignaLink.step",
       "svg": "",
