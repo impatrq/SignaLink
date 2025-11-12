@@ -28,10 +28,10 @@ TOPIC_SENSOR = "sensors/mpu_flex"
 USERNAME = 'franco'
 PASSWORD = '_fr4nco_'
 
-MODEL_PATH = "/home/signalink/SignaLink/cm4/code/mqtt_broker/tfmodel/signalink_model.tflite"
-LABEL_PATH = "/home/signalink/SignaLink/cm4/code/mqtt_broker/tfmodel/label_encoder.pkl"
-SCALER_PATH = "/home/signalink/SignaLink/cm4/code/mqtt_broker/tfmodel/scaler.pkl"
-AUDIO_DIR = "/home/signalink/SignaLink/cm4/code/mqtt_broker/voice/words"
+MODEL_PATH = "/home/signalink/SignaLink/app/cm4/code/mqtt_broker/tfmodel/signalink_model.tflite"
+LABEL_PATH = "/home/signalink/SignaLink/app/cm4/code/mqtt_broker/tfmodel/label_encoder.pkl"
+SCALER_PATH = "/home/signalink/SignaLink/app/cm4/code/mqtt_broker/tfmodel/scaler.pkl"
+AUDIO_DIR = "/home/signalink/SignaLink/app/cm4/code/mqtt_broker/voice/words"
 
 FEATURES = 7
 BUFFER_SIZE = 30
@@ -43,7 +43,7 @@ COOLDOWN_SECONDS = 1.2
 
 MOVEMENT_RANGE_THRESHOLD = 20.0
 
-TEMPO = 0.5
+TEMPO = 0.6
 GAIN_DB = -12
 
 # -----------------------
