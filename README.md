@@ -8,10 +8,16 @@
 
 </div>
 
-<div align="center" style="display: flex; gap: 10px; justify-content: center;">
-  <img src="Imagenes/ONIET/oniet.jpg" alt="Logo proyecto" width="60%"/>
-  <img src="Imagenes/Banner/banner.jpg" alt="Logo proyecto" width="40%"/>
-</div>
+<table align="center">
+<tr>
+<td align="center">
+<img src="Imagenes/ONIET/oniet.jpg" alt="Logo proyecto" width="60%"/>
+</td>
+<td align="center">
+<img src="Imagenes/Banner/banner.jpg" alt="Logo proyecto" width="40%"/>
+</td>
+</tr>
+</table>
 
 ## 🔗 Acceso a página web:
 
@@ -102,8 +108,6 @@ Este es el comienzo de un prototipo realizado a base de nuestros conocimientos, 
 
 ## 📱 Contactanos:
 
- <div style="display: flex; justify-content: space-around;">
-
 <a href="https://mail.google.com/mail/?view=cm&to=signalink2025@gmail.com" target="_blank">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
@@ -113,69 +117,14 @@ Este es el comienzo de un prototipo realizado a base de nuestros conocimientos, 
 
 ## 📱 Contactos personales
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-
-<div>
-<h3>1. Albornoz Thiago</h3>
-<a href="https://mail.google.com/mail/?view=cm&to=albornozthiagoagustin@gmail.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/thiago-agustin-albornoz-6956b135b">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</div>
-
-<div>
-<h3>2. Erbino Sebastian</h3>
-<a href="https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/sebasti%C3%A1n-erbino-25b9792ab?trk=contact-info">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</div>
-
-<div>
-<h3>3. Franco Valentin</h3>
-<a href="https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/valentin-franco-174587357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">
-   <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</div>
-
-<div>
-<h3>4. Lesme Franco</h3>
-<a href="https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/franco-lesme-25bb4b259/us">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</div>
-
-<div>
-<h3>5. Poggi Lorenzo</h3>
-<a href="https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/lorenzo-poggi-6b9b5a357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</div>
-
-<div>
-<h3>6. Sarniguette Valentino</h3>
-<a href="https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com" target="_blank">
-    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/valentino-sarniguette-156175354/">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-</div>
-
-</div>
+| Integrante | Gmail | LinkedIn |
+|------------|-------|----------|
+| **Albornoz Thiago** | [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=albornozthiagoagustin@gmail.com) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiago-agustin-albornoz-6956b135b) |
+| **Erbino Sebastian** | [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=serbino25@gmail.com) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebasti%C3%A1n-erbino-25b9792ab?trk=contact-info) |
+| **Franco Valentin** | [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=valentinfranco2506@gmail.com) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/valentin-franco-174587357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
+| **Lesme Franco** | [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=franco.lesme2006@gmail.com) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/franco-lesme-25bb4b259/us) |
+| **Poggi Lorenzo** | [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=lorenzo.poggijanin@gmail.com) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lorenzo-poggi-6b9b5a357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
+| **Sarniguette Valentino** | [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&to=valentinosarniguette@gmail.com) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/valentino-sarniguette-156175354/) |
 
 ---
 

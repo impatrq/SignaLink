@@ -24,15 +24,15 @@ Diseñar un modelo tridimensional que represente de forma realista y funcional e
 
 ## 🔨 Imágenes durante el proceso
 
-  <img src="images/WhatsApp Image 2025-08-04 at 10.35.30.jpeg" alt="Descripción de la imagen" width="800"/>
+  <img src="img/WhatsApp Image 2025-08-04 at 10.35.30.jpeg" alt="Descripción de la imagen" width="800"/>
 </div>
-  <img src="images/WhatsApp Image 2025-08-04 at 10.36.19.jpeg" alt="Descripción de la imagen" width="800"/>
+  <img src="img/WhatsApp Image 2025-08-04 at 10.36.19.jpeg" alt="Descripción de la imagen" width="800"/>
 </div>
-  <img src="images/WhatsApp Image 2025-08-04 at 10.37.14.jpeg" alt="Descripción de la imagen" width="800"/>
+  <img src="img/WhatsApp Image 2025-08-04 at 10.37.14.jpeg" alt="Descripción de la imagen" width="800"/>
 </div>
-  <img src="images/WhatsApp Image 2025-08-04 at 10.43.25.jpeg" alt="Descripción de la imagen" width="800"/>
+  <img src="img/WhatsApp Image 2025-08-04 at 10.43.25.jpeg" alt="Descripción de la imagen" width="800"/>
 </div>
-  <img src="images/WhatsApp Image 2025-08-04 at 10.44.15.jpeg" alt="Descripción de la imagen" width="800"/>
+  <img src="img/WhatsApp Image 2025-08-04 at 10.44.15.jpeg" alt="Descripción de la imagen" width="800"/>
 </div>
 
 ---
@@ -52,13 +52,13 @@ A continuación, algunas capturas de los modelos finales:
 
 ## Módulo Muñeca
 
-  <img src="images/Captura de pantalla 2025-08-04 a la(s) 11.15.48.png" width="800" alt=""/>
+  <img src="img/Captura de pantalla 2025-08-04 a la(s) 11.15.48.png" width="800" alt=""/>
 
 ## Módulo Pecho
-  <img src="images/Captura de pantalla 2025-08-04 a la(s) 11.16.00.png" width="800" alt=""/>
+  <img src="img/Captura de pantalla 2025-08-04 a la(s) 11.16.00.png" width="800" alt=""/>
 
 ## Soportes Anillos de Sensores Flex
-  <img src="images/soportesflexsensors.png" width="800" alt=""/>
+  <img src="img/soportesflexsensors.png" width="800" alt=""/>
 
 
 ### Videos de referencia durante el trabajo
