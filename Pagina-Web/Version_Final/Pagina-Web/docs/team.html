@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equipo - SignaLink</title>
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap'>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="img/logo/signalinkicon.png" rel="icon" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <div id="main-content">
+        <div class="bg-black text-white font-['Space_Grotesk'] overflow-x-hidden">
+            <!------------------ 
+            # Barra de Navegación (Desktop)
+            -------------------->
+            <header>
+                <nav id="navbar"
+                    class="fixed top-0 left-0 right-0 bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300">
+                    <div class="container mx-auto px-6 py-3">
+                        <div class="flex items-center justify-between">
+                            <!-- Logo SIEMPRE visible -->
+                            <div class="flex items-center">
+                                <img src="img/logo/signalinkicon.png" alt="Logo SignaLink"
+                                    class="w-10 h-10 object-contain" />
+                                <div
+                                    class="ml-2 text-xl font-[Lexend] bg-gradient-to-r from-yellow-500 via-yellow-500 to-yellow-500 bg-clip-text text-transparent">
+                                    SignaLink
+                                </div>
+                            </div>
+                            <!-- Desktop Navigation SOLO visible en desktop -->
+                            <div class="hidden md:flex items-center space-x-1">
+                                <a href="index.html#Inicio"
+                                    class="nav-link text-gray-300 hover:text-yellow-400 px-4 py-2  transition-colors duration-200 focus:outline-none focus:ring-0">Inicio</a>
+                                <a href="technology-detail.html"
+                                    class="nav-link text-gray-300 hover:text-yellow-400 px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-0">Tecnología</a>
+                                <a href="galeria.html"
+                                    class="nav-link text-gray-300 hover:text-yellow-400 px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-0">Galería</a>
+                                <a href="team.html"
+                                    class="nav-link text-gray-300 hover:text-yellow-400 px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-0">Equipo</a>
+                                <a href="index.html#Contacto"
+                                    class="nav-link text-gray-300 hover:text-yellow-400 px-4 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-0">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!------------------ 
+                # Barra de Navegación (Mobile)
+                -------------------->
+                <input class="menu-icon mobile-only" type="checkbox" id="menu-icon" name="menu-icon"
+                    title="Abrir menú de navegación móvil" />
+                <label for="menu-icon" class="mobile-only"></label>
+                <nav class="nav mobile-only">
+                    <ul>
+                        <li class="mobile-menu-first-item"><a href="index.html#Equipo"
+                                onclick="document.getElementById('menu-icon').checked=false;">Regresar</a> </li>
+                        <li><a href="index.html#Contacto"
+                                onclick="document.getElementById('menu-icon').checked=false;">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-------------------------- 
+            # Botón Menú Móvil
+            ------------------------>
+            <div class="flex md:hidden">
+                <button id="mobile-menu-button" class="relative w-10 h-10 focus:outline-none group"
+                    aria-label="Toggle menu">
+                    <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <main>
+            <section id="history" class="min-h-screen flex items-center relative py-10">
+                <div class="container mx-auto px-6">
+                    <div class="w-full mx-auto">
+                        <div class="text-center mb-12">
+                            <div class="inline-block mb-3">
+                                <div class="text-xs text-gray-400 tracking-widest uppercase mb-1">Conoce nuestra</div>
+                                <div class="text-4xl md:text-5xl font-bold text-white">
+                                    Historia</div>
+                            </div>
+                            <div class="w-32 h-1 mx-auto rounded glow-line"></div>
+                        </div>
+
+                        <div class="history-card">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <img src="img/team/thiagoalbornoz.jpg" alt="Equipo 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/team/sebastianerbino.jpg" alt="Equipo 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/team/valentinfranco.png" alt="Equipo 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/team/francolesme.jpg" alt="Equipo 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/team/lorenzopoggi.jpg" alt="Equipo 5">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/team/valentinosarniguette.png" alt="Equipo 6">
+                                </div>
+                                <div class="carousel-dots">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                    <span class="dot" onclick="currentSlide(6)"></span>
+                                </div>
+                            </div>
+                            <div class="history-content">
+                                <h3 class="fw-bold fs-2 mb-3">¿Cómo surgió el proyecto SignaLink?</h3>
+                                <p>
+                                    Somos alumnos de la Escuela de Educación Secundaria Técnica N°7 (IMPA) Taller
+                                    Regional Quilmes, cursando el séptimo año en el ciclo lectivo 2025 en el área de
+                                    aviónica.
+                                    Este gran proyecto surgió un día que fuimos a nuestra biblioteca, en donde vimos a
+                                    nuestra bibliotecaria
+                                    Belen enseñandole a un chico a decir el himno nacional en lengua de señas. Ahi nos
+                                    dimos cuenta de la poca
+                                    integración de la gente hipoacusica en nuestra sociedad. Ahi es donde nació
+                                    "SignaLink". El objetivo que
+                                    nos planteamos con este proyecto es fomentar la inclsuión social, sobre todo en
+                                    entornos escolares.
+                                    Desde ese día, estuvimos investigando por diferentes medios como podriamos llevarlo
+                                    a cabo, contactandonos
+                                    con facultades y empresas que nos puedan brindar ayuda tanto economica como
+                                    educativa. Sobre todo, nos hemos
+                                    basado en un proyecto hecho por unos estudiantes del MIT (Massachusetts Institute of
+                                    Technology). Hemos encontrado
+                                    de esta forma, todas las herramientas necesarias para que SignaLink sea lo mas
+                                    fiable y ergoconomico posible, para
+                                    que sea la base de un futuro mejor para aquellos que tengan este tipo de
+                                    discapacidad.
+                                </p>
+                                <div class="stats-container">
+                                    <div class="stats-item">
+                                        <i class="bi bi-person-fill"></i>
+                                        <div>
+                                            <h1 class="font-bold">1M</h1>
+                                            <p class="text-xs text-gray-400">Personas sordomudas en Argentina</p>
+                                        </div>
+                                    </div>
+                                    <div class="stats-item">
+                                        <i class="bi bi-file-earmark-text-fill"></i>
+                                        <div>
+                                            <h1 class="font-bold">1</h1>
+                                            <p class="text-xs text-gray-400">Proyecto</p>
+                                        </div>
+                                    </div>
+                                    <div class="stats-item">
+                                        <i class="bi bi-clock-fill"></i>
+                                        <div>
+                                            <h1 class="font-bold">4</h1>
+                                            <p class="text-xs text-gray-400">Horas de trabajo por día</p>
+                                        </div>
+                                    </div>
+                                    <div class="stats-item">
+                                        <i class="bi bi-people-fill"></i>
+                                        <div>
+                                            <h1 class="font-bold">6</h1>
+                                            <p class="text-xs text-gray-400">Colaboradores</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+         <footer id="footer">
+            <div class="col col1">
+                <h3 class="glow-text focus:outline-none focus:ring-0"z>Proyecto SignaLink</h3>
+                <span  style="font-style: italic;">Proyecto por Alumnos de la Escuela de Educación Secundaria Técnica Nº7 "Taller Regional Quilmes"
+                    IMPA
+                </span>
+                <div class="social">
+                    <a href="https://www.instagram.com/signalink_?igsh=MXJla3NxOGVqOXlqNQ=="
+                        aria-label="Read more about Seminole tax hike" rel="noopener" target="_blank" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/impatrq/SignaLink" aria-label="Read more about Seminole tax hike"
+                        rel="noopener" target="_blank" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path fill-rute="envenodd"
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/share/1A6re3CLKK/?mibextid=wwXIfr"
+                        aria-label="Read more about Seminole tax hike" rel="noopener" target="_blank" class="link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </div>
+                <span style="color: #818181; font-size: smaller;" class="derechos">2025 © Todos los derechos
+                    reservados</span>
+            </div>
+            <div class="col col2 sebita-cuadro">
+                <a href="index.html#Inicio">Inicio </a>
+                <a href="index.html#objetivo">Objetivos</a>
+                <a href="index.html#tecnologia">Tecnologia</a>
+                <a href="index.html#galeria">Galeria</a>
+            </div>
+            <div class="col col3 sebita-cuadro">
+                <a href="index.html#Equipo">Equipo</a>
+                <a href="technology-detail.html#hardware">Hardware</a>
+                <a href="technology-detail.html#software">Software</a>
+                <a href="index.html#Contacto">Contactanos</a>
+            </div>
+            <div class="backdrop"></div>
+
+             <span style="color: #818181; font-size: smaller; margin-bottom: 0px;" class="derechos2">2025 © Todos los derechos reservados</span>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/team.js"></script>
+    <script src='https://cdn.tailwindcss.com'></script>
+</body>
+
+</html>
