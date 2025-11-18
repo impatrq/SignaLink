@@ -1,0 +1,7 @@
+dependencies:
+  arduino:
+    version: "*"
+  driver:
+    version: "*"
+build:
+  cmake: CMakeLists.txt
