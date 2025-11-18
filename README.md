@@ -11,10 +11,10 @@
 <table align="center">
 <tr>
 <td align="center">
-<img src="Imagenes/ONIET/oniet.jpg" alt="Logo proyecto" width="60%"/>
+<img src="Imagenes/ONIET/oniet.jpg" alt="Logo proyecto" width="80%"/>
 </td>
 <td align="center">
-<img src="Imagenes/Banner/banner.jpg" alt="Logo proyecto" width="40%"/>
+<img src="Imagenes/Banner/banner.jpg" alt="Logo proyecto" width="60%"/>
 </td>
 </tr>
 </table>
