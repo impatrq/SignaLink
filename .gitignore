@@ -1,2 +1,17 @@
-# Entorno Virtual
-venv/
+# ESP-IDF build output
+build/
+sdkconfig.old
+sdkconfig.local
+
+# Archivos compilados
+*.bin 
+*.elf 
+*.map
+*.obj
+*.o
+*.a
+
+# Archivos temporales 
+.vscode/
+*.DS_Store
+Thumbs.db
